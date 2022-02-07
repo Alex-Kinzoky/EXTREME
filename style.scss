@@ -139,13 +139,18 @@
         height: 100%;
     }
 }
+.menu-left{
+    display: flex;
+    align-items: center;
+    
+}
 .top-search{
-    margin-left: -28vw;
     display: flex;
     justify-content: space-between;
     width: 405px;
     height: 43px;
     padding-left: 16px;
+    margin-left: calc(100vw * (164 / 1920));
     .search-image{
         background-image: url(icon/blue-search.svg);
         width: 19px;
@@ -305,6 +310,12 @@
         }
     }
 }
+.advertisement-left{
+    background: #E2E2E2;
+    width: calc(100vw * (269 / 1920));
+    height: calc(100vw * (388 / 1920));
+    margin-top: calc(100vw * (110 / 1920));
+}
 .user{
     display: flex;
     justify-content: space-between;
@@ -368,6 +379,9 @@
     }
     .card-content-image {
         padding: calc(100vw * (12/ 1920)) 0 calc(100vw * (25 / 1920));
+        img{
+            width: 100%;
+        }
     }
     .card-content-bottom{
         width: 230px;

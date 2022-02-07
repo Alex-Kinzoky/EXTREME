@@ -137,13 +137,18 @@
   height: 100%;
 }
 
+.menu-left {
+  display: flex;
+  align-items: center;
+}
+
 .top-search {
-  margin-left: -28vw;
   display: flex;
   justify-content: space-between;
   width: 405px;
   height: 43px;
   padding-left: 16px;
+  margin-left: 8.5416666667vw;
 }
 .top-search .search-image {
   background-image: url(icon/blue-search.svg);
@@ -308,6 +313,13 @@
   height: fit-content;
 }
 
+.advertisement-left {
+  background: #E2E2E2;
+  width: 14.0104166667vw;
+  height: 20.2083333333vw;
+  margin-top: 5.7291666667vw;
+}
+
 .user {
   display: flex;
   justify-content: space-between;
@@ -373,6 +385,9 @@
 }
 .card-content .card-content-image {
   padding: 0.625vw 0 1.3020833333vw;
+}
+.card-content .card-content-image img {
+  width: 100%;
 }
 .card-content .card-content-bottom {
   width: 230px;

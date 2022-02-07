@@ -266,7 +266,7 @@
   padding-top: 3.4375vw;
   border-bottom-right-radius: 50px;
   height: 45.8333333333vw;
-  box-shadow: 10px 15px 20px rgba(9, 27, 94, 0.09);
+  box-shadow: 10px 15px 20px rgba(9, 27, 94, 0.02);
 }
 .left-menu .size-26 {
   padding: 0.5208333333vw 0;
@@ -306,6 +306,10 @@
   height: 60px;
   align-items: center;
 }
+.nav-line .nav-title img {
+  margin: 0 1.0416666667vw;
+  height: 100%;
+}
 .nav-line .nav-sort {
   display: flex;
   height: fit-content;
@@ -328,7 +332,6 @@
 }
 .user .user-label {
   display: flex;
-  width: 586px;
   justify-content: space-between;
 }
 .user .user-label .user-photo {
@@ -341,6 +344,8 @@
 }
 .user .user-label .user-info {
   height: 100%;
+  margin-left: 1.0416666667vw;
+  margin-right: 1.25vw;
 }
 .user .user-label .user-follow {
   height: fit-content;
@@ -422,6 +427,107 @@
   border: 1px solid #363636;
   height: 40px;
   padding: 7px 10px;
+}
+
+.description {
+  margin: auto;
+  width: fit-content;
+  margin-top: 4.9479166667vw;
+  width: 51.0416666667vw;
+}
+.description .description-card {
+  box-shadow: none;
+}
+.description .description-card .card-content .card-content-image {
+  margin: 2.96875vw 0;
+}
+.description .description-card .card-content .card-content-bottom {
+  margin-top: 2.96875vw;
+}
+
+.before {
+  display: flex;
+  margin: 2.6041666667vw 0;
+}
+.before .arrow-back {
+  width: 104px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.before .before-info {
+  height: 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comments .nav-line {
+  margin: 0;
+}
+
+.new-comment {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8854166667vw 0.7291666667vw;
+  display: flex;
+}
+.new-comment .smile {
+  background-image: url(icon/grey-smile.svg);
+  background-size: 100% 100%;
+  width: 1.5104166667vw;
+  height: 1.5104166667vw;
+  margin-right: 1.1979166667vw;
+}
+.new-comment input::placeholder {
+  color: #5F6681;
+}
+
+.comments-bottom {
+  width: 51.0416666667vw;
+  margin: auto;
+  margin-bottom: 6.9791666667vw;
+}
+
+.one-comment {
+  margin: 3.125vw 0;
+}
+.one-comment .user .user-label .user-info {
+  margin-left: 0.78125vw;
+}
+.one-comment .user .user-label .user-photo {
+  width: 80px;
+  height: 80px;
+}
+.one-comment .user .user-button {
+  font-size: 10px;
+  height: fit-content;
+}
+.one-comment .user .user-button .unlike {
+  display: flex;
+  align-items: flex-end;
+  color: #E55555;
+}
+.one-comment .user .user-button .unlike img {
+  margin-right: 4px;
+  padding-top: 5px;
+}
+.one-comment .user .user-button .like-comment {
+  display: flex;
+  align-items: flex-end;
+  color: #17B126;
+}
+.one-comment .user .user-button .like-comment img {
+  margin-right: 4px;
+}
+.one-comment .comment-content {
+  margin-left: 96px;
+}
+.one-comment .comment-content .comment-bottom {
+  display: flex;
+  margin-top: 7px;
+  align-items: baseline;
+  width: 191px;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

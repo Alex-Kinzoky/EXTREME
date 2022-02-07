@@ -1,0 +1,95 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        .header 
+            .menu.content
+                .logo 
+                .menu-right 
+                    .theme.button
+                        .dark.button
+                            img(src="icon/dark-theme.svg", alt="")
+                        .light.button
+                            img(src="icon/light-theme.svg", alt="")
+                    button.blue.size-20.text-white Войти
+            .header-content 
+                .left-gradient 
+                .right-gradient
+                .center-search 
+                    .size-50.text-black Экстремальные ответы 
+                        br
+                        | на экстремальные вопросы
+                    
+                    .search-line.button.white-blur
+                        .search-image 
+                        input.size-20.text-grey(type="text" placeholder="Поиск")
+                        .filter-image
+                        button.white-white-border.button.size-20.text-black Поиск
+                    .request-line 
+                        .request.button.white-blur
+                            .size-14.text-grey Ключевое слово
+                            .close-image
+                        .request.button.white-blur
+                            .size-14.text-grey Ключевое слово
+                            .close-image
+        .page-card.button.white-white-border.content
+            .page-card-h.size-50.text-black.weight-500 Искать по теме
+            .page-card-list 
+                .card.button 
+                    .card-image 
+                        img(src="images/theme1.png", alt="")
+                    .card-title 
+                        .size-40.text-black Велосипед
+                        a.arrow-more(href='guest-tape.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme2.png", alt="")
+                    .card-title 
+                        .size-40.text-black Ролики
+                        a.arrow-more(href='guest-tape.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme3.png", alt="")
+                    .card-title 
+                        .size-40.text-black Самокаты
+                        a.arrow-more(href='guest-tape.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme4.png", alt="")
+                    .card-title 
+                        .size-40.text-black Лыжи
+                        a.arrow-more(href='guest-tape.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme5.png", alt="")
+                    .card-title 
+                        .size-40.text-black Сноуборд
+                        a.arrow-more(href='guest-tape.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme6.png", alt="")
+                    .card-title 
+                        .size-40.text-black Скейтборды
+                        a.arrow-more(href='guest-tape.html')
+        .footer.text-black.size-18
+            .footer-list 
+                .footer-col 
+                    a.footer-link.text-black(href="#") Пользовательское соглашение
+                    a.footer-link.text-black(href="#") Политика обработки персональных данных
+                .footer-col 
+                    a.footer-link.text-black(href="#") Помощь
+                    a.footer-link.text-black(href="#") Написать в поддержку
+                    a.footer-link.text-black(href="#") Реклама и сотрудничество
+                .footer-col
+                    .footer-link Мы в социальных сетях
+                    .footer-social 
+                        a.social(href="#") 
+                            img(src="icon/grey-facebook.svg", alt="")
+                        a.social(href="#") 
+                            img(src="icon/grey-vk.svg", alt="")
+                        a.social(href="#") 
+                            img(src="icon/grey-instagramm.svg", alt="")
+            .copyright.size-20 © extremy.ru, 2021
+        .up 
+            img(src="icon/up.svg", alt="")
+

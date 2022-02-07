@@ -1,0 +1,163 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.button {
+  border-radius: 50px;
+}
+
+.content {
+  padding: 0 4.1666666667vw;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.size-50 {
+  font-size: 50px;
+}
+
+.size-14 {
+  font-size: 14px;
+}
+
+.size-16 {
+  font-size: 16px;
+}
+
+.size-40 {
+  font-size: 40px;
+}
+
+.size-30 {
+  font-size: 30px;
+}
+
+.size-20 {
+  font-size: 20px;
+}
+
+.size-26 {
+  font-size: 26px;
+}
+
+.size-18 {
+  font-size: 18px;
+}
+
+.text-black {
+  color: #161616;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-grey {
+  color: #7B7B7B;
+}
+
+.text-blue {
+  color: #5575E8;
+}
+
+.text-grey-2 {
+  color: #7C7C7C;
+}
+
+.text-grey-light {
+  color: #C4C4C4;
+}
+
+.text-black-2 {
+  color: #393939;
+}
+
+.text-blue-grey {
+  color: #5F6681;
+}
+
+.blue {
+  background-color: #5575E8;
+  border: 1px solid #5575E8;
+}
+
+.white-blue-border {
+  background-color: #FFFFFF;
+  border: 1px solid #5575E8;
+}
+
+.light-blue-blue-border {
+  background-color: rgba(0, 56, 255, 0.04);
+  border: 1px solid #5575E8;
+}
+
+.white-white-border {
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.white-blur {
+  display: flex;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  border-right: 1px solid #FFFFFF;
+}
+.white-blur:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*bottom: 0; */
+  left: 0;
+  width: 98%;
+  height: 1px;
+  z-index: -1;
+  margin: 0px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(90deg, transparent, #FFFFFF 80%);
+}
+.white-blur::after {
+  content: "";
+  position: absolute;
+  /*top: 0; */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 98%;
+  height: 1px;
+  z-index: -1;
+  margin: -1px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(90deg, transparent, #FFFFFF 80%);
+}
+
+/*# sourceMappingURL=style-components.css.map */

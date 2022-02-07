@@ -1,0 +1,136 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <link rel="stylesheet" href="style-components.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-mobile.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body> 
+    <div class="header"> 
+      <div class="menu content white-white-border">
+        <div class="logo"> </div>
+        <div class="search-line button white-blue-border top-search">
+          <div class="search-image blue-search"></div>
+          <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+          <button class="blue button size-14 text-white">Поиск</button>
+        </div>
+        <div class="menu-right"> 
+          <div class="theme button">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div>
+          <button class="blue size-20 text-white">Войти</button>
+        </div>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <div class="left-menu"><a class="size-26 text-black" href="#">Виды спорта</a><a class="size-26 text-black" href="#">Бортжурналы</a><a class="size-26 text-black" href="#">Места катания</a><a class="size-26 text-black" href="#">Мероприятия</a><a class="size-26 text-black" href="#">Партнёры</a></div>
+    <div class="nav-line content">
+      <div class="nav-title size-50 weight-500 text-black">Лента</div>
+      <div class="nav-sort light-blue-blue-border text-blue size-14 button">
+        <div class="nav-sort-line blue text-white button">По популярности</div>
+        <div class="nav-sort-line button">По коментариям</div>
+        <div class="nav-sort-line button">По дате</div>
+      </div>
+    </div>
+    <div class="right-filter"> 
+      <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Вид спорта</button>
+      <div class="podmenu-filter" id="sport"><a class="podmenu-filter-link" href="#">Аквабайк </a><a class="podmenu-filter-link" href="#">Альпинизм</a><a class="podmenu-filter-link" href="#">Бейсджампинг </a><a class="podmenu-filter-link" href="#">Бокинг</a><a class="podmenu-filter-link" href="#">Вейкбординг</a><a class="podmenu-filter-link" href="#">Виндсерфинг</a><a class="podmenu-filter-link" href="#">Воркаут </a><a class="podmenu-filter-link" href="#">Горнолыжный спорт</a><a class="podmenu-filter-link" href="#">Скоростной спуск</a></div>
+      <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Модель снаряжения</button>
+      <div class="podmenu-filter" id="model"><a class="podmenu-filter-link" href="#">Гидрокостюмы</a><a class="podmenu-filter-link" href="#">Сухие гидрокостюмы</a><a class="podmenu-filter-link" href="#">Ласты</a><a class="podmenu-filter-link" href="#">Маски</a><a class="podmenu-filter-link" href="#">Трубки</a><a class="podmenu-filter-link" href="#">Дайвинг-компьютеры</a><a class="podmenu-filter-link" href="#">Регуляторы</a><a class="podmenu-filter-link" href="#">Октопусы</a><a class="podmenu-filter-link" href="#">Сумки для дайвинга</a></div>
+      <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Локация</button>
+      <div class="podmenu-filter" id="location">
+        <div class="podmenu-filter-link">Страна, регион, город</div>
+        <input class="location button size-20" type="text"/>
+      </div>
+      <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Уровень подготовки</button>
+      <div class="podmenu-filter" id="level"><a class="podmenu-filter-link" href="#">Новичок</a><a class="podmenu-filter-link" href="#">Любитель</a><a class="podmenu-filter-link" href="#">Продвинутый</a><a class="podmenu-filter-link" href="#">Мастер</a></div>
+      <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>О чём</button>
+      <div class="podmenu-filter" id="about"><a class="podmenu-filter-link" href="#">Обо всём</a><a class="podmenu-filter-link" href="#">Трюки</a><a class="podmenu-filter-link" href="#">Интересные места</a><a class="podmenu-filter-link" href="#">Снаряжение</a><a class="podmenu-filter-link" href="#">Лайфхаки</a><a class="podmenu-filter-link" href="#">Вопрос — ответ</a></div>
+      <button class="blue size-20 text-white">Применить</button>
+    </div>
+    <div class="tape-list"> 
+      <div class="card tape-card button">
+        <div class="user"> 
+          <div class="user-label">
+            <div class="user-photo"><img src="images/user-photo.png" alt=""/>
+              <div class="online"></div>
+            </div>
+            <div class="user-info">
+              <div class="user-name size-30 text-black">Андрей Кулагин</div>
+              <div class="user-level text-grey-2">Мастер</div>
+              <div class="user-location text-grey-2">Москва, Россия</div>
+            </div>
+            <button class="user-follow blue text-white size-20">Подписаться</button>
+          </div>
+          <div class="user-button">
+            <div class="bookmark"> </div>
+            <div class="share"></div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-content-top">
+            <div class="card-content-title size-40 weight-500 text-black">Лучшее снаряжение для сноубординга</div>
+            <div class="card-content-date text-grey-2">Опубликовано 07.12.2021</div>
+          </div>
+          <div class="card-content-text text-black">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.</div><a class="card-content-more text-black" href="#">Читать дальше...</a>
+          <div class="card-content-image"> <img src="images/tape.png" alt=""/></div>
+          <div class="card-content-bottom">
+            <button class="button size-30 text-black-2"><img src="icon/like.svg" alt=""/>20</button>
+            <button class="button size-30 text-black-2"><img src="icon/comment.svg" alt=""/>25</button>
+          </div>
+        </div>
+      </div>
+      <div class="card tape-card button">
+        <div class="user"> 
+          <div class="user-label">
+            <div class="user-photo"><img src="images/user-photo.png" alt=""/>
+              <div class="online"></div>
+            </div>
+            <div class="user-info">
+              <div class="user-name size-30 text-black">Андрей Кулагин</div>
+              <div class="user-level text-grey-2">Мастер</div>
+              <div class="user-location text-grey-2">Москва, Россия</div>
+            </div>
+            <button class="user-follow blue text-white size-20">Подписаться</button>
+          </div>
+          <div class="user-button">
+            <div class="bookmark"> </div>
+            <div class="share"></div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-content-top">
+            <div class="card-content-title size-40 weight-500 text-black">Лучшее снаряжение для сноубординга</div>
+            <div class="card-content-date text-grey-2">Опубликовано 07.12.2021</div>
+          </div>
+          <div class="card-content-text text-black">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.</div><a class="card-content-more text-black" href="#">Читать дальше...</a>
+          <div class="card-content-image"> <img src="images/tape.png" alt=""/></div>
+          <div class="card-content-bottom">
+            <button class="button size-30 text-black-2"><img src="icon/like.svg" alt=""/>20</button>
+            <button class="button size-30 text-black-2"><img src="icon/comment.svg" alt=""/>25</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer text-black size-18">
+      <div class="footer-list"> 
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Пользовательское соглашение</a><a class="footer-link text-black" href="#">Политика обработки персональных данных</a></div>
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Помощь</a><a class="footer-link text-black" href="#">Написать в поддержку</a><a class="footer-link text-black" href="#">Реклама и сотрудничество</a></div>
+        <div class="footer-col">
+          <div class="footer-link">Мы в социальных сетях</div>
+          <div class="footer-social"> <a class="social" href="#"> <img src="icon/grey-facebook.svg" alt=""/></a><a class="social" href="#"> <img src="./icon/grey-vk.svg" alt=""/></a><a class="social" href="#"> <img src="icon/grey-instagramm.svg" alt=""/></a></div>
+        </div>
+      </div>
+      <div class="copyright size-20">© extremy.ru, 2021</div>
+    </div>
+    <div class="up"> <img src="icon/up.svg" alt=""/></div>
+  </body>
+</html>

@@ -55,7 +55,7 @@
 .header .header-content {
   background-image: url(images/header.png);
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 50.5729166667vw;
   position: relative;
   display: flex;
@@ -96,10 +96,11 @@
   margin-left: 11px;
 }
 .header .header-content .center-search .request-line .request::before {
-  width: 95%;
+  width: 94%;
+  margin: -1px;
 }
 .header .header-content .center-search .request-line .request::after {
-  width: 95%;
+  width: 94%;
 }
 .header .header-content .center-search .request-line .request .close-image {
   background-image: url(icon/grey-close.svg);
@@ -176,6 +177,7 @@
 .card .card-image img {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  width: 100%;
 }
 .card .card-title {
   width: 100%;

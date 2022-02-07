@@ -125,7 +125,7 @@ input {
   display: flex;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
-  border-right: 1px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
 }
 .white-blur:before {
   content: "";
@@ -134,7 +134,7 @@ input {
   right: 0;
   /*bottom: 0; */
   left: 0;
-  width: 98%;
+  width: 97%;
   height: 1px;
   z-index: -1;
   margin: 0px;
@@ -150,7 +150,7 @@ input {
   right: 0;
   bottom: 0;
   left: 0;
-  width: 98%;
+  width: 97%;
   height: 1px;
   z-index: -1;
   margin: -1px;

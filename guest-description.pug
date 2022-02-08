@@ -15,10 +15,11 @@ html
                 .user 
                     .user-label
                         .user-photo
+                            a(href='guest-profile.html')
                             img(src="images/user-photo.png", alt="")
                             .online
                         .user-info
-                            .user-name.size-30.text-black Андрей Кулагин
+                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
                             .user-level.text-grey-2 Мастер
                             .user-location.text-grey-2 Москва, Россия
                         button.user-follow.blue.text-white.size-20 Подписаться
@@ -64,10 +65,11 @@ html
                 .user 
                     .user-label
                         .user-photo
-                            img(src="images/comment-photo.png", alt="")
+                            a(href='guest-profile.html')
+                                img(src="images/comment-photo.png", alt="")
                             .online
                         .user-info
-                            .user-name.size-24.text-black Кирилл Максимчук
+                            a.user-name.size-24.text-black(href='guest-profile.html') Кирилл Максимчук
                             .user-level.size-16.text-grey-2 Мастер
                             .user-location.size-16.text-grey-2 Москва, Россия
                     .user-button

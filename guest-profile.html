@@ -1,0 +1,210 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <link rel="stylesheet" href="style-components.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-mobile.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body> 
+    <div class="header"> 
+      <div class="menu content white-white-border">
+        <div class="menu-left">
+          <div class="logo"> </div>
+          <div class="search-line button white-blue-border top-search">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <button class="blue button size-14 text-white">Поиск</button>
+          </div>
+        </div>
+        <div class="menu-right"> 
+          <div class="theme button">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div>
+          <button class="blue size-20 text-white">Войти</button>
+        </div>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <div class="left-menu white-white-border"><a class="size-26 text-black" href="#">Виды спорта</a><a class="size-26 text-black" href="#">Бортжурналы</a><a class="size-26 text-black" href="#">Места катания</a><a class="size-26 text-black" href="#">Мероприятия</a><a class="size-26 text-black" href="#">Партнёры</a></div>
+    <div class="profile">
+      <div class="user"> 
+        <div class="user-label">
+          <div class="user-photo"><a href="guest-profile.html"><img src="images/user-photo.png" alt=""/></a>
+            <div class="online"></div>
+          </div>
+          <div class="user-info"><a class="user-name size-50 weight-500 text-black" href="guest-profile.html">Андрей Кулагин</a>
+            <div class="user-level text-grey-2">Мастер</div>
+            <div class="user-location text-grey-2">Москва, Россия</div>
+          </div>
+        </div>
+        <div class="user-button">
+          <button class="user-follow blue text-white size-20">Подписаться</button>
+          <button class="user-mess white-blue-border text-blue size-20">Сообщение</button>
+        </div>
+      </div>
+      <div class="user-profile"> 
+        <div class="user-profile-col"> 
+          <div class="text-black">2 подписчика</div>
+          <div class="text-black">8 лет на сайте</div>
+        </div>
+        <div class="user-profile-col"> 
+          <div class="text-black">10 подписок</div>
+          <div class="text-black">567 комментариев</div>
+        </div>
+      </div>
+    </div>
+    <div class="hr"> </div>
+    <div class="profile"> 
+      <div class="storage"> 
+        <div class="top-label">
+          <div class="size-50 weight-500 text-black">Кладовка</div>
+          <div class="slider-buttons">
+            <div class="slider-button blue"><img src="icon/white-back.svg" alt=""/></div>
+            <div class="slider-button blue"><img src="icon/white-forward.svg" alt=""/></div>
+          </div>
+        </div>
+        <div class="card-overflow">
+          <div class="card-line"> 
+            <div class="card button"> 
+              <div class="card-image"> <img src="images/storage.png" alt=""/></div>
+              <div class="card-title"> 
+                <div class="size-26 weight-500 text-black">Снаряжение 1 </div><a class="arrow-more" href="guest-tape.html"></a>
+              </div>
+            </div>
+            <div class="card button"> 
+              <div class="card-image"> <img src="images/storage.png" alt=""/></div>
+              <div class="card-title"> 
+                <div class="size-26 weight-500 text-black">Снаряжение 2</div><a class="arrow-more" href="guest-tape.html"></a>
+              </div>
+            </div>
+            <div class="card button"> 
+              <div class="card-image"> <img src="images/storage.png" alt=""/></div>
+              <div class="card-title"> 
+                <div class="size-26 weight-500 text-black">Снаряжение 3</div><a class="arrow-more" href="guest-tape.html"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="place"> 
+        <div class="top-label">
+          <div class="size-50 weight-500 text-black">Места катания</div>
+        </div>
+        <div class="place-info"> 
+          <div class="place-map button">
+            <button class="place-label" id="l-1"><img src="icon/location.svg" alt=""/></button>
+            <button class="place-label" id="l-2"><img src="icon/location.svg" alt=""/></button>
+            <button class="place-label" id="l-3"><img src="icon/location.svg" alt=""/></button>
+            <button class="place-label" id="l-4"><img src="icon/location.svg" alt=""/></button>
+          </div>
+          <div class="place-list"> 
+            <div class="place-part"> 
+              <div class="text-black">оз. Муромское, Респ. Карелия</div>
+              <div class="size-16 text-grey-2">61.483886, 36.340335</div>
+            </div>
+            <div class="place-part"> 
+              <div class="text-black">оз. Муромское, Респ. Карелия</div>
+              <div class="size-16 text-grey-2">61.483886, 36.340335</div>
+            </div>
+            <div class="place-part"> 
+              <div class="text-black">оз. Муромское, Респ. Карелия</div>
+              <div class="size-16 text-grey-2">61.483886, 36.340335</div>
+            </div>
+            <div class="place-part"> 
+              <div class="text-black">оз. Муромское, Респ. Карелия</div>
+              <div class="size-16 text-grey-2">61.483886, 36.340335</div>
+            </div>
+            <div class="place-part"> 
+              <div class="text-black">оз. Муромское, Респ. Карелия</div>
+              <div class="size-16 text-grey-2">61.483886, 36.340335</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="events"> 
+        <div class="top-label">
+          <div class="size-50 weight-500 text-black">Мероприятия</div>
+        </div>
+        <div class="events-list"> 
+          <div class="card button card-h">
+            <div class="card-h-left">
+              <div class="card-h-image"> <img src="images/map.png" alt=""/></div>
+              <div class="card-h-info"> 
+                <div class="size-16 weight-500 text-black">07.12.2021</div>
+                <div class="size-30 text-black">Название </div>
+                <div class="text-black">Небольшое описание</div>
+                <div class="participants"> 
+                  <div class="participants-photos">
+                    <div class="participants-photo"><img src="images/comment-photo.png" alt=""/></div>
+                    <div class="participants-photo"><img src="images/user-photo.png" alt=""/></div>
+                    <div class="participants-photo"><img src="images/photo.png" alt=""/></div>
+                  </div>
+                  <div class="text-black">10 участников</div>
+                </div>
+              </div>
+            </div>
+            <button class="button size-20 blue text-white">Присоединиться</button>
+          </div>
+          <div class="card button card-h">
+            <div class="card-h-left">
+              <div class="card-h-image"> <img src="images/map.png" alt=""/></div>
+              <div class="card-h-info"> 
+                <div class="size-16 weight-500 text-black">07.12.2021</div>
+                <div class="size-30 text-black">Название </div>
+                <div class="text-black">Небольшое описание</div>
+                <div class="participants"> 
+                  <div class="participants-photos">
+                    <div class="participants-photo"><img src="images/comment-photo.png" alt=""/></div>
+                    <div class="participants-photo"><img src="images/user-photo.png" alt=""/></div>
+                    <div class="participants-photo"><img src="images/photo.png" alt=""/></div>
+                  </div>
+                  <div class="text-black">10 участников</div>
+                </div>
+              </div>
+            </div>
+            <button class="button size-20 blue text-white">Присоединиться</button>
+          </div>
+          <div class="card button card-h">
+            <div class="card-h-left">
+              <div class="card-h-image"> <img src="images/map.png" alt=""/></div>
+              <div class="card-h-info"> 
+                <div class="size-16 weight-500 text-black">07.12.2021</div>
+                <div class="size-30 text-black">Название </div>
+                <div class="text-black">Небольшое описание</div>
+                <div class="participants"> 
+                  <div class="participants-photos">
+                    <div class="participants-photo"><img src="images/comment-photo.png" alt=""/></div>
+                    <div class="participants-photo"><img src="images/user-photo.png" alt=""/></div>
+                    <div class="participants-photo"><img src="images/photo.png" alt=""/></div>
+                  </div>
+                  <div class="text-black">10 участников</div>
+                </div>
+              </div>
+            </div>
+            <button class="button size-20 blue text-white">Присоединиться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer text-black size-18">
+      <div class="footer-list"> 
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Пользовательское соглашение</a><a class="footer-link text-black" href="#">Политика обработки персональных данных</a></div>
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Помощь</a><a class="footer-link text-black" href="#">Написать в поддержку</a><a class="footer-link text-black" href="#">Реклама и сотрудничество</a></div>
+        <div class="footer-col">
+          <div class="footer-link">Мы в социальных сетях</div>
+          <div class="footer-social"> <a class="social" href="#"> <img src="icon/grey-facebook.svg" alt=""/></a><a class="social" href="#"> <img src="./icon/grey-vk.svg" alt=""/></a><a class="social" href="#"> <img src="icon/grey-instagramm.svg" alt=""/></a></div>
+        </div>
+      </div>
+      <div class="copyright size-20">© extremy.ru, 2021</div>
+    </div>
+    <div class="up"> <img src="icon/up.svg" alt=""/></div>
+  </body>
+</html>

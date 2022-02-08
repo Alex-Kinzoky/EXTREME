@@ -47,10 +47,7 @@
                     }
                 }
             }
-            .blue{
-                width: 197px;
-                height: 48px;
-            }
+            
         }
     }
     .header-content{
@@ -112,6 +109,10 @@
             }
         }
     }
+}
+.blue{
+    width: 197px;
+    height: 48px;
 }
 .search-line{
     box-sizing: border-box;
@@ -714,4 +715,25 @@
         padding: 12px 17px;
         margin-right: calc(100vw * (38 / 1920));
     }
+}
+#join-window{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.join-card{
+    box-sizing: border-box;
+    width: 658px;
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 42px;
 }

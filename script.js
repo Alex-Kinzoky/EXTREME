@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('#location').hide()
     $('#level').hide()
     $('#about').hide()
+    $('#join-window').hide()
     $(function(){
         if ( $(window).width() > 460 ) {
             $(window).scroll(function(){
@@ -63,4 +64,13 @@ $(document).ready(function(){
             }
         }
     })
+    $('#join').click(function(){
+        $('#join-window').show()
+    })
+    $('#join-window').click(function(){
+        $('#join-window').hide()
+    })
+    $('.join-card').on('click', function(event) {
+        event.stopPropagation();
+    });
 })

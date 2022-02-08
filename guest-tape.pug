@@ -4,6 +4,8 @@ html
     body 
         include component/guest-header.pug 
         .hr
+        .nav-line.content.mobile
+            .nav-title.size-50.weight-500.text-black.mobile Лента
         .left-menu
             a.size-26.text-black(href='#') Виды спорта
             a.size-26.text-black(href='#') Бортжурналы
@@ -47,8 +49,8 @@ html
                 img(src="icon/arrow-down.svg", alt="")
                 | Локация
             .podmenu-filter#location
-                .podmenu-filter-link Страна, регион, город
-                input.location.button.size-20(type="text")
+                .podmenu-filter-link.desktop Страна, регион, город
+                input.location.button.size-20.text-grey-2(type="text" placeholder='Страна, регион, город')
             button.size-26.text-black
                 img(src="icon/arrow-down.svg", alt="")
                 | Уровень подготовки
@@ -69,6 +71,11 @@ html
                 a.podmenu-filter-link(href="#") Вопрос — ответ
             button.blue.size-20.text-white Применить
             .advertisement-left
+        .nav-line.content.mobile
+            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                .nav-sort-line.blue.text-white.button По популярности
+                .nav-sort-line.button По коментариям
+                .nav-sort-line.button По дате
         .tape-list 
             .card.tape-card.button
                 .user 

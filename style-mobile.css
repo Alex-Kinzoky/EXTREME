@@ -1,0 +1,356 @@
+@media (max-width: 460px) {
+  body {
+    font-size: 14px;
+  }
+
+  button {
+    border-radius: 23px;
+  }
+
+  .size-50 {
+    font-size: 25px;
+  }
+
+  .size-14 {
+    font-size: 12px;
+  }
+
+  .size-16 {
+    font-size: 16px;
+  }
+
+  .size-40 {
+    font-size: 20px;
+  }
+
+  .size-30 {
+    font-size: 20px;
+  }
+
+  .size-20 {
+    font-size: 14px;
+  }
+
+  .size-24 {
+    font-size: 24px;
+  }
+
+  .size-26 {
+    font-size: 14px;
+  }
+
+  .size-18 {
+    font-size: 12px;
+  }
+
+  .header .menu {
+    height: 72px;
+  }
+  .header .menu .logo {
+    width: 75px;
+    height: 40px;
+  }
+  .header .menu .menu-right {
+    width: 107px;
+  }
+  .header .menu .menu-right .theme {
+    display: none;
+  }
+  .header .menu .menu-right .blue {
+    display: none;
+  }
+  .header .menu .menu-right .mobile-login {
+    display: block;
+  }
+  .header .menu .menu-right .mobile-menu {
+    display: block;
+  }
+  .header .header-content {
+    background-image: url(images/header-mobile.png);
+    height: 181.5625vw;
+    padding-top: 42.8125vw;
+  }
+  .header .header-content .left-gradient {
+    width: 50vw;
+    height: 62.5vw;
+    top: 115.625vw;
+  }
+  .header .header-content .right-gradient {
+    width: 8.3333333333vw;
+    height: 10.4166666667vw;
+    top: -31.25vw;
+  }
+  .header .header-content .center-search {
+    height: 150px;
+  }
+  .header .header-content .center-search .request-line .request {
+    display: none;
+  }
+
+  .content {
+    padding: 0 4.6875vw;
+  }
+
+  .search-line {
+    width: 100%;
+    height: 37px;
+    padding-left: 16px;
+  }
+  .search-line .search-image {
+    width: 19px;
+    height: 19px;
+  }
+  .search-line input {
+    width: 40.625vw;
+  }
+  .search-line .filter-image {
+    width: 23px;
+    height: 16px;
+  }
+  .search-line .button {
+    width: 78px;
+    height: 100%;
+  }
+
+  .left-menu {
+    display: none;
+  }
+
+  .top-search {
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    margin-left: 25.625vw;
+    border: none;
+  }
+  .top-search .search-image {
+    background-image: url(icon/black-search.svg);
+    width: 25px;
+    height: 25px;
+  }
+  .top-search input {
+    display: none;
+  }
+  .top-search .button {
+    display: none;
+  }
+
+  .card {
+    box-shadow: 4px 6px 40px rgba(9, 27, 94, 0.09);
+  }
+  .card .card-image img {
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+  }
+
+  .button {
+    border-radius: 23px;
+  }
+
+  .page-card {
+    margin-top: -21.25vw;
+    border-radius: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .page-card .page-card-h {
+    padding: 10.625vw 0;
+  }
+  .page-card .page-card-list {
+    padding: 0 0 25.625vw;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-row-gap: 9.0625vw;
+  }
+
+  .card {
+    width: 100%;
+    height: 72.8125vw;
+  }
+  .card .card-title {
+    padding: 0 6.875vw;
+  }
+  .card .card-title .arrow-more {
+    background-image: url(icon/arrow-more.svg);
+    background-size: 100% 100%;
+    width: 35px;
+    height: 15px;
+  }
+
+  .footer {
+    box-sizing: border-box;
+    height: 320px;
+    padding: 29px 4.6875vw 23px;
+  }
+  .footer .footer-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-list .footer-col .footer-link {
+    margin-bottom: 13px;
+  }
+  .footer .footer-list .footer-col .footer-social .social {
+    margin-right: 22px;
+    height: 22px;
+  }
+
+  .up {
+    position: absolute;
+    right: 4.6875vw;
+    bottom: 75vw;
+    width: 15.9375vw;
+    height: 15.9375vw;
+  }
+  .up img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-filter {
+    box-sizing: border-box;
+    position: static;
+    width: 100%;
+    padding: 0 4.6875vw;
+  }
+  .right-filter .size-26 {
+    padding: 1.5625vw;
+    display: flex;
+    align-items: center;
+    text-align: start;
+  }
+  .right-filter .size-26 img {
+    width: 11px;
+    height: 6px;
+    margin-right: 1.5625vw;
+  }
+  .right-filter .blue {
+    width: 100%;
+    align-self: center;
+    padding: 2.8125vw 0;
+    margin-top: 7.5vw;
+    align-items: center;
+  }
+
+  .nav-line {
+    display: none;
+    margin: 0;
+    margin-top: 9.0625vw;
+  }
+
+  .advertisement-left {
+    background: #E2E2E2;
+    width: 100%;
+    height: 50.3125vw;
+    margin-top: 11.5625vw;
+  }
+
+  .user .user-label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .user .user-label .user-photo {
+    width: 67px;
+    height: 67px;
+    position: relative;
+  }
+  .user .user-label .user-photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .user .user-label .user-info {
+    height: 100%;
+    margin-left: 2.8125vw;
+    margin-right: 1.25vw;
+  }
+  .user .user-label .user-button {
+    width: 5.2604166667vw;
+  }
+
+  .user-follow {
+    display: none;
+  }
+
+  .user-button {
+    display: none;
+  }
+  .user-button .bookmark {
+    background-image: url(icon/bookmark.svg);
+    background-size: 100% 100%;
+    width: 17px;
+    height: 22px;
+  }
+  .user-button .share {
+    background-image: url(icon/share.svg);
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+  }
+
+  .tape-card {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 6.25vw 4.6875vw;
+    margin: 4.6875vw 0;
+  }
+
+  .tape-list {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20.3125vw;
+    margin-top: 6.25vw;
+  }
+
+  .card-content .card-content-top {
+    padding: 4.6875vw 0;
+  }
+  .card-content .card-content-more {
+    padding: 3.4375vw 0;
+  }
+  .card-content .card-content-image {
+    padding: 9.375vw 0 6.25vw;
+  }
+  .card-content .card-content-image img {
+    width: 100%;
+  }
+  .card-content .card-content-bottom {
+    display: flex;
+  }
+  .card-content .card-content-bottom .button {
+    height: 35px;
+    padding: 5px 7px;
+    margin-right: 20px;
+  }
+  .card-content .card-content-bottom .button img {
+    margin-right: 7px;
+  }
+}
+.mobile {
+  display: block;
+}
+
+.podmenu-filter {
+  font-size: 12px;
+  margin-left: 8.75vw;
+}
+.podmenu-filter .podmenu-filter-link {
+  margin: 2.1875vw 0;
+}
+.podmenu-filter .location {
+  height: 33px;
+  padding: 9px 19px;
+}
+.podmenu-filter .location::placeholder {
+  font-size: 12px;
+}
+
+.desktop {
+  display: none;
+}
+
+.online {
+  width: 15px;
+  height: 15px;
+}
+
+/*# sourceMappingURL=style-mobile.css.map */

@@ -4,14 +4,16 @@ html
     body 
         .header 
             .menu.content
-                .logo 
+                a.logo(href='index.html')
                 .menu-right 
                     .theme.button
                         .dark.button
                             img(src="icon/dark-theme.svg", alt="")
                         .light.button
                             img(src="icon/light-theme.svg", alt="")
-                    button.blue.size-20.text-white Войти
+                    a.blue.size-20.text-white(href='login.html') Войти
+                    button.mobile-login 
+                    button.mobile-menu
             .header-content 
                 .left-gradient 
                 .right-gradient

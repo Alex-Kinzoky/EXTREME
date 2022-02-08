@@ -15,8 +15,7 @@
   <body> 
     <div class="header"> 
       <div class="menu content white-white-border">
-        <div class="menu-left">
-          <div class="logo"> </div>
+        <div class="menu-left"><a class="logo" href="index.html"></a>
           <div class="search-line button white-blue-border top-search">
             <div class="search-image blue-search"></div>
             <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
@@ -27,12 +26,16 @@
           <div class="theme button">
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
-          </div>
-          <button class="blue size-20 text-white">Войти</button>
+          </div><a class="blue size-20 text-white" href="login.html">Войти</a>
+          <button class="mobile-login"> </button>
+          <button class="mobile-menu"></button>
         </div>
       </div>
     </div>
     <div class="hr"></div>
+    <div class="nav-line content mobile">
+      <div class="nav-title size-50 weight-500 text-black mobile">Лента</div>
+    </div>
     <div class="left-menu"><a class="size-26 text-black" href="#">Виды спорта</a><a class="size-26 text-black" href="#">Бортжурналы</a><a class="size-26 text-black" href="#">Места катания</a><a class="size-26 text-black" href="#">Мероприятия</a><a class="size-26 text-black" href="#">Партнёры</a></div>
     <div class="nav-line content">
       <div class="nav-title size-50 weight-500 text-black">Лента</div>
@@ -49,8 +52,8 @@
       <div class="podmenu-filter" id="model"><a class="podmenu-filter-link" href="#">Гидрокостюмы</a><a class="podmenu-filter-link" href="#">Сухие гидрокостюмы</a><a class="podmenu-filter-link" href="#">Ласты</a><a class="podmenu-filter-link" href="#">Маски</a><a class="podmenu-filter-link" href="#">Трубки</a><a class="podmenu-filter-link" href="#">Дайвинг-компьютеры</a><a class="podmenu-filter-link" href="#">Регуляторы</a><a class="podmenu-filter-link" href="#">Октопусы</a><a class="podmenu-filter-link" href="#">Сумки для дайвинга</a></div>
       <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Локация</button>
       <div class="podmenu-filter" id="location">
-        <div class="podmenu-filter-link">Страна, регион, город</div>
-        <input class="location button size-20" type="text"/>
+        <div class="podmenu-filter-link desktop">Страна, регион, город</div>
+        <input class="location button size-20 text-grey-2" type="text" placeholder="Страна, регион, город"/>
       </div>
       <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Уровень подготовки</button>
       <div class="podmenu-filter" id="level"><a class="podmenu-filter-link" href="#">Новичок</a><a class="podmenu-filter-link" href="#">Любитель</a><a class="podmenu-filter-link" href="#">Продвинутый</a><a class="podmenu-filter-link" href="#">Мастер</a></div>
@@ -58,6 +61,13 @@
       <div class="podmenu-filter" id="about"><a class="podmenu-filter-link" href="#">Обо всём</a><a class="podmenu-filter-link" href="#">Трюки</a><a class="podmenu-filter-link" href="#">Интересные места</a><a class="podmenu-filter-link" href="#">Снаряжение</a><a class="podmenu-filter-link" href="#">Лайфхаки</a><a class="podmenu-filter-link" href="#">Вопрос — ответ</a></div>
       <button class="blue size-20 text-white">Применить</button>
       <div class="advertisement-left"></div>
+    </div>
+    <div class="nav-line content mobile">
+      <div class="nav-sort light-blue-blue-border text-blue size-14 button">
+        <div class="nav-sort-line blue text-white button">По популярности</div>
+        <div class="nav-sort-line button">По коментариям</div>
+        <div class="nav-sort-line button">По дате</div>
+      </div>
     </div>
     <div class="tape-list"> 
       <div class="card tape-card button">

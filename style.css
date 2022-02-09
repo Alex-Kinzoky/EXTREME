@@ -508,6 +508,10 @@
   margin-top: 2.96875vw;
 }
 
+.like-comment {
+  display: flex;
+}
+
 .before {
   display: flex;
   margin: 2.6041666667vw 0;
@@ -735,9 +739,12 @@
 .card-h .card-h-left {
   display: flex;
 }
-.card-h .card-h-left .card-h-image img {
+.card-h .card-h-left .card-h-image {
   border-bottom-left-radius: 40px;
   border-top-left-radius: 40px;
+  overflow: hidden;
+}
+.card-h .card-h-left .card-h-image img {
   height: 100%;
   width: 250px;
 }
@@ -886,6 +893,7 @@
 }
 .journal .card.button.card-h .card-content-bottom .button img {
   margin-right: 10px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

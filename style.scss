@@ -499,10 +499,14 @@
             }
             .card-content-bottom{
                 margin-top: calc(100vw * (57 / 1920));
+                
 
             }
         }
     }
+}
+.like-comment{
+    display: flex;
 }
 .before {
     display: flex;
@@ -732,9 +736,11 @@
     .card-h-left{
         display: flex;
         .card-h-image{
+            border-bottom-left-radius: 40px;
+            border-top-left-radius: 40px;
+            overflow: hidden;
             img{
-                border-bottom-left-radius: 40px;
-                border-top-left-radius: 40px;
+                
                 height: 100%;
                 width: 250px;
             }
@@ -877,6 +883,7 @@
                 align-items: center;
                 img{
                     margin-right: 10px;
+                    height: 100%;
                 }
             }
             

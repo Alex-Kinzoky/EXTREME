@@ -240,7 +240,11 @@
   .nav-line .nav-sort {
     width: 100%;
   }
+  .nav-line .nav-sort .nav-sort-line {
+    padding: 6px 9px 6px 0;
+  }
   .nav-line .size-50 {
+    flex-wrap: wrap;
     font-size: 30px;
   }
   .nav-line .size-50 img {
@@ -278,14 +282,6 @@
     width: 5.2604166667vw;
   }
 
-  .user-follow {
-    display: none;
-  }
-
-  .user-button {
-    display: none;
-  }
-
   .user-button-mobile {
     position: absolute;
     display: flex;
@@ -315,6 +311,25 @@
     width: 22px;
     height: 22px;
     margin-right: 15px;
+  }
+
+  .user-button {
+    width: 65px;
+    align-items: center;
+    justify-self: flex-end;
+  }
+  .user-button .bookmark {
+    background-image: url(icon/bookmark.svg);
+    background-size: 100% 100%;
+    width: 17px;
+    height: 22px;
+    margin-right: 25px;
+  }
+  .user-button .share {
+    background-image: url(icon/share.svg);
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
   }
 
   .mobile-user-menu {
@@ -352,6 +367,7 @@
     width: 100%;
   }
   .card-content .card-content-bottom {
+    width: 100%;
     display: flex;
   }
   .card-content .card-content-bottom .button {
@@ -395,6 +411,15 @@
     box-sizing: border-box;
     width: 100%;
     padding: 10.9375vw 4.6875vw 6.25vw;
+  }
+  .description .user {
+    flex-direction: column-reverse;
+  }
+  .description .user .user-label {
+    justify-content: flex-start;
+  }
+  .description .user .text-black {
+    padding: 6.25vw 0;
   }
 
   .user-follow {
@@ -534,6 +559,14 @@
     margin-right: 1.40625vw;
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
+  }
+  .card-line .card .card-image img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .card-line .card .card-title {
+    padding: 4.375vw;
   }
 
   .place-info {
@@ -564,6 +597,107 @@
   .place-info .place-map #l-4 {
     top: 44.6875vw;
     left: 85.625vw;
+  }
+
+  .card-h {
+    flex-direction: column;
+    width: 100%;
+    height: 132px;
+  }
+  .card-h .card-h-left {
+    height: 79px;
+    align-self: flex-start;
+  }
+  .card-h .card-h-left .card-h-image img {
+    width: 78px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 23px;
+  }
+  .card-h .card-h-left .card-h-info .size-16 {
+    font-size: 8px;
+  }
+  .card-h .card-h-left .card-h-info .size-30 {
+    font-size: 14px;
+  }
+  .card-h .card-h-left .card-h-info .text-black {
+    font-size: 12px;
+  }
+  .card-h .card-h-left .card-h-info .participants .text-black {
+    font-size: 10px;
+  }
+  .card-h .card-h-left .card-h-info .participants .participants-photos .participants-photo {
+    width: 17px;
+    height: 17px;
+  }
+  .card-h .card-h-left .card-h-info .participants .participants-photos .participants-photo:not(:last-child):after {
+    width: 17px;
+    height: 17px;
+    margin-left: -9px;
+  }
+  .card-h .button {
+    margin: 0 11px 17px;
+    width: calc(100% - 22px);
+    padding: 6px 0;
+  }
+
+  .card-grid {
+    height: auto;
+    grid-template-columns: repeat(1, auto);
+    width: calc(100% - 15px);
+  }
+  .card-grid .card {
+    width: 100%;
+    margin: 0;
+    height: 72.8125vw;
+  }
+  .card-grid .card .card-title {
+    padding: 6.5625vw;
+  }
+  .card-grid .card .card-title .size-26 {
+    font-size: 16px;
+  }
+
+  #slider-line {
+    display: none;
+  }
+
+  .journal .card-h {
+    flex-direction: row;
+    height: 79px;
+    margin: 5.9375vw 0;
+  }
+  .journal .card-h .card-h-left .card-h-image {
+    width: 78px;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+  }
+  .journal .card-h .card-h-left .card-h-image img {
+    width: auto;
+    margin-left: -10px;
+  }
+  .journal .card-h .card-h-left .card-h-info {
+    padding: 11px 18px;
+    justify-content: center;
+  }
+  .journal .card-h .card-h-left .card-h-info br {
+    display: none;
+  }
+  .journal .card-h .card-h-left .card-h-info .size-30 {
+    font-weight: 500;
+  }
+  .journal .card-h .card-content-bottom {
+    flex-direction: column;
+    height: 47px;
+    justify-content: space-between;
+  }
+  .journal .card-h .card-content-bottom .button {
+    font-size: 14px;
+    padding: 0;
+    height: 18px;
+    margin: 0;
+  }
+  .journal .card-h .card-content-bottom .button img {
+    margin: 0 4px;
   }
 }
 

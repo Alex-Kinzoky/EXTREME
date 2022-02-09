@@ -505,6 +505,9 @@
   margin-right: 20px;
   margin-top: 10px;
 }
+.before .arrow-back img {
+  width: 100%;
+}
 .before .before-info {
   height: 77px;
   display: flex;
@@ -562,6 +565,7 @@
 .one-comment .user .user-button .unlike img {
   margin-right: 4px;
   padding-top: 5px;
+  height: 110%;
 }
 .one-comment .user .user-button .like-comment {
   display: flex;
@@ -570,6 +574,7 @@
 }
 .one-comment .user .user-button .like-comment img {
   margin-right: 4px;
+  height: 110%;
 }
 .one-comment .comment-content {
   margin-left: 96px;

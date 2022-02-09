@@ -501,6 +501,9 @@
         width: 104px;
         margin-right: 20px;
         margin-top: 10px;
+        img{
+            width: 100%;
+        }
     }
     .before-info{
         height: 77px;
@@ -560,6 +563,7 @@
                 img{
                     margin-right: 4px;
                     padding-top: 5px;
+                    height: 110%;
                 }
             }
             .like-comment{
@@ -568,6 +572,7 @@
                 color: #17B126;
                 img{
                     margin-right: 4px;
+                    height: 110%;
                 }
             }
         }

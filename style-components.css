@@ -27,6 +27,9 @@ input {
 
 .button {
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {

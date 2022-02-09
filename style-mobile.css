@@ -8,7 +8,7 @@
   }
 
   .size-50 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .size-14 {
@@ -16,7 +16,7 @@
   }
 
   .size-16 {
-    font-size: 16px;
+    font-size: 8px;
   }
 
   .size-40 {
@@ -32,7 +32,7 @@
   }
 
   .size-24 {
-    font-size: 24px;
+    font-size: 12px;
   }
 
   .size-26 {
@@ -195,9 +195,11 @@
   }
 
   .up {
-    position: absolute;
-    right: 4.6875vw;
-    bottom: 75vw;
+    position: static;
+    /*right: calc(100vw * (15 / 320));
+    bottom: 240px;*/
+    margin-left: 79.375vw;
+    margin-top: -75vw;
     width: 15.9375vw;
     height: 15.9375vw;
   }
@@ -232,9 +234,19 @@
   }
 
   .nav-line {
-    display: none;
     margin: 0;
     margin-top: 9.0625vw;
+  }
+  .nav-line .nav-sort {
+    width: 100%;
+  }
+  .nav-line .size-50 {
+    font-size: 30px;
+  }
+  .nav-line .size-50 img {
+    height: 20px;
+    align-self: center;
+    margin: 1.5625vw;
   }
 
   .advertisement-left {
@@ -273,17 +285,43 @@
   .user-button {
     display: none;
   }
-  .user-button .bookmark {
+
+  .user-button-mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 31px 15px 31px 18px;
+    width: 228px;
+    height: 125px;
+    right: 4.6875vw;
+    margin-top: 18px;
+  }
+  .user-button-mobile .user-button-line {
+    display: flex;
+  }
+  .user-button-mobile .user-button-line .bookmark {
     background-image: url(icon/bookmark.svg);
     background-size: 100% 100%;
     width: 17px;
     height: 22px;
+    margin-right: 21px;
   }
-  .user-button .share {
+  .user-button-mobile .user-button-line .share {
     background-image: url(icon/share.svg);
     background-size: 100% 100%;
     width: 22px;
     height: 22px;
+    margin-right: 15px;
+  }
+
+  .mobile-user-menu {
+    background-image: url(icon/black-user-menu.svg);
+    background-size: 100% 100%;
+    width: 5px;
+    height: 18px;
   }
 
   .tape-card {
@@ -324,33 +362,209 @@
   .card-content .card-content-bottom .button img {
     margin-right: 7px;
   }
-}
-.mobile {
-  display: block;
-}
 
-.podmenu-filter {
-  font-size: 12px;
-  margin-left: 8.75vw;
-}
-.podmenu-filter .podmenu-filter-link {
-  margin: 2.1875vw 0;
-}
-.podmenu-filter .location {
-  height: 33px;
-  padding: 9px 19px;
-}
-.podmenu-filter .location::placeholder {
-  font-size: 12px;
-}
+  .mobile {
+    display: block;
+  }
 
-.desktop {
-  display: none;
-}
+  .podmenu-filter {
+    font-size: 12px;
+    margin-left: 8.75vw;
+  }
+  .podmenu-filter .podmenu-filter-link {
+    margin: 2.1875vw 0;
+  }
+  .podmenu-filter .location {
+    height: 33px;
+    padding: 9px 19px;
+  }
+  .podmenu-filter .location::placeholder {
+    font-size: 12px;
+  }
 
-.online {
-  width: 15px;
-  height: 15px;
+  .desktop {
+    display: none;
+  }
+
+  .online {
+    width: 15px;
+    height: 15px;
+  }
+
+  .description {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10.9375vw 4.6875vw 6.25vw;
+  }
+
+  .user-follow {
+    width: 100%;
+    padding: 8px 0;
+    align-items: center;
+    margin-top: 6.5625vw;
+  }
+
+  .card-content-title {
+    margin-bottom: 1.875vw;
+  }
+
+  .before {
+    margin: 12.5vw 0;
+  }
+  .before .arrow-back {
+    width: 18.75vw;
+  }
+  .before .before-info {
+    height: 41px;
+  }
+  .before .before-info .before-theme {
+    font-size: 12px;
+  }
+
+  .comments .nav-line {
+    flex-direction: column;
+    height: 77px;
+    align-items: flex-start;
+  }
+  .comments .nav-sort-line {
+    width: 50%;
+  }
+
+  .comments-bottom {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 4.6875vw 25.625vw;
+  }
+  .comments-bottom .new-comment {
+    padding: 8px 4.6875vw;
+  }
+  .comments-bottom .new-comment .smile {
+    margin-right: 4.6875vw;
+    width: 16px;
+    height: 16px;
+  }
+  .comments-bottom .user .user-label .user-photo {
+    width: 42px;
+    height: 42px;
+  }
+  .comments-bottom .user .user-label .user-info {
+    margin-left: 2.5vw;
+  }
+  .comments-bottom .user .user-button {
+    display: flex;
+    width: 73px;
+    font-size: 10px;
+  }
+  .comments-bottom .user .user-button .unlike {
+    width: 35px;
+    height: 23px;
+    padding: 0;
+  }
+  .comments-bottom .user .user-button .like-comment {
+    width: 35px;
+    height: 23px;
+    padding: 0;
+  }
+  .comments-bottom .one-comment .comment-content {
+    margin-left: 50px;
+  }
+  .comments-bottom .one-comment .comment-content .comment-text {
+    font-size: 12px;
+  }
+  .comments-bottom .one-comment .comment-bottom {
+    width: 96px;
+  }
+  .comments-bottom .one-comment .comment-bottom .text-grey-2 {
+    font-size: 8px;
+    padding: 0;
+  }
+
+  .profile {
+    margin: 9.0625vw 4.6875vw 11.25vw;
+    width: auto;
+  }
+  .profile .user-profile {
+    margin: 5.3125vw 0;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .profile .user {
+    width: 100%;
+  }
+  .profile .user .user-label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .profile .user .user-label .user-photo {
+    width: 67px;
+    height: 67px;
+    position: relative;
+  }
+  .profile .user .user-label .user-photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .profile .user .user-label .user-info {
+    height: 100%;
+    margin-left: 2.8125vw;
+    margin-right: 1.25vw;
+  }
+  .profile .user .user-label .user-button {
+    width: 5.2604166667vw;
+  }
+
+  .top-label .slider-buttons {
+    display: none;
+  }
+
+  .storage {
+    margin-right: -4.6875vw;
+  }
+  .storage .card-overflow {
+    width: 100%;
+  }
+
+  .card-line {
+    width: 180vw;
+    height: 53.125vw;
+  }
+  .card-line .card {
+    width: 57.1875vw;
+    height: 45.9375vw;
+    margin-right: 1.40625vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place-info {
+    flex-direction: column;
+  }
+  .place-info .place-map {
+    width: auto;
+    height: 77.5vw;
+    margin: 0 -4.6875vw;
+    border-radius: 0;
+  }
+  .place-info .place-map .place-label img {
+    width: 13px;
+    height: 21px;
+  }
+  .place-info .place-map #l-1 {
+    top: 16.25vw;
+    left: 23.75vw;
+  }
+  .place-info .place-map #l-2 {
+    top: 19.6875vw;
+    left: 65.3125vw;
+  }
+  .place-info .place-map #l-3 {
+    top: 48.125vw;
+    left: 39.0625vw;
+  }
+  .place-info .place-map #l-4 {
+    top: 44.6875vw;
+    left: 85.625vw;
+  }
 }
 
 /*# sourceMappingURL=style-mobile.css.map */

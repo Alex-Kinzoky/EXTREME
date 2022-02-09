@@ -188,6 +188,8 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   box-shadow: 4px 6px 40px rgba(9, 27, 94, 0.09);
 }
 .card .card-image {
@@ -205,12 +207,15 @@
 }
 
 .page-card {
+  display: flex;
+  flex-direction: column;
   margin-top: -4.1145833333vw;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.page-card .page-card-h {
+.page-card .page-card-t {
   padding: 4.9479166667vw 0;
+  align-self: flex-start;
 }
 .page-card .page-card-list {
   padding: 0.9895833333vw 0 8.8541666667vw;
@@ -348,6 +353,7 @@
 .nav-line .nav-sort {
   display: flex;
   height: fit-content;
+  justify-content: space-between;
 }
 .nav-line .nav-sort .nav-sort-line {
   padding: 7px 14px;
@@ -368,6 +374,7 @@
 .user {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .user .user-label {
   display: flex;
@@ -414,11 +421,16 @@
   height: 38px;
 }
 
+.mobile {
+  display: none;
+}
+
 .tape-card {
   box-sizing: border-box;
   width: 58.6458333333vw;
   padding: 2.34375vw 3.8020833333vw;
   margin: 1.40625vw 0;
+  height: auto;
 }
 
 .tape-list {
@@ -713,6 +725,7 @@
 
 .card-h {
   display: flex;
+  flex-direction: row;
   width: 51.0416666667vw;
   height: 163px;
   justify-content: space-between;
@@ -845,6 +858,7 @@
 }
 .equip .card-content-bottom {
   width: 30.5208333333vw;
+  justify-content: space-between;
 }
 
 .feedback {

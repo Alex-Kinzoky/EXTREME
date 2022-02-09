@@ -190,6 +190,8 @@
     }
 }
 .card{
+    display: flex;
+    flex-direction: column;
     box-shadow: 4px 6px 40px rgba(9, 27, 94, 0.09);
     .card-image{
         width: 100%;
@@ -206,11 +208,14 @@
     }
 }
 .page-card{
+    display: flex;
+    flex-direction: column;
     margin-top: calc(100vw * (-79 / 1920));
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    .page-card-h{
+    .page-card-t{
         padding: calc(100vw * (95 / 1920)) 0;
+        align-self: flex-start;
     }
     .page-card-list {
         padding: calc(100vw * (19 / 1920)) 0 calc(100vw * (170 / 1920));
@@ -347,6 +352,7 @@
     .nav-sort{
         display: flex;
         height: fit-content;
+        justify-content: space-between;
         .nav-sort-line{
             padding: 7px 14px;
             height: fit-content;
@@ -367,6 +373,7 @@
 .user{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     .user-label{
         display: flex;
         justify-content: space-between;
@@ -411,12 +418,15 @@
         height: 38px;
     }
 }
-
+.mobile{
+    display: none;
+}
 .tape-card{
     box-sizing: border-box;
     width: calc(100vw * (1126 / 1920));
     padding: calc(100vw * (45 / 1920)) calc(100vw * (73 / 1920));
     margin: calc(100vw * (27 / 1920)) 0;
+    height: auto;
 }
 .tape-list{
     width: fit-content;
@@ -713,6 +723,7 @@
 }
 .card-h{
     display: flex;
+    flex-direction: row;
     width: calc(100vw * (980 / 1920));
     height: 163px;
     justify-content: space-between;
@@ -841,6 +852,7 @@
     margin-bottom: calc(100vw * (110 / 1920));
     .card-content-bottom{
         width: calc(100vw * (586 / 1920));
+        justify-content: space-between;
     }
 }
 .feedback{

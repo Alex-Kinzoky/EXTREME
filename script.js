@@ -6,8 +6,14 @@ $(document).ready(function(){
     $('#about').hide()
     $('#join-window').hide()
     $('.user-button-mobile').hide()
+    $('.location').attr('placeholder','')
+    $('.left-menu-mobile').hide()
+    $('.menu-search-mobile').hide()
+    $('.filter-card').hide()
     $(function(){
-        if ($(window).width() > 460){
+        if ($(window).width() > 960){
+            //$('.filter-card').width($('.search-line').width())
+            $('.location').attr('placeholder','')
             $(window).scroll(function(){
                 if($(window).scrollTop() > 500) {
                     $('.up').show();
@@ -15,8 +21,41 @@ $(document).ready(function(){
                     $('.up').hide();
                 }
             });
+        } else{
+            $('.location').attr('placeholder','Страна, регион, город')
         }
     });
+    
+    $('.close-image').click(function(){
+        $('.filter-card').hide()
+    })
+    $('.filter-image').click(function(){
+        $('.filter-card').show()
+    })
+    if($('.filter-image').is(':visible')){
+        $(document).mouseup( function(e){ 
+            var div = $( ".filter-card" );
+            if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
+                div.hide(); 
+            }
+        });
+    }
+    
+    $('.mobile-menu').click(function(){
+        $('.left-menu-mobile').show()
+        $('.menu-search-mobile').hide()
+    })
+    $('.left-menu-close').click(function(){
+        $('.left-menu-mobile').hide()
+    })
+    $('.search-button').click(function(){
+        if($('.menu-search-mobile').is(':visible')){
+            $('.menu-search-mobile').hide()
+        } else{
+            $('.menu-search-mobile').show()
+        }
+        
+    })
     $('.mobile-user-menu').click(function(){
         if ($('.user-button-mobile').is(':visible')){
             $('.user-button-mobile').hide()

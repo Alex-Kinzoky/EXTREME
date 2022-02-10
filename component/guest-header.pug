@@ -2,16 +2,58 @@
     .menu.content.white-white-border
         .menu-left
             a.logo(href='index.html')
-            .search-line.button.white-blue-border.top-search
+            .search-line.button.white-blue-border.top-search.desktop
                 .search-image.blue-search
                 input.size-14.text-blue(type="text" placeholder="Поиск")
-                button.blue.button.size-14.text-white Поиск
+                .blue.button.size-14.text-white Поиск
+            
         .menu-right 
-            .theme.button
+            .search-button.mobile
+            .theme.button.desktop
                 .dark.button
                     img(src="icon/dark-theme.svg", alt="")
                 .light.button
                     img(src="icon/light-theme.svg", alt="")
-            a.blue.size-20.text-white.button(href='login.html') Войти
-            button.mobile-login 
-            button.mobile-menu
+            a.blue.size-20.text-white.button.desktop(href='login.html') Войти
+            .mobile-login.mobile
+            .mobile-menu.mobile
+.left-menu-mobile.white-white-border.content
+    .left-menu-top
+        .theme.button
+            .dark.button
+                img(src="icon/dark-theme.svg", alt="")
+            .light.button
+                img(src="icon/light-theme.svg", alt="")
+        .left-menu-close
+    .left-menu
+        a.size-26.text-black(href='#') Виды спорта
+        a.size-26.text-black(href='#') Бортжурналы
+        a.size-26.text-black(href='guest-place.html') Места катания
+        a.size-26.text-black(href='guest-events.html') Мероприятия
+        a.size-26.text-black(href='guest-partners.html') Партнёры
+.menu-search-mobile.white-white-border
+    .menu.content.white-white-border.content
+        .menu-left
+            a.logo(href='index.html')
+            .search-button.mobile
+        .menu-right 
+            .search-button.mobile
+            .mobile-menu
+    .hr 
+    .content
+        .search-line.button.light-blue-blue-border.top-search
+            .search-image.blue-search
+            input.size-14.text-blue(type="text" placeholder="Поиск")
+            .blue.button.size-14.text-white Поиск
+    .hr 
+    .request-mobile.content
+        .size-40.weight-500 Недавние запросы
+        .request-mobile-line 
+            | Запрос 1
+            .close-image
+        .request-mobile-line 
+            | Запрос 2
+            .close-image
+        .request-mobile-line 
+            | Запрос 3
+            .close-image

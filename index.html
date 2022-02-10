@@ -14,17 +14,71 @@
   </head>
   <body> 
     <div class="header"> 
-      <div class="menu content"><a class="logo" href="index.html"></a>
+      <div class="menu content white-white-border">
+        <div class="menu-left"><a class="logo" href="index.html"></a>
+          <div class="search-line button white-blue-border top-search desktop">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <div class="blue button size-14 text-white">Поиск</div>
+          </div>
+        </div>
         <div class="menu-right"> 
+          <div class="search-button mobile"></div>
+          <div class="theme button desktop">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div><a class="blue size-20 text-white button desktop" href="login.html">Войти</a>
+          <div class="mobile-login mobile"></div>
+          <div class="mobile-menu mobile"></div>
+        </div>
+      </div>
+      <div class="left-menu-mobile white-white-border content">
+        <div class="left-menu-top">
           <div class="theme button">
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
-          </div><a class="blue size-20 text-white button" href="login.html">Войти</a>
-          <button class="mobile-login"> </button>
-          <button class="mobile-menu"></button>
+          </div>
+          <div class="left-menu-close"></div>
+        </div>
+        <div class="left-menu"><a class="size-26 text-black" href="#">Виды спорта</a><a class="size-26 text-black" href="#">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners.html">Партнёры</a></div>
+      </div>
+      <div class="menu-search-mobile white-white-border">
+        <div class="menu content white-white-border content">
+          <div class="menu-left"><a class="logo" href="index.html"></a>
+            <div class="search-button mobile"></div>
+          </div>
+          <div class="menu-right"> 
+            <div class="search-button mobile"></div>
+            <div class="mobile-menu"></div>
+          </div>
+        </div>
+        <div class="hr"> </div>
+        <div class="content">
+          <div class="search-line button light-blue-blue-border top-search">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <div class="blue button size-14 text-white">Поиск</div>
+          </div>
+        </div>
+        <div class="hr"> </div>
+        <div class="request-mobile content">
+          <div class="size-40 weight-500">Недавние запросы</div>
+          <div class="request-mobile-line">
+             Запрос 1
+            <div class="close-image"></div>
+          </div>
+          <div class="request-mobile-line">
+             Запрос 2
+            <div class="close-image"></div>
+          </div>
+          <div class="request-mobile-line">
+             Запрос 3
+            <div class="close-image"></div>
+          </div>
         </div>
       </div>
       <div class="header-content"> 
+        <div class="background-image"></div>
         <div class="left-gradient"> </div>
         <div class="right-gradient"></div>
         <div class="center-search"> 
@@ -43,6 +97,26 @@
             <div class="request button white-blur">
               <div class="size-14 text-grey">Ключевое слово</div>
               <div class="close-image"></div>
+            </div>
+          </div>
+          <div class="filter-card white-white-border">
+            <div class="filter-card-top"> 
+              <div class="close-image"></div>
+            </div>
+            <div class="right-filter"> 
+              <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Вид спорта</button>
+              <div class="podmenu-filter" id="sport"><a class="podmenu-filter-link" href="#">Аквабайк </a><a class="podmenu-filter-link" href="#">Альпинизм</a><a class="podmenu-filter-link" href="#">Бейсджампинг </a><a class="podmenu-filter-link" href="#">Бокинг</a><a class="podmenu-filter-link" href="#">Вейкбординг</a><a class="podmenu-filter-link" href="#">Виндсерфинг</a><a class="podmenu-filter-link" href="#">Воркаут </a><a class="podmenu-filter-link" href="#">Горнолыжный спорт</a><a class="podmenu-filter-link" href="#">Скоростной спуск</a></div>
+              <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Модель снаряжения</button>
+              <div class="podmenu-filter" id="model"><a class="podmenu-filter-link" href="#">Гидрокостюмы</a><a class="podmenu-filter-link" href="#">Сухие гидрокостюмы</a><a class="podmenu-filter-link" href="#">Ласты</a><a class="podmenu-filter-link" href="#">Маски</a><a class="podmenu-filter-link" href="#">Трубки</a><a class="podmenu-filter-link" href="#">Дайвинг-компьютеры</a><a class="podmenu-filter-link" href="#">Регуляторы</a><a class="podmenu-filter-link" href="#">Октопусы</a><a class="podmenu-filter-link" href="#">Сумки для дайвинга</a></div>
+              <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Локация</button>
+              <div class="podmenu-filter" id="location">
+                <div class="podmenu-filter-link">Страна, регион, город</div>
+                <input class="location button size-20" type="text"/>
+              </div>
+              <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Уровень подготовки</button>
+              <div class="podmenu-filter" id="level"><a class="podmenu-filter-link" href="#">Новичок</a><a class="podmenu-filter-link" href="#">Любитель</a><a class="podmenu-filter-link" href="#">Продвинутый</a><a class="podmenu-filter-link" href="#">Мастер</a></div>
+              <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>О чём</button>
+              <div class="podmenu-filter" id="about"><a class="podmenu-filter-link" href="#">Обо всём</a><a class="podmenu-filter-link" href="#">Трюки</a><a class="podmenu-filter-link" href="#">Интересные места</a><a class="podmenu-filter-link" href="#">Снаряжение</a><a class="podmenu-filter-link" href="#">Лайфхаки</a><a class="podmenu-filter-link" href="#">Вопрос — ответ</a></div>
             </div>
           </div>
         </div>

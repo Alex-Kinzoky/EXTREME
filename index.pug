@@ -3,18 +3,65 @@ html
     include component/head.pug
     body 
         .header 
-            .menu.content
-                a.logo(href='index.html')
+            .menu.content.white-white-border
+                .menu-left
+                    a.logo(href='index.html')
+                    .search-line.button.white-blue-border.top-search.desktop
+                        .search-image.blue-search
+                        input.size-14.text-blue(type="text" placeholder="Поиск")
+                        .blue.button.size-14.text-white Поиск
                 .menu-right 
+                    .search-button.mobile
+                    .theme.button.desktop
+                        .dark.button
+                            img(src="icon/dark-theme.svg", alt="")
+                        .light.button
+                            img(src="icon/light-theme.svg", alt="")
+                    a.blue.size-20.text-white.button.desktop(href='login.html') Войти
+                    .mobile-login.mobile
+                    .mobile-menu.mobile
+            .left-menu-mobile.white-white-border.content
+                .left-menu-top
                     .theme.button
                         .dark.button
                             img(src="icon/dark-theme.svg", alt="")
                         .light.button
                             img(src="icon/light-theme.svg", alt="")
-                    a.blue.size-20.text-white.button(href='login.html') Войти
-                    button.mobile-login 
-                    button.mobile-menu
+                    .left-menu-close
+                .left-menu
+                    a.size-26.text-black(href='#') Виды спорта
+                    a.size-26.text-black(href='#') Бортжурналы
+                    a.size-26.text-black(href='guest-place.html') Места катания
+                    a.size-26.text-black(href='guest-events.html') Мероприятия
+                    a.size-26.text-black(href='guest-partners.html') Партнёры
+            .menu-search-mobile.white-white-border
+                .menu.content.white-white-border.content
+                    .menu-left
+                        a.logo(href='index.html')
+                        .search-button.mobile
+                    .menu-right 
+                        .search-button.mobile
+                        .mobile-menu
+                .hr 
+                .content
+                    .search-line.button.light-blue-blue-border.top-search
+                        .search-image.blue-search
+                        input.size-14.text-blue(type="text" placeholder="Поиск")
+                        .blue.button.size-14.text-white Поиск
+                .hr 
+                .request-mobile.content
+                    .size-40.weight-500 Недавние запросы
+                    .request-mobile-line 
+                        | Запрос 1
+                        .close-image
+                    .request-mobile-line 
+                        | Запрос 2
+                        .close-image
+                    .request-mobile-line 
+                        | Запрос 3
+                        .close-image
             .header-content 
+                .background-image
                 .left-gradient 
                 .right-gradient
                 .center-search 
@@ -27,6 +74,7 @@ html
                         input.size-20.text-grey(type="text" placeholder="Поиск")
                         .filter-image
                         button.white-white-border.button.size-20.text-black Поиск
+                        
                     .request-line 
                         .request.button.white-blur
                             .size-14.text-grey Ключевое слово
@@ -34,6 +82,60 @@ html
                         .request.button.white-blur
                             .size-14.text-grey Ключевое слово
                             .close-image
+                    .filter-card.white-white-border
+                            .filter-card-top 
+                                .close-image
+                            .right-filter 
+                                button.size-26.text-black
+                                    img(src="icon/arrow-down.svg", alt="")
+                                    | Вид спорта
+                                .podmenu-filter#sport
+                                    a.podmenu-filter-link(href="#") Аквабайк 
+                                    a.podmenu-filter-link(href="#") Альпинизм
+                                    a.podmenu-filter-link(href="#") Бейсджампинг 
+                                    a.podmenu-filter-link(href="#") Бокинг
+                                    a.podmenu-filter-link(href="#") Вейкбординг
+                                    a.podmenu-filter-link(href="#") Виндсерфинг
+                                    a.podmenu-filter-link(href="#") Воркаут 
+                                    a.podmenu-filter-link(href="#") Горнолыжный спорт
+                                    a.podmenu-filter-link(href="#") Скоростной спуск
+                                button.size-26.text-black
+                                    img(src="icon/arrow-down.svg", alt="")
+                                    | Модель снаряжения
+                                .podmenu-filter#model
+                                    a.podmenu-filter-link(href="#") Гидрокостюмы
+                                    a.podmenu-filter-link(href="#") Сухие гидрокостюмы
+                                    a.podmenu-filter-link(href="#") Ласты
+                                    a.podmenu-filter-link(href="#") Маски
+                                    a.podmenu-filter-link(href="#") Трубки
+                                    a.podmenu-filter-link(href="#") Дайвинг-компьютеры
+                                    a.podmenu-filter-link(href="#") Регуляторы
+                                    a.podmenu-filter-link(href="#") Октопусы
+                                    a.podmenu-filter-link(href="#") Сумки для дайвинга
+                                button.size-26.text-black
+                                    img(src="icon/arrow-down.svg", alt="")
+                                    | Локация
+                                .podmenu-filter#location
+                                    .podmenu-filter-link Страна, регион, город
+                                    input.location.button.size-20(type="text")
+                                button.size-26.text-black
+                                    img(src="icon/arrow-down.svg", alt="")
+                                    | Уровень подготовки
+                                .podmenu-filter#level
+                                    a.podmenu-filter-link(href="#") Новичок
+                                    a.podmenu-filter-link(href="#") Любитель
+                                    a.podmenu-filter-link(href="#") Продвинутый
+                                    a.podmenu-filter-link(href="#") Мастер
+                                button.size-26.text-black
+                                    img(src="icon/arrow-down.svg", alt="")
+                                    | О чём
+                                .podmenu-filter#about
+                                    a.podmenu-filter-link(href="#") Обо всём
+                                    a.podmenu-filter-link(href="#") Трюки
+                                    a.podmenu-filter-link(href="#") Интересные места
+                                    a.podmenu-filter-link(href="#") Снаряжение
+                                    a.podmenu-filter-link(href="#") Лайфхаки
+                                    a.podmenu-filter-link(href="#") Вопрос — ответ
         .page-card.button.white-white-border.content
             .page-card-t.size-50.text-black.weight-500 Искать по теме
             .page-card-list 

@@ -59,6 +59,9 @@ input{
 .size-18{
     font-size: 18px;
 }
+.text-green{
+    color: #17B126;
+}
 .text-black{
     color: #161616;
 }
@@ -70,6 +73,9 @@ input{
 }
 .text-blue{
     color: #5575E8;
+}
+.text-orange{
+    color: #FFA800;
 }
 .text-grey-2{
     color: #7C7C7C;
@@ -90,6 +96,14 @@ input{
 .white-blue-border{
     background-color: #FFFFFF;
     border: 1px solid #5575E8;
+}
+.white-green-border{
+    background-color: #FFFFFF;
+    border: 1px solid #17B126;
+}
+.white-orange-border{
+    background-color: #FFFFFF;
+    border: 1px solid #FFA800;
 }
 .light-blue-blue-border{
     background-color: rgba(0, 56, 255, 0.04);

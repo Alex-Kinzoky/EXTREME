@@ -6,12 +6,12 @@ html
         .hr
         .nav-line.content.mobile
             .nav-title.size-50.weight-500.text-black.mobile Лента
-        .left-menu
+        .left-menu.desktop
             a.size-26.text-black(href='#') Виды спорта
             a.size-26.text-black(href='#') Бортжурналы
-            a.size-26.text-black(href='#') Места катания
-            a.size-26.text-black(href='#') Мероприятия
-            a.size-26.text-black(href='#') Партнёры
+            a.size-26.text-black(href='guest-place.html') Места катания
+            a.size-26.text-black(href='guest-events.html') Мероприятия
+            a.size-26.text-black(href='guest-partners.html') Партнёры
         .nav-line.content.desktop
             .nav-title.size-50.weight-500.text-black Лента
             .nav-sort.light-blue-blue-border.text-blue.size-14.button
@@ -126,8 +126,16 @@ html
                             a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
                             .user-level.text-grey-2 Мастер
                             .user-location.text-grey-2 Москва, Россия
-                        button.user-follow.blue.text-white.size-20 Подписаться
-                    .user-button
+                        button.user-follow.blue.text-white.size-20.desktop Подписаться
+                    .mobile-user-menu.mobile
+                    .user-button-mobile.button.white-white-border
+                        .user-button-line
+                            .bookmark
+                            | Сохранить в закладках
+                        .user-button-line
+                            .share
+                            | Поделиться
+                    .user-button.desktop
                         .bookmark 
                         .share
                 .card-content

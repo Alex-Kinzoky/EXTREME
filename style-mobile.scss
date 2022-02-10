@@ -645,6 +645,9 @@
                     border-top-right-radius: 15px;
                 }
             }
+            .product-title{
+                padding: calc(100vw * (12 / 320)) calc(100vw * (14 / 320)) calc(100vw * (11 / 320));
+            }
             .card-title{
                 padding: calc(100vw * (14 / 320));
             }

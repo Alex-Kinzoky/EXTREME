@@ -728,6 +728,9 @@
 .card-line .card .card-title {
   padding: 0 1.71875vw;
 }
+.card-line .card .product-title {
+  padding: 1.1458333333vw 1.6666666667vw 1.9270833333vw;
+}
 
 .place-info {
   width: 100%;
@@ -1014,6 +1017,190 @@
 }
 .search-filter input {
   width: 90%;
+}
+
+.big-map {
+  position: relative;
+  background-image: url(images/big-map.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 29.53125vw;
+}
+.big-map .place-label {
+  position: absolute;
+  height: 15%;
+}
+.big-map #l-1 {
+  top: 7.8125vw;
+  left: 19.53125vw;
+}
+.big-map #l-2 {
+  top: 14.0625vw;
+  left: 29.21875vw;
+}
+.big-map #l-3 {
+  top: 8.28125vw;
+  left: 52.9166666667vw;
+}
+.big-map .scale {
+  position: absolute;
+  right: 10px;
+  bottom: 3.75vw;
+}
+.big-map .scale .scale-up {
+  border-radius: 10px;
+  width: 43px;
+  height: 42px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-map .scale .scale-up img {
+  width: 80%;
+  height: 80%;
+}
+.big-map .scale .scale-down {
+  border-radius: 10px;
+  width: 43px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-map .scale .scale-down img {
+  width: 80%;
+  height: 80%;
+}
+
+.card-place-list {
+  margin-bottom: 9.8958333333vw;
+}
+.card-place-list .card-place {
+  margin: 1.40625vw 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: -4.1666666667vw;
+}
+.card-place-list .card-place .card-place-info .text-grey-2 {
+  margin: 0.625vw 0;
+}
+.card-place-list .card-place .card-place-images {
+  width: 42.1875vw;
+  overflow: hidden;
+}
+.card-place-list .card-place .card-place-images .card-place-images-line {
+  display: flex;
+  width: auto;
+}
+.card-place-list .card-place .card-place-images .card-place-images-line .card-place-image {
+  width: 20.8854166667vw;
+  height: 11.5625vw;
+  margin-right: 1.9270833333vw;
+}
+.card-place-list .card-place .card-place-images .card-place-images-line .card-place-image img {
+  height: 100%;
+}
+
+.partners-header {
+  margin-left: 18.75vw;
+  background-image: url(images/partners.png);
+  background-size: 100% 100%;
+  height: 25.9895833333vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.partners-header .partners-header-center {
+  display: flex;
+}
+.partners-header .partners-header-center .patners-header-image {
+  width: 9.6354166667vw;
+  height: 9.6354166667vw;
+  margin-right: 3.3854166667vw;
+}
+.partners-header .partners-header-center .patners-header-image img {
+  width: 100%;
+  height: 100%;
+}
+.partners-header .partners-header-center .partners-header-info {
+  width: 33.2291666667vw;
+}
+
+.button-partners {
+  display: flex;
+  margin-top: -2.8125vw;
+  margin-left: 26.09375vw;
+}
+.button-partners .button {
+  padding: 0.625vw 0.8854166667vw;
+  margin-right: 1.71875vw;
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.partners-sales {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 2.5vw;
+}
+.partners-sales .button {
+  padding: 0.9375vw 2.2395833333vw;
+}
+
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.advantages .advantages-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.advantages .advantages-card .advantages-image {
+  border-radius: 50%;
+  background-color: rgba(0, 56, 255, 0.04);
+  width: 8.75vw;
+  height: 8.75vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+.advantages .advantages-card .advantages-image img {
+  width: 70%;
+  height: 70%;
+}
+.advantages .advantages-card .advantages-text {
+  width: 19.1145833333vw;
+  text-align: center;
+}
+
+.partner-contact {
+  display: grid;
+  grid-template-columns: 32.5520833333vw 38.0208333333vw;
+  margin: 9.1145833333vw 0 11.40625vw;
+}
+.partner-contact .partner-contact-info .size-50 {
+  margin-bottom: 2.3958333333vw;
+}
+.partner-contact .partner-contact-info .size-30 {
+  margin: 0.7291666667vw 0;
+}
+.partner-contact .parner-map {
+  background-image: url(images/contact-map.png);
+  background-size: 100%;
+  width: 100%;
+  height: 27.3958333333vw;
+  position: relative;
+}
+.partner-contact .parner-map .place-label {
+  position: absolute;
+  top: 7.4479166667vw;
+  left: 23.0208333333vw;
 }
 
 @media (max-width: 1620px) {

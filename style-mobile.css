@@ -657,6 +657,9 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
+  .card-line .card .product-title {
+    padding: 3.75vw 4.375vw 3.4375vw;
+  }
   .card-line .card .card-title {
     padding: 4.375vw;
   }

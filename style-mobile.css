@@ -307,14 +307,18 @@
   }
 
   .nav-line {
+    flex-direction: column-reverse;
     margin: 0;
     margin-top: 9.0625vw;
+    height: auto;
+    align-items: flex-start;
   }
   .nav-line .nav-sort {
     width: 100%;
   }
   .nav-line .nav-sort .nav-sort-line {
     padding: 6px 6px;
+    width: 50%;
   }
   .nav-line .size-50 {
     flex-wrap: wrap;
@@ -324,6 +328,13 @@
     height: 20px;
     align-self: center;
     margin: 1.5625vw;
+  }
+  .nav-line .search-line {
+    margin: 6.25vw 0;
+    width: 100%;
+  }
+  .nav-line .search-line input {
+    width: 90%;
   }
 
   .advertisement-left {
@@ -794,6 +805,174 @@
   }
   .journal .card-h .card-content-bottom .button img {
     margin: 0 4px;
+  }
+
+  .card-line-1 {
+    display: none;
+  }
+
+  .card-line-2 {
+    display: block;
+  }
+  .card-line-2 .card-map {
+    height: 104.6875vw;
+    margin: 5.9375vw 0;
+  }
+  .card-line-2 .card-map .card-image .status {
+    top: 5.3125vw;
+    left: 8.75vw;
+  }
+  .card-line-2 .card-map .card-title {
+    padding: 5vw 8.75vw 8.125vw;
+  }
+
+  .card-list .card-h {
+    flex-direction: row;
+    height: 117px;
+    margin: 3.75vw 0;
+    position: relative;
+    overflow: visible;
+  }
+  .card-list .card-h .card-h-left {
+    height: 100%;
+    border-bottom-left-radius: 23px;
+    overflow: hidden;
+  }
+  .card-list .card-h .card-h-left .card-h-image {
+    width: 28.125vw;
+  }
+  .card-list .card-h .card-h-left .card-h-info {
+    box-sizing: border-box;
+    width: 63.125vw;
+    padding: 4.375vw 4.6875vw 5.3125vw 3.125vw;
+  }
+  .card-list .card-h .card-h-left .card-h-info .size-16 {
+    font-size: 10px;
+  }
+  .card-list .card-h .card-h-left .card-h-info .size-30 {
+    font-size: 16px;
+  }
+  .card-list .card-h .card-h-left .card-h-info .text-black {
+    font-size: 10px;
+  }
+  .card-list .card-h .status {
+    box-sizing: border-box;
+    width: 25.3125vw;
+    height: 22px;
+    font-size: 10px;
+    bottom: -5px;
+    left: -5px;
+    margin: 0;
+  }
+
+  .big-map {
+    background-image: url(images/big-map-mobile.png);
+    border-radius: 0;
+    width: 100vw;
+    margin-left: -4.6875vw;
+    height: 132.8125vw;
+  }
+  .big-map .scale {
+    display: none;
+  }
+
+  .card-place-list .card-place {
+    flex-direction: column;
+  }
+  .card-place-list .card-place .card-place-images {
+    width: 100%;
+    margin: 8.125vw 0;
+    margin-right: -0.9375vw;
+  }
+  .card-place-list .card-place .card-place-images .card-place-images-line .card-place-image {
+    width: 69.6875vw;
+    height: 38.4375vw;
+    margin-right: 4.375vw;
+  }
+
+  .partners-header {
+    background-image: url(images/sport-master-mobile.png);
+    margin: 0;
+    height: 118.75vw;
+  }
+  .partners-header .partners-header-center {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 8.125vw;
+  }
+  .partners-header .partners-header-center .patners-header-image {
+    width: 29.0625vw;
+    height: 29.0625vw;
+    align-self: center;
+  }
+  .partners-header .partners-header-center .partners-header-info {
+    width: 100%;
+  }
+
+  .button-partners {
+    flex-direction: column;
+    margin: 0;
+  }
+  .button-partners .text-white {
+    color: #000000;
+  }
+  .button-partners .button {
+    font-size: 20px;
+    padding: 4.375vw;
+    border-bottom: 1px solid #DFDFDF;
+  }
+
+  .partners-sales {
+    display: flex;
+    flex-direction: column;
+  }
+  .partners-sales .button {
+    padding: 8px 0;
+  }
+
+  .advantages {
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages .advantages-card {
+    width: 100%;
+  }
+  .advantages .advantages-card .advantages-image {
+    width: 31.875vw;
+    height: 31.875vw;
+  }
+  .advantages .advantages-card .advantages-text {
+    width: 100%;
+  }
+
+  .card-overflow {
+    width: auto;
+    overflow: hidden;
+    margin-right: -4.6875vw;
+  }
+  .card-overflow .card-line {
+    align-items: center;
+    height: 71.875vw;
+  }
+  .card-overflow .card-line .card {
+    width: 57.1875vw;
+    height: 56.25vw;
+  }
+
+  .partner-contact {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .partner-contact .partner-contact-info .weight-500 {
+    display: none;
+  }
+  .partner-contact .parner-map.card {
+    margin-left: -4.6875vw;
+    width: 100vw;
+    border-radius: 0;
+    height: 77.5vw;
+    background-size: 100% 100%;
+    margin-bottom: 9.375vw;
   }
 }
 

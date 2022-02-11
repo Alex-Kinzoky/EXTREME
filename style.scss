@@ -996,8 +996,8 @@
         margin: calc(100vw * (22 / 1920)) 0;
         width: 100%;
         .status{
-            margin-top: calc(100vw * (130 / 1920));
-            margin-left: calc(100vw * (-12 / 1920));
+            margin-top: 130px;
+            margin-left: -12px;
         }
     }
 }
@@ -1072,6 +1072,9 @@
         .card-place-info{
             .text-grey-2{
                 margin: calc(100vw * (12 / 1920)) 0;
+            }
+            .size-20{
+                text-decoration: underline;
             }
         }
         .card-place-images{
@@ -1171,6 +1174,7 @@
     grid-template-columns: calc(100vw * (625 / 1920)) calc(100vw * (730 / 1920));
     margin: calc(100vw * (175 / 1920)) 0 calc(100vw * (219 / 1920));
     .partner-contact-info {
+        margin-right: 10px;
         .size-50{
             margin-bottom: calc(100vw * (46 / 1920));
         }

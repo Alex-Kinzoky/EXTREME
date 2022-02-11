@@ -1008,8 +1008,8 @@
   width: 100%;
 }
 .card-list .card-h .status {
-  margin-top: 6.7708333333vw;
-  margin-left: -0.625vw;
+  margin-top: 130px;
+  margin-left: -12px;
 }
 
 .search-filter {
@@ -1085,6 +1085,9 @@
 }
 .card-place-list .card-place .card-place-info .text-grey-2 {
   margin: 0.625vw 0;
+}
+.card-place-list .card-place .card-place-info .size-20 {
+  text-decoration: underline;
 }
 .card-place-list .card-place .card-place-images {
   width: 42.1875vw;
@@ -1183,6 +1186,9 @@
   display: grid;
   grid-template-columns: 32.5520833333vw 38.0208333333vw;
   margin: 9.1145833333vw 0 11.40625vw;
+}
+.partner-contact .partner-contact-info {
+  margin-right: 10px;
 }
 .partner-contact .partner-contact-info .size-50 {
   margin-bottom: 2.3958333333vw;

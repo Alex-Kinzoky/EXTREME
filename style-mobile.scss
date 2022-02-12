@@ -202,6 +202,8 @@
         }
     }
     .footer{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
         box-sizing: border-box;
         height: 320px;
         padding: 29px calc(100vw * (15 / 320)) 23px;
@@ -974,6 +976,91 @@
             height: calc(100vw * (248 / 320));
             background-size: 100% 100%;
             margin-bottom: calc(100vw * (30 / 320));
+        }
+    }
+    .login-content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 92px;
+        .login-info{
+            height: 125px;
+            margin: 30px 0 0;
+            .social{
+                .size-16{
+                    font-size: 16px;
+                    margin-bottom: 4px;
+                }
+                .social-part{
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 12px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .login-form{
+            form{
+                width: auto;
+                height: 221px;
+                .input-form{
+                    height: 88px;
+                    
+                
+                    input{
+                        width: auto;
+                        padding: 11px 19px;
+                    }
+                }    
+                .button{
+                    width: 100%;
+                    padding: 14px 0;
+                    margin: 20px 0 10px;
+                }
+            }
+            
+        }
+        .login-register{
+            height: 92px;
+            .size-16{
+                font-size: 20px;
+                margin-bottom: 21px;
+            }
+            .button{
+                padding: 14px 0;
+            }
+        }
+    }
+    .whith-text{
+        flex-direction: column;
+        margin-right: 0;
+        .size-12{
+            width: 100%;
+            margin-left: 0;
+        }
+        input{
+            width: 100%;
+        }
+    }
+    .register{
+        .login-info {
+            height: 115px;
+            .login-register{
+                .button{
+                    width: 185px;
+                    text-align: center;
+                }
+            }
+        }
+        .login-form{
+            form{
+                height: auto;
+                .input-form{
+                    height: 334px;
+                }
+            }
         }
     }
 }

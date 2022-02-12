@@ -216,6 +216,8 @@
   }
 
   .footer {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     box-sizing: border-box;
     height: 320px;
     padding: 29px 4.6875vw 23px;
@@ -973,6 +975,81 @@
     height: 77.5vw;
     background-size: 100% 100%;
     margin-bottom: 9.375vw;
+  }
+
+  .login-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 92px;
+  }
+  .login-content .login-info {
+    height: 125px;
+    margin: 30px 0 0;
+  }
+  .login-content .login-info .social .size-16 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .login-content .login-info .social .social-part {
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+  }
+  .login-content .login-info .social .social-part img {
+    width: 100%;
+    height: 100%;
+  }
+  .login-content .login-form form {
+    width: auto;
+    height: 221px;
+  }
+  .login-content .login-form form .input-form {
+    height: 88px;
+  }
+  .login-content .login-form form .input-form input {
+    width: auto;
+    padding: 11px 19px;
+  }
+  .login-content .login-form form .button {
+    width: 100%;
+    padding: 14px 0;
+    margin: 20px 0 10px;
+  }
+  .login-content .login-register {
+    height: 92px;
+  }
+  .login-content .login-register .size-16 {
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+  .login-content .login-register .button {
+    padding: 14px 0;
+  }
+
+  .whith-text {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .whith-text .size-12 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .whith-text input {
+    width: 100%;
+  }
+
+  .register .login-info {
+    height: 115px;
+  }
+  .register .login-info .login-register .button {
+    width: 185px;
+    text-align: center;
+  }
+  .register .login-form form {
+    height: auto;
+  }
+  .register .login-form form .input-form {
+    height: 334px;
   }
 }
 

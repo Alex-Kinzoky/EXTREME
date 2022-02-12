@@ -283,6 +283,8 @@
 }
 
 .footer {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   box-sizing: border-box;
   height: 305px;
   padding: 89px 80px 27px;
@@ -1207,6 +1209,102 @@
   position: absolute;
   top: 7.4479166667vw;
   left: 23.0208333333vw;
+}
+
+.login-content {
+  display: grid;
+  grid-template-columns: 22.65625vw 68.4895833333vw;
+  grid-gap: 10px;
+  margin: 6.3020833333vw 0 7.3958333333vw;
+  position: relative;
+}
+.login-content .login-gradient {
+  background-image: url(images/login-gradient.svg);
+  background-size: 100% 100%;
+  width: 24.4791666667vw;
+  height: 30.5208333333vw;
+  position: absolute;
+  bottom: -15.8854166667vw;
+  right: 0;
+  z-index: -1;
+}
+.login-content .login-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19.1145833333vw;
+}
+.login-content .login-info .social .social-line {
+  display: flex;
+  margin-top: 0.7291666667vw;
+}
+.login-content .login-info .social .social-line .social-part {
+  margin-right: 0.8333333333vw;
+}
+.login-content .login-info .login-register .button {
+  margin-top: 1.0416666667vw;
+  padding: 0.625vw 0.9375vw;
+  display: block;
+  width: fit-content;
+}
+.login-content .login-form form {
+  width: 425px;
+}
+.login-content .login-form form .button {
+  margin: 1.0416666667vw 0 0.7291666667vw;
+  padding: 0.625vw 0;
+  width: 227px;
+}
+.login-content .login-form form input {
+  display: block;
+  width: 425px;
+}
+.login-content .login-form form .input-form {
+  height: 5.8333333333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+.login-content .login-form form .input-form input {
+  padding: 0.6770833333vw 1.25vw;
+}
+.login-content .login-form form .input-form input::placeholder {
+  color: #5575E8;
+}
+
+.whith-text {
+  display: flex;
+  margin-right: -310px;
+}
+.whith-text .size-12 {
+  width: 235px;
+  margin-left: 1.0416666667vw;
+}
+.whith-text input {
+  width: 425px;
+}
+
+.return-password .login-info {
+  height: 13.0208333333vw;
+}
+.return-password .login-form form .input-form {
+  height: 3.4375vw;
+}
+
+.register .login-info {
+  height: 19.5833333333vw;
+}
+.register .login-info .login-register .button {
+  width: 185px;
+  text-align: center;
+}
+.register .login-form form .input-form {
+  height: 19.5833333333vw;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 @media (max-width: 1620px) {

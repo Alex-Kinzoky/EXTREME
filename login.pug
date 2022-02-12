@@ -1,0 +1,38 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/guest-header.pug 
+        .hr
+        .content.login-content
+            .login-gradient
+            .login-info 
+                .size-50.weight-500 Вход
+                .social 
+                    .size-16.text-black Быстрый вход через соцсеть
+                    .social-line 
+                        .social-part 
+                            img(src="icon/color-vk.svg", alt="")
+                        .social-part 
+                            img(src="icon/color-fb.svg", alt="")
+                        .social-part 
+                            img(src="icon/color-yn.svg", alt="")
+                        .social-part 
+                            img(src="icon/color-gl.svg", alt="")
+                .login-register.desktop
+                    .size-16.text-black Ещё не зарегистрированы? 
+                    a.button.white-blue-border.text-blue(href="register.html") Зарегистрироваться
+            .login-form 
+                form(action="", method="post") 
+                    .input-form
+                        input.light-blue-blue-border.text-blue(type="email", name="" placeholder='Email*')
+                        input.light-blue-blue-border.text-blue(type="password", name="" placeholder='Пароль*')
+                    a.size-12.text-blue(href='return-password.html') Забыли пароль?
+                    input.button.blue.text-white(type="submit", value="Войти")
+                    .size-12.text-grey-2 
+                        | Нажимая «Войти», Вы принимаете условия 
+                        .underline пользовательского соглашения
+            .login-register.mobile
+                .size-16.text-black Ещё не зарегистрированы? 
+                a.button.white-blue-border.text-blue(href="register.html") Зарегистрироваться
+        include component/footer.pug 

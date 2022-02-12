@@ -1,0 +1,46 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/guest-header.pug 
+        .hr
+        .content.login-content.register
+            .login-gradient
+            .login-info 
+                .size-50.weight-500 Регистрация 
+                .social 
+                    .size-16.text-black Быстрый вход через соцсеть
+                    .social-line 
+                        .social-part 
+                            img(src="icon/color-vk.svg", alt="")
+                        .social-part 
+                            img(src="icon/color-fb.svg", alt="")
+                        .social-part 
+                            img(src="icon/color-yn.svg", alt="")
+                        .social-part 
+                            img(src="icon/color-gl.svg", alt="")
+                .login-register.desktop
+                    .size-16.text-black Уже зарегистрированы? 
+                    a.button.white-blue-border.text-blue(href="login.html") Войти
+            .login-form 
+                form(action="", method="post") 
+                    .input-form
+                        input.light-blue-blue-border.text-blue(type="text", name="" placeholder='ФИО*')
+                        .whith-text
+                            input.light-blue-blue-border.text-blue(type="text", name="" placeholder='Псевдоним*')
+                            .size-12.text-grey-2 От 3 до 16 символов,
+                                br
+                                | только латинские буквы, цифры и дефис
+
+                        input.light-blue-blue-border.text-blue(type="email", name="" placeholder='Email*')
+                        input.light-blue-blue-border.text-blue(type="tel", name="" placeholder='Телефон*')
+                        input.light-blue-blue-border.text-blue(type="password", name="" placeholder='Пароль*')
+                        input.light-blue-blue-border.text-blue(type="password", name="" placeholder='Повторите пароль*')
+                    input.button.blue.text-white(type="submit", value="Зарегистрироваться")
+                    .size-12.text-grey-2 
+                        | Нажимая «Войти», Вы принимаете условия 
+                        .underline пользовательского соглашения
+            .login-register.mobile
+                .size-16.text-black Уже зарегистрированы? 
+                a.button.white-blue-border.text-blue(href="login.html") Войти
+        include component/footer.pug 

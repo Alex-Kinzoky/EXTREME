@@ -1249,6 +1249,7 @@
 }
 .login-content .login-form form {
   width: 425px;
+  margin-left: 10px;
 }
 .login-content .login-form form .button {
   margin: 1.0416666667vw 0 0.7291666667vw;
@@ -1542,6 +1543,27 @@
 
   .footer .footer-list .footer-col .footer-social .social {
     margin-right: 15px;
+  }
+
+  .login-content .login-form form .input-form {
+    height: 90px;
+  }
+
+  .register .login-form form .input-form {
+    height: 290px;
+  }
+
+  .whith-text {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .whith-text .size-12 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4px;
+  }
+  .whith-text input {
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {

@@ -1241,6 +1241,7 @@
         
         form{
             width: 425px;
+            margin-left: 10px;
             .button{
                 margin: calc(100vw * (20 / 1920)) 0 calc(100vw * (14 / 1920));
                 padding: calc(100vw * (12 / 1920)) 0;
@@ -1589,6 +1590,32 @@
                     }
                 }
             }
+        }
+    }
+    .login-content {
+        .login-form form {
+            .input-form{
+                height: 90px;
+            }
+        }
+    }
+    .register {
+        .login-form form {
+            .input-form{
+                height: 290px;
+            }
+        }
+    }
+    .whith-text{
+        flex-direction: column;
+        margin-right: 0;
+        .size-12{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 4px;
+        }
+        input{
+            width: 100%;
         }
     }
 }

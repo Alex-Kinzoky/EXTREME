@@ -8,14 +8,23 @@
                 .blue.button.size-14.text-white Поиск
             
         .menu-right 
-            .search-button.mobile
             .theme.button.desktop
                 .dark.button
                     img(src="icon/dark-theme.svg", alt="")
                 .light.button
                     img(src="icon/light-theme.svg", alt="")
-            a.blue.size-20.text-white.button.desktop(href='login.html') Войти
-            a.mobile-login.mobile(href='login.html')
+            .menu-right-buttons 
+                a.menu-right-button(href="user-chat.html") 
+                    img(src="icon/black-chat.svg", alt="")
+                a.menu-right-button(href="user-myprofile.html") 
+                    img(src="icon/black-profile.svg", alt="")
+                a.menu-right-button(href="user-notification.html") 
+                    img(src="icon/black-bell.svg", alt="")
+                a.menu-right-button(href="") 
+                    img(src="icon/black-setting.svg", alt="")
+            .search-button.mobile
+            
+            
             .mobile-menu.mobile
 .left-menu-mobile.white-white-border.content
     .left-menu-top
@@ -26,11 +35,11 @@
                 img(src="icon/light-theme.svg", alt="")
         .left-menu-close
     .left-menu
-        a.size-26.text-black(href='#') Виды спорта
-        a.size-26.text-black(href='#') Бортжурналы
-        a.size-26.text-black(href='guest-place.html') Места катания
-        a.size-26.text-black(href='guest-events.html') Мероприятия
-        a.size-26.text-black(href='guest-partners.html') Партнёры
+        a.size-26.text-black(href='user-sports.html') Виды спорта
+        a.size-26.text-black(href='user-journal.html') Бортжурналы
+        a.size-26.text-black(href='user-place.html') Места катания
+        a.size-26.text-black(href='user-events.html') Мероприятия
+        a.size-26.text-black(href='user-partners.html') Партнёры
 .menu-search-mobile.white-white-border
     .menu.content.white-white-border.content
         .menu-left

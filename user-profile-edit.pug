@@ -1,0 +1,113 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Мой профиль
+            a.left-profile-button(href='user-myprofile.html')
+                .size-20.text-black  Назад в профиль
+                .arrow-more
+        .profile 
+            .profile-edit-top 
+                .profile-edit-photo
+                    .profile-edit-image
+                    .size-18.text-blue 
+                        img(src="icon/return.svg", alt="")
+                        | Заменить
+                    .size-18.text-red
+                        img(src="icon/del.svg", alt="")
+                        | Удалить
+                .profile-edit-field 
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black ФИО
+                        .profile-edit-input
+                            input.light-blue-blue-border.button.text-blue.size-16(type="text" value='Иванов Иван')
+                            .profile-edit-check
+                                .profile-edit-check-block.light-blue-blue-border
+                                .size-20.text-grey-2 Скрыть своё имя
+                        .profile-edit-text
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Email
+                        .profile-edit-input
+                            input.light-blue-blue-border.button.text-blue.size-16(type="text" value='example@gmail.com')
+                        .profile-edit-text.size-12.text-grey-2 На новый адрес будет отправлено письмо
+                            | с кодом подтверждения
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Никнейм
+                        .profile-edit-input
+                            input.light-blue-blue-border.button.text-blue.size-16(type="text" value='Name 1')
+                        .profile-edit-text
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Пароль
+                        .profile-edit-input
+                            .button.blue.text-white.size-20 Сменить
+                        .profile-edit-text
+        .hr 
+        .profile 
+            .profile-edit
+                .profile-edit-field 
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black День рождения
+                        .profile-edit-input
+                            .input-date
+                                input.light-blue-blue-border.button.text-blue.size-20#day(type="text" placeholder='День')
+                                .light-blue-blue-border.button.text-blue#month.chekbox
+                                    input.size-20(type="text" placeholder='Месяц')
+                                    img(src="icon/arrow-down.svg", alt="")
+                                input.light-blue-blue-border.button.text-blue.size-20#year(type="text" placeholder='Год')
+                            .profile-edit-check
+                                .profile-edit-check-block.light-blue-blue-border
+                                .size-20.text-grey-2 Скрыть свой возраст
+                        .profile-edit-text
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Пол
+                        .profile-edit-input 
+                            input#male(type="radio", name="")
+                            label.radio.size-20.text-black-2(for="male") Мужской
+                            input#female(type="radio", name="")
+                            label.radio.size-20.text-black-2(for="female") Женский
+                            
+                        .profile-edit-text
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Моя страна
+                        .profile-edit-input
+                            .input-date
+                                .light-blue-blue-border.button.text-blue.chekbox
+                                    input.size-20(type="text" placeholder='Выбрать')
+                                    img(src="icon/arrow-down.svg", alt="")
+                        .profile-edit-text
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Мой город
+                        .profile-edit-input
+                            .input-date
+                                .light-blue-blue-border.button.text-blue.chekbox
+                                    input.size-20(type="text" placeholder='Выбрать')
+                                    img(src="icon/arrow-down.svg", alt="")
+                        .profile-edit-text
+        .hr 
+        .profile 
+            .profile-edit
+                .profile-edit-field 
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Обо мне
+                        .profile-edit-input
+                            textarea#about-me.light-blue-blue-border.button.text-blue(name="", cols="30", rows="15") 
+                        .profile-edit-text
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Уровень подготовки
+                        .profile-edit-input
+                            .input-date
+                                .light-blue-blue-border.button.text-blue.chekbox
+                                    input.size-20(type="text" placeholder='Выбрать')
+                                    img(src="icon/arrow-down.svg", alt="")
+                        .profile-edit-text
+                    .save-change 
+                        .button.blue.size-20.text-white Сохранить изменения
+                        .delete-profile 
+                            img(src="icon/del.svg", alt="")
+                            .text-red.size-20 Удалить профиль
+        include component/footer.pug 

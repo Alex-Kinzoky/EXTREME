@@ -1,0 +1,92 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Велосипед
+                img(src="icon/arrow-nav.svg", alt="")
+                | тип транспорта
+        .profile   
+            .page-card-list-small
+                .card.button 
+                    .card-image 
+                        img(src="images/velo1.png", alt="")
+                    .card-title 
+                        .size-26.text-black Городской велосипед
+                        a.arrow-more(href='user-mark-of-sports.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/velo2.png", alt="")
+                    .card-title 
+                        .size-26.text-black Горный велосипед
+                        a.arrow-more(href='user-mark-of-sports.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/velo3.png", alt="")
+                    .card-title 
+                        .size-26.text-black BMX
+                        a.arrow-more(href='user-mark-of-sports.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/velo4.png", alt="")
+                    .card-title 
+                        .size-26.text-black Шоссейный велосипед
+                        a.arrow-more(href='user-mark-of-sports.html')
+        .nav-line.content.desktop
+            .nav-title.size-50.weight-500.text-black 
+                | Последние записи
+        .profile 
+            .page-card-list-small
+                - for (var x = 0; x < 6; x++)
+                    .card.button.card-map
+                        .card-image 
+                            img(src="images/last-note.png", alt="")
+                        .card-title.product-title
+                            a.size-26.weight-500.text-black(href='user-description.html') Замена седла на велосипеде Cannondale
+                            .card-bottom
+                                .card-bottom-info
+                                    .weight-500.size-18#open-user-card Name 1
+                                    .size-14 Россия, Москва
+                                .card-content-bottom
+                                    button.button.size-22.text-black-2
+                                        img(src="icon/like.svg", alt="")
+                                        | 20
+                                    button.button.size-22.text-black-2
+                                        img(src="icon/comment.svg", alt="")
+                                        | 25
+            .button.blue.text-white.border-top-0 Показать ещё    
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Бортжурналы
+        .nav-line.content
+            .search-line.button.white-blue-border.top-search.search-filter
+                .search-image.blue-search
+                input.size-14.text-blue(type="text" placeholder="Фильтр по стране или городу")
+            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                .nav-sort-line.blue.text-white.button По популярности
+                .nav-sort-line.button По коментариям
+                .nav-sort-line.button По дате
+        .profile 
+            .page-card-list-small
+                - for (var x = 0; x < 6; x++)
+                    .card.button.card-map
+                        .card-image 
+                            img(src="images/product.png", alt="")
+                        .card-title.product-title
+                            a.size-26.weight-500.text-black(href='user-journal.html') Велосипед Cannondale
+                            .card-bottom
+                                .card-bottom-info
+                                    .weight-500.size-18#open-user-card Name 1
+                                    .size-14 Россия, Москва
+                                .card-content-bottom
+                                    button.button.size-22.text-black-2
+                                        img(src="icon/like.svg", alt="")
+                                        | 20
+                                    button.button.size-22.text-black-2
+                                        img(src="icon/comment.svg", alt="")
+                                        | 25
+        include component/footer.pug

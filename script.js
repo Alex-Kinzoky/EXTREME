@@ -10,6 +10,8 @@ $(document).ready(function(){
     $('.left-menu-mobile').hide()
     $('.menu-search-mobile').hide()
     $('.filter-card').hide()
+    var height = $('body').height() - $('.header').height()
+    $('.chat-list').css('height', height)
     $(function(){
         if ($(window).width() > 960){
             //$('.filter-card').width($('.search-line').width())

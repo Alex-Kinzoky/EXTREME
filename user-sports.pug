@@ -1,0 +1,52 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black Виды спорта 
+            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                .nav-sort-line.blue.text-white.button Популярные
+                .nav-sort-line.button Все виды спорта
+        .profile   
+            .page-card-list-small
+                .card.button 
+                    .card-image 
+                        img(src="images/theme1.png", alt="")
+                    .card-title 
+                        .size-26.text-black Велосипед
+                        a.arrow-more(href='user-types-of-sports.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme2.png", alt="")
+                    .card-title 
+                        .size-26.text-black Ролики
+                        a.arrow-more(href='user-types-of-sports.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme3.png", alt="")
+                    .card-title 
+                        .size-26.text-black Самокаты
+                        a.arrow-more(href='user-types-of-sports.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme4.png", alt="")
+                    .card-title 
+                        .size-26.text-black Лыжи
+                        a.arrow-more(href='user-types-of-sports.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme5.png", alt="")
+                    .card-title 
+                        .size-26.text-black Сноуборд
+                        a.arrow-more(href='user-types-of-sports.html')
+                .card.button 
+                    .card-image 
+                        img(src="images/theme6.png", alt="")
+                    .card-title 
+                        .size-26.text-black Скейтборды
+                        a.arrow-more(href='user-types-of-sports.html')
+            .advertisement-bottom
+        include component/footer.pug

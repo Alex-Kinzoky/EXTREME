@@ -1,0 +1,67 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .chat-field 
+            .chat-content
+                .chat-title.size-50.weight-500 Сообщения
+                .chat-mess 
+                    .left-mess.old-mess
+                        .mess-image 
+                            img(src="images/photo.png", alt="")
+                        .mess-text.white-white-border 
+                            .size-14.text-black Здравствуйте, Name1!
+                                br
+                                br
+                                | Напоминаем вам о том, что ваш адрес электронной почты нужно подтвердить.
+                                br
+                                br
+                                | Это займёт всего минуту. Перейдите по ссылке в письме, которое мы вам отправили при регистрации.
+                                br
+                                br
+                                | Если вы потеряли это письмо, то мы можем выслать его вам ещё раз.
+                                br
+                                br
+                                | Если же письмо так и не приходит, попробуйте сменить адрес электронной почты.
+                                br
+                                br
+                                | С уважением, Extremy.
+                            .size-14.text-blue.date-mess 18:40
+                    .right-mess.old-mess
+                        .mess-image 
+                            img(src="images/user-photo.png", alt="")
+                        .mess-text.light-blue 
+                            .size-14.text-black Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовки 
+                                | и реализации позиций, занимаемых участниками в отношении поставленных задач.
+                            .size-14.text-blue.date-mess 18:40
+                .new-mess.white-blue-border
+                    .smile-mess 
+                        img(src="icon/smile-mess.svg", alt="")
+                    input(type="text")
+                    .button.blue 
+                        img(src="icon/white-mess.svg", alt="")
+            .chat-list.white-white-border
+                .search-line.button.white-blue-border.top-search.desktop
+                    .search-image.blue-search
+                    input.size-14.text-blue(type="text" placeholder="Поиск")
+                    .blue.button.size-14.text-white Поиск
+                .mess-cards
+                    .mess-card.card.active-mess
+                        .mess-photo 
+                            img(src="images/photo.png", alt="")
+                        .mess-info 
+                            .size-20.text-black Info
+                            .text
+                                .size-14.text-black Здравствуйте, Name1! Напоми
+                            .size-14.text-grey-2 5 дней назад
+                    .mess-card.card 
+                        .mess-photo 
+                            img(src="images/comment-photo.png", alt="")
+                        .mess-info 
+                            .size-20.text-black Info
+                            .text
+                                .size-14.text-black Здравствуйте, Name1! Напоми
+                            .size-14.text-grey-2 5 дней назад

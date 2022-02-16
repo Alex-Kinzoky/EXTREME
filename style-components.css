@@ -72,6 +72,10 @@ input {
   font-size: 24px;
 }
 
+.size-22 {
+  font-size: 22px;
+}
+
 .size-26 {
   font-size: 26px;
 }
@@ -104,6 +108,10 @@ input {
   color: #FFA800;
 }
 
+.text-red {
+  color: #E55555;
+}
+
 .text-grey-2 {
   color: #7C7C7C;
 }
@@ -118,6 +126,10 @@ input {
 
 .text-blue-grey {
   color: #5F6681;
+}
+
+.light-blue {
+  background: rgba(0, 56, 255, 0.15);
 }
 
 .blue {

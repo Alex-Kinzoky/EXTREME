@@ -1,0 +1,35 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Отзыв
+            a.left-profile-button(href='user-myequipment.html')
+                .size-20.text-black  Назад в снаряжение
+                .arrow-more
+        .profile.margin-end
+            .add-journal-note 
+                .size-30.text-black Текст записи
+                .textarea-icon 
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-1.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-2.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-3.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-4.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-5.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-6.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-7.svg", alt="")
+                textarea.light-blue-blue-border(name="", cols="30", rows="30") 
+            .save-change
+                a.button.blue.size-20.text-white(href='user-myequipment.html') Опубликовать
+        include component/footer.pug 

@@ -1,0 +1,69 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .profile 
+            .storage 
+                .top-label
+                    .size-50
+                        a.weight-500.text-black(href='user-storage.html') Кладовка
+                        a.blue.button.text-white.size-20(href="user-storage-add.html") Добавить снаряжение
+                .card-grid.card-line
+                    .card.button 
+                        .card-image 
+                            img(src="images/storage.png", alt="")
+                        .card-title 
+                            .size-26.weight-500.text-black Снаряжение 1 
+                            a.arrow-more(href='user-myequipment.html')
+                        .delete 
+                            img(src="icon/del.svg", alt="")
+                            .text-red.size-16 Удалить
+                    .card.button 
+                        .card-image 
+                            img(src="images/storage.png", alt="")
+                        .card-title 
+                            .size-26.weight-500.text-black Снаряжение 1
+                            a.arrow-more(href='user-myequipment.html')
+                        .delete 
+                            img(src="icon/del.svg", alt="")
+                            .text-red.size-16 Удалить
+                    .card.button 
+                        .card-image 
+                            img(src="images/storage.png", alt="")
+                        .card-title 
+                            .size-26.weight-500.text-black Снаряжение 1
+                            a.arrow-more(href='user-myequipment.html')
+                        .delete 
+                            img(src="icon/del.svg", alt="")
+                            .text-red.size-16 Удалить
+                    .card.button 
+                        .card-image 
+                            img(src="images/storage.png", alt="")
+                        .card-title 
+                            .size-26.weight-500.text-black Снаряжение 1
+                            a.arrow-more(href='user-myequipment.html')
+                        .delete 
+                            img(src="icon/del.svg", alt="")
+                            .text-red.size-16 Удалить
+                    .card.button 
+                        .card-image 
+                            img(src="images/storage.png", alt="")
+                        .card-title 
+                            .size-26.weight-500.text-black Снаряжение 1
+                            a.arrow-more(href='user-myequipment.html')
+                        .delete 
+                            img(src="icon/del.svg", alt="")
+                            .text-red.size-16 Удалить
+                    .card.button 
+                        .card-image 
+                            img(src="images/storage.png", alt="")
+                        .card-title 
+                            .size-26.weight-500.text-black Снаряжение 1
+                            a.arrow-more(href='user-myequipment.html')
+                        .delete 
+                            img(src="icon/del.svg", alt="")
+                            .text-red.size-16 Удалить
+        include component/footer.pug 

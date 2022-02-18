@@ -1,0 +1,182 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <link rel="stylesheet" href="style-components.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-mobile.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body> 
+    <div class="header"> 
+      <div class="menu content white-white-border">
+        <div class="menu-left"><a class="logo" href="index.html"></a>
+          <div class="search-line button white-blue-border top-search desktop">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <div class="blue button size-14 text-white">Поиск</div>
+          </div>
+        </div>
+        <div class="menu-right"> 
+          <div class="theme button desktop">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div>
+          <div class="menu-right-buttons"> <a class="menu-right-button" href="user-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button" href="user-myprofile.html"> <img src="icon/black-profile.svg" alt=""/></a><a class="menu-right-button" href="user-notification.html"> <img src="icon/black-bell.svg" alt=""/></a><a class="menu-right-button" href=""> <img src="icon/black-setting.svg" alt=""/></a></div>
+          <div class="search-button mobile"></div>
+          <div class="mobile-menu mobile"></div>
+        </div>
+      </div>
+    </div>
+    <div class="left-menu-mobile white-white-border content">
+      <div class="left-menu-top">
+        <div class="theme button">
+          <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+          <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+        </div>
+        <div class="left-menu-close"></div>
+      </div>
+      <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-journal.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a></div>
+    </div>
+    <div class="menu-search-mobile white-white-border">
+      <div class="menu content white-white-border content">
+        <div class="menu-left"><a class="logo" href="index.html"></a>
+          <div class="search-button mobile"></div>
+        </div>
+        <div class="menu-right"> 
+          <div class="search-button mobile"></div>
+          <div class="mobile-menu"></div>
+        </div>
+      </div>
+      <div class="hr"> </div>
+      <div class="content">
+        <div class="search-line button light-blue-blue-border top-search">
+          <div class="search-image blue-search"></div>
+          <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+          <div class="blue button size-14 text-white">Поиск</div>
+        </div>
+      </div>
+      <div class="hr"> </div>
+      <div class="request-mobile content">
+        <div class="size-40 weight-500">Недавние запросы</div>
+        <div class="request-mobile-line">
+           Запрос 1
+          <div class="close-image"></div>
+        </div>
+        <div class="request-mobile-line">
+           Запрос 2
+          <div class="close-image"></div>
+        </div>
+        <div class="request-mobile-line">
+           Запрос 3
+          <div class="close-image"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-journal.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a><a class="size-26 text-black" href="">Моё<img src="icon/arrow-down.svg" alt=""/></a><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
+    <div class="nav-line content">
+      <div class="nav-title size-50 weight-500 text-black">
+         Добавление места катания</div><a class="left-profile-button" href="user-myprofile.html">
+        <div class="size-20 text-black"> Назад в профиль</div>
+        <div class="arrow-more"></div></a>
+    </div>
+    <div class="profile"> 
+      <div class="add-place-map">
+        <div class="place-map button">
+          <button class="place-label" id="l-1"><img src="icon/location.svg" alt=""/></button>
+        </div>
+      </div>
+      <div class="profile-edit-field"> 
+        <div class="profile-edit-line">
+          <div class="profile-edit-title size-20 text-black">Адрес</div>
+          <div class="profile-edit-input">
+            <input class="light-blue-blue-border button text-blue size-16" type="text" value="оз. Муромское, Респ. Карелия"/>
+          </div>
+          <div class="profile-edit-text"></div>
+        </div>
+        <div class="profile-edit-line">
+          <div class="profile-edit-title size-20 text-black">Координаты</div>
+          <div class="profile-edit-input">
+            <input class="light-blue-blue-border button text-blue size-16" type="text" value="61.483886, 36.340335"/>
+          </div>
+          <div class="profile-edit-text"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hr"> </div>
+    <div class="profile"> 
+      <div class="profile-edit-field"> 
+        <div class="profile-edit-line">
+          <div class="profile-edit-title size-20 text-black">Вид спорта</div>
+          <div class="profile-edit-input">
+            <div class="input-date">
+              <div class="light-blue-blue-border button text-blue chekbox">
+                <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+              </div>
+            </div>
+          </div>
+          <div class="profile-edit-text"></div>
+        </div>
+        <div class="profile-edit-line">
+          <div class="profile-edit-title size-20 text-black">Уровень сложности</div>
+          <div class="profile-edit-input">
+            <div class="input-date">
+              <div class="light-blue-blue-border button text-blue chekbox">
+                <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+              </div>
+            </div>
+          </div>
+          <div class="profile-edit-text"></div>
+        </div>
+        <div class="profile-edit-line">
+          <div class="profile-edit-title size-20 text-black">Описание</div>
+          <div class="profile-edit-input">
+            <textarea class="light-blue-blue-border button text-blue" id="about-me" name="" cols="30" rows="15"> </textarea>
+          </div>
+          <div class="profile-edit-text"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hr">   </div>
+    <div class="profile"> 
+      <div class="profile-edit-field"> 
+        <div class="size-20 text-black">Фотографии места</div>
+        <div class="save-change"> 
+          <div class="button blue size-20 text-white">Загрузить фотографии</div>
+        </div>
+        <div class="add-photo"> 
+          <div class="light-blue-blue-border"></div>
+          <div class="light-blue-blue-border"></div>
+          <div class="light-blue-blue-border"></div>
+          <div class="light-blue-blue-border"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hr">   </div>
+    <div class="profile margin-end">
+      <div class="profile-edit-field"> 
+        <div class="save-change"> 
+          <div class="button blue size-20 text-white">Добавить место</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer text-black size-18 white-white-border">
+      <div class="footer-list"> 
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Пользовательское соглашение</a><a class="footer-link text-black" href="#">Политика обработки персональных данных</a></div>
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Помощь</a><a class="footer-link text-black" href="#">Написать в поддержку</a><a class="footer-link text-black" href="#">Реклама и сотрудничество</a></div>
+        <div class="footer-col">
+          <div class="footer-link">Мы в социальных сетях</div>
+          <div class="footer-social"> <a class="social" href="#"> <img src="icon/grey-facebook.svg" alt=""/></a><a class="social" href="#"> <img src="./icon/grey-vk.svg" alt=""/></a><a class="social" href="#"> <img src="icon/grey-instagramm.svg" alt=""/></a></div>
+        </div>
+      </div>
+      <div class="copyright size-20">© extremy.ru, 2021</div>
+    </div>
+    <div class="up"> <img src="icon/up.svg" alt=""/></div>
+  </body>
+</html>

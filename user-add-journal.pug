@@ -1,0 +1,78 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Новая запись
+            a.left-profile-button(href='user-myequipment.html')
+                .size-20.text-black  Назад в снаряжение
+                .arrow-more
+        .profile 
+            .add-journal-top 
+                .add-journal-note 
+                    .size-30.text-black О чём запись?
+
+                    .input-date
+                            .light-blue-blue-border.button.text-blue.chekbox
+                                input.size-20(type="text" placeholder='Выбрать')
+                                img(src="icon/arrow-down.svg", alt="")
+                .add-journal-note 
+                    .size-30.text-black Заголовок
+                    input.light-blue-blue-border.button.text-blue.size-20(type="text")
+        .hr 
+        .profile 
+            .add-journal-note 
+                .size-30.text-black Текст записи
+                .textarea-icon 
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-1.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-2.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-3.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-4.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-5.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-6.svg", alt="")
+                    button.textarea-icon-button 
+                        img(src="icon/area-icon-7.svg", alt="")
+                textarea.light-blue-blue-border(name="", cols="30", rows="30") 
+        .hr 
+        .profile 
+            .add-place-journal
+                .add-place-journal-map 
+                    button.place-label
+                        img(src="icon/location.svg", alt="")
+                .add-journal-note 
+                    .size-30.text-black Добавить локацию
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Адрес
+                        .profile-edit-input
+                            input.light-blue-blue-border.button.text-blue.size-16(type="text" value='Страна, регион, город')
+                        .profile-edit-text
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Координаты
+                        .profile-edit-input
+                            input.light-blue-blue-border.button.text-blue.size-16(type="text" value='61.483886, 36.340335')
+                        .profile-edit-text
+        .hr 
+        .profile.margin-end
+            .profile-edit-field 
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Кто видит бортжурнал?
+                    .profile-edit-input 
+                        input#me(type="radio", name="")
+                        label.radio.size-20.text-black-2(for="me") Только я
+                        input#follow(type="radio", name="")
+                        label.radio.size-20.text-black-2(for="follow") Подписчики
+                        input#all(type="radio", name="")
+                        label.radio.size-20.text-black-2(for="all") Все
+                .save-change
+                    a.button.blue.size-20.text-white(href='user-myequipment.html') Опубликовать
+        include component/footer.pug 

@@ -124,8 +124,16 @@ input {
   color: #393939;
 }
 
+.text-black-3 {
+  color: #262D33;
+}
+
 .text-blue-grey {
   color: #5F6681;
+}
+
+.text-grey-3 {
+  color: #6E7781;
 }
 
 .light-blue {
@@ -165,6 +173,11 @@ input {
 .white-white-border {
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
+}
+
+.white-red-border {
+  background-color: #FFFFFF;
+  border: 1px solid #E65555;
 }
 
 .white-blur {

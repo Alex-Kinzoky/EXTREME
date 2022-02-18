@@ -1,0 +1,70 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Добавление снаряжения
+            a.left-profile-button(href='user-myprofile.html')
+                .size-20.text-black  Назад в снаряжение
+                .arrow-more
+        .profile 
+            .profile-edit-field 
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Вид спорта
+                    .profile-edit-input
+                        .input-date
+                            .light-blue-blue-border.button.text-blue.chekbox
+                                input.size-20(type="text" placeholder='Выбрать')
+                                img(src="icon/arrow-down.svg", alt="")
+                    .profile-edit-text
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Модель снаряжения
+                    .profile-edit-input
+                        .input-date
+                            .light-blue-blue-border.button.text-blue.chekbox
+                                input.size-20(type="text" placeholder='Выбрать')
+                                img(src="icon/arrow-down.svg", alt="")
+                    .profile-edit-text
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Марка снаряжения
+                    .profile-edit-input
+                        .input-date
+                            .light-blue-blue-border.button.text-blue.chekbox
+                                input.size-20(type="text" placeholder='Выбрать')
+                                img(src="icon/arrow-down.svg", alt="")
+                    .profile-edit-text
+        .hr    
+        .profile 
+            .profile-edit-field 
+                .size-20.text-black Фотографии Вашего снаряжения
+                .save-change 
+                    .button.blue.size-20.text-white Загрузить фотографии
+                .add-photo 
+                    .light-blue-blue-border
+                    .light-blue-blue-border
+                    .light-blue-blue-border
+                    .light-blue-blue-border
+        .hr    
+        .profile.margin-end
+                .profile-edit-field 
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Описание снаряжения
+                        .profile-edit-input
+                            textarea#about-me.light-blue-blue-border.button.text-blue(name="", cols="30", rows="15") 
+                        .profile-edit-text
+                    .profile-edit-line
+                        .profile-edit-title.size-20.text-black Кто видит снаряжение?
+                        .profile-edit-input 
+                            input#me(type="radio", name="")
+                            label.radio.size-20.text-black-2(for="me") Только я
+                            input#follow(type="radio", name="")
+                            label.radio.size-20.text-black-2(for="follow") Подписчики
+                            input#all(type="radio", name="")
+                            label.radio.size-20.text-black-2(for="all") Все
+                    .save-change.margin-left-button
+                        a.button.blue.size-20.text-white(href='user-myequipment.html') Добавить снаряжение
+        include component/footer.pug 

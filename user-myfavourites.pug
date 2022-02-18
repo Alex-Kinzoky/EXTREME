@@ -1,0 +1,35 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .nav-line.content
+            .nav-title
+                .size-50.weight-500.text-black Избранное
+                .size-50.text-grey-2 21
+            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                .nav-sort-line.blue.text-white.button По теме
+                .nav-sort-line.button По дате
+                .nav-sort-line.button По популярности
+        .profile.margin-end
+            .page-card-list-small
+                - for (var x = 0; x < 6; x++)
+                    .card.button.card-map
+                        .card-image 
+                            img(src="images/state.png", alt="")
+                        .card-title.product-title
+                            a.size-26.weight-500.text-black(href='user-description.html') Гидрокостюм Waterproof Серия Спорт WP Skin
+                            .card-bottom
+                                .card-bottom-info
+                                    .weight-500.size-18#open-user-card Name 1
+                                    .size-14 Россия, Москва
+                                .card-content-bottom
+                                    button.button.size-22.text-black-2
+                                        img(src="icon/blue-like.svg", alt="")
+                                        | 20
+                                    button.button.size-22.text-black-2
+                                        img(src="icon/comment.svg", alt="")
+                                        | 25
+        include component/footer.pug 

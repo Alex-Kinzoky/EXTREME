@@ -1,0 +1,22 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/partners-header.pug 
+        .hr
+        include component/partners-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Добавить скидку
+        .description
+            .add-journal-note 
+                .size-30.text-black 
+                    | Текст скидки или акции
+                    .edit-description 
+                        .text-black-2.size-20 Добавить ещё
+                        .text-black-2.size-20 Дублировать
+                        .text-black-2.size-20 Удалить
+                textarea.light-blue-blue-border.width-100(name="", cols="30", rows="30") 
+            .save-change
+                a.button.blue.size-20.text-white(href='partners-add-sale.html') Создать
+        include component/footer.pug

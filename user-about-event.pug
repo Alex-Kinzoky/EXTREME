@@ -1,0 +1,163 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Мероприятия
+                img(src="icon/arrow-nav.svg", alt="")
+                | Название
+            a.left-profile-button(href='user-myprofile.html')
+                .size-20.text-black  Назад в профиль
+                .arrow-more
+        .profile 
+            .about-top-button 
+                .blue.button.text-white.size-20 Редактировать
+                .white-red-border.button.text-red.size-20 Удалить
+            .about-event
+                .about-event-map 
+                    button.place-label
+                        img(src="icon/location.svg", alt="")
+                .abot-event-info
+                    .white-green-border.button.text-green.size-20 Скоро начнётся
+                    .size-30 Дайвинг
+                    .size-20 Не следует, однако забывать, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, 
+                        | что укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития. 
+                    .calendar
+                        .calendar-header 
+                            .size-14 January
+                        .calendar-days 
+                            .text-grey-3.size-14 Su
+                            .text-grey-3.size-14 Mo
+                            .text-grey-3.size-14 Tu
+                            .text-grey-3.size-14 We
+                            .text-grey-3.size-14 Th
+                            .text-grey-3.size-14 Fr
+                            .text-grey-3.size-14 Sa
+                        .calendar-date
+                            .text-grey-3.size-14 26
+                            .text-grey-3.size-14 27
+                            .text-grey-3.size-14 28
+                            .text-grey-3.size-14 29
+                            .text-grey-3.size-14 30
+                            .text-grey-3.size-14 31
+                            .text-black-3.size-14 1
+                            .text-black-3.size-14 2
+                            .text-black-3.size-14 3
+                            .text-black-3.size-14 4
+                            .text-black-3.size-14 5
+                            .text-black-3.size-14 6
+                            .text-black-3.size-14 7
+                            .text-black-3.size-14 8
+                            .text-black-3.size-14 9
+                            .text-black-3.size-14 10
+                            .text-black-3.size-14 11
+                            .text-black-3.size-14 12
+                            .text-black-3.size-14 13
+                            .text-black-3.size-14 14
+                            .text-black-3.size-14 15
+                            .text-black-3.size-14 16
+                            .text-black-3.size-14 17
+                            .text-black-3.size-14 18
+                            .text-black-3.size-14 19
+                            .text-white.size-14.blue 20
+                            .text-white.size-14.blue 21
+                            .text-white.size-14.blue 22
+                            .text-black-3.size-14 23
+                            .text-black-3.size-14 24
+                            .text-black-3.size-14 25
+                            .text-black-3.size-14 26
+                            .text-black-3.size-14 27
+                            .text-black-3.size-14 28
+                            .text-black-3.size-14 29
+                            .text-black-3.size-14 30
+                            .text-black-3.size-14 31
+                            .text-grey-3.size-14 1
+                            .text-grey-3.size-14 2
+                            .text-grey-3.size-14 3
+                            .text-grey-3.size-14 4
+                            .text-grey-3.size-14 5
+        .nav-line.content
+            .nav-title
+                .size-50.weight-500.text-black Участники
+                .size-30.text-black-2 5 участников
+         
+        .participants-line 
+            .profile
+                .user
+                    .user-label
+                        .user-photo
+                            a(href='guest-profile.html')
+                                img(src="images/user-photo.png", alt="")
+                            .online
+                        .user-info
+                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                            .user-level.text-grey-2 Мастер
+                            .user-location.text-grey-2 Москва, Россия
+                .delete 
+                    img(src="icon/del.svg", alt="")
+                    .text-red.size-20 Удалить
+        .participants-line 
+            .profile
+                .user
+                    .user-label
+                        .user-photo
+                            a(href='guest-profile.html')
+                                img(src="images/user-photo.png", alt="")
+                            .online
+                        .user-info
+                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                            .user-level.text-grey-2 Мастер
+                            .user-location.text-grey-2 Москва, Россия
+                .delete 
+                    img(src="icon/del.svg", alt="")
+                    .text-red.size-20 Удалить
+        .participants-line 
+            .profile
+                .user
+                    .user-label
+                        .user-photo
+                            a(href='guest-profile.html')
+                                img(src="images/user-photo.png", alt="")
+                            .online
+                        .user-info
+                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                            .user-level.text-grey-2 Мастер
+                            .user-location.text-grey-2 Москва, Россия
+                .delete 
+                    img(src="icon/del.svg", alt="")
+                    .text-red.size-20 Удалить
+        .participants-line 
+            .profile
+                .user
+                    .user-label
+                        .user-photo
+                            a(href='guest-profile.html')
+                                img(src="images/user-photo.png", alt="")
+                            .online
+                        .user-info
+                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                            .user-level.text-grey-2 Мастер
+                            .user-location.text-grey-2 Москва, Россия
+                .delete 
+                    img(src="icon/del.svg", alt="")
+                    .text-red.size-20 Удалить
+        .participants-line.margin-end
+            .profile
+                .user
+                    .user-label
+                        .user-photo
+                            a(href='guest-profile.html')
+                                img(src="images/user-photo.png", alt="")
+                            .online
+                        .user-info
+                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                            .user-level.text-grey-2 Мастер
+                            .user-location.text-grey-2 Москва, Россия
+                .delete 
+                    img(src="icon/del.svg", alt="")
+                    .text-red.size-20 Удалить
+        include component/footer.pug

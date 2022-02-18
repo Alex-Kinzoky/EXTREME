@@ -10,6 +10,9 @@ $(document).ready(function(){
     $('.left-menu-mobile').hide()
     $('.menu-search-mobile').hide()
     $('.filter-card').hide()
+    $('.user-notificarion-card').hide()
+    $('.user-setting-card').hide()
+    $('.user-card').hide()
     var height = $('body').height() - $('.header').height()
     $('.chat-list').css('height', height)
     $(function(){
@@ -42,7 +45,35 @@ $(document).ready(function(){
             }
         });
     }
-    
+    $('#user-notification').click(function(){
+        $('.user-notificarion-card').show()
+    })
+    $(document).mouseup( function(e){ 
+        var div = $( ".user-notificarion-card" );
+        if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
+            div.hide(); 
+        }
+    });
+    $('#user-setting').click(function(){
+        $('.user-setting-card').show()
+    })
+    $(document).mouseup( function(e){ 
+        var div = $( ".user-setting-card" );
+        if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
+            div.hide(); 
+        }
+    });
+    $('.open-user-card').click(function(){
+        $('.user-card').hide()
+        $(this).parent().find('.user-card').show();
+        
+    })
+    $(document).mouseup( function(e){ 
+        var div = $( ".user-card" );
+        if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
+            div.hide(); 
+        }
+    });
     $('.mobile-menu').click(function(){
         $('.left-menu-mobile').show()
         $('.menu-search-mobile').hide()
@@ -93,6 +124,14 @@ $(document).ready(function(){
             }
         }
         if ($(this).is(':contains("Локация")')){
+            if ($('#location').is(':visible')){
+                $('.podmenu-filter').hide()
+            } else{
+                $('.podmenu-filter').hide()
+                $('#location').show()
+            }
+        }
+        if ($(this).is(':contains("Город, регион")')){
             if ($('#location').is(':visible')){
                 $('.podmenu-filter').hide()
             } else{

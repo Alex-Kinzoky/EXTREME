@@ -44,7 +44,7 @@ html
                     .profile-edit-line
                         .profile-edit-title.size-20.text-black Пароль
                         .profile-edit-input
-                            .button.blue.text-white.size-20 Сменить
+                            a.button.blue.text-white.size-20(href='user-change-password.html') Сменить
                         .profile-edit-text
         .hr 
         .profile 
@@ -89,7 +89,7 @@ html
                                     img(src="icon/arrow-down.svg", alt="")
                         .profile-edit-text
         .hr 
-        .profile 
+        .profile.margin-end
             .profile-edit
                 .profile-edit-field 
                     .profile-edit-line
@@ -107,7 +107,7 @@ html
                         .profile-edit-text
                     .save-change 
                         .button.blue.size-20.text-white Сохранить изменения
-                        .delete-profile 
+                        .delete 
                             img(src="icon/del.svg", alt="")
                             .text-red.size-20 Удалить профиль
         include component/footer.pug 

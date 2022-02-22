@@ -1,0 +1,58 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/admin-header.pug 
+        .hr
+        include component/admin-left-menu.pug 
+        .profile.margin-end
+            .admin-cards 
+                .admin-card.card
+                    .admin-card-top 
+                        .size-26.text-black Публикации
+                        .arrow-forward 
+                            img(src="icon/arrow-more.svg", alt="")
+                    .size-16.text-black Недавно опубликованное
+                    .publish-list 
+                        .publish-date.size-16.text-black Сегодня в 12:30
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-date.size-16.text-black Сегодня в 12:30
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-date.size-16.text-black Сегодня в 12:30
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-date.size-16.text-black Сегодня в 12:30
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                .admin-card.card
+                    a.admin-card-top(href='admin-information.html')
+                        .size-26.text-black Иформация
+                        .arrow-forward 
+                            img(src="icon/arrow-more.svg", alt="")
+                    .size-16.text-black Вы можете пополнить контент портала
+                    .admin-information 
+                        .size-16.text-black.underline Виды спорта
+                        .size-16.text-black.underline Роли пользователей
+                        .size-16.text-black.underline Модели снаряжения
+                        .size-16.text-black.underline Ачивки за трюки
+                        .size-16.text-black.underline Уровень подготовки
+                .admin-card.card
+                    .admin-gradient.left
+                    a.admin-card-top(href='admin-portal-status.html') 
+                        .size-26.text-black Состояние портала
+                        .arrow-forward 
+                            img(src="icon/arrow-more.svg", alt="")
+                    .size-16.text-black Количество пользователей и записей бортовых журналов состояние серверов
+                    .admin-card-image 
+                        img(src="icon/portal-status.svg", alt="")
+                .admin-card.card
+                    .admin-gradient.right
+                    a.admin-card-top(href='admin-analytics.html') 
+                        .size-26.text-black Аналитика
+                        .arrow-forward 
+                            img(src="icon/arrow-more.svg", alt="")
+                    .size-16.text-black Аналитика по посещаемости и нагрузке
+                    .admin-card-image 
+                        img(src="icon/analitic.svg", alt="")
+        include component/footer.pug

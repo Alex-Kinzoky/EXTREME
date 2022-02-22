@@ -23,12 +23,35 @@
           </div>
         </div>
         <div class="menu-right"> 
-          <div class="search-button mobile"></div>
           <div class="theme button desktop">
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
-          </div><a class="blue size-20 text-white button desktop" href="login.html">Войти</a><a class="mobile-login mobile" href="login.html"></a>
+          </div>
+          <div class="menu-right-buttons"> <a class="menu-right-button" href="admin-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button" href="admin-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
+            <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
+            <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
+          </div>
+          <div class="search-button mobile"></div>
           <div class="mobile-menu mobile"></div>
+        </div>
+      </div>
+    </div>
+    <div class="user-setting-card white-white-border card">
+      <div class="size-18 text-black">Уведомления и сообщения</div>
+      <div class="size-18 text-black invite">Чёрный список</div>
+      <div class="size-18 text-black" id="exit">Выход</div>
+    </div>
+    <div class="user-notificarion-card white-white-border card">
+      <div class="notification-line">
+        <div class="notification-left">
+          <div class="notification-image"> <img src="icon/black-event.svg" alt=""/></div>
+          <div class="size-18 text-black">Name1 отправил Вам сообщение</div>
+        </div>
+      </div>
+      <div class="notification-line invite"> 
+        <div class="notification-left">
+          <div class="notification-image"> <img src="icon/black-notification.svg" alt=""/></div>
+          <div class="size-18 text-black">Важное уведомление</div>
         </div>
       </div>
     </div>
@@ -40,7 +63,7 @@
         </div>
         <div class="left-menu-close"></div>
       </div>
-      <div class="left-menu"><a class="size-26 text-black" href="#">Виды спорта</a><a class="size-26 text-black" href="#">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners.html">Партнёры</a></div>
+      <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-journal.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a></div>
     </div>
     <div class="menu-search-mobile white-white-border">
       <div class="menu content white-white-border content">
@@ -78,38 +101,41 @@
       </div>
     </div>
     <div class="hr"></div>
-    <div class="content login-content">
-      <div class="login-gradient"></div>
-      <div class="login-info"> 
-        <div class="size-50 weight-500">Вход</div>
-        <div class="social"> 
-          <div class="size-16 text-black">Быстрый вход через соцсеть</div>
-          <div class="social-line"> 
-            <div class="social-part"> <img src="icon/color-vk.svg" alt=""/></div>
-            <div class="social-part"> <img src="icon/color-fb.svg" alt=""/></div>
-            <div class="social-part"> <img src="icon/color-yn.svg" alt=""/></div>
-            <div class="social-part"> <img src="icon/color-gl.svg" alt=""/></div>
-          </div>
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="">Контент</a><a class="size-26 text-black" href="">Техническая поддержка</a></div>
+    <div class="nav-line content">
+      <div class="nav-title size-50 weight-500 text-black">
+         Состояние портала</div>
+    </div>
+    <div class="profile"> 
+      <div class="status-cards">
+        <div class="status-card card"> 
+          <div class="admin-gradient right"></div>
+          <div class="size-60 text-black">200</div>
+          <div class="size-26 text-black">Пользователей на сайте</div>
         </div>
-        <div class="login-register desktop">
-          <div class="size-16 text-black">Ещё не зарегистрированы? </div><a class="button white-blue-border text-blue" href="register.html">Зарегистрироваться</a>
+        <div class="status-card card"> 
+          <div class="admin-gradient top-right"></div>
+          <div class="admin-gradient"></div>
+          <div class="size-60 text-black">2000</div>
+          <div class="size-26 text-black">Бортжурналов на сайте</div>
+        </div>
+        <div class="status-card card"> 
+          <div class="admin-gradient top-left"></div>
+          <div class="size-60 text-black">1000</div>
+          <div class="size-26 text-black">Кладовок на сайте</div>
         </div>
       </div>
-      <div class="login-form"> 
-        <form action="" method="post"> 
-          <div class="input-form">
-            <input class="light-blue-blue-border text-blue" type="email" name="" placeholder="Email*"/>
-            <input class="light-blue-blue-border text-blue" type="password" name="" placeholder="Пароль*"/>
-          </div><a class="size-12 text-blue" href="return-password.html">Забыли пароль?</a>
-          <input class="button blue text-white" id="login" type="submit" value="Войти"/>
-          <div class="size-12 text-grey-2">
-             Нажимая «Войти», Вы принимаете условия 
-            <div class="underline">пользовательского соглашения</div>
-          </div>
-        </form>
+      <div class="admin-menu-content big-admin-menu">
+        <div class="admin-menu-content-part size-30 active">Текущие сообщения</div>
+        <div class="admin-menu-content-part size-30">Недавно закрытые</div>
       </div>
-      <div class="login-register mobile">
-        <div class="size-16 text-black">Ещё не зарегистрированы? </div><a class="button white-blue-border text-blue" href="register.html">Зарегистрироваться</a>
+    </div>
+    <div class="hr"></div>
+    <div class="profile"> 
+      <div class="now-messege"> 
+        <div class="not-now-messege"> 
+          <div class="size-30">В последнее время не было никаких проблем или событий</div>
+        </div>
       </div>
     </div>
     <div class="footer text-black size-18 white-white-border">

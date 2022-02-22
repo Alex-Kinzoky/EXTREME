@@ -437,8 +437,6 @@
   }
 
   .mobile-user-menu {
-    background-image: url(icon/black-user-menu.svg);
-    background-size: 100% 100%;
     width: 5px;
     height: 18px;
   }

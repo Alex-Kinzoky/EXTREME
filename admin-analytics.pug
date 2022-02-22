@@ -1,0 +1,74 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/admin-header.pug 
+        .hr
+        include component/admin-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Информация
+        .profile 
+            .admin-menu-content.small-admin-menu
+                .admin-menu-content-part.size-30.active#attendance Посещаемость
+                .admin-menu-content-part.size-30#workload Нагрузка
+        .hr
+        .profile.attendance
+            .analytics-cards 
+                .analytics-card.card
+                    .analytics-card-top 
+                        .size-40.weight-500 700
+                        .size-20 в день
+                    .analytics-card-image 
+                    .analytics-card-bottom
+                        .size-26.weight-500 Уникальные посетители
+                .analytics-card.card
+                    .analytics-card-top 
+                        .size-40.weight-500 200
+                        .size-20 в день
+                    .analytics-card-image 
+                    .analytics-card-bottom
+                        .size-26.weight-500 Новые посетители
+        
+        .profile.attendance 
+            .admin-menu-content.small-admin-menu
+                .admin-menu-content-part.size-30.active За всё время
+                .admin-menu-content-part.size-30 За год
+                .admin-menu-content-part.size-30 За месяц
+                .admin-menu-content-part.size-30 За день
+        .hr.attendance 
+        .profile.margin-end.attendance
+            .admin-chart 
+                .admin-chart-top
+                    .admin-chart-value 
+                        .size-20 4
+                        .size-20 3
+                        .size-20 2
+                        .size-20 1
+                        .size-20 0
+                    .admin-chart-canvas 
+                        img(src="icon/attendance-line.svg", alt="")
+                .admin-chart-bottom
+                    .size-20 26 декабря
+                    .size-20 30 декабря
+                    .size-20 3 января
+                    .size-20 7 января
+                    .size-20 11 января
+        .profile.margin-end.workload
+            .admin-chart 
+                .admin-chart-top
+                    .admin-chart-value 
+                        .size-20 4
+                        .size-20 3
+                        .size-20 2
+                        .size-20 1
+                        .size-20 0
+                    .admin-chart-canvas 
+                        img(src="icon/attendance-line-2.svg", alt="")
+                .admin-chart-bottom
+                    .size-20 26 декабря
+                    .size-20 30 декабря
+                    .size-20 3 января
+                    .size-20 7 января
+                    .size-20 11 января
+        include component/footer.pug

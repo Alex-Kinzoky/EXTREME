@@ -1,0 +1,44 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/moderator-header.pug 
+        .hr
+        include component/moderator-left-menu.pug 
+        .profile.margin-end
+            .admin-cards 
+                .admin-card.card
+                    .moderator-gradient
+                    .admin-card-top 
+                        .size-26.text-black Публикации
+                        .arrow-forward 
+                            img(src="icon/arrow-more.svg", alt="")
+                    .size-16.text-black Недавно опубликованное
+                    .publish-list 
+                        .publish-date.size-16.text-black Сегодня в 12:30
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-date.size-16.text-black Сегодня в 12:30
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-date.size-16.text-black Сегодня в 12:30
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-date.size-16.text-black Сегодня в 12:30
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                .admin-card.card
+                    .moderator-gradient.rotate-gradient
+                    .admin-card-top 
+                        .size-26.text-black Отказы
+                        .arrow-forward 
+                            img(src="icon/arrow-more.svg", alt="")
+                    .size-16.text-black Список отказов в публикации
+                    .publish-list 
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                    .publish-list 
+                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+        include component/footer.pug

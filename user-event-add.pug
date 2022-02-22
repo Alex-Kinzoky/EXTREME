@@ -1,0 +1,80 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        include component/user-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Мероприятие
+            a.left-profile-button(href='user-myequipment.html')
+                .size-20.text-black  Назад в профиль
+                .arrow-more
+        .profile 
+            .add-place-map
+                .place-map.button
+                    button.place-label#l-1
+                        img(src="icon/location.svg", alt="")
+            .profile-edit-field 
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Адрес
+                    .profile-edit-input
+                        input.light-blue-blue-border.button.text-blue.size-16(type="text" placeholder='Страна, регион, город')
+                    .profile-edit-text
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Координаты
+                    .profile-edit-input
+                        input.light-blue-blue-border.button.text-blue.size-16(type="text" placeholder='61.483886, 36.340335')
+                    .profile-edit-text
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Время начала
+                    .profile-edit-input
+                        .input-date
+                            .light-blue-blue-border.button.text-blue.chekbox
+                                input.size-20(type="text" placeholder='10 января 2022')
+                                img.calendar(src="icon/calendar.svg", alt="")
+                            .light-blue-blue-border.button.text-blue.chekbox.time
+                                input.size-20(type="text" placeholder='20:00')
+                        .profile-edit-check
+                                .profile-edit-check-block.light-blue-blue-border
+                                .size-20.text-grey-2 Указать дату окончания
+                    .profile-edit-text
+        .hr 
+        .profile.margin-end 
+            .profile-edit-field 
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Название
+                    .profile-edit-input
+                        input.light-blue-blue-border.button.text-blue.size-16(type="text")
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Статус
+                    .profile-edit-input
+                        .input-date
+                            .light-blue-blue-border.button.text-blue.chekbox
+                                input.size-20(type="text" placeholder='Выбрать')
+                                img(src="icon/arrow-down.svg", alt="")
+                    .profile-edit-text
+                .profile-edit-line
+                    .profile-edit-title.size-20.text-black Вид спорта
+                    .profile-edit-input
+                        .input-date
+                            .light-blue-blue-border.button.text-blue.chekbox
+                                input.size-20(type="text" placeholder='Выбрать')
+                                img(src="icon/arrow-down.svg", alt="")
+                    .profile-edit-text
+                .profile-edit-line
+                        .profile-edit-title.size-20.text-black Описание
+                        .profile-edit-input
+                            textarea#about-me.light-blue-blue-border.button.text-blue(name="", cols="30", rows="15") 
+                        .profile-edit-text
+                .profile-edit-line
+                        .profile-edit-title.size-20.text-black Тип встречи
+                        .profile-edit-input 
+                            input#male(type="radio", name="")
+                            label.radio.size-20.text-black-2(for="male") Открытая
+                            input#female(type="radio", name="")
+                            label.radio.size-20.text-black-2(for="female") Закрытая
+                .save-change 
+                    .button.blue.size-20.text-white Создать мероприятие
+        include component/footer.pug 

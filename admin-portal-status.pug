@@ -1,0 +1,35 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/admin-header.pug 
+        .hr
+        include component/admin-left-menu.pug 
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black 
+                | Состояние портала
+        .profile 
+            .status-cards
+                
+                .status-card.card 
+                    .admin-gradient.right
+                    .size-60.text-black 200
+                    .size-26.text-black Пользователей на сайте
+                .status-card.card 
+                    .admin-gradient.top-right
+                    .admin-gradient
+                    .size-60.text-black 2000
+                    .size-26.text-black Бортжурналов на сайте
+                .status-card.card 
+                    .admin-gradient.top-left
+                    .size-60.text-black 1000
+                    .size-26.text-black Кладовок на сайте
+            .admin-menu-content.big-admin-menu
+                .admin-menu-content-part.size-30.active Текущие сообщения
+                .admin-menu-content-part.size-30 Недавно закрытые
+        .hr
+        .profile 
+            .now-messege 
+                .not-now-messege 
+                    .size-30 В последнее время не было никаких проблем или событий
+        include component/footer.pug

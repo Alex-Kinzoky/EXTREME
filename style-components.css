@@ -40,6 +40,10 @@ input {
   font-weight: 500;
 }
 
+.size-60 {
+  font-size: 60px;
+}
+
 .size-50 {
   font-size: 50px;
 }

@@ -1,0 +1,116 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/admin-header.pug 
+        .hr
+        .nav-line.content.mobile
+            .nav-title.size-50.weight-500.text-black.mobile Лента
+        include component/admin-left-menu.pug
+        .nav-line.content.desktop
+            .nav-title.size-50.weight-500.text-black Лента
+            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                .nav-sort-line.blue.text-white.button По популярности
+                .nav-sort-line.button По коментариям
+                .nav-sort-line.button По дате
+        include component/right-filter.pug
+        .nav-line.content.mobile
+            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                .nav-sort-line.blue.text-white.button По популярности
+                .nav-sort-line.button По коментариям
+                .nav-sort-line.button По дате
+        .tape-list 
+            .card.tape-card.button
+                .user 
+                    .user-label
+                        .user-photo
+                            a(href='guest-profile.html')
+                                img(src="images/user-photo.png", alt="")
+                            .online
+                        .user-info
+                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                            .user-level.text-grey-2 Мастер
+                            .user-location.text-grey-2 Москва, Россия
+                        button.user-follow.blue.text-white.size-20.desktop Подписаться
+                    .mobile-user-menu.mobile
+                    .user-button-mobile.button.white-white-border
+                        .user-button-line
+                            .bookmark
+                            | Сохранить в закладках
+                        .user-button-line
+                            .share
+                            | Поделиться
+                    .user-button-desktop.white-white-border.card
+                        .user-button-line
+                            img(src="icon/black-delete.svg", alt="")
+                            | Удалить
+                        .user-button-line
+                            img(src="icon/black-return.svg", alt="")
+                            | Изменить
+                    .user-button.desktop
+                        .mobile-user-menu
+                        .bookmark 
+                        .share
+                .card-content
+                    .card-content-top
+                        .card-content-title.size-40.weight-500.text-black Лучшее снаряжение для сноубординга
+                        .card-content-date.text-grey-2 Опубликовано 07.12.2021
+                    .card-content-text.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                    a.card-content-more.text-black(href='admin-description.html') Читать дальше...
+                    .card-content-image 
+                        img(src="images/tape.png", alt="")
+                    .card-content-bottom
+                        button.button.size-30.text-black-2
+                            img(src="icon/like.svg", alt="")
+                            | 20
+                        button.button.size-30.text-black-2
+                            img(src="icon/comment.svg", alt="")
+                            | 25
+            .card.tape-card.button
+                .user 
+                    .user-label
+                        .user-photo
+                            a(href='guest-profile.html')
+                                img(src="images/user-photo.png", alt="")
+                            .online
+                        .user-info
+                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                            .user-level.text-grey-2 Мастер
+                            .user-location.text-grey-2 Москва, Россия
+                        button.user-follow.blue.text-white.size-20.desktop Подписаться
+                    .mobile-user-menu.mobile
+                    .user-button-mobile.button.white-white-border
+                        .user-button-line
+                            .bookmark
+                            | Сохранить в закладках
+                        .user-button-line
+                            .share
+                            | Поделиться
+                    .user-button-desktop.white-white-border.card
+                        .user-button-line
+                            img(src="icon/black-delete.svg", alt="")
+                            | Удалить
+                        .user-button-line
+                            img(src="icon/black-return.svg", alt="")
+                            | Изменить
+                    .user-button.desktop
+                        .mobile-user-menu
+                        .bookmark 
+                        .share
+                    .user-button-desktop
+                .card-content
+                    .card-content-top
+                        .card-content-title.size-40.weight-500.text-black Лучшее снаряжение для сноубординга
+                        .card-content-date.text-grey-2 Опубликовано 07.12.2021
+                    .card-content-text.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                    a.card-content-more.text-black(href='admin-description.html') Читать дальше...
+                    .card-content-image 
+                        img(src="images/tape.png", alt="")
+                    .card-content-bottom
+                        button.button.size-30.text-black-2
+                            img(src="icon/like.svg", alt="")
+                            | 20
+                        button.button.size-30.text-black-2
+                            img(src="icon/comment.svg", alt="")
+                            | 25
+        include component/footer.pug

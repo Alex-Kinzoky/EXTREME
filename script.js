@@ -13,10 +13,15 @@ $(document).ready(function(){
     $('.user-notificarion-card').hide()
     $('.user-setting-card').hide()
     $('.user-card').hide()
+    $('.workload').hide()
+    $('.user-button-desktop').hide()
+    $('.admin-information-add-card').hide()
+    $('.moderator-rejection-card').hide()
     var height = $('body').height() - $('.header').height()
     $('.chat-list').css('height', height)
     $(function(){
         if ($(window).width() > 960){
+            
             //$('.filter-card').width($('.search-line').width())
             $('.location').attr('placeholder','')
             $(window).scroll(function(){
@@ -28,9 +33,70 @@ $(document).ready(function(){
             });
         } else{
             $('.location').attr('placeholder','Страна, регион, город')
+            $('.mobile-user-menu').click(function(){
+                if ($(this).parent().find('.user-button-mobile').is(':visible')){
+                    $(this).parent().find('.user-button-mobile').hide()
+                } else {
+                    $(this).parent().find('.user-button-mobile').show()
+                }
+            })
         }
     });
-    
+    $('#login').click(function(){
+        var old_link = window.location.href
+        if ($(this).parent().find('input[type="email"]').val() == 'user@mail.com'){
+            var new_link = old_link.replace(/login/gi, 'user-tape')
+            window.location.href = new_link
+        }
+        if ($(this).parent().find('input[type="email"]').val() == 'partners@mail.com'){
+            var new_link = old_link.replace(/login/gi, 'partners-index')
+            window.location.href = new_link
+        }
+        if ($(this).parent().find('input[type="email"]').val() == 'admin@mail.com'){
+            var new_link = old_link.replace(/login/gi, 'admin-index')
+            window.location.href = new_link
+        }
+        if ($(this).parent().find('input[type="email"]').val() == 'moderator@mail.com'){
+            var new_link = old_link.replace(/login/gi, 'moderator-index')
+            window.location.href = new_link
+        }
+        return false
+    })
+    $('.rejection').click(function(){
+        $('.moderator-rejection-card').hide()
+        $(this).parent().parent().parent().find('.moderator-rejection-card').show()
+    })
+    $('.close-image').click(function(){
+        $('.moderator-rejection-card').hide()
+    })
+    $('.close-image').click(function(){
+        $('.admin-information-add-card').hide()
+    })
+    $('.admin-informarion-add').click(function(){
+        $('.admin-information-add-card').hide()
+        $(this).parent().find('.admin-information-add-card').show()
+    })
+    $('.mobile-user-menu').click(function(){
+        $(this).parent().parent().find('.user-button-desktop').show()
+    })
+    $(document).mouseup( function(e){ 
+        var div = $( ".user-button-desktop" );
+        if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
+            div.hide(); 
+        }
+    });
+    $('#attendance').click(function(){
+        $('#workload').removeClass('active')
+        $('.workload').hide()
+        $('.attendance').show()
+        $('#attendance').addClass('active')
+    })
+    $('#workload').click(function(){
+        $('#attendance').removeClass('active')
+        $('.attendance').hide()
+        $('.workload').show()
+        $('#workload').addClass('active')
+    })
     $('.close-image').click(function(){
         $('.filter-card').hide()
     })
@@ -89,13 +155,7 @@ $(document).ready(function(){
         }
         
     })
-    $('.mobile-user-menu').click(function(){
-        if ($('.user-button-mobile').is(':visible')){
-            $('.user-button-mobile').hide()
-        } else {
-            $('.user-button-mobile').show()
-        }
-    })
+    
     $(document).mouseup( function(e){ 
 		var div = $( ".user-button-mobile" );
 		if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 

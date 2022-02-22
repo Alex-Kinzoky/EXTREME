@@ -1,0 +1,162 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <link rel="stylesheet" href="style-components.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-mobile.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body> 
+    <div class="header"> 
+      <div class="menu content white-white-border">
+        <div class="menu-left"><a class="logo" href="index.html"></a>
+          <div class="search-line button white-blue-border top-search desktop">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <div class="blue button size-14 text-white">Поиск</div>
+          </div>
+        </div>
+        <div class="menu-right"> 
+          <div class="theme button desktop">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div>
+          <div class="menu-right-buttons"> <a class="menu-right-button" href="moderator-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button" href="moderator-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
+            <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
+            <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
+          </div>
+          <div class="search-button mobile"></div>
+          <div class="mobile-menu mobile"></div>
+        </div>
+      </div>
+    </div>
+    <div class="user-setting-card white-white-border card">
+      <div class="size-18 text-black">Уведомления и сообщения</div>
+      <div class="size-18 text-black invite">Чёрный список</div>
+      <div class="size-18 text-black" id="exit">Выход</div>
+    </div>
+    <div class="user-notificarion-card white-white-border card">
+      <div class="notification-line">
+        <div class="notification-left">
+          <div class="notification-image"> <img src="icon/black-event.svg" alt=""/></div>
+          <div class="size-18 text-black">Name1 отправил Вам сообщение</div>
+        </div>
+      </div>
+      <div class="notification-line invite"> 
+        <div class="notification-left">
+          <div class="notification-image"> <img src="icon/black-notification.svg" alt=""/></div>
+          <div class="size-18 text-black">Важное уведомление</div>
+        </div>
+      </div>
+    </div>
+    <div class="left-menu-mobile white-white-border content">
+      <div class="left-menu-top">
+        <div class="theme button">
+          <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+          <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+        </div>
+        <div class="left-menu-close"></div>
+      </div>
+      <div class="left-menu"><a class="size-26 text-black" href="moderator-index.html">Главная</a><a class="size-26 text-black" href="moderator-tape.html">Лента</a><a class="size-26 text-black" href="moderator-users.html">Пользователи</a><a class="size-26 text-black" href="">Отказы</a><a class="size-26 text-black" href="moderator-black-list.html">Чёрный список</a></div>
+    </div>
+    <div class="menu-search-mobile white-white-border">
+      <div class="menu content white-white-border content">
+        <div class="menu-left"><a class="logo" href="index.html"></a>
+          <div class="search-button mobile"></div>
+        </div>
+        <div class="menu-right"> 
+          <div class="search-button mobile"></div>
+          <div class="mobile-menu"></div>
+        </div>
+      </div>
+      <div class="hr"> </div>
+      <div class="content">
+        <div class="search-line button light-blue-blue-border top-search">
+          <div class="search-image blue-search"></div>
+          <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+          <div class="blue button size-14 text-white">Поиск</div>
+        </div>
+      </div>
+      <div class="hr"> </div>
+      <div class="request-mobile content">
+        <div class="size-40 weight-500">Недавние запросы</div>
+        <div class="request-mobile-line">
+           Запрос 1
+          <div class="close-image"></div>
+        </div>
+        <div class="request-mobile-line">
+           Запрос 2
+          <div class="close-image"></div>
+        </div>
+        <div class="request-mobile-line">
+           Запрос 3
+          <div class="close-image"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="moderator-index.html">Главная</a><a class="size-26 text-black" href="moderator-tape.html">Лента</a><a class="size-26 text-black" href="moderator-users.html">Пользователи</a><a class="size-26 text-black" href="">Отказы</a><a class="size-26 text-black" href="moderator-black-list.html">Чёрный список</a></div>
+    <div class="chat-field"> 
+      <div class="chat-content">
+        <div class="chat-title size-50 weight-500">Сообщения</div>
+        <div class="chat-mess"> 
+          <div class="left-mess old-mess">
+            <div class="mess-image"> <img src="images/photo.png" alt=""/></div>
+            <div class="mess-text white-white-border"> 
+              <div class="size-14 text-black">Здравствуйте, Name1!<br/><br/>Напоминаем вам о том, что ваш адрес электронной почты нужно подтвердить.<br/><br/>Это займёт всего минуту. Перейдите по ссылке в письме, которое мы вам отправили при регистрации.<br/><br/>Если вы потеряли это письмо, то мы можем выслать его вам ещё раз.<br/><br/>Если же письмо так и не приходит, попробуйте сменить адрес электронной почты.<br/><br/>С уважением, Extremy.</div>
+              <div class="size-14 text-blue date-mess">18:40</div>
+            </div>
+          </div>
+          <div class="right-mess old-mess">
+            <div class="mess-image"> <img src="images/user-photo.png" alt=""/></div>
+            <div class="mess-text light-blue"> 
+              <div class="size-14 text-black">
+                Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</div>
+              <div class="size-14 text-blue date-mess">18:40</div>
+            </div>
+          </div>
+        </div>
+        <div class="new-mess white-blue-border">
+          <div class="smile-mess"> <img src="icon/smile-mess.svg" alt=""/></div>
+          <input type="text"/>
+          <div class="button blue"> <img src="icon/white-mess.svg" alt=""/></div>
+        </div>
+      </div>
+      <div class="chat-list white-white-border">
+        <div class="search-line button white-blue-border top-search desktop">
+          <div class="search-image blue-search"></div>
+          <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+          <div class="blue button size-14 text-white">Поиск</div>
+        </div>
+        <div class="mess-cards">
+          <div class="mess-card card active-mess">
+            <div class="mess-photo"> <img src="images/photo.png" alt=""/></div>
+            <div class="mess-info"> 
+              <div class="size-20 text-black">Info</div>
+              <div class="text">
+                <div class="size-14 text-black">Здравствуйте, Name1! Напоми</div>
+              </div>
+              <div class="size-14 text-grey-2">5 дней назад</div>
+            </div>
+          </div>
+          <div class="mess-card card"> 
+            <div class="mess-photo"> <img src="images/comment-photo.png" alt=""/></div>
+            <div class="mess-info"> 
+              <div class="size-20 text-black">Info</div>
+              <div class="text">
+                <div class="size-14 text-black">Здравствуйте, Name1! Напоми</div>
+              </div>
+              <div class="size-14 text-grey-2">5 дней назад</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

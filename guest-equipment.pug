@@ -6,8 +6,8 @@ html
         .hr
         include component/guest-left-menu.pug 
         .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Кадовка
+            .nav-title.size-50.weight-500.text-black
+                a.size-50.weight-500.text-black(href='guest-storage.html') Кладовка
                 img(src="icon/arrow-nav.svg", alt="")
                 | снаряжение 1
         .description 
@@ -55,8 +55,8 @@ html
                         a(href='guest-profile.html')
                             img(src="images/user-photo.png", alt="")
                         .online
-                    .user-info
-                        a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                    a.user-info(href='guest-profile.html')
+                        .user-name.size-30.text-black Андрей Кулагин
                         .user-level.text-grey-2 Мастер
                         .user-location.text-grey-2 Москва, Россия
                 .size-40.text-black Отзыв владельца

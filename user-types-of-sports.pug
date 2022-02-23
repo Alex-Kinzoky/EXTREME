@@ -6,36 +6,36 @@ html
         .hr
         include component/user-left-menu.pug
         .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Велосипед
+            .nav-title.size-50.weight-500.text-black
+                |  Велосипед
                 img(src="icon/arrow-nav.svg", alt="")
                 | тип транспорта
         .profile   
             .page-card-list-small
-                .card.button 
+                a.card.button(href='user-mark-of-sports.html') 
                     .card-image 
                         img(src="images/velo1.png", alt="")
                     .card-title 
                         .size-26.text-black Городской велосипед
-                        a.arrow-more(href='user-mark-of-sports.html')
-                .card.button 
+                        .arrow-more
+                a.card.button(href='user-mark-of-sports.html') 
                     .card-image 
                         img(src="images/velo2.png", alt="")
                     .card-title 
                         .size-26.text-black Горный велосипед
-                        a.arrow-more(href='user-mark-of-sports.html')
-                .card.button 
+                        .arrow-more
+                a.card.button(href='user-mark-of-sports.html') 
                     .card-image 
                         img(src="images/velo3.png", alt="")
                     .card-title 
                         .size-26.text-black BMX
-                        a.arrow-more(href='user-mark-of-sports.html')
-                .card.button 
+                        .arrow-more
+                a.card.button(href='user-mark-of-sports.html') 
                     .card-image 
                         img(src="images/velo4.png", alt="")
                     .card-title 
                         .size-26.text-black Шоссейный велосипед
-                        a.arrow-more(href='user-mark-of-sports.html')
+                        .arrow-more
         .nav-line.content.desktop
             .nav-title.size-50.weight-500.text-black 
                 | Последние записи
@@ -43,7 +43,7 @@ html
             .page-card-list-small
                 - for (var x = 0; x < 6; x++)
                     .card.button.card-map
-                        .card-image 
+                        a.card-image(href='user-description.html') 
                             img(src="images/last-note.png", alt="")
                         .card-title.product-title
                             a.size-26.weight-500.text-black(href='user-description.html') Замена седла на велосипеде Cannondale
@@ -57,8 +57,8 @@ html
                                                     a(href='guest-profile.html')
                                                         img(src="images/user-photo.png", alt="")
                                                     .online
-                                                .user-info
-                                                    a.user-name.size-30.weight-500.text-black(href='guest-profile.html') Андрей Кулагин
+                                                a.user-info(href='guest-profile.html')
+                                                    .user-name.size-30.weight-500.text-black Андрей Кулагин
                                                     .user-level.text-grey-2 Мастер
                                                     .user-location.text-grey-2 Москва, Россия
                                             .user-button.desktop
@@ -88,11 +88,11 @@ html
             .page-card-list-small
                 - for (var x = 0; x < 6; x++)
                     .card.button.card-map
-                        .card-image 
+                        a.card-image(href='user-equipment.html') 
                             img(src="images/product.png", alt="")
                         .card-title.product-title
                             a.size-26.weight-500.text-black(href='user-equipment.html') Велосипед Cannondale
-                            .card-bottom#open-user-card
+                            .card-bottom.open-user-card
                                 .card-bottom-info
                                     button.weight-500.size-18.open-user-card Name 1
                                     .user-card.white-white-border.card
@@ -102,8 +102,8 @@ html
                                                     a(href='guest-profile.html')
                                                         img(src="images/user-photo.png", alt="")
                                                     .online
-                                                .user-info
-                                                    a.user-name.size-30.weight-500.text-black(href='guest-profile.html') Андрей Кулагин
+                                                a.user-info(href='guest-profile.html')
+                                                    .user-name.size-30.weight-500.text-black Андрей Кулагин
                                                     .user-level.text-grey-2 Мастер
                                                     .user-location.text-grey-2 Москва, Россия
                                             .user-button.desktop

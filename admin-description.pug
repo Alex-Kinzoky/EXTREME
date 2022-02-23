@@ -7,7 +7,7 @@ html
         include component/admin-left-menu.pug 
         .nav-line.content
             .nav-title.size-50.weight-500.text-black 
-                | Лента
+                a.size-50.weight-500.text-black(href='admin-tape.html') Лента
                 img(src="icon/arrow-nav.svg", alt="")
                 | дайвинг
         .description 
@@ -15,11 +15,11 @@ html
                 .user 
                     .user-label
                         .user-photo
-                            a(href='guest-profile.html')
+                            a(href='admin-profile.html')
                             img(src="images/user-photo.png", alt="")
                             .online
-                        .user-info
-                            a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                        a.user-info(href='admin-profile.html')
+                            .user-name.size-30.text-black Андрей Кулагин
                             .user-level.text-grey-2 Мастер
                             .user-location.text-grey-2 Москва, Россия
                         button.user-follow.blue.text-white.size-20.desktop Подписаться
@@ -61,8 +61,8 @@ html
                         button.button.size-30.text-black-2
                             img(src="icon/comment.svg", alt="")
                             | 25
-            .before 
-                a.arrow-back(href='guest-description.pug')
+            a.before(href='admin-description.pug') 
+                .arrow-back
                     img(src="icon/arrow-back.svg", alt="")
                 .before-info
                     .before-title.size-40.text-black Ранее
@@ -82,10 +82,10 @@ html
                 .user 
                     .user-label
                         .user-photo
-                            a(href='guest-profile.html')
+                            a(href='admin-profile.html')
                                 img(src="images/comment-photo.png", alt="")
-                        .user-info
-                            a.user-name.size-24.text-black(href='guest-profile.html') Кирилл Максимчук
+                        a.user-info(href='admin-profile.html')
+                            .user-name.size-24.text-black Кирилл Максимчук
                             .user-level.size-16.text-grey-2 Мастер
                             .user-location.size-16.text-grey-2 Москва, Россия
                     .user-button

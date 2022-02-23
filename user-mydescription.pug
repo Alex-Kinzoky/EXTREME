@@ -7,7 +7,7 @@ html
         include component/user-left-menu.pug 
         .nav-line.content
             .nav-title.size-50.weight-500.text-black 
-                | Велосипед
+                .size-50.weight-500.text-black Велосипед
                 img(src="icon/arrow-nav.svg", alt="")
                 | Cannondale
         .description 
@@ -18,8 +18,8 @@ html
                             a(href='user-profile.html')
                             img(src="images/user-photo.png", alt="")
                             .online
-                        .user-info
-                            a.user-name.size-30.text-black(href='user-profile.html') Андрей Кулагин
+                        a.user-info(href='user-profile.html')
+                            .user-name.size-30.text-black Андрей Кулагин
                             .user-level.text-grey-2 Мастер
                             .user-location.text-grey-2 Москва, Россия
                         button.user-follow.blue.text-white.size-20.desktop Продвинуть запись
@@ -64,8 +64,8 @@ html
                         .vie 
                             img(src="icon/Eye.svg", alt="")
                             .size-26.text-black-2 20
-            .before 
-                a.arrow-back(href='user-description.html')
+            a.before(href='user-description.html') 
+                .arrow-back
                     img(src="icon/arrow-back.svg", alt="")
                 .before-info
                     .before-title.size-40.text-black Ранее
@@ -80,15 +80,15 @@ html
         .comments-bottom
             .new-comment.light-blue-blue-border.button
                 .smile 
-                input.text-blue-grey.size-20(type="text", placeholder='Написать комментарий...')
+                input.size-20(type="text", placeholder='Написать комментарий...')
             .one-comment 
                 .user 
                     .user-label
                         .user-photo
                             a(href='user-profile.html')
                                 img(src="images/comment-photo.png", alt="")
-                        .user-info
-                            a.user-name.size-24.text-black(href='user-profile.html') Кирилл Максимчук
+                        a.user-info(href='user-profile.html')
+                            .user-name.size-24.text-black Кирилл Максимчук
                             .user-level.size-16.text-grey-2 Мастер
                             .user-location.size-16.text-grey-2 Москва, Россия
                     .user-button

@@ -6,8 +6,8 @@ html
         .hr
         include component/admin-left-menu.pug 
         .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Кадовка
+            .nav-title.size-50.weight-500.text-black
+                a.size-50.weight-500.text-black(href='admin-storage.html') Кладовка
                 img(src="icon/arrow-nav.svg", alt="")
                 | снаряжение 1
             .admin-setting-equipment
@@ -61,11 +61,11 @@ html
             .user 
                 .user-label
                     .user-photo
-                        a(href='guest-profile.html')
+                        a(href='admin-profile.html')
                             img(src="images/user-photo.png", alt="")
                         .online
-                    .user-info
-                        a.user-name.size-30.text-black(href='guest-profile.html') Андрей Кулагин
+                    a.user-info(href='admin-profile.html')
+                        .user-name.size-30.text-black Андрей Кулагин
                         .user-level.text-grey-2 Мастер
                         .user-location.text-grey-2 Москва, Россия
                 .size-40.text-black Отзыв владельца
@@ -87,7 +87,7 @@ html
                             img(src="images/journal.png", alt="")
                         .card-h-info 
                             .size-16.weight-500.text-grey-2 07.12.2021
-                            a.size-30.text-black(href='user-description.html') Название 
+                            a.size-30.text-black(href='admin-description.html') Название 
                             .text-black Небольшое описание
                     .card-content-bottom
                         button.button.size-30.text-black-2
@@ -102,7 +102,7 @@ html
                             img(src="images/journal.png", alt="")
                         .card-h-info 
                             .size-16.weight-500.text-grey-2 07.12.2021
-                            a.size-30.text-black(href='user-description.html') Название 
+                            a.size-30.text-black(href='admin-description.html') Название 
                             .text-black Небольшое описание
                     .card-content-bottom
                         button.button.size-30.text-black-2
@@ -118,7 +118,7 @@ html
                             img(src="images/journal.png", alt="")
                         .card-h-info 
                             .size-16.weight-500.text-grey-2 07.12.2021
-                            a.size-30.text-black(href='user-description.html') Название 
+                            a.size-30.text-black(href='admin-description.html') Название 
                             .text-black Небольшое описание
                     .card-content-bottom
                         button.button.size-30.text-black-2

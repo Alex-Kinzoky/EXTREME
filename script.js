@@ -17,6 +17,7 @@ $(document).ready(function(){
     $('.user-button-desktop').hide()
     $('.admin-information-add-card').hide()
     $('.moderator-rejection-card').hide()
+    $('.left-podmenu').hide()
     var height = $('body').height() - $('.header').height()
     $('.chat-list').css('height', height)
     $(function(){
@@ -152,6 +153,14 @@ $(document).ready(function(){
             $('.menu-search-mobile').hide()
         } else{
             $('.menu-search-mobile').show()
+        }
+        
+    })
+    $('#open-left-podmenu').click(function(){
+        if($('.left-podmenu').is(':visible')){
+            $('.left-podmenu').hide()
+        } else{
+            $('.left-podmenu').show()
         }
         
     })

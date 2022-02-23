@@ -12,8 +12,8 @@ html
                         a(href='guest-profile.html')
                             img(src="images/user-photo.png", alt="")
                         .online
-                    .user-info
-                        a.user-name.size-50.weight-500.text-black(href='guest-profile.html') Андрей Кулагин
+                    a.user-info(href='guest-profile.html')
+                        .user-name.size-50.weight-500.text-black Андрей Кулагин
                         .user-level.text-grey-2 Мастер
                         .user-location.text-grey-2 Москва, Россия
                 .user-button.desktop
@@ -42,24 +42,24 @@ html
                             img(src="icon/white-forward.svg", alt="")
                 .card-overflow
                     .card-line 
-                        .card.button 
+                        a.card.button(href='guest-equipment.html') 
                             .card-image 
                                 img(src="images/storage.png", alt="")
                             .card-title 
                                 .size-26.weight-500.text-black Снаряжение 1 
-                                a.arrow-more(href='guest-equipment.html')
-                        .card.button 
+                                .arrow-more
+                        a.card.button(href='guest-equipment.html') 
                             .card-image 
                                 img(src="images/storage.png", alt="")
                             .card-title 
                                 .size-26.weight-500.text-black Снаряжение 2
-                                a.arrow-more(href='guest-equipment.html')
-                        .card.button 
+                                .arrow-more
+                        a.card.button(href='guest-equipment.html') 
                             .card-image 
                                 img(src="images/storage.png", alt="")
                             .card-title 
                                 .size-26.weight-500.text-black Снаряжение 3
-                                a.arrow-more(href='guest-equipment.html')
+                                .arrow-more
             .place 
                 .top-label
                     .size-50.weight-500.text-black Места катания

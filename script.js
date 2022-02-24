@@ -18,6 +18,8 @@ $(document).ready(function(){
     $('.admin-information-add-card').hide()
     $('.moderator-rejection-card').hide()
     $('.left-podmenu').hide()
+    $('.active-label').hide()
+    $('.about-map-card').hide()
     var height = $('body').height() - $('.header').height()
     $('.chat-list').css('height', height)
     $(function(){
@@ -43,6 +45,19 @@ $(document).ready(function(){
             })
         }
     });
+    $('.place-label').click(function(){
+        $('.about-map-card').show()
+        $('.active-label').hide()
+        $(this).find('.active-label').show()
+    })
+    $('.open-left-podmenu').click(function(){
+        if($('.left-podmenu').is(':visible')){
+            $('.left-podmenu').hide()
+        } else{
+            $('.left-podmenu').show()
+        }
+        
+    })
     $('#login').click(function(){
         var old_link = window.location.href
         if ($(this).parent().find('input[type="email"]').val() == 'user@mail.com'){
@@ -156,14 +171,7 @@ $(document).ready(function(){
         }
         
     })
-    $('#open-left-podmenu').click(function(){
-        if($('.left-podmenu').is(':visible')){
-            $('.left-podmenu').hide()
-        } else{
-            $('.left-podmenu').show()
-        }
-        
-    })
+    
     $('.nav-sort').find('.button').click(function(){
         $('.nav-sort').find('.button').removeClass('blue')
         $('.nav-sort').find('.button').removeClass('text-white')

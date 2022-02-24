@@ -199,6 +199,7 @@ button.blue:disabled {
 
 a.blue:hover {
   background: #3C66FF;
+  color: #FFFFFF;
 }
 a.blue:active {
   background: #2E52D2;

@@ -164,6 +164,197 @@ $(document).ready(function(){
         }
         
     })
+    $('.nav-sort').find('.button').click(function(){
+        $('.nav-sort').find('.button').removeClass('blue')
+        $('.nav-sort').find('.button').removeClass('text-white')
+        $('.nav-sort').find('.button').addClass('text-blue')
+        $(this).addClass('blue')
+        $(this).removeClass('text-blue')
+        $(this).addClass('text-white')
+    })
+    $('.left-menu.white-white-border').find('a').click(function(){
+        $('.left-menu.white-white-border').find('a').removeClass('text-blue')
+        $('.left-menu.white-white-border').find('a').addClass('text-black')
+        $(this).removeClass('text-black')
+        $(this).addClass('text-blue')
+    })
+    var fileName = location.href.split("/").slice(-1); 
+    $('.left-menu').find('a').each(function(index, value){
+        if (fileName == 'index.html'){
+            if ($(this).text() == 'Виды спорта'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'guest-tape.html'){
+            if ($(this).text() == 'Бортжурналы'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'guest-place.html'){
+            if ($(this).text() == 'Места катания'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'guest-events.html'){
+            if ($(this).text() == 'Мероприятия'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'guest-partners.html'){
+            if ($(this).text() == 'Партнёры'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-sports.html'){
+            if ($(this).text() == 'Виды спорта'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-tape.html'){
+            if ($(this).text() == 'Лента'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-place.html'){
+            if ($(this).text() == 'Места катания'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-events.html'){
+            if ($(this).text() == 'Мероприятия'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-partners.html'){
+            if ($(this).text() == 'Партнёры'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-myfavourites.html'){
+            if ($(this).text() == 'Избранное'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-mystorage.html'){
+            if ($(this).text() == 'Моя кладовка'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-myplace.html'){
+            if ($(this).text() == 'Мои места катания'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'user-myevents.html'){
+            if ($(this).text() == 'Мои мероприятия'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'admin-index.html'){
+            if ($(this).text() == 'Главная'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'admin-tape.html'){
+            if ($(this).text() == 'Лента'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'admin-users.html'){
+            if ($(this).text() == 'Пользователи'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'admin-black-list.html'){
+            if ($(this).text() == 'Чёрный список'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'admin-portal-status.html'){
+            if ($(this).text() == 'Состояние портала'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'admin-analytics.html'){
+            if ($(this).text() == 'Аналитика'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'admin-information.html'){
+            if ($(this).text() == 'Информация'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'admin-chat.html'){
+            if ($(this).text() == 'Техническая поддержка'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'moderator-index.html'){
+            if ($(this).text() == 'Главная'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'moderator-tape.html'){
+            if ($(this).text() == 'Лента'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'moderator-users.html'){
+            if ($(this).text() == 'Пользователи'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'moderator-black-list.html'){
+            if ($(this).text() == 'Чёрный список'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'partners-index.html'){
+            if ($(this).text() == 'Главная'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'partners-tape.html'){
+            if ($(this).text() == 'Лента'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+        if (fileName == 'partners-advertisement.html'){
+            if ($(this).text() == 'Рекламная кампания'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
+    })
     
     $(document).mouseup( function(e){ 
 		var div = $( ".user-button-mobile" );

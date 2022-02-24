@@ -76,19 +76,18 @@
 .filter-card{
     position: absolute;
     width: calc(100vw * (875 / 1920));
-    height: calc(100vw * (528 / 1920));
+    min-height: calc(100vw * (528 / 1920));
     display: flex;
     flex-direction: column;
     border-radius: 40px;
     box-sizing: border-box;
-    padding: 0 52px;
+    padding: calc(100vw * (39 / 1920)) calc(100vw * (52 / 1920));
     z-index: 2;
     margin-top: 200px;
     .filter-card-top {
-        height: calc(100vw * (140 / 1920));
+        height: calc(100vw * (110 / 1920));
         display: flex;
         justify-content: flex-end;
-        align-items: center;
         .close-image{
             width: calc(100vw * (60 / 1920));
             height: calc(100vw * (60 / 1920));
@@ -1290,12 +1289,30 @@
     background-size: 100% 100%;
     height: calc(100vw * (499 / 1920));
     display: flex;
-    justify-content: center;
+    position: relative;
     align-items: center;
     z-index: -1;
-    
+    .partners-gradient-left{
+        background-image: url(icon/partners-gradient-1.svg);
+        background-size: cover;
+        width: calc(100vw * (270 / 1920));
+        height: calc(100vw * (350 / 1920));
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .partners-gradient-right{
+        background-image: url(icon/partners-gradient.svg);
+        background-size: cover;
+        width: calc(100vw * (270 / 1920));
+        height: calc(100vw * (450 / 1920));
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     .partners-header-center{
         display: flex;
+        margin-left: calc(100vw * (250 / 1920));
         .patners-header-image{
             width: calc(100vw * (185 / 1920));
             height: calc(100vw * (185 / 1920));

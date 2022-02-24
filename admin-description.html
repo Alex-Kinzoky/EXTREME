@@ -19,7 +19,7 @@
           <div class="search-line button white-blue-border top-search desktop">
             <div class="search-image blue-search"></div>
             <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
-            <div class="blue button size-14 text-white">Поиск</div>
+            <button class="blue button size-14 text-white">Поиск</button>
           </div>
         </div>
         <div class="menu-right"> 
@@ -63,7 +63,7 @@
         </div>
         <div class="left-menu-close"></div>
       </div>
-      <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-journal.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a></div>
+      <div class="left-menu"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
     </div>
     <div class="menu-search-mobile white-white-border">
       <div class="menu content white-white-border content">
@@ -80,7 +80,7 @@
         <div class="search-line button light-blue-blue-border top-search">
           <div class="search-image blue-search"></div>
           <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
-          <div class="blue button size-14 text-white">Поиск</div>
+          <button class="blue button size-14 text-white">Поиск</button>
         </div>
       </div>
       <div class="hr"> </div>
@@ -101,22 +101,20 @@
       </div>
     </div>
     <div class="hr"></div>
-    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="">Контент</a><a class="size-26 text-black" href="">Техническая поддержка</a></div>
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
     <div class="nav-line content">
-      <div class="nav-title size-50 weight-500 text-black">
-         Лента<img src="icon/arrow-nav.svg" alt=""/>дайвинг</div>
+      <div class="nav-title size-50 weight-500 text-black"> <a class="size-50 weight-500 text-black" href="admin-tape.html">Лента</a><img src="icon/arrow-nav.svg" alt=""/>дайвинг</div>
     </div>
     <div class="description"> 
       <div class="card description-card">
         <div class="user"> 
           <div class="user-label">
-            <div class="user-photo"><a href="guest-profile.html"></a><img src="images/user-photo.png" alt=""/>
+            <div class="user-photo"><a href="admin-profile.html"></a><img src="images/user-photo.png" alt=""/>
               <div class="online"></div>
-            </div>
-            <div class="user-info"><a class="user-name size-30 text-black" href="guest-profile.html">Андрей Кулагин</a>
+            </div><a class="user-info" href="admin-profile.html">
+              <div class="user-name size-30 text-black">Андрей Кулагин</div>
               <div class="user-level text-grey-2">Мастер</div>
-              <div class="user-location text-grey-2">Москва, Россия</div>
-            </div>
+              <div class="user-location text-grey-2">Москва, Россия</div></a>
             <button class="user-follow blue text-white size-20 desktop">Подписаться</button>
             <div class="mobile-user-menu mobile"></div>
             <div class="user-button-mobile button white-white-border">
@@ -153,13 +151,12 @@
             <button class="button size-30 text-black-2"><img src="icon/comment.svg" alt=""/>25</button>
           </div>
         </div>
-      </div>
-      <div class="before"> <a class="arrow-back" href="guest-description.pug"><img src="icon/arrow-back.svg" alt=""/></a>
+      </div><a class="before" href="admin-description.pug"> 
+        <div class="arrow-back"><img src="icon/arrow-back.svg" alt=""/></div>
         <div class="before-info">
           <div class="before-title size-40 text-black">Ранее</div>
           <div class="before-theme text-grey-2">Посмотреть предыдущий бортжурнал</div>
-        </div>
-      </div>
+        </div></a>
       <div class="comments"> 
         <div class="nav-line">
           <div class="nav-title size-40 weight-500 text-black">25 комментариев</div>
@@ -179,11 +176,10 @@
       <div class="one-comment"> 
         <div class="user"> 
           <div class="user-label">
-            <div class="user-photo"><a href="guest-profile.html"><img src="images/comment-photo.png" alt=""/></a></div>
-            <div class="user-info"><a class="user-name size-24 text-black" href="guest-profile.html">Кирилл Максимчук</a>
+            <div class="user-photo"><a href="admin-profile.html"><img src="images/comment-photo.png" alt=""/></a></div><a class="user-info" href="admin-profile.html">
+              <div class="user-name size-24 text-black">Кирилл Максимчук</div>
               <div class="user-level size-16 text-grey-2">Мастер</div>
-              <div class="user-location size-16 text-grey-2">Москва, Россия</div>
-            </div>
+              <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
           </div>
           <div class="user-button">
             <button class="unlike"><img src="icon/unlike.svg" alt=""/>1</button>

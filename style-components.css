@@ -17,6 +17,9 @@ button {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #5575E8;
+}
 
 input {
   background: none;
@@ -182,6 +185,49 @@ input {
 .white-red-border {
   background-color: #FFFFFF;
   border: 1px solid #E65555;
+}
+
+button.blue:hover {
+  background: #3C66FF;
+}
+button.blue:active {
+  background: #2E52D2;
+}
+button.blue:disabled {
+  background: #D7D7D7;
+}
+
+a.blue:hover {
+  background: #3C66FF;
+}
+a.blue:active {
+  background: #2E52D2;
+}
+a.blue:disabled {
+  background: #D7D7D7;
+}
+
+input.blue:hover {
+  background: #3C66FF;
+}
+input.blue:active {
+  background: #2E52D2;
+}
+input.blue:disabled {
+  background: #D7D7D7;
+}
+
+button.light-blue-blue-border:hover {
+  background: rgba(0, 56, 255, 0.09);
+}
+button.light-blue-blue-border:active {
+  border: 1px solid #5C7CEE;
+  color: #5C7CEE;
+}
+button.light-blue-blue-border:disabled {
+  background: #D7D7D7;
+  border: 1px solid #D7D7D7;
+  color: #FFFFFF;
 }
 
 .white-blur {

@@ -92,6 +92,11 @@ $(document).ready(function(){
         $('.admin-information-add-card').hide()
         $(this).parent().find('.admin-information-add-card').show()
     })
+    $('.admin-information').find('.underline').click(function(){
+        $('.admin-information-add-card').hide()
+        //$(this).parent().find('.admin-information-add-card').show()
+        $('.admin-information-add-card').show()
+    })
     $('.mobile-user-menu').click(function(){
         $(this).parent().parent().find('.user-button-desktop').show()
     })

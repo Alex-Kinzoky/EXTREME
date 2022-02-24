@@ -8,23 +8,23 @@ html
         .profile.margin-end
             .admin-cards 
                 .admin-card.card
-                    .admin-card-top 
+                    a.admin-card-top(href='admin-tape.html') 
                         .size-26.text-black Публикации
                         .arrow-forward 
                             img(src="icon/arrow-more.svg", alt="")
                     .size-16.text-black Недавно опубликованное
                     .publish-list 
                         .publish-date.size-16.text-black Сегодня в 12:30
-                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                        a.publish-theme.size-16.text-black(href='admin-description.html') Название статьи/бортжурнала/снаряжения
                     .publish-list 
                         .publish-date.size-16.text-black Сегодня в 12:30
-                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                        a.publish-theme.size-16.text-black(href='admin-description.html') Название статьи/бортжурнала/снаряжения
                     .publish-list 
                         .publish-date.size-16.text-black Сегодня в 12:30
-                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                        a.publish-theme.size-16.text-black(href='admin-description.html') Название статьи/бортжурнала/снаряжения
                     .publish-list 
                         .publish-date.size-16.text-black Сегодня в 12:30
-                        .publish-theme.size-16.text-black Название статьи/бортжурнала/снаряжения
+                        a.publish-theme.size-16.text-black(href='admin-description.html') Название статьи/бортжурнала/снаряжения
                 .admin-card.card
                     a.admin-card-top(href='admin-information.html')
                         .size-26.text-black Иформация
@@ -33,10 +33,18 @@ html
                     .size-16.text-black Вы можете пополнить контент портала
                     .admin-information 
                         .size-16.text-black.underline Виды спорта
+                            
                         .size-16.text-black.underline Роли пользователей
                         .size-16.text-black.underline Модели снаряжения
                         .size-16.text-black.underline Ачивки за трюки
                         .size-16.text-black.underline Уровень подготовки
+                .admin-information-add-card.card.white-white-border 
+                                .admin-informarion-add-card-top 
+                                    .size-30 Добавить информацию
+                                    .close-image 
+                                textarea.light-blue-blue-border.size-20(name="", cols="30", rows="17") 
+                                .save-change
+                                    button.button.blue.size-20.text-white Добавить
                 .admin-card.card
                     .admin-gradient.left
                     a.admin-card-top(href='admin-portal-status.html') 

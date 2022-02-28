@@ -27,7 +27,7 @@
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
           </div>
-          <div class="menu-right-buttons"> <a class="menu-right-button" href="user-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button" href="user-myprofile.html"> <img src="icon/black-profile.svg" alt=""/></a>
+          <div class="menu-right-buttons"> <a class="menu-right-button" href="user-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button desktop" href="user-myprofile.html"> <img src="icon/black-profile.svg" alt=""/></a>
             <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
             <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
           </div>
@@ -36,11 +36,8 @@
         </div>
       </div>
     </div>
-    <div class="user-setting-card white-white-border card">
-      <div class="size-18 text-black">Редактировать профиль</div>
-      <div class="size-18 text-black">Уведомления и сообщения</div>
-      <div class="size-18 text-black invite">Чёрный список</div>
-      <div class="size-18 text-black" id="exit">Выход</div>
+    <div class="user-setting-card white-white-border card"><a class="size-18 text-black" href="user-profile-edit.html">Редактировать профиль</a>
+      <div class="size-18 text-black">Уведомления и сообщения</div><a class="size-18 text-black invite" href="user-black-list.html">Чёрный список</a><a class="size-18 text-black" id="exit" href="login.html">Выход</a>
     </div>
     <div class="user-notificarion-card white-white-border card">
       <div class="notification-line"> 
@@ -85,9 +82,24 @@
         </div>
         <div class="left-menu-close"></div>
       </div>
-      <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-tape.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
-        <button class="size-26 text-black" id="open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></button>
-        <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
+      <div class="profile">
+        <div class="user">
+          <div class="user-label">
+            <div class="user-photo"><a href="guest-profile.html"><img src="images/user-photo.png" alt=""/></a>
+              <div class="online"></div>
+            </div><a class="user-info" href="guest-profile.html">
+              <div class="user-name size-30 text-black">Андрей Кулагин</div>
+              <div class="user-level text-grey-2">Мастер</div>
+              <div class="user-location text-grey-2">Москва, Россия</div></a>
+          </div>
+        </div>
+        <div class="delete"> <img src="icon/blue-mobile-exit.svg" alt=""/>
+          <div class="text-blue size-20">Выход</div>
+        </div>
+      </div>
+      <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-journal.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
+        <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
+        <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="user-subscriptions.html">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
       </div>
     </div>
     <div class="menu-search-mobile white-white-border">
@@ -126,8 +138,8 @@
       </div>
     </div>
     <div class="hr"></div>
-    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-tape.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
-      <button class="size-26 text-black" id="open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></button>
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-journal.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
+      <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
       <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
     </div>
     <div class="nav-line content">

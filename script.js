@@ -20,6 +20,7 @@ $(document).ready(function(){
     $('.left-podmenu').hide()
     $('.active-label').hide()
     $('.about-map-card').hide()
+    $('.read-more').hide()
     var height = $('body').height() - $('.header').height()
     $('.chat-list').css('height', height)
     $(function(){
@@ -176,7 +177,10 @@ $(document).ready(function(){
         }
         
     })
-    
+    $('.card-content-more').click(function(){
+        $(this).parent().find('.read-more').show()
+        $(this).hide()
+    })
     $('.nav-sort').find('.button').click(function(){
         $('.nav-sort').find('.button').removeClass('blue')
         $('.nav-sort').find('.button').removeClass('text-white')
@@ -235,6 +239,12 @@ $(document).ready(function(){
                 $(this).addClass('text-blue')
             }
         }
+        if (fileName == 'user-journal.html'){
+            if ($(this).text() == 'Бортжурналы'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+            }
+        }
         if (fileName == 'user-place.html'){
             if ($(this).text() == 'Места катания'){
                 $(this).removeClass('text-black')
@@ -257,24 +267,35 @@ $(document).ready(function(){
             if ($(this).text() == 'Избранное'){
                 $(this).removeClass('text-black')
                 $(this).addClass('text-blue')
+                $('.left-podmenu').show()
+            }
+        }
+        if (fileName == 'user-subscriptions.html'){
+            if ($(this).text() == 'Подписки'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+                $('.left-podmenu').show()
             }
         }
         if (fileName == 'user-mystorage.html'){
             if ($(this).text() == 'Моя кладовка'){
                 $(this).removeClass('text-black')
                 $(this).addClass('text-blue')
+                $('.left-podmenu').show()
             }
         }
         if (fileName == 'user-myplace.html'){
             if ($(this).text() == 'Мои места катания'){
                 $(this).removeClass('text-black')
                 $(this).addClass('text-blue')
+                $('.left-podmenu').show()
             }
         }
         if (fileName == 'user-myevents.html'){
             if ($(this).text() == 'Мои мероприятия'){
                 $(this).removeClass('text-black')
                 $(this).addClass('text-blue')
+                $('.left-podmenu').show()
             }
         }
         if (fileName == 'admin-index.html'){

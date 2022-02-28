@@ -580,6 +580,15 @@
         height: 38px;
         margin-right: 10px;
     }
+    .size-26{
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        img{
+            height: 35px;
+            margin-right: 13px;
+        }
+    }
 }
 .mobile{
     display: none;
@@ -989,6 +998,22 @@
             }
         }
     }
+    .card-h-right{
+        height: calc(100vw * (88 / 1920));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .close-image{
+            width: 19px;
+            height: 19px;
+            align-self: flex-end;
+            margin-right: calc(100vw * (34 / 1920));
+            margin-top: calc(100vw * (-10 / 1920));
+        }
+        .button{
+            padding: calc(100vw * (12 / 1920)) calc(100vw * (41 / 1920));
+        }
+    }
     .button{
         height: fit-content;
         padding: calc(100vw * (12/ 1920)) calc(100vw * (17 / 1920));
@@ -1154,6 +1179,14 @@
         height: 57%;
         overflow: hidden;
         position: relative;
+        .mobile-user-menu{
+            position: absolute;
+            top: calc(100vw * (29 / 1920));
+            right: calc(100vw * (30 / 1920));
+        }
+        .user-button-desktop{
+            margin-top: calc(100vw * (30 / 1920));
+        }
         img{
             height: 100%;
             width: auto;
@@ -1183,6 +1216,12 @@
     .card-h{
         margin: calc(100vw * (22 / 1920)) 0;
         width: 100%;
+        position: relative;
+        .mobile-user-menu{
+            position: absolute;
+            top: calc(100vw * (15 / 1920));
+            right: calc(100vw * (38 / 1920));
+        }
         .status{
             margin-top: 130px;
             margin-left: -12px;
@@ -2003,6 +2042,16 @@ input[type=radio]{
     .profile{
         display: flex;
         justify-content: space-between;
+        .user{
+            width: calc(100vw * (500 / 1920));
+        }
+        .about-refusals{
+            margin-left: calc(100vw * (-149 / 1920));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: calc(100vw * (30 / 1920));
+        }
     }
     padding: calc(100vw * (33 / 1920)) 0;
     border-bottom: 2px solid rgba(223, 223, 223, 0.44);
@@ -2568,7 +2617,19 @@ input[type=radio]{
     display: flex;
     flex-direction: column;
 }
-
+.card-refusals {
+    padding: calc(100vw * (26 / 1920)) calc(100vw * (32 / 1920)) calc(100vw * (48 / 1920));
+    border-radius: 27px;
+    margin-bottom: calc(100vw * (82 / 1920));
+    .card-refusals-top {
+        margin-bottom: calc(100vw * (31 / 1920));
+        display: flex;
+        img{
+            height: 24px;
+            margin-right: calc(100vw * (36 / 1920));
+        }
+    }
+}
 @media (max-width: 1620px){
     body{
         font-size: 18px;

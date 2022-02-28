@@ -2,26 +2,22 @@ doctype html
 html 
     include component/head.pug
     body 
-        include component/user-header.pug 
+        include component/admin-header.pug 
         .hr
-        include component/user-left-menu.pug 
-        .nav-line.content.column-mobile
+        include component/admin-left-menu.pug 
+        .nav-line.content
             .nav-title.size-50.weight-500.text-black 
-                | Мой профиль
-            a.left-profile-button(href='user-myprofile.html')
-                .size-20.text-black  Назад в профиль
-                .arrow-more
+                | Редактировать профиль
         .profile 
             .profile-edit-top 
                 .profile-edit-photo
                     .profile-edit-image
-                    .profile-edet-photo-buttons
-                        .size-18.text-blue 
-                            img(src="icon/return.svg", alt="")
-                            | Заменить
-                        .size-18.text-red
-                            img(src="icon/del.svg", alt="")
-                            | Удалить
+                    .size-18.text-blue 
+                        img(src="icon/return.svg", alt="")
+                        | Заменить
+                    .size-18.text-red
+                        img(src="icon/del.svg", alt="")
+                        | Удалить
                 .profile-edit-field 
                     .profile-edit-line
                         .profile-edit-title.size-20.text-black ФИО

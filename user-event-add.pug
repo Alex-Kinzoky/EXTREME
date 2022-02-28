@@ -5,7 +5,7 @@ html
         include component/user-header.pug 
         .hr
         include component/user-left-menu.pug 
-        .nav-line.content
+        .nav-line.content.column-mobile
             .nav-title.size-50.weight-500.text-black 
                 | Мероприятие
             a.left-profile-button(href='user-myprofile.html')
@@ -30,7 +30,7 @@ html
                 .profile-edit-line
                     .profile-edit-title.size-20.text-black Время начала
                     .profile-edit-input
-                        .input-date
+                        .input-date.grid-2-mobile
                             .light-blue-blue-border.button.text-blue.chekbox
                                 input.size-20(type="text" placeholder='10 января 2022')
                                 img.calendar(src="icon/calendar.svg", alt="")

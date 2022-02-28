@@ -27,7 +27,7 @@
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
           </div>
-          <div class="menu-right-buttons"> <a class="menu-right-button" href="user-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button desktop" href="user-myprofile.html"> <img src="icon/black-profile.svg" alt=""/></a>
+          <div class="menu-right-buttons"> <a class="menu-right-button" href="admin-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button" href="admin-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
             <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
             <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
           </div>
@@ -37,34 +37,15 @@
       </div>
     </div>
     <div class="user-setting-card white-white-border card">
-      <div class="size-18 text-black">Редактировать профиль</div>
       <div class="size-18 text-black">Уведомления и сообщения</div>
       <div class="size-18 text-black invite">Чёрный список</div>
       <div class="size-18 text-black" id="exit">Выход</div>
     </div>
     <div class="user-notificarion-card white-white-border card">
-      <div class="notification-line"> 
-        <div class="notification-left">
-          <div class="notification-image"> <img src="icon/black-level.svg" alt=""/></div>
-          <div class="size-18 text-black">Уровень вашего снаряжения увеличился  (5 ур.)</div>
-        </div>
-      </div>
-      <div class="notification-line"> 
-        <div class="notification-left">
-          <div class="notification-image"> <img src="icon/black-like.svg" alt=""/></div>
-          <div class="size-18 text-black">Name1 нравится ваше снаряжение</div>
-        </div>
-      </div>
-      <div class="notification-line"> 
-        <div class="notification-left">
-          <div class="notification-image"> <img src="icon/black-follow.svg" alt=""/></div>
-          <div class="size-18 text-black">Name1 начал(а) отслеживать ваш профиль</div>
-        </div>
-      </div>
       <div class="notification-line">
         <div class="notification-left">
           <div class="notification-image"> <img src="icon/black-event.svg" alt=""/></div>
-          <div class="size-18 text-black">Name1 приглашает Вас на мероприятие</div>
+          <div class="size-18 text-black">Name1 отправил Вам сообщение</div>
         </div>
       </div>
       <div class="notification-line invite"> 
@@ -73,9 +54,6 @@
           <div class="size-18 text-black">Важное уведомление</div>
         </div>
       </div>
-      <div class="notification-line"><a class="notification-left" href="user-notification.html">
-          <div class="notification-image"> <img src="" alt=""/></div>
-          <div class="size-18 text-black">Смотреть все уведомления</div></a></div>
     </div>
     <div class="left-menu-mobile white-white-border content">
       <div class="left-menu-top">
@@ -85,25 +63,7 @@
         </div>
         <div class="left-menu-close"></div>
       </div>
-      <div class="profile">
-        <div class="user">
-          <div class="user-label">
-            <div class="user-photo"><a href="guest-profile.html"><img src="images/user-photo.png" alt=""/></a>
-              <div class="online"></div>
-            </div><a class="user-info" href="guest-profile.html">
-              <div class="user-name size-30 text-black">Андрей Кулагин</div>
-              <div class="user-level text-grey-2">Мастер</div>
-              <div class="user-location text-grey-2">Москва, Россия</div></a>
-          </div>
-        </div>
-        <div class="delete"> <img src="icon/blue-mobile-exit.svg" alt=""/>
-          <div class="text-blue size-20">Выход</div>
-        </div>
-      </div>
-      <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-tape.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
-        <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
-        <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
-      </div>
+      <div class="left-menu"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
     </div>
     <div class="menu-search-mobile white-white-border">
       <div class="menu content white-white-border content">
@@ -141,24 +101,17 @@
       </div>
     </div>
     <div class="hr"></div>
-    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-tape.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
-      <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
-      <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
-    </div>
-    <div class="nav-line content column-mobile">
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
+    <div class="nav-line content">
       <div class="nav-title size-50 weight-500 text-black">
-         Мой профиль</div><a class="left-profile-button" href="user-myprofile.html">
-        <div class="size-20 text-black"> Назад в профиль</div>
-        <div class="arrow-more"></div></a>
+         Редактировать профиль</div>
     </div>
     <div class="profile"> 
       <div class="profile-edit-top"> 
         <div class="profile-edit-photo">
           <div class="profile-edit-image"></div>
-          <div class="profile-edet-photo-buttons">
-            <div class="size-18 text-blue"> <img src="icon/return.svg" alt=""/>Заменить</div>
-            <div class="size-18 text-red"><img src="icon/del.svg" alt=""/>Удалить</div>
-          </div>
+          <div class="size-18 text-blue"> <img src="icon/return.svg" alt=""/>Заменить</div>
+          <div class="size-18 text-red"><img src="icon/del.svg" alt=""/>Удалить</div>
         </div>
         <div class="profile-edit-field"> 
           <div class="profile-edit-line">

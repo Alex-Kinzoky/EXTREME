@@ -586,6 +586,15 @@
   height: 38px;
   margin-right: 10px;
 }
+.user-button .size-26 {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+.user-button .size-26 img {
+  height: 35px;
+  margin-right: 13px;
+}
 
 .mobile {
   display: none;
@@ -994,6 +1003,22 @@
 .card-h .card-h-left .card-h-info .change-card {
   width: 11.4583333333vw;
 }
+.card-h .card-h-right {
+  height: 4.5833333333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-h .card-h-right .close-image {
+  width: 19px;
+  height: 19px;
+  align-self: flex-end;
+  margin-right: 1.7708333333vw;
+  margin-top: -0.5208333333vw;
+}
+.card-h .card-h-right .button {
+  padding: 0.625vw 2.1354166667vw;
+}
 .card-h .button {
   height: fit-content;
   padding: 0.625vw 0.8854166667vw;
@@ -1169,6 +1194,14 @@
   overflow: hidden;
   position: relative;
 }
+.card-map .card-image .mobile-user-menu {
+  position: absolute;
+  top: 1.5104166667vw;
+  right: 1.5625vw;
+}
+.card-map .card-image .user-button-desktop {
+  margin-top: 1.5625vw;
+}
 .card-map .card-image img {
   height: 100%;
   width: auto;
@@ -1196,6 +1229,12 @@
 .card-list .card-h {
   margin: 1.1458333333vw 0;
   width: 100%;
+  position: relative;
+}
+.card-list .card-h .mobile-user-menu {
+  position: absolute;
+  top: 0.78125vw;
+  right: 1.9791666667vw;
 }
 .card-list .card-h .status {
   margin-top: 130px;
@@ -2020,6 +2059,16 @@ input[type=radio] {
   display: flex;
   justify-content: space-between;
 }
+.participants-line .profile .user {
+  width: 26.0416666667vw;
+}
+.participants-line .profile .about-refusals {
+  margin-left: -7.7604166667vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1.5625vw;
+}
 
 .small-arrow-forward {
   width: 24px;
@@ -2597,6 +2646,20 @@ input[type=radio] {
 .left-podmenu {
   display: flex;
   flex-direction: column;
+}
+
+.card-refusals {
+  padding: 1.3541666667vw 1.6666666667vw 2.5vw;
+  border-radius: 27px;
+  margin-bottom: 4.2708333333vw;
+}
+.card-refusals .card-refusals-top {
+  margin-bottom: 1.6145833333vw;
+  display: flex;
+}
+.card-refusals .card-refusals-top img {
+  height: 24px;
+  margin-right: 1.875vw;
 }
 
 @media (max-width: 1620px) {

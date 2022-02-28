@@ -27,7 +27,7 @@
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
           </div>
-          <div class="menu-right-buttons"> <a class="menu-right-button" href="user-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button desktop" href="user-myprofile.html"> <img src="icon/black-profile.svg" alt=""/></a>
+          <div class="menu-right-buttons"> <a class="menu-right-button" href="moderator-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button" href="moderator-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
             <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
             <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
           </div>
@@ -37,34 +37,15 @@
       </div>
     </div>
     <div class="user-setting-card white-white-border card">
-      <div class="size-18 text-black">Редактировать профиль</div>
       <div class="size-18 text-black">Уведомления и сообщения</div>
       <div class="size-18 text-black invite">Чёрный список</div>
       <div class="size-18 text-black" id="exit">Выход</div>
     </div>
     <div class="user-notificarion-card white-white-border card">
-      <div class="notification-line"> 
-        <div class="notification-left">
-          <div class="notification-image"> <img src="icon/black-level.svg" alt=""/></div>
-          <div class="size-18 text-black">Уровень вашего снаряжения увеличился  (5 ур.)</div>
-        </div>
-      </div>
-      <div class="notification-line"> 
-        <div class="notification-left">
-          <div class="notification-image"> <img src="icon/black-like.svg" alt=""/></div>
-          <div class="size-18 text-black">Name1 нравится ваше снаряжение</div>
-        </div>
-      </div>
-      <div class="notification-line"> 
-        <div class="notification-left">
-          <div class="notification-image"> <img src="icon/black-follow.svg" alt=""/></div>
-          <div class="size-18 text-black">Name1 начал(а) отслеживать ваш профиль</div>
-        </div>
-      </div>
       <div class="notification-line">
         <div class="notification-left">
           <div class="notification-image"> <img src="icon/black-event.svg" alt=""/></div>
-          <div class="size-18 text-black">Name1 приглашает Вас на мероприятие</div>
+          <div class="size-18 text-black">Name1 отправил Вам сообщение</div>
         </div>
       </div>
       <div class="notification-line invite"> 
@@ -73,9 +54,6 @@
           <div class="size-18 text-black">Важное уведомление</div>
         </div>
       </div>
-      <div class="notification-line"><a class="notification-left" href="user-notification.html">
-          <div class="notification-image"> <img src="" alt=""/></div>
-          <div class="size-18 text-black">Смотреть все уведомления</div></a></div>
     </div>
     <div class="left-menu-mobile white-white-border content">
       <div class="left-menu-top">
@@ -85,25 +63,7 @@
         </div>
         <div class="left-menu-close"></div>
       </div>
-      <div class="profile">
-        <div class="user">
-          <div class="user-label">
-            <div class="user-photo"><a href="guest-profile.html"><img src="images/user-photo.png" alt=""/></a>
-              <div class="online"></div>
-            </div><a class="user-info" href="guest-profile.html">
-              <div class="user-name size-30 text-black">Андрей Кулагин</div>
-              <div class="user-level text-grey-2">Мастер</div>
-              <div class="user-location text-grey-2">Москва, Россия</div></a>
-          </div>
-        </div>
-        <div class="delete"> <img src="icon/blue-mobile-exit.svg" alt=""/>
-          <div class="text-blue size-20">Выход</div>
-        </div>
-      </div>
-      <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-tape.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
-        <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
-        <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
-      </div>
+      <div class="left-menu"><a class="size-26 text-black" href="moderator-index.html">Главная</a><a class="size-26 text-black" href="moderator-tape.html">Лента</a><a class="size-26 text-black" href="moderator-users.html">Пользователи</a><a class="size-26 text-black" href="">Отказы</a><a class="size-26 text-black" href="moderator-black-list.html">Чёрный список</a></div>
     </div>
     <div class="menu-search-mobile white-white-border">
       <div class="menu content white-white-border content">
@@ -141,25 +101,21 @@
       </div>
     </div>
     <div class="hr"></div>
-    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-tape.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
-      <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
-      <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
-    </div>
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="moderator-index.html">Главная</a><a class="size-26 text-black" href="moderator-tape.html">Лента</a><a class="size-26 text-black" href="moderator-users.html">Пользователи</a><a class="size-26 text-black" href="">Отказы</a><a class="size-26 text-black" href="moderator-black-list.html">Чёрный список</a></div>
     <div class="profile">
-      <div class="user width-100">
+      <div class="user"> 
         <div class="user-label">
-          <div class="user-photo"><a href="guest-myprofile.html"><img src="images/user-photo.png" alt=""/></a>
+          <div class="user-photo"><a href="guest-profile.html"><img src="images/user-photo.png" alt=""/></a>
             <div class="online"></div>
-          </div>
-          <div class="user-info">
+          </div><a class="user-info" href="guest-profile.html">
             <div class="user-name size-50 weight-500 text-black">Андрей Кулагин</div>
             <div class="user-level text-grey-2">Мастер</div>
-            <div class="user-location text-grey-2">Москва, Россия</div>
-          </div>
+            <div class="user-location text-grey-2">Москва, Россия</div></a>
         </div>
-        <div class="myprofile-button desktop"><a class="button blue text-white size-20" href="user-profile-edit.html">Редактировать профиль</a><a class="left-profile-button" id="exit" href="index.html">
-            <div class="size-20 text-black"> Выйти</div>
-            <div class="arrow-more"></div></a></div>
+        <div class="user-button desktop">
+          <button class="user-follow blue text-white size-20">Подписаться</button>
+          <button class="user-mess white-blue-border text-blue size-20">Сообщение</button>
+        </div>
       </div>
       <div class="user-profile"> 
         <div class="user-profile-col"> 
@@ -171,31 +127,32 @@
           <div class="text-black">567 комментариев</div>
         </div>
       </div>
-      <div class="user-button-profile mobile"><a class="button blue text-white size-20" href="index.html">Редактировать профиль</a></div>
+      <div class="user-button-profile mobile">
+        <button class="user-follow blue text-white size-20">Подписаться</button>
+        <button class="user-mess white-blue-border text-blue size-20">Сообщение</button>
+      </div>
     </div>
     <div class="hr"> </div>
     <div class="profile"> 
-      <div class="mobile-button-myprofile"> <a class="light-blue-blue-border button text-blue size-20" href="user-storage-add.html">Добавить снаряжение</a><a class="light-blue-blue-border button text-blue size-20" href="user-place-add.html">Добавить место</a><a class="light-blue-blue-border button text-blue size-20" href="user-event-add.html">Создать мероприятие</a></div>
       <div class="storage"> 
-        <div class="top-label">
-          <div class="size-50 text-black"><a class="text-black weight-500" href="user-mystorage.html"> Кладовка</a><a class="light-blue-blue-border button text-blue size-20 desktop" href="user-storage-add.html">Добавить снаряжение</a></div>
+        <div class="top-label"><a class="size-50 weight-500 text-black" href="guest-storage.html">Кладовка</a>
           <div class="slider-buttons">
             <button class="slider-button blue"><img src="icon/white-back.svg" alt=""/></button>
             <button class="slider-button blue"><img src="icon/white-forward.svg" alt=""/></button>
           </div>
         </div>
         <div class="card-overflow">
-          <div class="card-line"> <a class="card button" href="guest-myequipment.html"> 
+          <div class="card-line"> <a class="card button" href="guest-equipment.html"> 
               <div class="card-image"> <img src="images/storage.png" alt=""/></div>
               <div class="card-title"> 
                 <div class="size-26 weight-500 text-black">Снаряжение 1 </div>
                 <div class="arrow-more"></div>
-              </div></a><a class="card button" href="guest-myequipment.html"> 
+              </div></a><a class="card button" href="guest-equipment.html"> 
               <div class="card-image"> <img src="images/storage.png" alt=""/></div>
               <div class="card-title"> 
                 <div class="size-26 weight-500 text-black">Снаряжение 2</div>
                 <div class="arrow-more"></div>
-              </div></a><a class="card button" href="guest-myequipment.html"> 
+              </div></a><a class="card button" href="guest-equipment.html"> 
               <div class="card-image"> <img src="images/storage.png" alt=""/></div>
               <div class="card-title"> 
                 <div class="size-26 weight-500 text-black">Снаряжение 3</div>
@@ -203,45 +160,9 @@
               </div></a></div>
         </div>
       </div>
-      <div class="storage"> 
-        <div class="top-label">
-          <div class="size-50 weight-500 text-black">Избранное</div>
-          <div class="slider-buttons">
-            <button class="slider-button blue"><img src="icon/white-back.svg" alt=""/></button>
-            <button class="slider-button blue"><img src="icon/white-forward.svg" alt=""/></button>
-          </div>
-        </div>
-        <div class="card-overflow">
-          <div class="card-line"> 
-            <div class="card button" href="guest-description.html"> 
-              <div class="card-image"> <img src="images/state.png" alt=""/></div>
-              <div class="card-title"> 
-                <div class="size-26 weight-500 text-black">Статья 1</div>
-                <div class="arrow-more"></div>
-              </div>
-            </div>
-            <div class="card button" href="guest-description.html"> 
-              <div class="card-image"> <img src="images/state.png" alt=""/></div>
-              <div class="card-title"> 
-                <div class="size-26 weight-500 text-black">Статья 2</div>
-                <div class="arrow-more"></div>
-              </div>
-            </div>
-            <div class="card button" href="guest-description.html"> 
-              <div class="card-image"> <img src="images/state.png" alt=""/></div>
-              <div class="card-title"> 
-                <div class="size-26 weight-500 text-black">Статья 3</div>
-                <div class="arrow-more"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="place"> 
         <div class="top-label">
-          <div class="size-50 text-black"> 
-            <div class="weight-500">Места катания</div><a class="light-blue-blue-border button text-blue size-20 desktop" href="user-place-add.html">Добавить место</a>
-          </div>
+          <div class="size-50 weight-500 text-black">Места катания</div>
         </div>
         <div class="place-info"> 
           <div class="place-map button">
@@ -276,16 +197,15 @@
       </div>
       <div class="events"> 
         <div class="top-label">
-          <div class="size-50 text-black"> 
-            <div class="weight-500">Мероприятия</div><a class="light-blue-blue-border button text-blue size-20 desktop" href="user-event-add.html">Создать мероприятие</a>
-          </div>
+          <div class="size-50 weight-500 text-black">Мероприятия</div>
         </div>
         <div class="events-list"> 
           <div class="card button card-h">
             <div class="card-h-left">
               <div class="card-h-image"> <img src="images/map.png" alt=""/></div>
               <div class="card-h-info"> 
-                <div class="size-16 weight-500 text-black">07.12.2021</div><a class="size-30 text-black" href="user-about-event.html">Название </a>
+                <div class="size-16 weight-500 text-black">07.12.2021</div>
+                <div class="size-30 text-black">Название </div>
                 <div class="text-black">Небольшое описание</div>
                 <div class="participants"> 
                   <div class="participants-photos">
@@ -296,13 +216,15 @@
                   <div class="text-black">10 участников</div>
                 </div>
               </div>
-            </div><a class="button size-20 blue text-white" href="user-event-add.html">Изменить</a>
+            </div>
+            <button class="button size-20 blue text-white" id="join">Присоединиться</button>
           </div>
           <div class="card button card-h">
             <div class="card-h-left">
               <div class="card-h-image"> <img src="images/map.png" alt=""/></div>
               <div class="card-h-info"> 
-                <div class="size-16 weight-500 text-black">07.12.2021</div><a class="size-30 text-black" href="user-about-event.html">Название </a>
+                <div class="size-16 weight-500 text-black">07.12.2021</div>
+                <div class="size-30 text-black">Название </div>
                 <div class="text-black">Небольшое описание</div>
                 <div class="participants"> 
                   <div class="participants-photos">
@@ -313,13 +235,15 @@
                   <div class="text-black">10 участников</div>
                 </div>
               </div>
-            </div><a class="button size-20 blue text-white" href="user-event-add.html">Изменить</a>
+            </div>
+            <button class="button size-20 blue text-white" id="join">Присоединиться</button>
           </div>
           <div class="card button card-h">
             <div class="card-h-left">
               <div class="card-h-image"> <img src="images/map.png" alt=""/></div>
               <div class="card-h-info"> 
-                <div class="size-16 weight-500 text-black">07.12.2021</div><a class="size-30 text-black" href="user-about-event.html">Название </a>
+                <div class="size-16 weight-500 text-black">07.12.2021</div>
+                <div class="size-30 text-black">Название </div>
                 <div class="text-black">Небольшое описание</div>
                 <div class="participants"> 
                   <div class="participants-photos">
@@ -330,7 +254,8 @@
                   <div class="text-black">10 участников</div>
                 </div>
               </div>
-            </div><a class="button size-20 blue text-white" href="user-event-add.html">Изменить</a>
+            </div>
+            <button class="button size-20 blue text-white" id="join">Присоединиться</button>
           </div>
         </div>
       </div>

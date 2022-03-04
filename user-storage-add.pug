@@ -5,7 +5,7 @@ html
         include component/user-header.pug 
         .hr
         include component/user-left-menu.pug 
-        .nav-line.content
+        .nav-line.content.column-mobile
             .nav-title.size-50.weight-500.text-black 
                 | Добавление снаряжения
             a.left-profile-button(href='user-mystorage.html')
@@ -39,7 +39,7 @@ html
                     .profile-edit-text
         .hr    
         .profile 
-            .profile-edit-field 
+            .profile-edit-field.desktop
                 .size-20.text-black Фотографии Вашего снаряжения
                 .save-change 
                     button.button.blue.size-20.text-white Загрузить фотографии
@@ -48,6 +48,19 @@ html
                     .light-blue-blue-border
                     .light-blue-blue-border
                     .light-blue-blue-border
+            .profile-edit-field.mobile
+                .mobile-h-line
+                    .size-20.text-black Загрузить фото
+                    .size-20.text-grey Добавить ещё
+                .add-photo 
+                    .light-blue-blue-border
+                .change-card 
+                    .size-18.text-blue 
+                        img(src="icon/return.svg", alt="")
+                        | Заменить
+                    .size-18.text-red
+                        img(src="icon/del.svg", alt="")
+                        | Удалить
         .hr    
         .profile.margin-end
                 .profile-edit-field 

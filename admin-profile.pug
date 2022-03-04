@@ -31,11 +31,12 @@ html
                 .user-profile-col 
                     .text-black 10 подписок
                     .text-black 567 комментариев
-            .user-button-profile.mobile
-                    button.user-follow.blue.text-white.size-20 Подписаться
-                    button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+            
         .hr 
         .profile 
+            .description-card.mobile
+                a.button.light-blue-blue-border.text-blue.size-20(href='admin-profile-edit.html') Изменить
+                button.button.white-red-border.text-red.size-20 Удалить
             .storage 
                 .top-label
                     a.size-50.weight-500.text-black(href='admin-storage.html') Кладовка
@@ -97,7 +98,15 @@ html
                 .top-label
                     .size-50.weight-500.text-black Мероприятия
                 .events-list 
-                    .card.button.card-h
+                    .card.button.card-h.admin-event-user
+                        .mobile-user-menu
+                        .user-button-mobile.white-white-border.card
+                            .user-button-line
+                                img(src="icon/black-delete.svg", alt="")
+                                | Удалить
+                            .user-button-line
+                                img(src="icon/black-return.svg", alt="")
+                                | Изменить
                         .card-h-left
                             .card-h-image 
                                 img(src="images/map.png", alt="")
@@ -114,10 +123,18 @@ html
                                         .participants-photo
                                             img(src="images/photo.png", alt="")
                                     .text-black 10 участников
-                        .card-h-right
+                        .card-h-right.desktop
                             .close-image
-                            button.button.size-20.blue.text-white#join Изменить
-                    .card.button.card-h
+                            button.button.size-20.blue.text-white Изменить
+                    .card.button.card-h.admin-event-user
+                        .mobile-user-menu
+                        .user-button-mobile.white-white-border.card
+                            .user-button-line
+                                img(src="icon/black-delete.svg", alt="")
+                                | Удалить
+                            .user-button-line
+                                img(src="icon/black-return.svg", alt="")
+                                | Изменить
                         .card-h-left
                             .card-h-image 
                                 img(src="images/map.png", alt="")
@@ -134,10 +151,18 @@ html
                                         .participants-photo
                                             img(src="images/photo.png", alt="")
                                     .text-black 10 участников
-                        .card-h-right
+                        .card-h-right.desktop
                             .close-image
-                            button.button.size-20.blue.text-white#join Изменить
-                    .card.button.card-h
+                            button.button.size-20.blue.text-white Изменить
+                    .card.button.card-h.admin-event-user
+                        .mobile-user-menu
+                        .user-button-mobile.white-white-border.card
+                            .user-button-line
+                                img(src="icon/black-delete.svg", alt="")
+                                | Удалить
+                            .user-button-line
+                                img(src="icon/black-return.svg", alt="")
+                                | Изменить
                         .card-h-left
                             .card-h-image 
                                 img(src="images/map.png", alt="")
@@ -154,11 +179,7 @@ html
                                         .participants-photo
                                             img(src="images/photo.png", alt="")
                                     .text-black 10 участников
-                        .card-h-right
+                        .card-h-right.desktop
                             .close-image
-                            button.button.size-20.blue.text-white#join Изменить
-        #join-window
-            .join-card.button.white-white-border 
-                .size-30.text-black Чтобы присоединиться к мероприятию, нужно авторизироваться
-                button.button.blue.text-white.size-20 Войти
+                            button.button.size-20.blue.text-white Изменить
         include component/footer.pug 

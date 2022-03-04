@@ -35,7 +35,17 @@ $(document).ready(function(){
                     $('.up').hide();
                 }
             });
+            $('.mobile-user-menu').click(function(){
+                $(this).parent().parent().find('.user-button-desktop').show()
+            })
+            $(document).mouseup( function(e){ 
+                var div = $( ".user-button-desktop" );
+                if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
+                    div.hide(); 
+                }
+            });
         } else{
+            
             $('.location').attr('placeholder','Страна, регион, город')
             $('.mobile-user-menu').click(function(){
                 if ($(this).parent().find('.user-button-mobile').is(':visible')){
@@ -98,15 +108,7 @@ $(document).ready(function(){
         //$(this).parent().find('.admin-information-add-card').show()
         $('.admin-information-add-card').show()
     })
-    $('.mobile-user-menu').click(function(){
-        $(this).parent().parent().find('.user-button-desktop').show()
-    })
-    $(document).mouseup( function(e){ 
-        var div = $( ".user-button-desktop" );
-        if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
-            div.hide(); 
-        }
-    });
+    
     $('#attendance').click(function(){
         $('#workload').removeClass('active')
         $('.workload').hide()

@@ -313,6 +313,13 @@
         margin-top: calc(100vw * (29 / 320));
         height: auto;
         align-items: flex-start;
+        position: relative;
+        .admin-setting-equipment{
+            position: absolute;
+            right: calc(100vw * (15 / 320));
+            margin: 0;
+            top: 0;
+        }
         .nav-sort{
             width: 100%;
             .nav-sort-line{
@@ -391,14 +398,17 @@
         flex-direction: column;
         box-sizing: border-box;
         align-items: flex-start;
-        justify-content: space-between;
-        padding: 31px 15px 31px 18px;
+        padding: 25px 15px 25px 18px;
         width: 228px;
-        height: 125px;
         right: calc(100vw * (15 / 320));
         margin-top: 18px;
         .user-button-line{
             display: flex;
+            height: 37px;
+            align-items: center;
+            img{
+                margin-right: 21px;
+            }
             .bookmark{
                 background-image: url(icon/bookmark.svg);
                 background-size: 100% 100%;
@@ -530,6 +540,7 @@
         padding: 8px 0;
         align-items: center;
         margin-top: calc(100vw * (21 / 320));
+        margin-bottom: 7px;
     }
     .card-content-title{
         margin-bottom: calc(100vw * (6 / 320));
@@ -723,6 +734,8 @@
         flex-direction: column;
         width: 100%;
         height: 132px;
+        position: relative;
+        overflow:visible;
         .card-h-left{
             height: 79px;
             align-self: flex-start;
@@ -747,10 +760,34 @@
                 
             }
         }
+        .desktop{
+            display: none;
+        }
+        .mobile-user-menu{
+            position: absolute;
+            top: 8px;
+            right: 14px;
+        }
         .button{
             margin: 0 11px 17px;
             width: calc(100% - 22px);
             padding: 6px 0;
+        }
+    }
+    .admin-event-user{
+        height: 111px;
+        .card-h-left{
+            height: 100%;
+            .card-h-image{
+                
+                img{
+                    border-bottom-left-radius: 23px;
+                }
+            }
+        }
+        .user-button-mobile{
+            z-index: 2;
+            height: auto;
         }
     }
     .participants{
@@ -908,6 +945,7 @@
     .card-place-list {
         .card-place{
             flex-direction: column;
+            align-items: flex-start;
             .card-place-images {
                 width: 100%;
                 margin: calc(100vw * (26 / 320)) 0;
@@ -1008,7 +1046,7 @@
         flex-direction: column;
         margin-bottom: 92px;
         .login-info{
-            height: 125px;
+            height: auto;
             margin: 30px 0 0;
             .social{
                 .size-16{
@@ -1031,7 +1069,7 @@
                 width: auto;
                 height: 221px;
                 .input-form{
-                    height: 88px;
+                    height: 97px;
                     
                 
                     input{
@@ -1049,6 +1087,7 @@
         }
         .login-register{
             height: 92px;
+            margin-top: 64px;
             .size-16{
                 font-size: 20px;
                 margin-bottom: 21px;
@@ -1083,7 +1122,7 @@
             form{
                 height: auto;
                 .input-form{
-                    height: 334px;
+                    height: 350px;
                 }
             }
         }
@@ -1091,11 +1130,16 @@
     .menu {
         .menu-right {
             .menu-right-buttons{
-                margin-right: 13px;
+                //margin-right: 13px;
                 width: 108px;
+                justify-content: flex-end;
+                .menu-right-button{
+                    margin-right: 19px;
                     img{
                         height: 25px;
                     }
+                }
+                    
             }
         }
     }
@@ -1211,7 +1255,7 @@
     .add-place-map {
         margin-left: calc(100vw * (-15 / 320));
         .place-map{
-            width: 100%;
+            width: 100vw;
             height: calc(100vw * (248 / 320));
             border: 0;
             .place-label{
@@ -1421,6 +1465,17 @@
             width: 100%;
             height: calc(100vw * (129 / 320));
         }
+        .size-30{
+            margin: 10px 0;
+            .edit-description{
+                display: none;
+            }
+        }
+        .edit-description{
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0 42px;
+        }
     }
     .add-place-journal{
         display: flex;
@@ -1448,5 +1503,300 @@
         width: 100vw;
         margin-left: calc(100vw * (-15 / 320));
         height: calc(100vw * (248 / 320));
+    }
+    .mobile-h-line{
+        display: flex;
+        justify-content: space-between;
+    }
+    .add-photo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .light-blue-blue-border{
+            margin: 10px 0;
+            width: 100%;
+            height: calc(100vw * (162 / 320));
+        }
+    }
+    .change-card {
+        width: 100%;
+        justify-content: space-around;
+        .size-18{
+            font-size: 14px;
+        }
+    }
+    .card-place{
+        .change-card{
+            width: 205px;
+            justify-content: space-between;
+            margin-top: 22px;
+        }
+    }
+    .big-map {
+        .place-label{
+            width: 25px;
+            height: 40px;
+        }
+        .active-label{
+            width: 14px;
+            height: 14px;
+            margin-top: -14px;
+            margin-left: 5px;
+        }
+        .about-map-card{
+            box-sizing: border-box;
+            width: 100vw;
+            padding: calc(100vw * (16 / 320)) calc(100vw* (24 / 320));
+            height: 125px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+    .image-galery{
+        display: flex;
+        flex-direction: column;
+    }
+    .description-card{
+        .light-blue-blue-border{
+            padding: 6px 0;
+            margin: 14px 0;
+        }
+        .white-red-border{
+            padding: 6px 0;
+            margin: 14px 0;
+            width: 100%;
+        }
+    }
+    
+    .vie{
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        .size-26{
+            font-size: 20px;
+        }
+        img{
+            height: 26px;
+            margin-right: 20px;
+        }
+    }
+    .login-content {
+        .login-info {
+            .social {
+                margin-top: 29px;
+                .social-line{
+                    margin-top: 10px;
+                    .social-part{
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .user-notificarion-card{
+        width: 100vw;
+        box-sizing: border-box;
+        right: 0;
+    }
+    .user-setting-card{
+        height: auto;
+        width: 100vw;
+        box-sizing: border-box;
+        right: 0;
+        .size-18{
+            font-size: 18px;
+            padding: 7px;
+        }
+    }
+    .advertisement-line{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .partners-card{
+        margin: 12px 0;
+        position: relative;
+        height: auto;
+        box-sizing: border-box;
+        padding: calc(100vw * (12 / 320)) calc(100vw * (13 / 320)) calc(100vw * (36 / 320));
+        .user{
+            flex-direction: column;
+            .user-label{
+                flex-direction: column;
+                .user-info{
+                    width: 100%;
+                }
+                
+            }
+            .user-button{
+                position: absolute;
+                right: calc(100vw * (13 / 320));
+                .bookmark{
+                    margin: 0;
+                    height: 31px;
+                    width: 23px;
+                }
+            }
+        }
+        .partners-sales{
+            margin: 5px 0 20px;
+            width: 100%;
+            .button{
+                font-size: 14px;
+                padding: 8px 0;
+                margin: 5px 0;
+            }
+        }
+        .partners-card-bottom{
+            width: 80%;
+            margin: 0;
+        }
+    }
+    .admin-cards{
+        display: flex;
+        flex-direction: column;
+        .admin-card{
+            border-radius: 27px;
+            height: auto;
+            padding: 17px 16px 35px 24px;
+            .size-26{
+                font-size: 16px;
+            }
+            .size-16{
+                font-size: 12px;
+                width: 100%;
+            }
+            .publish-list{
+                flex-direction: column;
+                .publish-date{
+                    margin-top: 15px;
+                }
+                .publish-theme{
+                    margin-top: 5px;
+                }
+            }
+            .admin-information{
+                display: flex;
+                flex-direction: column;
+            }
+            .admin-card-image{
+                margin: 50px 0;
+            }
+        }
+    }
+    .admin-gradient{
+        width: 55%;
+        height: 50%;
+    }
+    .status-cards{
+        display: flex;
+        flex-direction: column;
+        .status-card{
+            margin: 16px 0;
+            height: calc(100vw * (140 / 320));
+            padding: calc(100vw * (26 / 320)) calc(100vw * (70 / 320));
+            justify-content: flex-start;
+            .size-60{
+                font-size: 40px;
+            }
+            .size-26{
+                font-size: 20px;
+            }
+            .admin-gradient{
+                width: 55%;
+                height: 50%;
+            }
+        }
+    }
+    .big-admin-menu{
+        display: flex;
+        flex-direction: column;
+        .admin-menu-content-part{
+            box-sizing: border-box;
+            width: 100vw;
+            margin-left: calc(100vw * (-15 / 320));
+            padding: 20px 15px;
+            border-bottom: 1px solid rgba(223, 223, 223, 0.29);
+        }
+        .active{
+            background: rgba(0, 56, 255, 0.04);
+        }
+    }
+    .now-messege{
+        height: 500px;
+        .not-now-messege{
+            display: flex;
+            align-items: center;
+            padding: 0;
+            height: 100%;
+            text-align: center;
+        }
+    }
+    .small-admin-menu{
+        display: flex;
+        flex-direction: column;
+        .admin-menu-content-part{
+            box-sizing: border-box;
+            width: 100vw;
+            margin-left: calc(100vw * (-15 / 320));
+            padding: 20px 15px;
+            border-bottom: 1px solid rgba(223, 223, 223, 0.29);
+        }
+        .active{
+            background: rgba(0, 56, 255, 0.04);
+        }
+    }
+    .analytics-cards{
+        display: flex;
+        flex-direction: column;
+        .analytics-card{
+            padding: calc(100vw * (11 / 320)) calc(100vw * (18 / 320)) calc(100vw * (38 / 320));
+            border-radius: 20px;
+            .analytics-card-image{
+                height: calc(100vw * (78 / 320));
+                margin: 0 calc(100vw * (-18 / 320));
+            }
+        }
+    }
+    .admin-chart{
+        .admin-chart-top {
+            .admin-chart-canvas{
+                width: 100%;
+                height: calc(100vw * (242 / 320));
+                img{
+                    height: calc(100vw * (175 / 320));
+                }
+            }
+            .admin-chart-value{
+                grid-template-columns: calc(100vw * (22 / 320));
+                grid-template-rows: repeat(5, calc(100vw * (55 / 320)));
+                margin-top: calc(100vw * (-30 / 320));
+            }
+        }
+        .admin-chart-bottom{
+            grid-template-columns: repeat(5, calc(100vw * (58 / 320)));
+        }
+        .size-20{
+            font-size: 10px;
+        }
+    }
+    .admin-information-list{
+        margin: 0;
+        height: 78px;
+        align-items: center;
+        width: 100%;
+        border-bottom:  1px solid #DFDFDF;
+        .admin-informarion-add {
+            
+            .arrow-forward{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    textarea{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
     }
 }

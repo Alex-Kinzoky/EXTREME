@@ -2903,6 +2903,11 @@ input[type=radio]{
     }
     .nav-line{
         height: 42px;
+        .nav-title {
+            img {
+                height: 24px;
+            }
+        }
         .nav-sort{
             .nav-sort-line{
                 padding: 5px 8px;

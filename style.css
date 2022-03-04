@@ -2925,7 +2925,7 @@ input[type=radio] {
         height: auto;
     }
     .description .save-change .button {
-        width: 272px;
+        width: 190px;
     }
 
     .change-card .size-18 {
@@ -2940,6 +2940,9 @@ input[type=radio] {
 
     .nav-line {
         height: 42px;
+    }
+    .nav-line .nav-title img {
+        height: 24px;
     }
     .nav-line .nav-sort .nav-sort-line {
         padding: 5px 8px;

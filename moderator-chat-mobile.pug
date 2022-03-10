@@ -1,0 +1,43 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/moderator-header.pug 
+        .hr
+        include component/moderator-left-menu.pug 
+        .profile 
+            .chat-adress 
+                .mess-image 
+                    img(src="images/photo.png", alt="")
+                .weight-500.size-50 Info
+        .chat-field 
+            .chat-content
+                .chat-mess 
+                    .left-mess.old-mess
+                        .mess-text.white-white-border 
+                            .size-14.text-black Здравствуйте, Name1!
+                                br
+                                br
+                                | Напоминаем вам о том, что ваш адрес электронной почты нужно подтвердить.
+                                br
+                                br
+                                | Это займёт всего минуту. Перейдите по ссылке в письме, которое мы вам отправили при регистрации.
+                                br
+                                br
+                                | Если вы потеряли это письмо, то мы можем выслать его вам ещё раз.
+                                br
+                                br
+                                | Если же письмо так и не приходит, попробуйте сменить адрес электронной почты.
+                                br
+                                br
+                                | С уважением, Extremy.
+                            .size-14.text-blue.date-mess 18:40
+                    .right-mess.old-mess
+                        .mess-text.light-blue 
+                            .size-14.text-black Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовки 
+                                | и реализации позиций, занимаемых участниками в отношении поставленных задач.
+                            .size-14.text-blue.date-mess 18:40
+                .new-mess.white-blue-border
+                    .smile-mess 
+                        img(src="icon/smile-mess.svg", alt="")
+                    input(type="text")

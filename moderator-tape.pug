@@ -31,15 +31,9 @@ html
                             .user-name.size-30.text-black Андрей Кулагин
                             .user-level.text-grey-2 Мастер
                             .user-location.text-grey-2 Москва, Россия
-                        button.user-follow.blue.text-white.size-20.desktop Подписаться
-                    .mobile-user-menu.mobile
-                    .user-button-mobile.button.white-white-border
-                        .user-button-line
-                            .bookmark
-                            | Сохранить в закладках
-                        .user-button-line
-                            .share
-                            | Поделиться
+                    .moderator-buttons.mobile
+                            img(src="icon/yes.svg", alt="")
+                            img.rejection(src="icon/rejection.svg", alt="")
                     .moderator-rejection-card.card.white-white-border
                         .add-journal-note 
                             .moderator-card-rejection-top
@@ -50,8 +44,6 @@ html
                                     img(src="icon/area-icon-1.svg", alt="")
                                 button.textarea-icon-button 
                                     img(src="icon/area-icon-2.svg", alt="")
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-3.svg", alt="")
                                 button.textarea-icon-button 
                                     img(src="icon/area-icon-4.svg", alt="")
                                 button.textarea-icon-button 
@@ -67,7 +59,7 @@ html
                         .moderator-buttons
                             img(src="icon/yes.svg", alt="")
                             img.rejection(src="icon/rejection.svg", alt="")
-                        .bookmark 
+                        .bookmark
                         .share
                 .card-content
                     .card-content-top
@@ -87,6 +79,9 @@ html
                         button.button.size-30.text-black-2
                             img(src="icon/comment.svg", alt="")
                             | 25
+                        .user-button.mobile
+                            .bookmark
+                            .share
             .card.tape-card.button
                 .user 
                     .user-label
@@ -98,15 +93,9 @@ html
                             .user-name.size-30.text-black Андрей Кулагин
                             .user-level.text-grey-2 Мастер
                             .user-location.text-grey-2 Москва, Россия
-                        button.user-follow.blue.text-white.size-20.desktop Подписаться
-                    .mobile-user-menu.mobile
-                    .user-button-mobile.button.white-white-border
-                        .user-button-line
-                            .bookmark
-                            | Сохранить в закладках
-                        .user-button-line
-                            .share
-                            | Поделиться
+                    .moderator-buttons.mobile
+                        img(src="icon/yes.svg", alt="")
+                        img.rejection(src="icon/rejection.svg", alt="")
                     .moderator-rejection-card.card.white-white-border
                         .add-journal-note 
                             .moderator-card-rejection-top
@@ -117,8 +106,6 @@ html
                                     img(src="icon/area-icon-1.svg", alt="")
                                 button.textarea-icon-button 
                                     img(src="icon/area-icon-2.svg", alt="")
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-3.svg", alt="")
                                 button.textarea-icon-button 
                                     img(src="icon/area-icon-4.svg", alt="")
                                 button.textarea-icon-button 
@@ -154,4 +141,7 @@ html
                         button.button.size-30.text-black-2
                             img(src="icon/comment.svg", alt="")
                             | 25
+                        .user-button.mobile
+                            .bookmark
+                            .share
         include component/footer.pug

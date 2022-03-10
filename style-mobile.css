@@ -12,7 +12,7 @@
   }
 
   .size-14 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .size-16 {
@@ -441,6 +441,16 @@
     margin-right: 15px;
   }
 
+  .card-content-bottom {
+    position: relative;
+    width: 100%;
+  }
+  .card-content-bottom .user-button {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+
   .user-button {
     width: 65px;
     align-items: center;
@@ -544,9 +554,6 @@
   .description .user .user-label {
     justify-content: flex-start;
   }
-  .description .user .text-black {
-    padding: 6.25vw 0;
-  }
   .description .user .text-black a {
     width: 100%;
   }
@@ -616,7 +623,7 @@
   }
   .comments-bottom .user .user-button {
     display: flex;
-    width: 73px;
+    width: 100px;
     font-size: 10px;
   }
   .comments-bottom .user .user-button .unlike {
@@ -775,10 +782,19 @@
     top: 8px;
     right: 14px;
   }
+  .card-h .static-user-menu {
+    position: static;
+    margin: -9px 16px 0 0;
+    align-self: flex-end;
+  }
   .card-h .button {
     margin: 0 11px 17px;
     width: calc(100% - 22px);
     padding: 6px 0;
+  }
+  .card-h .user-button-mobile {
+    z-index: 1;
+    height: auto;
   }
 
   .admin-event-user {
@@ -1373,7 +1389,7 @@
     border-radius: 0;
   }
   .about-event .about-event-map .button {
-    width: 140px;
+    width: fit-content;
     padding: 6px 18px;
     margin-left: 16px;
     margin-top: -11px;
@@ -1534,11 +1550,27 @@
   .description-card .light-blue-blue-border {
     padding: 6px 0;
     margin: 14px 0;
+    width: 100%;
+  }
+  .description-card .white-green-border {
+    padding: 6px 0;
+    margin: 14px 0;
   }
   .description-card .white-red-border {
     padding: 6px 0;
     margin: 14px 0;
     width: 100%;
+  }
+
+  .one-comment .user .user-button .unlike img {
+    margin-right: 0;
+  }
+  .one-comment .user .user-button .like-comment img {
+    margin-right: 0;
+  }
+  .one-comment .user .user-button .mobile-user-menu {
+    margin: 0;
+    margin-left: 5px;
   }
 
   .vie {
@@ -1772,6 +1804,134 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+  }
+
+  .moderator-gradient {
+    width: 55%;
+    height: 50%;
+    transform: rotate(270deg);
+    right: -6.25vw;
+    left: auto;
+  }
+
+  .rotate-gradient {
+    transform: rotate(360deg);
+    left: 0;
+    right: auto;
+  }
+
+  .moderator-buttons {
+    display: flex;
+    margin-right: 40px;
+  }
+
+  .moderator-rejection-card {
+    height: auto;
+    padding: 20px 15px 42px;
+    width: 100vw;
+    margin-left: -4.6875vw;
+  }
+  .moderator-rejection-card .add-journal-note .moderator-card-rejection-top {
+    align-items: center;
+  }
+  .moderator-rejection-card .add-journal-note .moderator-card-rejection-top .close-image {
+    width: 27px;
+    height: 27px;
+  }
+  .moderator-rejection-card .add-journal-note .textarea-icon .textarea-icon-button img {
+    height: 18px;
+  }
+
+  .card-refusals {
+    width: 100%;
+    padding: 23px 12px 30px;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .card-refusals .card-refusals-top {
+    align-items: center;
+  }
+  .card-refusals .card-refusals-top .size-20 {
+    font-size: 16px;
+  }
+  .card-refusals .card-refusals-top img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .chat-list {
+    position: static;
+    width: 100%;
+    padding: 5px 15px;
+  }
+  .chat-list .search-line input {
+    font-size: 12px;
+  }
+
+  .mess-cards {
+    margin: 25px 0;
+  }
+
+  .mess-card {
+    flex-direction: row;
+    height: auto;
+    padding: 9px 19px;
+  }
+  .mess-card .mess-info {
+    width: auto;
+  }
+  .mess-card .mess-info .size-20 {
+    font-size: 16px;
+  }
+  .mess-card .mess-info .size-14 {
+    font-size: 12px;
+  }
+  .mess-card .mess-photo {
+    width: 66px;
+    height: 66px;
+    margin-right: 16px;
+  }
+
+  .chat-adress {
+    display: flex;
+  }
+  .chat-adress .mess-image {
+    width: 53px;
+    height: 53px;
+    margin-right: 23px;
+  }
+
+  .chat-field .chat-content {
+    padding: 10px 4.6875vw;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .chat-field .chat-content .new-mess {
+    height: 36px;
+    border-radius: 20px;
+  }
+  .chat-field .chat-content .new-mess .smile-mess {
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+  }
+  .chat-field .chat-content .new-mess .smile-mess img {
+    width: 100%;
+    height: 100%;
+  }
+  .chat-field .chat-content .chat-mess .old-mess {
+    width: 79.6875vw;
+  }
+  .chat-field .chat-content .chat-mess .old-mess .mess-text {
+    margin: 0;
+    padding: 22px 33px;
+  }
+  .chat-field .chat-content .chat-mess .left-mess .mess-text {
+    border-bottom-left-radius: 0px;
+  }
+  .chat-field .chat-content .chat-mess .right-mess .mess-text {
+    border-bottom-right-radius: 0px;
   }
 }
 

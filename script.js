@@ -21,6 +21,7 @@ $(document).ready(function(){
     $('.active-label').hide()
     $('.about-map-card').hide()
     $('.read-more').hide()
+    $('.drop-chekbox').hide()
     var height = $('body').height() - $('.header').height()
     $('.chat-list').css('height', height)
     $(function(){
@@ -45,7 +46,13 @@ $(document).ready(function(){
                 }
             });
         } else{
-            
+            var old_link = window.location.href
+            $('.mess-card').click(function(){
+                var new_link = old_link.replace(/admin-chat/gi, 'admin-chat-mobile')
+                var new_link = old_link.replace(/moderator-chat/gi, 'moderator-chat-mobile')
+                var new_link = old_link.replace(/user-chat/gi, 'user-chat-mobile')
+                window.location.href = new_link
+            })
             $('.location').attr('placeholder','Страна, регион, город')
             $('.mobile-user-menu').click(function(){
                 if ($(this).parent().find('.user-button-mobile').is(':visible')){
@@ -56,6 +63,40 @@ $(document).ready(function(){
             })
         }
     });
+    $('.top-chekbox').click(function(){
+        if($(this).parent().find('.drop-chekbox').is(':visible')){
+            $(this).parent().find('.drop-chekbox').hide()
+        } else{
+            $(this).parent().find('.drop-chekbox').show()
+        }
+    })
+    $('.profile-edit-check-block').click(function(){
+        if ($(this).hasClass('active')){
+            $(this).removeClass('active')
+        } else{
+            $(this).addClass('active')
+        }
+    })
+    $('.like').click(function(){
+        if ($(this).hasClass('active')){
+            $(this).attr('src', 'icon/like.svg')
+            $(this).removeClass('active')
+        } else{
+            $(this).attr('src', 'icon/blue-like.svg')
+            $(this).addClass('active')
+        }
+        
+    })
+    $('.bookmark').click(function(){
+        if ($(this).hasClass('active')){
+            $(this).attr('style', 'background-image:url(icon/bookmark.svg)')
+            $(this).removeClass('active')
+        } else{
+            $(this).attr('style', 'background-image:url(icon/blue-bookmark.svg)')
+            $(this).addClass('active')
+        }
+        
+    })
     $('.place-label').click(function(){
         $('.about-map-card').show()
         $('.active-label').hide()

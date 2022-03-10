@@ -1,0 +1,100 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/admin-header.pug 
+        .hr
+        include component/admin-left-menu.pug
+        .nav-line.content
+            .nav-title.size-50.weight-500.text-black
+                |  Информация
+                img(src="icon/arrow-nav.svg", alt="")
+                | вид спорта
+        .profile
+            .save-change
+                a.button.blue.size-20.text-white(href='admin-info-add.html') Добавить вид спорта
+        .nav-line.content
+            .search-line.button.white-blue-border.top-search.search-filter
+                .search-image.blue-search
+                input.size-14(type="text" placeholder="Быстрый поиск")
+        .profile.margin-end
+            .page-card-list-small
+                .card.button
+                    .card-image 
+                        img(src="images/theme1.png", alt="")
+                    .card-title 
+                        .size-26.text-black Велосипед
+                        .arrow-more
+                    .change-card 
+                        a.size-18.text-blue(href='admin-info-edit.html') 
+                            img(src="icon/return.svg", alt="")
+                            | Изменить
+                        .size-18.text-red
+                            img(src="icon/del.svg", alt="")
+                            | Удалить
+                .card.button
+                    .card-image 
+                        img(src="images/theme2.png", alt="")
+                    .card-title 
+                        .size-26.text-black Ролики
+                        .arrow-more
+                    .change-card 
+                        a.size-18.text-blue(href='admin-info-edit.html') 
+                            img(src="icon/return.svg", alt="")
+                            | Изменить
+                        .size-18.text-red
+                            img(src="icon/del.svg", alt="")
+                            | Удалить
+                .card.button
+                    .card-image 
+                        img(src="images/theme3.png", alt="")
+                    .card-title 
+                        .size-26.text-black Самокаты
+                        .arrow-more
+                    .change-card 
+                        a.size-18.text-blue(href='admin-info-edit.html') 
+                            img(src="icon/return.svg", alt="")
+                            | Изменить
+                        .size-18.text-red
+                            img(src="icon/del.svg", alt="")
+                            | Удалить
+                .card.button
+                    .card-image 
+                        img(src="images/theme4.png", alt="")
+                    .card-title 
+                        .size-26.text-black Лыжи
+                        .arrow-more
+                    .change-card 
+                        a.size-18.text-blue(href='admin-info-edit.html') 
+                            img(src="icon/return.svg", alt="")
+                            | Изменить
+                        .size-18.text-red
+                            img(src="icon/del.svg", alt="")
+                            | Удалить
+                .card.button
+                    .card-image 
+                        img(src="images/theme5.png", alt="")
+                    .card-title 
+                        .size-26.text-black Сноуборд
+                        .arrow-more
+                    .change-card 
+                        a.size-18.text-blue(href='admin-info-edit.html') 
+                            img(src="icon/return.svg", alt="")
+                            | Изменить
+                        .size-18.text-red
+                            img(src="icon/del.svg", alt="")
+                            | Удалить
+                .card.button
+                    .card-image 
+                        img(src="images/theme6.png", alt="")
+                    .card-title 
+                        .size-26.text-black Скейтборды
+                        .arrow-more
+                    .change-card.delete 
+                        a.size-18.text-blue(href='admin-info-edit.html') 
+                            img(src="icon/return.svg", alt="")
+                            | Изменить
+                        .size-18.text-red
+                            img(src="icon/del.svg", alt="")
+                            | Удалить
+        include component/footer.pug

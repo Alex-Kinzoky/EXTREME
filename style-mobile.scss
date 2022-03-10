@@ -9,7 +9,7 @@
         font-size: 30px;
     }
     .size-14{
-        font-size: 12px;
+        font-size: 10px;
     }
     .size-16{
         font-size: 8px;
@@ -425,6 +425,15 @@
             }
         }
     }
+    .card-content-bottom{
+        position: relative;
+        width: 100%;
+        .user-button{
+            display: flex;
+            position: absolute;
+            right: 0;
+        }
+    }
     .user-button{
         width: 65px;
         align-items: center;
@@ -520,7 +529,7 @@
                 justify-content: flex-start;
             }
             .text-black{
-                padding: calc(100vw * (20 / 320)) 0;
+                //padding: calc(100vw * (20 / 320)) 0;
                 a{
                     width: 100%;
                 }
@@ -594,7 +603,7 @@
             }
             .user-button{
                 display: flex;
-                width: 73px;
+                width: 100px;
                 font-size: 10px;
                 .unlike{
                     width: 35px;
@@ -768,10 +777,19 @@
             top: 8px;
             right: 14px;
         }
+        .static-user-menu{
+            position: static;
+            margin: -9px 16px 0 0;
+            align-self: flex-end;
+        }
         .button{
             margin: 0 11px 17px;
             width: calc(100% - 22px);
             padding: 6px 0;
+        }
+        .user-button-mobile{
+            z-index: 1;
+            height: auto;
         }
     }
     .admin-event-user{
@@ -1395,7 +1413,7 @@
             margin-left: calc(100vw * (-15 / 320));
             border-radius: 0;
             .button{
-                width: 140px;
+                width: fit-content;
                 padding: 6px 18px;
                 margin-left: 16px;
                 margin-top: -11px;
@@ -1560,6 +1578,11 @@
         .light-blue-blue-border{
             padding: 6px 0;
             margin: 14px 0;
+            width: 100%;
+        }
+        .white-green-border{
+            padding: 6px 0;
+            margin: 14px 0;
         }
         .white-red-border{
             padding: 6px 0;
@@ -1567,7 +1590,26 @@
             width: 100%;
         }
     }
-    
+    .one-comment {
+        .user {
+            .user-button {
+                .unlike {
+                    img{
+                        margin-right: 0;
+                    }
+                }
+                .like-comment {
+                    img{
+                        margin-right: 0;
+                    }
+                }
+                .mobile-user-menu{
+                    margin: 0;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
     .vie{
         width: 100%;
         justify-content: flex-end;
@@ -1798,5 +1840,144 @@
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
+    }
+    .moderator-gradient{
+        width: 55%;
+        height: 50%;
+        transform: rotate(270deg);
+        right: calc(100vw * (-20 / 320));
+        left: auto;
+    }
+    .rotate-gradient{
+        transform: rotate(360deg);
+        left: 0;
+        right: auto;
+    }
+    .moderator-buttons{
+        display: flex;
+        margin-right: 40px;
+    }
+    .moderator-rejection-card{
+        height: auto;
+        padding: 20px 15px 42px;
+        width: 100vw;
+        margin-left: calc(100vw * (-15 / 320));
+        .add-journal-note{
+            .moderator-card-rejection-top{
+                align-items: center;
+                .close-image{
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+            .textarea-icon{
+                .textarea-icon-button{
+                    img{
+                        height: 18px;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+    .card-refusals{
+        width: 100%;
+        padding: 23px 12px 30px;
+        box-sizing: border-box;
+        height: auto;
+        .card-refusals-top{
+            align-items: center;
+            .size-20{
+                font-size: 16px;
+            }
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .chat-list{
+        position: static;
+        width: 100%;
+        padding: 5px 15px;
+        .search-line {
+            input{
+                font-size: 12px;
+            }
+        }
+    }
+    .mess-cards{
+        margin: 25px 0;
+    }
+    .mess-card{
+        flex-direction: row;
+        height: auto;
+        padding: 9px 19px;
+        .mess-info{
+            width: auto;
+            .size-20{
+                font-size: 16px;
+            }
+            .size-14{
+                font-size: 12px;
+            }
+        }
+        .mess-photo{
+            width: 66px;
+            height: 66px;
+            margin-right: 16px;
+        }
+    }
+    .chat-adress {
+        display: flex;
+        .mess-image {
+            width: 53px;
+            height: 53px;
+            margin-right: 23px;
+        }
+    }
+    .chat-field{
+        .chat-content{
+            padding: 10px calc(100vw * (15 / 320));
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            .new-mess{
+                height: 36px;
+                border-radius: 20px;
+                .smile-mess{
+                    width: 22px;
+                    height: 22px;
+                    margin-left: 15px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .chat-mess {
+                .old-mess{
+                    width: calc(100vw * (255 / 320));
+                    .mess-text{
+                        margin: 0;
+                        padding: 22px 33px;
+                    }
+                }
+                .left-mess{
+                    .mess-text{
+                        border-bottom-left-radius: 0px;
+                    }
+                    
+                }
+                .right-mess{
+                    .mess-text{
+                        border-bottom-right-radius: 0px;
+                    }
+                   
+                }
+            }
+            
+        }
     }
 }

@@ -154,7 +154,14 @@
           <div class="size-30 text-black">О чём запись?</div>
           <div class="input-date">
             <div class="light-blue-blue-border button chekbox">
-              <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+              <div class="top-chekbox">
+                <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+              </div>
+              <div class="drop-chekbox"> 
+                <div class="size-16 text-blue-grey">Вариант 1</div>
+                <div class="size-16 text-blue-grey">Вариант 2</div>
+                <div class="size-16 text-blue-grey">Вариант 3</div>
+              </div>
             </div>
           </div>
         </div>
@@ -212,11 +219,11 @@
         <div class="profile-edit-line">
           <div class="profile-edit-title size-20 text-black">Кто видит бортжурнал?</div>
           <div class="profile-edit-input"> 
-            <input id="me" type="radio" name=""/>
+            <input id="me" type="radio" name="view"/>
             <label class="radio size-20 text-black-2" for="me">Только я</label>
-            <input id="follow" type="radio" name=""/>
+            <input id="follow" type="radio" name="view"/>
             <label class="radio size-20 text-black-2" for="follow">Подписчики</label>
-            <input id="all" type="radio" name=""/>
+            <input id="all" type="radio" name="view"/>
             <label class="radio size-20 text-black-2" for="all">Все</label>
           </div>
         </div>

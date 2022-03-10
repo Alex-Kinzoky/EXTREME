@@ -6,7 +6,7 @@ html
         .hr
         include component/user-left-menu.pug 
         .chat-field 
-            .chat-content
+            .chat-content.desktop
                 .chat-title.size-50.weight-500 Сообщения
                 .chat-mess 
                     .left-mess.old-mess
@@ -44,10 +44,10 @@ html
                     button.button.blue 
                         img(src="icon/white-mess.svg", alt="")
             .chat-list.white-white-border
-                .search-line.button.white-blue-border.top-search.desktop
+                .search-line.button.white-blue-border.top-search
                     .search-image.blue-search
                     input.size-14.text-blue(type="text" placeholder="Поиск")
-                    button.blue.button.size-14.text-white Поиск
+                    button.blue.button.size-14.text-white.desktop Поиск
                 .mess-cards
                     .mess-card.card.active-mess
                         .mess-photo 

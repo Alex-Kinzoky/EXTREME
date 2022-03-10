@@ -53,8 +53,13 @@ html
                             .input-date
                                 input.light-blue-blue-border.button.size-20#day(type="text" placeholder='День')
                                 .light-blue-blue-border.button#month.chekbox
-                                    input.size-20(type="text" placeholder='Месяц')
-                                    img(src="icon/arrow-down.svg", alt="")
+                                    .top-chekbox
+                                        input.size-20(type="text" placeholder='Месяц')
+                                        img(src="icon/arrow-down.svg", alt="")
+                                    .drop-chekbox 
+                                        .size-16.text-blue-grey Вариант 1
+                                        .size-16.text-blue-grey Вариант 2
+                                        .size-16.text-blue-grey Вариант 3
                                 input.light-blue-blue-border.button.size-20#year(type="text" placeholder='Год')
                             .profile-edit-check
                                 .profile-edit-check-block.light-blue-blue-border
@@ -63,9 +68,9 @@ html
                     .profile-edit-line
                         .profile-edit-title.size-20.text-black Пол
                         .profile-edit-input 
-                            input#male(type="radio", name="")
+                            input#male(type="radio", name="sex")
                             label.radio.size-20.text-black-2(for="male") Мужской
-                            input#female(type="radio", name="")
+                            input#female(type="radio", name="sex")
                             label.radio.size-20.text-black-2(for="female") Женский
                             
                         .profile-edit-text
@@ -74,16 +79,26 @@ html
                         .profile-edit-input
                             .input-date
                                 .light-blue-blue-border.button.chekbox
-                                    input.size-20(type="text" placeholder='Выбрать')
-                                    img(src="icon/arrow-down.svg", alt="")
+                                    .top-chekbox
+                                        input.size-20(type="text" placeholder='Выбрать')
+                                        img(src="icon/arrow-down.svg", alt="")
+                                    .drop-chekbox 
+                                        .size-16.text-blue-grey Вариант 1
+                                        .size-16.text-blue-grey Вариант 2
+                                        .size-16.text-blue-grey Вариант 3
                         .profile-edit-text
                     .profile-edit-line
                         .profile-edit-title.size-20.text-black Мой город
                         .profile-edit-input
                             .input-date
                                 .light-blue-blue-border.button.chekbox
-                                    input.size-20(type="text" placeholder='Выбрать')
-                                    img(src="icon/arrow-down.svg", alt="")
+                                    .top-chekbox
+                                        input.size-20(type="text" placeholder='Выбрать')
+                                        img(src="icon/arrow-down.svg", alt="")
+                                    .drop-chekbox 
+                                        .size-16.text-blue-grey Вариант 1
+                                        .size-16.text-blue-grey Вариант 2
+                                        .size-16.text-blue-grey Вариант 3
                         .profile-edit-text
         .hr 
         .profile.margin-end
@@ -99,8 +114,13 @@ html
                         .profile-edit-input
                             .input-date
                                 .light-blue-blue-border.button.chekbox
-                                    input.size-20(type="text" placeholder='Выбрать')
-                                    img(src="icon/arrow-down.svg", alt="")
+                                    .top-chekbox
+                                        input.size-20(type="text" placeholder='Выбрать')
+                                        img(src="icon/arrow-down.svg", alt="")
+                                    .drop-chekbox 
+                                        .size-16.text-blue-grey Вариант 1
+                                        .size-16.text-blue-grey Вариант 2
+                                        .size-16.text-blue-grey Вариант 3
                         .profile-edit-text
                     .save-change 
                         a.button.blue.size-20.text-white(href='user-myprofile.html') Сохранить изменения

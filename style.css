@@ -118,7 +118,7 @@
 .menu .menu-right {
   display: flex;
   justify-content: space-between;
-  width: 22.1354166667vw;
+  width: auto;
   align-items: center;
 }
 .menu .menu-right .blue {
@@ -144,7 +144,11 @@
 .menu .menu-right .menu-right-buttons {
   display: flex;
   justify-content: space-between;
-  width: 11.9791666667vw;
+  width: auto;
+  margin-left: 1.0416666667vw;
+}
+.menu .menu-right .menu-right-buttons .menu-right-button {
+  margin-right: 1.0416666667vw;
 }
 
 .theme {
@@ -514,6 +518,7 @@
   display: flex;
   height: fit-content;
   justify-content: space-between;
+  padding: 0;
 }
 .nav-line .nav-sort .nav-sort-line {
   padding: 7px 14px;
@@ -1836,16 +1841,28 @@ textarea {
   border-radius: 20px;
   width: 100%;
 }
+.profile-edit-field .profile-edit-line .profile-edit-input .button {
+  border-radius: 27px;
+  height: fit-content;
+}
 .profile-edit-field .profile-edit-line .profile-edit-input .chekbox {
   margin-right: 0.6770833333vw;
   padding: 0.7291666667vw 1.25vw;
-  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.profile-edit-field .profile-edit-line .profile-edit-input .chekbox img {
+.profile-edit-field .profile-edit-line .profile-edit-input .chekbox .drop-chekbox .size-16 {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(223, 223, 223, 0.29);
+}
+.profile-edit-field .profile-edit-line .profile-edit-input .chekbox .top-chekbox {
+  justify-content: space-between;
+  display: flex;
+}
+.profile-edit-field .profile-edit-line .profile-edit-input .chekbox .top-chekbox img {
   width: 13px;
 }
-.profile-edit-field .profile-edit-line .profile-edit-input .chekbox input {
+.profile-edit-field .profile-edit-line .profile-edit-input .chekbox .top-chekbox input {
   width: 150px;
   padding: 0;
 }
@@ -1862,6 +1879,9 @@ textarea {
   border-radius: 50%;
   border: 2px solid #5575E8;
   margin-right: 22px;
+}
+.profile-edit-field .profile-edit-line .profile-edit-input input[type=radio]:checked + label::before {
+  background: #5575E8;
 }
 .profile-edit-field .profile-edit-line .profile-edit-input .input-date {
   display: flex;
@@ -1912,11 +1932,17 @@ textarea {
 .profile-edit-field .profile-edit-line .profile-edit-input .profile-edit-check {
   display: flex;
   margin-top: 0.78125vw;
+  align-items: center;
 }
 .profile-edit-field .profile-edit-line .profile-edit-input .profile-edit-check .profile-edit-check-block {
   width: 18px;
   height: 18px;
   margin-right: 6px;
+  padding: 0;
+  border-radius: 5px;
+}
+.profile-edit-field .profile-edit-line .profile-edit-input .profile-edit-check .active {
+  background: #5575E8;
 }
 .profile-edit-field .profile-edit-line .profile-edit-text {
   margin-left: 0.8333333333vw;
@@ -1962,6 +1988,20 @@ input[type=radio] {
   margin-right: -7.8125vw;
 }
 
+.card .change-card {
+  padding: 0 0 1.5625vw 1.6666666667vw;
+  justify-content: flex-start;
+  width: 100%;
+}
+.card .change-card .size-18 {
+  margin-right: 1.5625vw;
+}
+
+.light-blue-blue-border {
+  padding: 0.625vw 1.7708333333vw;
+  width: fit-content;
+}
+
 .delete {
   display: flex;
 }
@@ -1974,13 +2014,13 @@ input[type=radio] {
   margin-left: calc(1.5104166667vw + 96px);
 }
 
-.add-photo {
+.add-journal-note .add-photo {
   display: flex;
   width: 85%;
   justify-content: space-between;
   margin: 1.5625vw 0;
 }
-.add-photo .light-blue-blue-border {
+.add-journal-note .add-photo .light-blue-blue-border {
   background-image: url(icon/add-photo.svg);
   background-size: 80% 80%;
   background-repeat: no-repeat;
@@ -1988,6 +2028,11 @@ input[type=radio] {
   width: 13.90625vw;
   height: 8.3854166667vw;
   border-radius: 25px;
+  padding: 0;
+  overflow: hidden;
+}
+.add-journal-note .add-photo .light-blue-blue-border img {
+  height: 100%;
 }
 
 .image-galery {
@@ -3401,10 +3446,15 @@ input[type=radio] {
   .profile-edit-field .profile-edit-line .profile-edit-input .blue {
     width: 101px;
   }
+  .profile-edit-field .profile-edit-line .profile-edit-input .profile-edit-check {
+    align-items: center;
+  }
   .profile-edit-field .profile-edit-line .profile-edit-input .profile-edit-check .profile-edit-check-block {
     width: 13px;
     height: 13px;
     margin-right: 4px;
+    padding: 0;
+    border-radius: 5px;
   }
 
   .profile-edit {

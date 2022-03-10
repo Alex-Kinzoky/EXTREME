@@ -27,7 +27,7 @@
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
           </div>
-          <div class="menu-right-buttons"> <a class="menu-right-button" href="admin-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button" href="admin-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
+          <div class="menu-right-buttons"> <a class="menu-right-button" href="admin-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button desktop" href="admin-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
             <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
             <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
           </div>
@@ -61,7 +61,22 @@
         </div>
         <div class="left-menu-close"></div>
       </div>
-      <div class="left-menu"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
+      <div class="profile">
+        <div class="user">
+          <div class="user-label">
+            <div class="user-photo"><a href="guest-profile.html"><img src="images/user-photo.png" alt=""/></a>
+              <div class="online"></div>
+            </div><a class="user-info" href="guest-profile.html">
+              <div class="user-name size-30 text-black">Админ</div>
+              <div class="user-level text-grey-2">Мастер</div>
+              <div class="user-location text-grey-2">Москва, Россия</div></a>
+          </div>
+        </div>
+        <div class="delete"> <img src="icon/blue-mobile-exit.svg" alt=""/>
+          <div class="text-blue size-20">Выход</div>
+        </div>
+      </div>
+      <div class="left-menu"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-advertisement.html">Реклама</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
     </div>
     <div class="menu-search-mobile white-white-border">
       <div class="menu content white-white-border content">
@@ -99,7 +114,7 @@
       </div>
     </div>
     <div class="hr"></div>
-    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-advertisement.html">Реклама</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
     <div class="nav-line content">
       <div class="top-label">
         <div class="size-50">
@@ -127,6 +142,10 @@
               <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
               <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
             </div>
+            <div class="user-button-mobile white-white-border card">
+              <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
+              <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
+            </div>
             <div class="status white-white-border button text-green">Скоро начнётся</div>
             <button class="place-label"><img src="icon/location.svg" alt=""/></button><img src="images/card-map.png" alt=""/>
           </div>
@@ -149,6 +168,10 @@
           <div class="card-image">
             <div class="mobile-user-menu"></div>
             <div class="user-button-desktop white-white-border card">
+              <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
+              <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
+            </div>
+            <div class="user-button-mobile white-white-border card">
               <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
               <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
             </div>
@@ -179,6 +202,10 @@
               <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
               <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
             </div>
+            <div class="user-button-mobile white-white-border card">
+              <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
+              <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
+            </div>
             <div class="status white-white-border button text-green">Скоро начнётся</div>
             <button class="place-label"><img src="icon/location.svg" alt=""/></button><img src="images/card-map.png" alt=""/>
           </div>
@@ -204,6 +231,10 @@
               <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
               <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
             </div>
+            <div class="user-button-mobile white-white-border card">
+              <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
+              <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
+            </div>
             <div class="status white-blue-border button text-blue">В процессе</div>
             <button class="place-label"><img src="icon/location.svg" alt=""/></button><img src="images/card-map.png" alt=""/>
           </div>
@@ -226,6 +257,10 @@
           <div class="card-image">
             <div class="mobile-user-menu"></div>
             <div class="user-button-desktop white-white-border card">
+              <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
+              <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
+            </div>
+            <div class="user-button-mobile white-white-border card">
               <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
               <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
             </div>
@@ -271,6 +306,10 @@
             <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
             <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
           </div>
+          <div class="user-button-mobile white-white-border card">
+            <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
+            <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
+          </div>
         </div>
         <div class="card button card-h">
           <div class="status white-green-border button text-green">Скоро начнётся</div>
@@ -294,6 +333,10 @@
             <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
             <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
           </div>
+          <div class="user-button-mobile white-white-border card">
+            <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
+            <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
+          </div>
         </div>
         <div class="card button card-h">
           <div class="status white-orange-border button text-orange">Закончилось</div>
@@ -314,6 +357,10 @@
           </div>
           <div class="mobile-user-menu"></div>
           <div class="user-button-desktop white-white-border card">
+            <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
+            <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
+          </div>
+          <div class="user-button-mobile white-white-border card">
             <div class="user-button-line"><img src="icon/black-delete.svg" alt=""/>Удалить</div>
             <div class="user-button-line"><img src="icon/black-return.svg" alt=""/>Изменить</div>
           </div>

@@ -27,7 +27,7 @@
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
           </div>
-          <div class="menu-right-buttons"> <a class="menu-right-button" href="admin-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button" href="admin-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
+          <div class="menu-right-buttons"> <a class="menu-right-button" href="admin-chat.html"> <img src="icon/black-chat.svg" alt=""/></a><a class="menu-right-button desktop" href="admin-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
             <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
             <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
           </div>
@@ -61,7 +61,22 @@
         </div>
         <div class="left-menu-close"></div>
       </div>
-      <div class="left-menu"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
+      <div class="profile">
+        <div class="user">
+          <div class="user-label">
+            <div class="user-photo"><a href="guest-profile.html"><img src="images/user-photo.png" alt=""/></a>
+              <div class="online"></div>
+            </div><a class="user-info" href="guest-profile.html">
+              <div class="user-name size-30 text-black">Админ</div>
+              <div class="user-level text-grey-2">Мастер</div>
+              <div class="user-location text-grey-2">Москва, Россия</div></a>
+          </div>
+        </div>
+        <div class="delete"> <img src="icon/blue-mobile-exit.svg" alt=""/>
+          <div class="text-blue size-20">Выход</div>
+        </div>
+      </div>
+      <div class="left-menu"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-advertisement.html">Реклама</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
     </div>
     <div class="menu-search-mobile white-white-border">
       <div class="menu content white-white-border content">
@@ -99,7 +114,7 @@
       </div>
     </div>
     <div class="hr"></div>
-    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
+    <div class="left-menu white-white-border desktop"><a class="size-26 text-black" href="admin-index.html">Главная</a><a class="size-26 text-black" href="admin-tape.html">Лента</a><a class="size-26 text-black" href="admin-users.html">Пользователи</a><a class="size-26 text-black" href="admin-black-list.html">Чёрный список</a><a class="size-26 text-black" href="admin-portal-status.html">Состояние портала</a><a class="size-26 text-black" href="admin-analytics.html">Аналитика</a><a class="size-26 text-black" href="admin-information.html">Информация</a><a class="size-26 text-black" href="admin-advertisement.html">Реклама</a><a class="size-26 text-black" href="admin-chat.html">Техническая поддержка</a></div>
     <div class="nav-line content">
       <div class="nav-title size-50 weight-500 text-black">
          Редактировать профиль</div>
@@ -156,7 +171,14 @@
               <div class="input-date">
                 <input class="light-blue-blue-border button size-20" id="day" type="text" placeholder="День"/>
                 <div class="light-blue-blue-border button chekbox" id="month">
-                  <input class="size-20" type="text" placeholder="Месяц"/><img src="icon/arrow-down.svg" alt=""/>
+                  <div class="top-chekbox">
+                    <input class="size-20" type="text" placeholder="Месяц"/><img src="icon/arrow-down.svg" alt=""/>
+                  </div>
+                  <div class="drop-chekbox"> 
+                    <div class="size-16 text-blue-grey">Вариант 1</div>
+                    <div class="size-16 text-blue-grey">Вариант 2</div>
+                    <div class="size-16 text-blue-grey">Вариант 3</div>
+                  </div>
                 </div>
                 <input class="light-blue-blue-border button size-20" id="year" type="text" placeholder="Год"/>
               </div>
@@ -170,9 +192,9 @@
           <div class="profile-edit-line">
             <div class="profile-edit-title size-20 text-black">Пол</div>
             <div class="profile-edit-input"> 
-              <input id="male" type="radio" name=""/>
+              <input id="male" type="radio" name="sex"/>
               <label class="radio size-20 text-black-2" for="male">Мужской</label>
-              <input id="female" type="radio" name=""/>
+              <input id="female" type="radio" name="sex"/>
               <label class="radio size-20 text-black-2" for="female">Женский</label>
             </div>
             <div class="profile-edit-text"></div>
@@ -182,7 +204,14 @@
             <div class="profile-edit-input">
               <div class="input-date">
                 <div class="light-blue-blue-border button chekbox">
-                  <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+                  <div class="top-chekbox">
+                    <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+                  </div>
+                  <div class="drop-chekbox"> 
+                    <div class="size-16 text-blue-grey">Вариант 1</div>
+                    <div class="size-16 text-blue-grey">Вариант 2</div>
+                    <div class="size-16 text-blue-grey">Вариант 3</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -193,7 +222,14 @@
             <div class="profile-edit-input">
               <div class="input-date">
                 <div class="light-blue-blue-border button chekbox">
-                  <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+                  <div class="top-chekbox">
+                    <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+                  </div>
+                  <div class="drop-chekbox"> 
+                    <div class="size-16 text-blue-grey">Вариант 1</div>
+                    <div class="size-16 text-blue-grey">Вариант 2</div>
+                    <div class="size-16 text-blue-grey">Вариант 3</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,7 +254,14 @@
             <div class="profile-edit-input">
               <div class="input-date">
                 <div class="light-blue-blue-border button chekbox">
-                  <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+                  <div class="top-chekbox">
+                    <input class="size-20" type="text" placeholder="Выбрать"/><img src="icon/arrow-down.svg" alt=""/>
+                  </div>
+                  <div class="drop-chekbox"> 
+                    <div class="size-16 text-blue-grey">Вариант 1</div>
+                    <div class="size-16 text-blue-grey">Вариант 2</div>
+                    <div class="size-16 text-blue-grey">Вариант 3</div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -37,7 +37,7 @@ $(document).ready(function(){
                 }
             });
             $('.mobile-user-menu').click(function(){
-                $(this).parent().parent().find('.user-button-desktop').show()
+                $(this).parent().find('.user-button-desktop').show()
             })
             $(document).mouseup( function(e){ 
                 var div = $( ".user-button-desktop" );

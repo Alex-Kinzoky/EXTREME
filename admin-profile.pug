@@ -2,9 +2,9 @@ doctype html
 html 
     include component/head.pug
     body 
-        include component/guest-header.pug 
+        include component/admin-header.pug 
         .hr
-        include component/guest-left-menu.pug 
+        include component/admin-left-menu.pug 
         .profile
             .user 
                 .user-label
@@ -99,7 +99,7 @@ html
                     .size-50.weight-500.text-black Мероприятия
                 .events-list 
                     .card.button.card-h.admin-event-user
-                        .mobile-user-menu
+                        .mobile-user-menu.mobile
                         .user-button-mobile.white-white-border.card
                             .user-button-line
                                 img(src="icon/black-delete.svg", alt="")
@@ -127,7 +127,7 @@ html
                             .close-image
                             button.button.size-20.blue.text-white Изменить
                     .card.button.card-h.admin-event-user
-                        .mobile-user-menu
+                        .mobile-user-menu.mobile
                         .user-button-mobile.white-white-border.card
                             .user-button-line
                                 img(src="icon/black-delete.svg", alt="")
@@ -155,7 +155,7 @@ html
                             .close-image
                             button.button.size-20.blue.text-white Изменить
                     .card.button.card-h.admin-event-user
-                        .mobile-user-menu
+                        .mobile-user-menu.mobile
                         .user-button-mobile.white-white-border.card
                             .user-button-line
                                 img(src="icon/black-delete.svg", alt="")

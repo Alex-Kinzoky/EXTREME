@@ -400,10 +400,6 @@
   height: 100%;
 }
 
-.mobile {
-  display: none;
-}
-
 .up {
   position: fixed;
   right: 4.1666666667vw;
@@ -1231,7 +1227,7 @@
 .card-map .card-image .mobile-user-menu {
   position: absolute;
   top: 1.5104166667vw;
-  right: 1.5625vw;
+  right: 0.5208333333vw;
 }
 .card-map .card-image .user-button-desktop {
   margin-top: 1.5625vw;
@@ -1268,8 +1264,8 @@
 }
 .card-list .card-h .mobile-user-menu {
   position: absolute;
-  top: 0.78125vw;
-  right: 1.9791666667vw;
+  top: 1.3020833333vw;
+  right: 0.5208333333vw;
 }
 .card-list .card-h .status {
   margin-top: 130px;
@@ -1864,7 +1860,6 @@ textarea {
   padding: 0.7291666667vw 1.25vw;
   flex-direction: column;
   justify-content: space-between;
-  flex-direction: row;
 }
 .profile-edit-field .profile-edit-line .profile-edit-input .chekbox .drop-chekbox .size-16 {
   padding: 8px 0;
@@ -2158,6 +2153,27 @@ input[type=radio] {
 }
 .add-journal-top .add-journal-note {
   width: 100%;
+}
+.add-journal-top .add-journal-note .input-date .chekbox {
+  margin-right: 0.6770833333vw;
+  padding: 0.7291666667vw 1.25vw;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.add-journal-top .add-journal-note .input-date .chekbox .drop-chekbox .size-16 {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(223, 223, 223, 0.29);
+}
+.add-journal-top .add-journal-note .input-date .chekbox .top-chekbox {
+  justify-content: space-between;
+  display: flex;
+}
+.add-journal-top .add-journal-note .input-date .chekbox .top-chekbox img {
+  width: 13px;
+}
+.add-journal-top .add-journal-note .input-date .chekbox .top-chekbox input {
+  width: 150px;
+  padding: 0;
 }
 .add-journal-top .add-journal-note .light-blue-blue-border {
   width: 100%;
@@ -2598,7 +2614,7 @@ input[type=radio] {
 .user-button-desktop {
   box-sizing: border-box;
   width: 12.34375vw;
-  height: 4.8958333333vw;
+  height: fit-content;
   position: absolute;
   top: 50px;
   right: 1.0416666667vw;
@@ -2611,6 +2627,7 @@ input[type=radio] {
 .user-button-desktop .user-button-line {
   display: flex;
   align-items: center;
+  margin: 5px 0;
 }
 .user-button-desktop .user-button-line img {
   margin-right: 0.8854166667vw;
@@ -3416,7 +3433,10 @@ input[type=radio] {
     margin-right: 8px;
   }
   .profile-edit-field .profile-edit-line .profile-edit-input .input-date .chekbox {
-    padding-block: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+  .profile-edit-field .profile-edit-line .profile-edit-input .input-date .chekbox .top-chekbox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3645,6 +3665,9 @@ input[type=radio] {
   .place-info {
     flex-direction: column;
   }
+}
+.mobile {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

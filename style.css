@@ -1864,6 +1864,7 @@ textarea {
   padding: 0.7291666667vw 1.25vw;
   flex-direction: column;
   justify-content: space-between;
+  flex-direction: row;
 }
 .profile-edit-field .profile-edit-line .profile-edit-input .chekbox .drop-chekbox .size-16 {
   padding: 8px 0;
@@ -2849,6 +2850,12 @@ input[type=radio] {
   .menu .menu-right .blue {
     height: 35px;
   }
+  .menu .menu-right-buttons {
+    height: 30px;
+  }
+  .menu .menu-right-buttons img {
+    height: 100%;
+  }
 
   .theme {
     width: 70px;
@@ -3253,6 +3260,10 @@ input[type=radio] {
     margin-top: 95px;
     margin-left: -8px;
   }
+  .card-list .card-h .mobile-user-menu {
+    height: 20px;
+    margin-right: 0;
+  }
 
   .big-map .scale {
     right: 7px;
@@ -3331,6 +3342,7 @@ input[type=radio] {
   }
 
   .mess-card {
+    flex-direction: row;
     border-radius: 20px;
     margin: 0 0 20px;
   }
@@ -3388,6 +3400,9 @@ input[type=radio] {
   .profile-edit-field .profile-edit-line .profile-edit-input textarea {
     border-radius: 14px;
   }
+  .profile-edit-field .profile-edit-line .profile-edit-input .chekbox {
+    flex-direction: row;
+  }
   .profile-edit-field .profile-edit-line .profile-edit-input .chekbox input {
     width: 105px;
     padding: 0;
@@ -3422,6 +3437,7 @@ input[type=radio] {
   .profile-edit-field .profile-edit-line .profile-edit-input .input-date #day {
     font-size: 14px;
     width: 58px;
+    height: 32px;
     padding: 0 0.78125vw;
     display: flex;
     align-items: center;
@@ -3447,6 +3463,7 @@ input[type=radio] {
   .profile-edit-field .profile-edit-line .profile-edit-input .input-date #year {
     font-size: 14px;
     width: 58px;
+    height: 32px;
     padding: 0 0.78125vw;
     display: flex;
     align-items: center;

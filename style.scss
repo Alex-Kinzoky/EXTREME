@@ -127,6 +127,7 @@
         .blue{
             width: calc(100vw * (197 / 1920));
             height: 48px;
+            margin-left: calc(100vw * (20 / 1920));
         }
         .mobile-login{
             box-sizing: border-box;
@@ -571,7 +572,7 @@
 }
 .user-button{
     display: flex;
-    width: calc(100vw * (144 / 1920));
+    //width: calc(100vw * (144 / 1920));
     justify-content: space-between;
     .bookmark{
         background-image: url(icon/bookmark.svg);
@@ -707,7 +708,9 @@
             }
             .card-content-bottom{
                 margin-top: calc(100vw * (57 / 1920));
-                
+                .blue{
+                    margin-left: calc(100vw * (20 / 1920));
+                }
 
             }
         }
@@ -733,6 +736,10 @@
         flex-direction: column;
         justify-content: space-between;
     }
+}
+.light-blue-blue-border{
+    padding: calc(100vw * (12 / 1920)) calc(100vw * (34 / 1920));
+    width: fit-content;
 }
 .comments{
     .nav-line{
@@ -779,6 +786,9 @@
         .user-button{
             font-size: 10px;
             height: fit-content;
+            .mobile-user-menu{
+                margin-left: 10px;
+            }
             .unlike{
                 display: flex;
                 align-items: flex-end;
@@ -1007,7 +1017,7 @@
             flex-direction: column;
             padding: 20px calc(100vw * (50 / 1920));
             .change-card{
-                width: calc(100vw * (220 / 1920));
+                width: calc(100vw * (255 / 1920));
             }
         }
     }
@@ -1021,7 +1031,7 @@
             height: 19px;
             align-self: flex-end;
             margin-right: calc(100vw * (34 / 1920));
-            margin-top: calc(100vw * (-10 / 1920));
+            margin-top: -15px;
         }
         .button{
             padding: calc(100vw * (12 / 1920)) calc(100vw * (41 / 1920));
@@ -1029,8 +1039,12 @@
     }
     .button{
         height: fit-content;
+        
         padding: calc(100vw * (12/ 1920)) calc(100vw * (17 / 1920));
         margin-right: calc(100vw * (38 / 1920));
+    }
+    .blue{
+        min-width: calc(100vw * (177 / 1920));
     }
 }
 .participants{
@@ -1988,7 +2002,7 @@ input[type=radio]{
 }
 .card{
     .change-card{
-        padding: 0 0 calc(100vw * (30 / 1920)) calc(100vw * (32 / 1920));
+        //padding: 0 0 calc(100vw * (30 / 1920)) calc(100vw * (32 / 1920));
         justify-content: flex-start;
         width: 100%;
         .size-18{
@@ -1996,10 +2010,7 @@ input[type=radio]{
         }
     }
 }
-.light-blue-blue-border{
-    padding: calc(100vw * (12 / 1920)) calc(100vw * (34 / 1920));
-    width: fit-content;
-}
+
 .delete {
     display: flex;
     img{
@@ -2629,10 +2640,11 @@ input[type=radio]{
 .moderator-buttons{
     position: relative;
     display: flex;
-    margin-left: -110px;
+    margin-left: 10px;
+    margin-right: 10px;
     align-items: flex-start;
     justify-content: space-between;
-    width: calc(100vw * (105 / 1920));
+    width: 105px;
     img{
         height: 38px;
         margin-right: 10px;
@@ -3612,8 +3624,9 @@ input[type=radio]{
         top: 28px;
     }
     .moderator-buttons{
-        margin-left: -77px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 70px;
         img{
             height: 27px;
             margin-right: 7px;

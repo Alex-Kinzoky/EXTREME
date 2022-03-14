@@ -205,22 +205,22 @@ button.light-blue-blue-border{
     backdrop-filter: blur(4px);
     box-sizing: border-box;
     position: relative;
-
-    &:before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        padding: 1px; /* !importanté */
-        border-radius: inherit; /* !importanté */
-        background: linear-gradient(90deg, transparent, #FFFFFF 80%);
-        -webkit-mask: 
-            linear-gradient(#fff 0 0) content-box, 
-            linear-gradient(#fff 0 0);
-        mask: 
-            linear-gradient(#fff 0 0) content-box, 
-            linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-                mask-composite: exclude;
-    }
+    border: 1px solid #FFFFFF;
+    //&:before {
+        //content: '';
+        //position: absolute;
+        //inset: 0;
+        //z-index: -1;
+        //padding: 1px; /* !importanté */
+        //border-radius: inherit; /* !importanté */
+        //background: linear-gradient(90deg, transparent, #FFFFFF 80%);
+        //-webkit-mask: 
+            //linear-gradient(#fff 0 0) content-box, 
+            //linear-gradient(#fff 0 0);
+        //mask: 
+            //linear-gradient(#fff 0 0) content-box, 
+            //linear-gradient(#fff 0 0);
+        //-webkit-mask-composite: xor;
+                //mask-composite: exclude;
+    //}
 }

@@ -127,6 +127,7 @@
         .blue{
             width: calc(100vw * (197 / 1920));
             height: 48px;
+            margin-left: calc(100vw * (20 / 1920));
         }
         .mobile-login{
             box-sizing: border-box;
@@ -1841,6 +1842,7 @@ textarea{
                 padding: calc(100vw * (14 / 1920)) calc(100vw * (24 / 1920));
                 flex-direction: column;
                 justify-content: space-between;
+                flex-direction: row;
                 .drop-chekbox {
                     .size-16{
                         padding: 8px 0;
@@ -2723,7 +2725,7 @@ input[type=radio]{
         font-size: 12px;
     }
 }
-@media (max-width: 1400px){
+@media (max-width: 1500px){
     body{
         font-size: 16px;
     }
@@ -2802,6 +2804,14 @@ input[type=radio]{
         .menu-right{
             .blue{
                 height: 35px;
+            }
+        }
+
+        .menu-right-buttons {
+            height: 30px;
+
+            img {
+                height: 100%;
             }
         }
     }
@@ -3255,6 +3265,11 @@ input[type=radio]{
                 margin-top: 95px;
                 margin-left: -8px;
             }
+
+            .mobile-user-menu {
+                height: 20px;
+                margin-right: 0;
+            }
         }
     }
     .big-map{
@@ -3348,6 +3363,7 @@ input[type=radio]{
         bottom: 0;
     }
     .mess-card{
+        flex-direction: row;
         border-radius: 20px;
         margin: 0 0 20px;
         .mess-info{
@@ -3413,6 +3429,7 @@ input[type=radio]{
                     border-radius: 14px;
                 }
                 .chekbox{
+                    flex-direction: row;
                     input{
                         width: 105px;
                         padding: 0;
@@ -3451,6 +3468,7 @@ input[type=radio]{
                     #day{
                         font-size: 14px;
                         width: 58px;
+                        height: 32px;
                         padding: 0 calc(100vw * (15 / 1920));
                         display: flex;
                         align-items: center;
@@ -3476,6 +3494,7 @@ input[type=radio]{
                     #year{
                         font-size: 14px;
                         width: 58px;
+                        height: 32px;
                         padding: 0 calc(100vw * (15 / 1920));
                         display: flex;
                         align-items: center;

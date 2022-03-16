@@ -1,4 +1,4 @@
-@media (max-width: 960px) {
+@media (max-width: 640px) {
   body {
     font-size: 14px;
   }
@@ -329,6 +329,7 @@
     height: auto;
     align-items: flex-start;
     position: relative;
+    width: 100%;
   }
   .nav-line .admin-setting-equipment {
     position: absolute;

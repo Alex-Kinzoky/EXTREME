@@ -25,7 +25,7 @@ $(document).ready(function(){
     var height = $('body').height() - $('.header').height()
     $('.chat-list').css('height', height)
     $(function(){
-        if ($(window).width() > 960){
+        if ($(window).width() > 1200){
             
             //$('.filter-card').width($('.search-line').width())
             $('.location').attr('placeholder','')
@@ -69,6 +69,16 @@ $(document).ready(function(){
         } else{
             $(this).parent().find('.drop-chekbox').show()
         }
+    })
+    $(document).mouseup( function(e){ 
+        var div = $( ".drop-chekbox" );
+        if ( !div.is(e.target)  && div.has(e.target).length === 0 ) { 
+            div.hide(); 
+        }
+    });
+    $('.drop-chekbox').find('.size-16').click(function(){
+        var variant = $(this).text()
+        $(this).parent().parent().find('input').attr('value', variant)
     })
     $('.profile-edit-check-block').click(function(){
         if ($(this).hasClass('active')){

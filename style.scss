@@ -3694,7 +3694,30 @@ input[type=radio]{
         }
     }
 }
+.mobile{
+    display: none;
+}
 @media (max-width: 1200px){
+    .profile{
+        margin: auto;
+    }
+    .description {
+        margin: auto;
+    }
+    .nav-line{
+        margin: 20px auto;
+        width: calc(100vw * (1355 / 1920));
+        padding: 0;
+    }
+    .tablet{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
     body{
         font-size: 14px;
     }
@@ -3720,7 +3743,16 @@ input[type=radio]{
     .place-info{
         flex-direction: column;
     }
-}
-.mobile{
-    display: none;
+    .card-line-1{
+        grid-template-rows: 400px;
+    }
+    .card-line-2{
+        grid-template-rows: 350px;
+    }
+    .mobile-user-menu{
+        height: 20px;
+    }
+    .partners-header{
+        margin: 0;
+    }
 }

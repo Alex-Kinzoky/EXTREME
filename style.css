@@ -367,6 +367,13 @@
   grid-template-rows: repeat(5, 3.3854166667vw);
   grid-auto-flow: column;
 }
+.mark-equipment-list .mark-equipment-part {
+  display: flex;
+  align-items: center;
+}
+.mark-equipment-list .mark-equipment-part img {
+  margin-right: 1.0416666667vw;
+}
 
 .mark-equipment-title {
   margin-bottom: 2.03125vw;
@@ -515,6 +522,12 @@
 }
 .nav-line .nav-title {
   align-items: baseline;
+}
+.nav-line .nav-title a:visited {
+  color: #161616;
+}
+.nav-line .nav-title a:hover {
+  color: #5575E8;
 }
 .nav-line .nav-title .size-30 {
   margin-left: 1.40625vw;

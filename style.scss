@@ -364,6 +364,13 @@
     grid-template-columns: repeat(3, calc(100vw * (405 / 1920)));
     grid-template-rows: repeat(5, calc(100vw * (65 / 1920)));
     grid-auto-flow: column;
+    .mark-equipment-part{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: calc(100vw * (20 / 1920));
+        }
+    }
 }
 .mark-equipment-title{
     margin-bottom: calc(100vw * (39 / 1920));
@@ -508,6 +515,15 @@
         width: auto;
     }
     .nav-title{
+        a{
+            &:visited{
+                color: #161616;
+            }
+            &:hover{
+                color: #5575E8;
+            }
+        }
+        
         align-items: baseline;
         .size-30{
             margin-left: calc(100vw * (27 / 1920));

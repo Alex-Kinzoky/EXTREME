@@ -2,59 +2,23 @@ doctype html
 html 
     include component/head.pug
     body 
-        include component/user-header.pug 
+        include component/guest-header.pug 
         .hr
         .nav-line.content.mobile
             .nav-title.size-50.weight-500.text-black
-                a.size-50.weight-500.text-black(href='user-types-of-sports.html') Велосипед
+                a.size-50.weight-500.text-black(href='guest-types-of-sports.html') Велосипед
                 img(src="icon/arrow-nav.svg", alt="")
-                | Городской велосипед
-        include component/user-left-menu.pug
+                a.size-50.weight-500.text-black(href='guest-mark-of-sports.html') Городской велосипед
+                img(src="icon/arrow-nav.svg", alt="")
+                | Cannondale
+        include component/guest-left-menu.pug
         .nav-line.content.desktop
-            .nav-title.size-50.weight-500.text-black 
-                a(href='user-types-of-sports.html') Велосипед
+            .nav-title.weight-500.text-black.size-50 
+                a(href='guest-types-of-sports.html') Велосипед
                 img(src="icon/arrow-nav.svg", alt="")
-                | Городской велосипед
-        .profile   
-            .mark-equipment 
-                .mark-equipment-title.size-40.weight-500 Марка трaнспорта
-                .mark-equipment-list
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark1.svg", alt="") 
-                        .size-30.text-black Cannondale
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark2.svg", alt="") 
-                        .size-30.text-black Corratec
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark3.svg", alt="") 
-                        .size-30.text-black GT
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark4.svg", alt="") 
-                        .size-30.text-black Jamis
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark5.svg", alt="") 
-                        .size-30.text-black Mongoose
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark6.svg", alt="") 
-                        .size-30.text-black Outleap
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark7.svg", alt="") 
-                        .size-30.text-black Pure Fix
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark8.svg", alt="") 
-                        .size-30.text-black Zycle Fix
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark9.svg", alt="") 
-                        .size-30.text-black Nirve
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark10.svg", alt="") 
-                        .size-30.text-black Bickerton
-                    a.mark-equipment-part(href='user-mark.html')  
-                        img(src="icon/mark11.svg", alt="") 
-                        .size-30.text-black Outleap
-                    a.mark-equipment-part(href='user-mark.html') 
-                        img(src="icon/mark12.svg", alt="") 
-                        .size-30.text-black Ubike
+                a.size-50.weight-500.text-black(href='guest-mark-of-sports.html') Городской велосипед
+                img(src="icon/arrow-nav.svg", alt="")
+                | Cannondale
         .nav-line.content
             .nav-title.size-50.weight-500.text-black 
                 | Последние записи
@@ -65,7 +29,7 @@ html
                         .card-image 
                             img(src="images/last-note.png", alt="")
                         .card-title.product-title
-                            a.size-20.weight-500.text-black(href='user-description.html') Замена седла на велосипеде Cannondale
+                            a.size-20.weight-500.text-black(href='guest-description.html') Замена седла на велосипеде Cannondale
                             .card-bottom
                                 .card-bottom-info
                                     .weight-500.size-18.open-user-card Name 1
@@ -73,11 +37,11 @@ html
                                         .user 
                                             .user-label
                                                 .user-photo
-                                                    a(href='user-profile.html')
+                                                    a(href='guest-profile.html')
                                                         img(src="images/user-photo.png", alt="")
                                                     .online
                                                 .user-info
-                                                    a.user-name.size-30.weight-500.text-black(href='user-profile.html') Андрей Кулагин
+                                                    a.user-name.size-30.weight-500.text-black(href='guest-profile.html') Андрей Кулагин
                                                     .user-level.text-grey-2 Мастер
                                                     .user-location.text-grey-2 Москва, Россия
                                             .user-button.desktop
@@ -110,7 +74,7 @@ html
                         .card-image 
                             img(src="images/product.png", alt="")
                         .card-title.product-title
-                            a.size-20.weight-500.text-black(href='user-eguipment.html') Велосипед Cannondale
+                            a.size-20.weight-500.text-black(href='guest-equipment.html') Велосипед Cannondale
                             .card-bottom
                                 .card-bottom-info
                                     .weight-500.size-18.open-user-card Name 1
@@ -118,11 +82,11 @@ html
                                         .user 
                                             .user-label
                                                 .user-photo
-                                                    a(href='user-profile.html')
+                                                    a(href='guest-profile.html')
                                                         img(src="images/user-photo.png", alt="")
                                                     .online
                                                 .user-info
-                                                    a.user-name.size-30.weight-500.text-black(href='user-profile.html') Андрей Кулагин
+                                                    a.user-name.size-30.weight-500.text-black(href='guest-profile.html') Андрей Кулагин
                                                     .user-level.text-grey-2 Мастер
                                                     .user-location.text-grey-2 Москва, Россия
                                             .user-button.desktop

@@ -428,7 +428,6 @@
     }
     .card-content-bottom{
         position: relative;
-        width: 100%;
         .user-button{
             display: flex;
             position: absolute;
@@ -1270,6 +1269,14 @@
         .button{
             padding: 8px 0;
             margin: 9px 0;
+            width: 100%;
+        }
+    }
+    .page-card-list-small {
+        .card {
+            .card-image{
+                height: 63%;
+            }
         }
     }
     .add-place-map {

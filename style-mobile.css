@@ -444,7 +444,6 @@
 
   .card-content-bottom {
     position: relative;
-    width: 100%;
   }
   .card-content-bottom .user-button {
     display: flex;
@@ -1251,6 +1250,11 @@
   .mobile-button-myprofile .button {
     padding: 8px 0;
     margin: 9px 0;
+    width: 100%;
+  }
+
+  .page-card-list-small .card .card-image {
+    height: 63%;
   }
 
   .add-place-map {

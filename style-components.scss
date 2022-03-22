@@ -19,12 +19,14 @@ button{
 }
 a{
     text-decoration: none;
+    
     &:hover{
         color: #5575E8;
     }
-    &:visited {
-        color: black;
+    &:active{
+        color: #5575E8;
     }
+    
 }
 input{
     background: none;

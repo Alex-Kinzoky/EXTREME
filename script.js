@@ -330,19 +330,21 @@ $(document).ready(function(){
                 $('.left-podmenu').show()
             }
         }
-        if (fileName == 'user-mystorage.html'){
-            if ($(this).text() == 'Моя кладовка'){
-                $(this).removeClass('text-black')
-                $(this).addClass('text-blue')
-                $('.left-podmenu').show()
-            }
-        }
+        
         if (fileName == 'user-myplace.html'){
             if ($(this).text() == 'Мои места катания'){
                 $(this).removeClass('text-black')
                 $(this).addClass('text-blue')
                 $('.left-podmenu').show()
             }
+        }
+        if (fileName == 'user-mystorage.html'){
+            if ($(this).text() == 'Моя кладовка'){
+                $(this).removeClass('text-black')
+                $(this).addClass('text-blue')
+                $('.left-podmenu').show()
+            }
+            
         }
         if (fileName == 'user-myevents.html'){
             if ($(this).text() == 'Мои мероприятия'){

@@ -513,6 +513,7 @@
     align-items: center;
     .top-label{
         width: auto;
+        
     }
     .nav-title{
         a{
@@ -907,6 +908,15 @@
     .size-50{
         display: flex;
         align-items: center;
+        .weight-500{
+                &:visited{
+                    color: #161616;
+                }
+                &:hover{
+                    color: #5575E8;
+                }
+        }
+        
         .button{
             padding: calc(100vw * (12 / 1920)) calc(100vw * (38 / 1920));
             margin-left: calc(100vw * (40 / 1920));

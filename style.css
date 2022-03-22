@@ -913,6 +913,12 @@
   display: flex;
   align-items: center;
 }
+.top-label .size-50 .weight-500:visited {
+  color: #161616;
+}
+.top-label .size-50 .weight-500:hover {
+  color: #5575E8;
+}
 .top-label .size-50 .button {
   padding: 0.625vw 1.9791666667vw;
   margin-left: 2.0833333333vw;

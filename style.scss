@@ -2179,6 +2179,9 @@ input[type=radio]{
 .small-arrow-forward {
     width: 24px;
     margin-left: calc(100vw * (15 / 1920));
+    img {
+        width: 100%;
+    }
 }
 .add-feedback{
     display: flex;

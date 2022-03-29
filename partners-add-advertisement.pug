@@ -4,37 +4,39 @@ html
     body 
         include component/partners-header.pug 
         .hr
-        include component/partners-left-menu.pug 
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Создание рекламы
-        .profile 
-            .add-journal-note 
-                    .size-30.text-black Загрузить баннер 1156×320 в верхней части страниц
-                    .add-photo.margin-0
-                        .light-blue-blue-border
-                    .change-card 
-                        .size-18.text-blue 
-                            img(src="icon/return.svg", alt="")
-                            | Заменить
-                        .size-18.text-red
-                            img(src="icon/del.svg", alt="")
-                            | Удалить
-        .hr 
-        .profile
-            .add-journal-note 
-                    .size-30.text-black Загрузить баннер 269×388 на внутренних страницах
-                    .add-photo.margin-0
-                        .light-blue-blue-border
-                    .change-card 
-                        .size-18.text-blue 
-                            img(src="icon/return.svg", alt="")
-                            | Заменить
-                        .size-18.text-red
-                            img(src="icon/del.svg", alt="")
-                            | Удалить
-            
-        .description.margin-end
-            .save-change
-                a.button.blue.size-20.text-white(href='partners-index.html') Создать
+        main.main
+            include component/partners-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black 
+                        | Создание рекламы
+                .profile 
+                    .add-journal-note 
+                            .size-30.text-black Загрузить баннер 1156×320 в верхней части страниц
+                            .add-photo.margin-0
+                                .light-blue-blue-border
+                            .change-card 
+                                .size-18.text-blue 
+                                    img(src="icon/return.svg", alt="")
+                                    | Заменить
+                                .size-18.text-red
+                                    img(src="icon/del.svg", alt="")
+                                    | Удалить
+                .hr 
+                .profile
+                    .add-journal-note 
+                            .size-30.text-black Загрузить баннер 269×388 на внутренних страницах
+                            .add-photo.margin-0
+                                .light-blue-blue-border
+                            .change-card 
+                                .size-18.text-blue 
+                                    img(src="icon/return.svg", alt="")
+                                    | Заменить
+                                .size-18.text-red
+                                    img(src="icon/del.svg", alt="")
+                                    | Удалить
+                    
+                .description.margin-end
+                    .save-change
+                        a.button.blue.size-20.text-white(href='partners-index.html') Создать
         include component/footer.pug

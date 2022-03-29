@@ -4,44 +4,46 @@ html
     body 
         include component/moderator-header.pug 
         .hr
-        include component/moderator-left-menu.pug 
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Чёрный список
-        .nav-line.content.desktop
-            .search-line.button.white-blue-border.top-search.desktop
-                .search-image.blue-search
-                input.size-14.text-blue(type="text" placeholder="Поиск пользователя")
-                button.blue.button.size-14.text-white Поиск
-        - for (var x = 0; x < 3; x++)
-            .participants-line
-                .profile
-                    .user
-                        .user-label
-                            .user-photo
-                                a(href='moderator-profile.html')
-                                    img(src="images/user-photo.png", alt="")
-                                .offline
-                            a.user-info(href='moderator-profile.html')
-                                .user-name.size-26.text-black Андрей Кулагин
-                                .user-level.size-16.text-grey-2 Мастер
-                                .user-location.size-16.text-grey-2 Москва, Россия
-                    .delete 
-                        img(src="icon/recover.svg", alt="")
-                        .text-green.size-20 Восстановить
-        .participants-line.margin-end
-            .profile
-                .user
-                    .user-label
-                        .user-photo
-                            a(href='guest-profile.html')
-                                img(src="images/user-photo.png", alt="")
-                            .offline
-                        a.user-info(href='moderator-profile.html')
-                            .user-name.size-26.text-black Андрей Кулагин
-                            .user-level.size-16.text-grey-2 Мастер
-                            .user-location.size-16.text-grey-2 Москва, Россия
-                .delete 
-                    img(src="icon/recover.svg", alt="")
-                    .text-green.size-20 Восстановить
+        main.main
+            include component/moderator-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black 
+                        | Чёрный список
+                .nav-line.content.desktop
+                    .search-line.button.white-blue-border.top-search.desktop
+                        .search-image.blue-search
+                        input.size-14.text-blue(type="text" placeholder="Поиск пользователя")
+                        button.blue.button.size-14.text-white Поиск
+                - for (var x = 0; x < 3; x++)
+                    .participants-line
+                        .profile
+                            .user
+                                .user-label
+                                    .user-photo
+                                        a(href='moderator-profile.html')
+                                            img(src="images/user-photo.png", alt="")
+                                        .offline
+                                    a.user-info(href='moderator-profile.html')
+                                        .user-name.size-26.text-black Андрей Кулагин
+                                        .user-level.size-16.text-grey-2 Мастер
+                                        .user-location.size-16.text-grey-2 Москва, Россия
+                            .delete 
+                                img(src="icon/recover.svg", alt="")
+                                .text-green.size-20 Восстановить
+                .participants-line.margin-end
+                    .profile
+                        .user
+                            .user-label
+                                .user-photo
+                                    a(href='guest-profile.html')
+                                        img(src="images/user-photo.png", alt="")
+                                    .offline
+                                a.user-info(href='moderator-profile.html')
+                                    .user-name.size-26.text-black Андрей Кулагин
+                                    .user-level.size-16.text-grey-2 Мастер
+                                    .user-location.size-16.text-grey-2 Москва, Россия
+                        .delete 
+                            img(src="icon/recover.svg", alt="")
+                            .text-green.size-20 Восстановить
         include component/footer.pug

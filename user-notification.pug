@@ -4,45 +4,47 @@ html
     body 
         include component/user-header.pug 
         .hr
-        include component/user-left-menu.pug 
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Уведомления
-        
-        .profile.notification-content
-            .notification-line.invite
-                .notification-left
-                    .notification-image 
-                        img(src="icon/black-event.svg", alt="")
-                    .size-26.text-black Name1 приглашает Вас на мероприятие
-                .notification-right 
-                    .notification-yes 
-                        .proposal-image 
-                            img(src="icon/yes.svg", alt="")
-                        .size-20.text-green Принять
-                    .notification-no
-                        .proposal-image 
-                            img(src="icon/no.svg", alt="")
-                        .size-20.text-red Отклонить
-            .notification-line 
-                .notification-left
-                    .notification-image 
-                        img(src="icon/black-like.svg", alt="")
-                    .size-26.text-black Name1 нравится ваше снаряжение
-            .notification-line 
-                .notification-left
-                    .notification-image 
-                        img(src="icon/black-level.svg", alt="")
-                    .size-26.text-black Уровень вашего снаряжения увеличился  (5 ур.)
-            .notification-line 
-                .notification-left
-                    .notification-image 
-                        img(src="icon/black-follow.svg", alt="")
-                    .size-26.text-black Name1 начал(а) отслеживать ваш профиль
-            .notification-line 
-                .notification-left
-                    .notification-image 
-                        img(src="icon/black-notification.svg", alt="")
-                    .size-26.text-black Важное уведомление
-        .login-gradient.body-gradient    
+        main.main
+            include component/user-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black 
+                        | Уведомления
+                
+                .profile.notification-content
+                    .notification-line.invite
+                        .notification-left
+                            .notification-image 
+                                img(src="icon/black-event.svg", alt="")
+                            .size-26.text-black Name1 приглашает Вас на мероприятие
+                        .notification-right 
+                            .notification-yes 
+                                .proposal-image 
+                                    img(src="icon/yes.svg", alt="")
+                                .size-20.text-green Принять
+                            .notification-no
+                                .proposal-image 
+                                    img(src="icon/no.svg", alt="")
+                                .size-20.text-red Отклонить
+                    .notification-line 
+                        .notification-left
+                            .notification-image 
+                                img(src="icon/black-like.svg", alt="")
+                            .size-26.text-black Name1 нравится ваше снаряжение
+                    .notification-line 
+                        .notification-left
+                            .notification-image 
+                                img(src="icon/black-level.svg", alt="")
+                            .size-26.text-black Уровень вашего снаряжения увеличился  (5 ур.)
+                    .notification-line 
+                        .notification-left
+                            .notification-image 
+                                img(src="icon/black-follow.svg", alt="")
+                            .size-26.text-black Name1 начал(а) отслеживать ваш профиль
+                    .notification-line 
+                        .notification-left
+                            .notification-image 
+                                img(src="icon/black-notification.svg", alt="")
+                            .size-26.text-black Важное уведомление
+                .login-gradient.body-gradient    
         include component/footer.pug 

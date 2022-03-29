@@ -6,152 +6,154 @@ html
         .hr
         .nav-line.content.mobile
             .nav-title.size-50.weight-500.text-black.mobile Лента
-        include component/user-left-menu.pug
-        .nav-line.content.desktop
-            .nav-title.size-50.weight-500.text-black Лента
-            .nav-sort.light-blue-blue-border.text-blue.size-14.button
-                .nav-sort-line.blue.text-white.button По популярности
-                .nav-sort-line.button По коментариям
-                .nav-sort-line.button По дате
-        .right-filter 
-            button.size-26.text-black
-                img(src="icon/arrow-down.svg", alt="")
-                | Вид спорта
-            .podmenu-filter#sport
-                a.podmenu-filter-link(href="#") Аквабайк 
-                a.podmenu-filter-link(href="#") Альпинизм
-                a.podmenu-filter-link(href="#") Бейсджампинг 
-                a.podmenu-filter-link(href="#") Бокинг
-                a.podmenu-filter-link(href="#") Вейкбординг
-                a.podmenu-filter-link(href="#") Виндсерфинг
-                a.podmenu-filter-link(href="#") Воркаут 
-                a.podmenu-filter-link(href="#") Горнолыжный спорт
-                a.podmenu-filter-link(href="#") Скоростной спуск
-            button.size-26.text-black
-                img(src="icon/arrow-down.svg", alt="")
-                | Модель снаряжения
-            .podmenu-filter#model
-                a.podmenu-filter-link(href="#") Гидрокостюмы
-                a.podmenu-filter-link(href="#") Сухие гидрокостюмы
-                a.podmenu-filter-link(href="#") Ласты
-                a.podmenu-filter-link(href="#") Маски
-                a.podmenu-filter-link(href="#") Трубки
-                a.podmenu-filter-link(href="#") Дайвинг-компьютеры
-                a.podmenu-filter-link(href="#") Регуляторы
-                a.podmenu-filter-link(href="#") Октопусы
-                a.podmenu-filter-link(href="#") Сумки для дайвинга
-            button.size-26.text-black
-                img(src="icon/arrow-down.svg", alt="")
-                | Локация
-            .podmenu-filter#location
-                .podmenu-filter-link.desktop Страна, регион, город
-                input.location.button.size-20.text-grey-2(type="text" placeholder='Страна, регион, город')
-            button.size-26.text-black
-                img(src="icon/arrow-down.svg", alt="")
-                | Уровень подготовки
-            .podmenu-filter#level
-                a.podmenu-filter-link(href="#") Новичок
-                a.podmenu-filter-link(href="#") Любитель
-                a.podmenu-filter-link(href="#") Продвинутый
-                a.podmenu-filter-link(href="#") Мастер
-            button.size-26.text-black
-                img(src="icon/arrow-down.svg", alt="")
-                | О чём
-            .podmenu-filter#about
-                a.podmenu-filter-link(href="#") Обо всём
-                a.podmenu-filter-link(href="#") Трюки
-                a.podmenu-filter-link(href="#") Интересные места
-                a.podmenu-filter-link(href="#") Снаряжение
-                a.podmenu-filter-link(href="#") Лайфхаки
-                a.podmenu-filter-link(href="#") Вопрос — ответ
-            button.blue.size-20.text-white Применить
-            .advertisement-left
-        .nav-line.content.mobile
-            .nav-sort.light-blue-blue-border.text-blue.size-14.button
-                .nav-sort-line.blue.text-white.button По популярности
-                .nav-sort-line.button По коментариям
-                .nav-sort-line.button По дате
-        .tape-list 
-            .card.tape-card.button
-                .user 
-                    .user-label
-                        .user-photo
-                            a(href='guest-profile.html')
-                                img(src="images/user-photo.png", alt="")
-                            .online
-                        a.user-info(href='guest-profile.html')
-                            .user-name.size-26.text-black Андрей Кулагин
-                            .user-level.size-16.text-grey-2 Мастер
-                            .user-location.size-16.text-grey-2 Москва, Россия
-                        button.user-follow.blue.text-white.size-20.desktop Подписаться
-                    .mobile-user-menu.mobile
-                    .user-button-mobile.button.white-white-border
-                        .user-button-line
-                            .bookmark
-                            | Сохранить в закладках
-                        .user-button-line
-                            .share
-                            | Поделиться
-                    .user-button.desktop
-                        .bookmark 
-                        .share
-                .card-content
-                    .card-content-top
-                        a.card-content-title.size-30.weight-500.text-black(href='user-description.html') Лучшее снаряжение для сноубординга
-                        .card-content-date.size-16.text-grey-2 Опубликовано 07.12.2021
-                    .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
-                    .read-more 
-                        br
-                        .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
-                    .card-content-more.size-18.text-black Читать дальше...
-                    .card-content-image 
-                        img(src="images/tape.png", alt="")
-                    .card-content-bottom
-                        button.button.size-30.text-black-2
-                            img.like(src="icon/like.svg", alt="")
-                            .size-18 20
-                        button.button.size-30.text-black-2
-                            img(src="icon/comment.svg", alt="")
-                            .size-18 25
-            .card.tape-card.button
-                .user 
-                    .user-label
-                        .user-photo
-                            a(href='guest-profile.html')
-                                img(src="images/user-photo.png", alt="")
-                            .online
-                        a.user-info(href='guest-profile.html')
-                            .user-name.size-26.text-black Андрей Кулагин
-                            .user-level.size-16.text-grey-2 Мастер
-                            .user-location.size-16.text-grey-2 Москва, Россия
-                        button.user-follow.blue.text-white.size-20.desktop Подписаться
-                    .mobile-user-menu.mobile
-                    .user-button-mobile.button.white-white-border
-                        .user-button-line
-                            .bookmark
-                            | Сохранить в закладках
-                        .user-button-line
-                            .share
-                            | Поделиться
-                    .user-button.desktop
-                        .bookmark 
-                        .share
-                .card-content
-                    .card-content-top
-                        a.card-content-title.size-30.weight-500.text-black(href='user-description.html') Лучшее снаряжение для сноубординга
-                        .card-content-date.size-16.text-grey-2 Опубликовано 07.12.2021
-                    .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
-                    .read-more 
-                        br
-                        .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
-                    .card-content-more.size-18.text-black Читать дальше...
-                    .card-content-image 
-                        img(src="images/tape.png", alt="")
-                    .card-content-bottom
-                        button.button.size-30.text-black-2
-                            img.like(src="icon/like.svg", alt="")
-                            .size-18 20
-                        button.button.size-30.text-black-2
-                            img(src="icon/comment.svg", alt="")
-                            .size-18 25
+        main.main
+            include component/user-left-menu.pug
+            .content-wrapper.pd-40
+                .nav-line.content.desktop
+                    .nav-title.size-50.weight-500.text-black Лента
+                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                        .nav-sort-line.blue.text-white.button По популярности
+                        .nav-sort-line.button По коментариям
+                        .nav-sort-line.button По дате
+                .right-filter 
+                    button.size-26.text-black
+                        img(src="icon/arrow-down.svg", alt="")
+                        | Вид спорта
+                    .podmenu-filter#sport
+                        a.podmenu-filter-link(href="#") Аквабайк 
+                        a.podmenu-filter-link(href="#") Альпинизм
+                        a.podmenu-filter-link(href="#") Бейсджампинг 
+                        a.podmenu-filter-link(href="#") Бокинг
+                        a.podmenu-filter-link(href="#") Вейкбординг
+                        a.podmenu-filter-link(href="#") Виндсерфинг
+                        a.podmenu-filter-link(href="#") Воркаут 
+                        a.podmenu-filter-link(href="#") Горнолыжный спорт
+                        a.podmenu-filter-link(href="#") Скоростной спуск
+                    button.size-26.text-black
+                        img(src="icon/arrow-down.svg", alt="")
+                        | Модель снаряжения
+                    .podmenu-filter#model
+                        a.podmenu-filter-link(href="#") Гидрокостюмы
+                        a.podmenu-filter-link(href="#") Сухие гидрокостюмы
+                        a.podmenu-filter-link(href="#") Ласты
+                        a.podmenu-filter-link(href="#") Маски
+                        a.podmenu-filter-link(href="#") Трубки
+                        a.podmenu-filter-link(href="#") Дайвинг-компьютеры
+                        a.podmenu-filter-link(href="#") Регуляторы
+                        a.podmenu-filter-link(href="#") Октопусы
+                        a.podmenu-filter-link(href="#") Сумки для дайвинга
+                    button.size-26.text-black
+                        img(src="icon/arrow-down.svg", alt="")
+                        | Локация
+                    .podmenu-filter#location
+                        .podmenu-filter-link.desktop Страна, регион, город
+                        input.location.button.size-20.text-grey-2(type="text" placeholder='Страна, регион, город')
+                    button.size-26.text-black
+                        img(src="icon/arrow-down.svg", alt="")
+                        | Уровень подготовки
+                    .podmenu-filter#level
+                        a.podmenu-filter-link(href="#") Новичок
+                        a.podmenu-filter-link(href="#") Любитель
+                        a.podmenu-filter-link(href="#") Продвинутый
+                        a.podmenu-filter-link(href="#") Мастер
+                    button.size-26.text-black
+                        img(src="icon/arrow-down.svg", alt="")
+                        | О чём
+                    .podmenu-filter#about
+                        a.podmenu-filter-link(href="#") Обо всём
+                        a.podmenu-filter-link(href="#") Трюки
+                        a.podmenu-filter-link(href="#") Интересные места
+                        a.podmenu-filter-link(href="#") Снаряжение
+                        a.podmenu-filter-link(href="#") Лайфхаки
+                        a.podmenu-filter-link(href="#") Вопрос — ответ
+                    button.blue.size-20.text-white Применить
+                    .advertisement-left
+                .nav-line.content.mobile
+                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                        .nav-sort-line.blue.text-white.button По популярности
+                        .nav-sort-line.button По коментариям
+                        .nav-sort-line.button По дате
+                .tape-list 
+                    .card.tape-card.button
+                        .user 
+                            .user-label
+                                .user-photo
+                                    a(href='guest-profile.html')
+                                        img(src="images/user-photo.png", alt="")
+                                    .online
+                                a.user-info(href='guest-profile.html')
+                                    .user-name.size-26.text-black Андрей Кулагин
+                                    .user-level.size-16.text-grey-2 Мастер
+                                    .user-location.size-16.text-grey-2 Москва, Россия
+                                button.user-follow.blue.text-white.size-20.desktop Подписаться
+                            .mobile-user-menu.mobile
+                            .user-button-mobile.button.white-white-border
+                                .user-button-line
+                                    .bookmark
+                                    | Сохранить в закладках
+                                .user-button-line
+                                    .share
+                                    | Поделиться
+                            .user-button.desktop
+                                .bookmark 
+                                .share
+                        .card-content
+                            .card-content-top
+                                a.card-content-title.size-30.weight-500.text-black(href='user-description.html') Лучшее снаряжение для сноубординга
+                                .card-content-date.size-16.text-grey-2 Опубликовано 07.12.2021
+                            .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                            .read-more 
+                                br
+                                .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                            .card-content-more.size-18.text-black Читать дальше...
+                            .card-content-image 
+                                img(src="images/tape.png", alt="")
+                            .card-content-bottom
+                                button.button.size-30.text-black-2
+                                    img.like(src="icon/like.svg", alt="")
+                                    .size-18 20
+                                button.button.size-30.text-black-2
+                                    img(src="icon/comment.svg", alt="")
+                                    .size-18 25
+                    .card.tape-card.button
+                        .user 
+                            .user-label
+                                .user-photo
+                                    a(href='guest-profile.html')
+                                        img(src="images/user-photo.png", alt="")
+                                    .online
+                                a.user-info(href='guest-profile.html')
+                                    .user-name.size-26.text-black Андрей Кулагин
+                                    .user-level.size-16.text-grey-2 Мастер
+                                    .user-location.size-16.text-grey-2 Москва, Россия
+                                button.user-follow.blue.text-white.size-20.desktop Подписаться
+                            .mobile-user-menu.mobile
+                            .user-button-mobile.button.white-white-border
+                                .user-button-line
+                                    .bookmark
+                                    | Сохранить в закладках
+                                .user-button-line
+                                    .share
+                                    | Поделиться
+                            .user-button.desktop
+                                .bookmark 
+                                .share
+                        .card-content
+                            .card-content-top
+                                a.card-content-title.size-30.weight-500.text-black(href='user-description.html') Лучшее снаряжение для сноубординга
+                                .card-content-date.size-16.text-grey-2 Опубликовано 07.12.2021
+                            .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                            .read-more 
+                                br
+                                .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                            .card-content-more.size-18.text-black Читать дальше...
+                            .card-content-image 
+                                img(src="images/tape.png", alt="")
+                            .card-content-bottom
+                                button.button.size-30.text-black-2
+                                    img.like(src="icon/like.svg", alt="")
+                                    .size-18 20
+                                button.button.size-30.text-black-2
+                                    img(src="icon/comment.svg", alt="")
+                                    .size-18 25
         include component/footer.pug

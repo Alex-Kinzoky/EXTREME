@@ -4,129 +4,131 @@ html
     body 
         include component/moderator-header.pug 
         .hr
-        include component/moderator-left-menu.pug 
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black
-                a.size-50.weight-500.text-black(href='moderator-tape.html') Лента
-                img(src="icon/arrow-nav.svg", alt="")
-                | дайвинг
-        .description 
-            .card.description-card
-                .user 
-                    .user-label
-                        .user-photo
-                            a(href='moderator-profile.html')
-                            img(src="images/user-photo.png", alt="")
-                            .online
-                        a.user-info(href='moderator-profile.html')
-                            .user-name.size-26.text-black Андрей Кулагин
-                            .user-level.size-16.text-grey-2 Мастер
-                            .user-location.size-16.text-grey-2 Москва, Россия
-                        button.user-follow.blue.text-white.size-20.desktop Подписаться
-                        
-                        .mobile-user-menu.mobile
-                        .user-button-mobile.button.white-white-border
-                            .user-button-line
-                                .bookmark
-                                | Сохранить в закладках
-                            .user-button-line
+        main.main
+            include component/moderator-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black
+                        a.size-50.weight-500.text-black(href='moderator-tape.html') Лента
+                        img(src="icon/arrow-nav.svg", alt="")
+                        | дайвинг
+                .description 
+                    .card.description-card
+                        .user 
+                            .user-label
+                                .user-photo
+                                    a(href='moderator-profile.html')
+                                    img(src="images/user-photo.png", alt="")
+                                    .online
+                                a.user-info(href='moderator-profile.html')
+                                    .user-name.size-26.text-black Андрей Кулагин
+                                    .user-level.size-16.text-grey-2 Мастер
+                                    .user-location.size-16.text-grey-2 Москва, Россия
+                                button.user-follow.blue.text-white.size-20.desktop Подписаться
+                                
+                                .mobile-user-menu.mobile
+                                .user-button-mobile.button.white-white-border
+                                    .user-button-line
+                                        .bookmark
+                                        | Сохранить в закладках
+                                    .user-button-line
+                                        .share
+                                        | Поделиться
+                            .moderator-rejection-card.card.white-white-border
+                                .add-journal-note 
+                                    .moderator-card-rejection-top
+                                        .size-30.text-black Текст отказа
+                                        .close-image
+                                    .textarea-icon 
+                                        button.textarea-icon-button 
+                                            img(src="icon/area-icon-1.svg", alt="")
+                                        button.textarea-icon-button 
+                                            img(src="icon/area-icon-2.svg", alt="")
+                                        button.textarea-icon-button 
+                                            img(src="icon/area-icon-3.svg", alt="")
+                                        button.textarea-icon-button 
+                                            img(src="icon/area-icon-4.svg", alt="")
+                                        button.textarea-icon-button 
+                                            img(src="icon/area-icon-5.svg", alt="")
+                                        button.textarea-icon-button 
+                                            img(src="icon/area-icon-6.svg", alt="")
+                                        button.textarea-icon-button 
+                                            img(src="icon/area-icon-7.svg", alt="")
+                                    textarea.light-blue-blue-border(name="", cols="30", rows="17") 
+                                .save-change
+                                    button.button.blue.size-20.text-white Отправить
+                            .user-button.desktop
+                                .moderator-buttons
+                                    img(src="icon/yes.svg", alt="")
+                                    img.rejection(src="icon/rejection.svg", alt="")
+                                .bookmark 
                                 .share
-                                | Поделиться
-                    .moderator-rejection-card.card.white-white-border
-                        .add-journal-note 
-                            .moderator-card-rejection-top
-                                .size-30.text-black Текст отказа
-                                .close-image
-                            .textarea-icon 
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-1.svg", alt="")
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-2.svg", alt="")
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-3.svg", alt="")
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-4.svg", alt="")
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-5.svg", alt="")
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-6.svg", alt="")
-                                button.textarea-icon-button 
-                                    img(src="icon/area-icon-7.svg", alt="")
-                            textarea.light-blue-blue-border(name="", cols="30", rows="17") 
-                        .save-change
-                            button.button.blue.size-20.text-white Отправить
-                    .user-button.desktop
-                        .moderator-buttons
-                            img(src="icon/yes.svg", alt="")
-                            img.rejection(src="icon/rejection.svg", alt="")
-                        .bookmark 
-                        .share
-                button.user-follow.blue.text-white.size-20.mobile Подписаться
-                button.white-green-border.button.text-green.size-20.mobile Опубликовать
-                button.white-red-border.button.text-red.size-20.rejection.mobile Отказать
-                .card-content
-                    .card-content-top
-                        .card-content-title.size-30.weight-500.text-black Лучшее снаряжение для сноубординга
-                        .card-content-date.size-16.text-grey-2 Опубликовано 07.12.2021
-                    .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
-                    
-                    .card-content-image 
-                        img(src="images/tape.png", alt="")
-                    .card-content-text.size-18.text-black Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
-                    br
-                    .card-content-text.size-18.text-black Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
-                    .card-content-bottom
-                        button.button.size-30.text-black-2
-                            img.like(src="icon/like.svg", alt="")
-                            .size-18 20
-                        button.button.size-30.text-black-2
-                            img(src="icon/comment.svg", alt="")
-                            .size-18 25
-            a.before(href='guest-description.pug') 
-                .arrow-back
-                    img(src="icon/arrow-back.svg", alt="")
-                .before-info
-                    .before-title.size-30.text-black Ранее
-                    .before-theme.size-20.text-grey-2 Посмотреть предыдущий бортжурнал
-            .comments 
-                .nav-line
-                    .nav-title.size-30.weight-500.text-black 25 комментариев
-                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
-                        .nav-sort-line.blue.text-white.button По популярности
-                        .nav-sort-line.button По порядку
-        .hr
-        .comments-bottom
-            .new-comment.light-blue-blue-border.button
-                .smile 
-                input.text-blue-grey.size-20(type="text", placeholder='Написать комментарий...')
-            .one-comment 
-                .user 
-                    .user-label
-                        .user-photo
-                            a(href='guest-profile.html')
-                                img(src="images/comment-photo.png", alt="")
-                        a.user-info(href='guest-profile.html')
-                            .user-name.size-24.text-black Кирилл Максимчук
-                            .user-level.size-16.text-grey-2 Мастер
-                            .user-location.size-16.text-grey-2 Москва, Россия
-                    .user-button
-                        button.unlike
-                            img(src="icon/unlike.svg", alt="")
-                            | 1
-                        button.like-comment
-                            img(src="icon/like-comment.svg", alt="")
-                            | 20
-                        .mobile-user-menu
-                        .user-button-mobile.button.white-white-border
-                            .user-button-line
-                                img(src="icon/black-delete.svg", alt="")
-                                | Удалить
-                            .user-button-line
-                                img(src="icon/black-black-list.svg", alt="")
-                                | Добавить в чёрный список
-                .comment-content 
-                    .comment-text.text-black Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно
-                    .comment-bottom 
-                        .comment-time.size-14.text-grey-2 Сегодня 14:00
-                        button.size-16.text-grey-2 Ответить
+                        button.user-follow.blue.text-white.size-20.mobile Подписаться
+                        button.white-green-border.button.text-green.size-20.mobile Опубликовать
+                        button.white-red-border.button.text-red.size-20.rejection.mobile Отказать
+                        .card-content
+                            .card-content-top
+                                .card-content-title.size-30.weight-500.text-black Лучшее снаряжение для сноубординга
+                                .card-content-date.size-16.text-grey-2 Опубликовано 07.12.2021
+                            .card-content-text.size-18.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                            
+                            .card-content-image 
+                                img(src="images/tape.png", alt="")
+                            .card-content-text.size-18.text-black Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+                            br
+                            .card-content-text.size-18.text-black Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.
+                            .card-content-bottom
+                                button.button.size-30.text-black-2
+                                    img.like(src="icon/like.svg", alt="")
+                                    .size-18 20
+                                button.button.size-30.text-black-2
+                                    img(src="icon/comment.svg", alt="")
+                                    .size-18 25
+                    a.before(href='guest-description.pug') 
+                        .arrow-back
+                            img(src="icon/arrow-back.svg", alt="")
+                        .before-info
+                            .before-title.size-30.text-black Ранее
+                            .before-theme.size-20.text-grey-2 Посмотреть предыдущий бортжурнал
+                    .comments 
+                        .nav-line
+                            .nav-title.size-30.weight-500.text-black 25 комментариев
+                            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                                .nav-sort-line.blue.text-white.button По популярности
+                                .nav-sort-line.button По порядку
+                .hr
+                .comments-bottom
+                    .new-comment.light-blue-blue-border.button
+                        .smile 
+                        input.text-blue-grey.size-20(type="text", placeholder='Написать комментарий...')
+                    .one-comment 
+                        .user 
+                            .user-label
+                                .user-photo
+                                    a(href='guest-profile.html')
+                                        img(src="images/comment-photo.png", alt="")
+                                a.user-info(href='guest-profile.html')
+                                    .user-name.size-24.text-black Кирилл Максимчук
+                                    .user-level.size-16.text-grey-2 Мастер
+                                    .user-location.size-16.text-grey-2 Москва, Россия
+                            .user-button
+                                button.unlike
+                                    img(src="icon/unlike.svg", alt="")
+                                    | 1
+                                button.like-comment
+                                    img(src="icon/like-comment.svg", alt="")
+                                    | 20
+                                .mobile-user-menu
+                                .user-button-mobile.button.white-white-border
+                                    .user-button-line
+                                        img(src="icon/black-delete.svg", alt="")
+                                        | Удалить
+                                    .user-button-line
+                                        img(src="icon/black-black-list.svg", alt="")
+                                        | Добавить в чёрный список
+                        .comment-content 
+                            .comment-text.text-black Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно
+                            .comment-bottom 
+                                .comment-time.size-14.text-grey-2 Сегодня 14:00
+                                button.size-16.text-grey-2 Ответить
         include component/footer.pug 

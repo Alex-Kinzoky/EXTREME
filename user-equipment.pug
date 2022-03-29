@@ -4,118 +4,120 @@ html
     body 
         include component/user-header.pug 
         .hr
-        include component/user-left-menu.pug 
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black
-                a.size-50.weight-500.text-black(href='user-storage.html') Кладовка
-                img(src="icon/arrow-nav.svg", alt="")
-                | снаряжение 1
-        .description 
-            .card.description-card.equip
-                .card-content
-                    .card-content-text.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
-                    #slider-eguip
-                        .card-content-image#slider-image
-                            img(src="images/storage-big.png", alt="")
-                        #slider-line 
-                            .line-arrow.card
-                                img(src="icon/gradient-back.svg", alt="")
-                            .line-overflow
-                                .line-images
-                                    .line-image
-                                        img(src="images/line-image.png", alt="")
-                                    .line-image
-                                        img(src="images/line-image.png", alt="")
-                                    .line-image
-                                        img(src="images/line-image.png", alt="")
-                                    .line-image
-                                        img(src="images/line-image.png", alt="")
-                                    .line-image
-                                        img(src="images/line-image.png", alt="")
-                                    .line-image
-                                        img(src="images/line-image.png", alt="")
-                            .line-arrow.card
-                                img(src="icon/gradient-forward.svg", alt="")
-                    .card-content-bottom
-                        .like-comment
-                            button.button.size-30.text-black-2
-                                img.like(src="icon/like.svg", alt="")
-                                | 20
-                            button.button.size-30.text-black-2
-                                img(src="icon/comment.svg", alt="")
-                                | 25
-                        .user-button
-                            .bookmark 
-                            .share
-                        button.user-follow.blue.text-white.size-20.desktop Подписаться
-                    button.user-follow.blue.text-white.size-20.mobile Подписаться
-            .user 
-                .user-label
-                    .user-photo
-                        a(href='guest-profile.html')
-                            img(src="images/user-photo.png", alt="")
-                        .online
-                    a.user-info(href='guest-profile.html')
-                        .user-name.size-26.text-black Андрей Кулагин
-                        .user-level.size-16.text-grey-2 Мастер
-                        .user-location.size-16.text-grey-2 Москва, Россия
-                .size-40.text-black Отзыв владельца
-            .feedback.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
-            .comments
-                .nav-line
-                    .nav-title
-                        .size-50.weight-500.text-black Бортжурнал
-                        .size-50.text-grey-2 21
-                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
-                        .nav-sort-line.blue.text-white.button По теме
-                        .nav-sort-line.button По дате
-                        .nav-sort-line.button По популярности
-            .journal
-                .size-40.text-black Тема 1
-                .card.button.card-h
-                    .card-h-left
-                        .card-h-image 
-                            img(src="images/journal.png", alt="")
-                        .card-h-info 
-                            .size-16.weight-500.text-grey-2 07.12.2021
-                            a.size-30.text-black(href='user-description.html') Название 
-                            .text-black Небольшое описание
-                    .card-content-bottom
-                        button.button.size-30.text-black-2
-                            img.like(src="icon/like.svg", alt="")
-                            | 20
-                        button.button.size-30.text-black-2
-                            img(src="icon/comment.svg", alt="")
-                            | 25
-                .card.button.card-h
-                    .card-h-left
-                        .card-h-image 
-                            img(src="images/journal.png", alt="")
-                        .card-h-info 
-                            .size-16.weight-500.text-grey-2 07.12.2021
-                            a.size-30.text-black(href='user-description.html') Название 
-                            .text-black Небольшое описание
-                    .card-content-bottom
-                        button.button.size-30.text-black-2
-                            img.like(src="icon/like.svg", alt="")
-                            | 20
-                        button.button.size-30.text-black-2
-                            img(src="icon/comment.svg", alt="")
-                            | 25
-                .size-40.text-black Тема 2
-                .card.button.card-h
-                    .card-h-left
-                        .card-h-image 
-                            img(src="images/journal.png", alt="")
-                        .card-h-info 
-                            .size-16.weight-500.text-grey-2 07.12.2021
-                            a.size-30.text-black(href='user-description.html') Название 
-                            .text-black Небольшое описание
-                    .card-content-bottom
-                        button.button.size-30.text-black-2
-                            img.like(src="icon/like.svg", alt="")
-                            | 20
-                        button.button.size-30.text-black-2
-                            img(src="icon/comment.svg", alt="")
-                            | 25
+        main.main
+            include component/user-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black
+                        a.size-50.weight-500.text-black(href='user-storage.html') Кладовка
+                        img(src="icon/arrow-nav.svg", alt="")
+                        | снаряжение 1
+                .description 
+                    .card.description-card.equip
+                        .card-content
+                            .card-content-text.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                            #slider-eguip
+                                .card-content-image#slider-image
+                                    img(src="images/storage-big.png", alt="")
+                                #slider-line 
+                                    .line-arrow.card
+                                        img(src="icon/gradient-back.svg", alt="")
+                                    .line-overflow
+                                        .line-images
+                                            .line-image
+                                                img(src="images/line-image.png", alt="")
+                                            .line-image
+                                                img(src="images/line-image.png", alt="")
+                                            .line-image
+                                                img(src="images/line-image.png", alt="")
+                                            .line-image
+                                                img(src="images/line-image.png", alt="")
+                                            .line-image
+                                                img(src="images/line-image.png", alt="")
+                                            .line-image
+                                                img(src="images/line-image.png", alt="")
+                                    .line-arrow.card
+                                        img(src="icon/gradient-forward.svg", alt="")
+                            .card-content-bottom
+                                .like-comment
+                                    button.button.size-30.text-black-2
+                                        img.like(src="icon/like.svg", alt="")
+                                        | 20
+                                    button.button.size-30.text-black-2
+                                        img(src="icon/comment.svg", alt="")
+                                        | 25
+                                .user-button
+                                    .bookmark 
+                                    .share
+                                button.user-follow.blue.text-white.size-20.desktop Подписаться
+                            button.user-follow.blue.text-white.size-20.mobile Подписаться
+                    .user 
+                        .user-label
+                            .user-photo
+                                a(href='guest-profile.html')
+                                    img(src="images/user-photo.png", alt="")
+                                .online
+                            a.user-info(href='guest-profile.html')
+                                .user-name.size-26.text-black Андрей Кулагин
+                                .user-level.size-16.text-grey-2 Мастер
+                                .user-location.size-16.text-grey-2 Москва, Россия
+                        .size-40.text-black Отзыв владельца
+                    .feedback.text-black Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.
+                    .comments
+                        .nav-line
+                            .nav-title
+                                .size-50.weight-500.text-black Бортжурнал
+                                .size-50.text-grey-2 21
+                            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                                .nav-sort-line.blue.text-white.button По теме
+                                .nav-sort-line.button По дате
+                                .nav-sort-line.button По популярности
+                    .journal
+                        .size-40.text-black Тема 1
+                        .card.button.card-h
+                            .card-h-left
+                                .card-h-image 
+                                    img(src="images/journal.png", alt="")
+                                .card-h-info 
+                                    .size-16.weight-500.text-grey-2 07.12.2021
+                                    a.size-30.text-black(href='user-description.html') Название 
+                                    .text-black Небольшое описание
+                            .card-content-bottom
+                                button.button.size-30.text-black-2
+                                    img.like(src="icon/like.svg", alt="")
+                                    | 20
+                                button.button.size-30.text-black-2
+                                    img(src="icon/comment.svg", alt="")
+                                    | 25
+                        .card.button.card-h
+                            .card-h-left
+                                .card-h-image 
+                                    img(src="images/journal.png", alt="")
+                                .card-h-info 
+                                    .size-16.weight-500.text-grey-2 07.12.2021
+                                    a.size-30.text-black(href='user-description.html') Название 
+                                    .text-black Небольшое описание
+                            .card-content-bottom
+                                button.button.size-30.text-black-2
+                                    img.like(src="icon/like.svg", alt="")
+                                    | 20
+                                button.button.size-30.text-black-2
+                                    img(src="icon/comment.svg", alt="")
+                                    | 25
+                        .size-40.text-black Тема 2
+                        .card.button.card-h
+                            .card-h-left
+                                .card-h-image 
+                                    img(src="images/journal.png", alt="")
+                                .card-h-info 
+                                    .size-16.weight-500.text-grey-2 07.12.2021
+                                    a.size-30.text-black(href='user-description.html') Название 
+                                    .text-black Небольшое описание
+                            .card-content-bottom
+                                button.button.size-30.text-black-2
+                                    img.like(src="icon/like.svg", alt="")
+                                    | 20
+                                button.button.size-30.text-black-2
+                                    img(src="icon/comment.svg", alt="")
+                                    | 25
         include component/footer.pug 

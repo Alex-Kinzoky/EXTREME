@@ -40,9 +40,18 @@ input{
     align-items: center;
     justify-content: center;
 }
-.content{
+.content-wrapper{
     padding: 0 calc(100vw * (80 / 1920));
+    flex-grow: 1;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.pd-40{
+    padding: 0 calc(100vw * (40 / 1920));
+}
+
 .weight-500{
     font-weight: 500;
 }

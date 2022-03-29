@@ -11,93 +11,95 @@ html
                 a.size-50.weight-500.text-black(href='user-mark-of-sports.html') Городской велосипед
                 img(src="icon/arrow-nav.svg", alt="")
                 | Cannondale
-        include component/user-left-menu.pug
-        .nav-line.content.desktop
-            .nav-title.size-50.weight-500.text-black 
-                a(href='user-types-of-sports.html') Велосипед
-                img(src="icon/arrow-nav.svg", alt="")
-                a.size-50.weight-500.text-black(href='user-mark-of-sports.html') Городской велосипед
-                img(src="icon/arrow-nav.svg", alt="")
-                | Cannondale
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Последние записи
-        .profile 
-            .page-card-list-small
-                - for (var x = 0; x < 6; x++)
-                    .card.button.card-map
-                        .card-image 
-                            img(src="images/last-note.png", alt="")
-                        .card-title.product-title
-                            a.size-20.weight-500.text-black(href='user-description.html') Замена седла на велосипеде Cannondale
-                            .card-bottom
-                                .card-bottom-info
-                                    .weight-500.size-18.open-user-card Name 1
-                                    .user-card.white-white-border.card
-                                        .user 
-                                            .user-label
-                                                .user-photo
-                                                    a(href='user-profile.html')
-                                                        img(src="images/user-photo.png", alt="")
-                                                    .online
-                                                .user-info
-                                                    a.user-name.size-30.weight-500.text-black(href='user-profile.html') Андрей Кулагин
-                                                    .user-level.text-grey-2 Мастер
-                                                    .user-location.text-grey-2 Москва, Россия
-                                            .user-button.desktop
-                                                button.user-follow.blue.text-white.size-20 Подписаться
-                                                button.user-mess.white-blue-border.text-blue.size-20 Сообщение
-                                    .size-14 Россия, Москва
-                                .card-content-bottom
-                                    button.button.size-22.text-black-2
-                                        img.like(src="icon/like.svg", alt="")
-                                        | 20
-                                    button.button.size-22.text-black-2
-                                        img(src="icon/comment.svg", alt="")
-                                        | 25
-            button.button.blue.size-20.text-white.border-top-0 Показать ещё    
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Бортжурналы
-        .nav-line.content
-            .search-line.button.white-blue-border.top-search.search-filter
-                .search-image.blue-search
-                input.size-14.text-blue(type="text" placeholder="Фильтр по стране или городу")
-            .nav-sort.light-blue-blue-border.text-blue.size-14.button
-                .nav-sort-line.blue.text-white.button По популярности
-                .nav-sort-line.button По коментариям
-                .nav-sort-line.button По дате
-        .profile 
-            .page-card-list-small
-                - for (var x = 0; x < 6; x++)
-                    .card.button.card-map
-                        .card-image 
-                            img(src="images/product.png", alt="")
-                        .card-title.product-title
-                            a.size-20.weight-500.text-black(href='user-eguipment.html') Велосипед Cannondale
-                            .card-bottom
-                                .card-bottom-info
-                                    .weight-500.size-18.open-user-card Name 1
-                                    .user-card.white-white-border.card
-                                        .user 
-                                            .user-label
-                                                .user-photo
-                                                    a(href='user-profile.html')
-                                                        img(src="images/user-photo.png", alt="")
-                                                    .online
-                                                .user-info
-                                                    a.user-name.size-30.weight-500.text-black(href='user-profile.html') Андрей Кулагин
-                                                    .user-level.text-grey-2 Мастер
-                                                    .user-location.text-grey-2 Москва, Россия
-                                            .user-button.desktop
-                                                button.user-follow.blue.text-white.size-20 Подписаться
-                                                button.user-mess.white-blue-border.text-blue.size-20 Сообщение
-                                    .size-14 Россия, Москва
-                                .card-content-bottom
-                                    button.button.size-22.text-black-2
-                                        img.like(src="icon/like.svg", alt="")
-                                        | 20
-                                    button.button.size-22.text-black-2
-                                        img(src="icon/comment.svg", alt="")
-                                        | 25
+        main.main
+            include component/user-left-menu.pug
+            .content-wrapper
+                .nav-line.content.desktop
+                    .nav-title.size-50.weight-500.text-black 
+                        a(href='user-types-of-sports.html') Велосипед
+                        img(src="icon/arrow-nav.svg", alt="")
+                        a.size-50.weight-500.text-black(href='user-mark-of-sports.html') Городской велосипед
+                        img(src="icon/arrow-nav.svg", alt="")
+                        | Cannondale
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black 
+                        | Последние записи
+                .profile 
+                    .page-card-list-small
+                        - for (var x = 0; x < 6; x++)
+                            .card.button.card-map
+                                .card-image 
+                                    img(src="images/last-note.png", alt="")
+                                .card-title.product-title
+                                    a.size-20.weight-500.text-black(href='user-description.html') Замена седла на велосипеде Cannondale
+                                    .card-bottom
+                                        .card-bottom-info
+                                            .weight-500.size-18.open-user-card Name 1
+                                            .user-card.white-white-border.card
+                                                .user 
+                                                    .user-label
+                                                        .user-photo
+                                                            a(href='user-profile.html')
+                                                                img(src="images/user-photo.png", alt="")
+                                                            .online
+                                                        .user-info
+                                                            a.user-name.size-30.weight-500.text-black(href='user-profile.html') Андрей Кулагин
+                                                            .user-level.text-grey-2 Мастер
+                                                            .user-location.text-grey-2 Москва, Россия
+                                                    .user-button.desktop
+                                                        button.user-follow.blue.text-white.size-20 Подписаться
+                                                        button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                                            .size-14 Россия, Москва
+                                        .card-content-bottom
+                                            button.button.size-22.text-black-2
+                                                img.like(src="icon/like.svg", alt="")
+                                                | 20
+                                            button.button.size-22.text-black-2
+                                                img(src="icon/comment.svg", alt="")
+                                                | 25
+                    button.button.blue.size-20.text-white.border-top-0 Показать ещё    
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black 
+                        | Бортжурналы
+                .nav-line.content
+                    .search-line.button.white-blue-border.top-search.search-filter
+                        .search-image.blue-search
+                        input.size-14.text-blue(type="text" placeholder="Фильтр по стране или городу")
+                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                        .nav-sort-line.blue.text-white.button По популярности
+                        .nav-sort-line.button По коментариям
+                        .nav-sort-line.button По дате
+                .profile 
+                    .page-card-list-small
+                        - for (var x = 0; x < 6; x++)
+                            .card.button.card-map
+                                .card-image 
+                                    img(src="images/product.png", alt="")
+                                .card-title.product-title
+                                    a.size-20.weight-500.text-black(href='user-eguipment.html') Велосипед Cannondale
+                                    .card-bottom
+                                        .card-bottom-info
+                                            .weight-500.size-18.open-user-card Name 1
+                                            .user-card.white-white-border.card
+                                                .user 
+                                                    .user-label
+                                                        .user-photo
+                                                            a(href='user-profile.html')
+                                                                img(src="images/user-photo.png", alt="")
+                                                            .online
+                                                        .user-info
+                                                            a.user-name.size-30.weight-500.text-black(href='user-profile.html') Андрей Кулагин
+                                                            .user-level.text-grey-2 Мастер
+                                                            .user-location.text-grey-2 Москва, Россия
+                                                    .user-button.desktop
+                                                        button.user-follow.blue.text-white.size-20 Подписаться
+                                                        button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                                            .size-14 Россия, Москва
+                                        .card-content-bottom
+                                            button.button.size-22.text-black-2
+                                                img.like(src="icon/like.svg", alt="")
+                                                | 20
+                                            button.button.size-22.text-black-2
+                                                img(src="icon/comment.svg", alt="")
+                                                | 25
         include component/footer.pug

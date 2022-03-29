@@ -4,41 +4,43 @@ html
     body 
         include component/moderator-header.pug 
         .hr
-        include component/moderator-left-menu.pug 
-        .profile.margin-end
-            .admin-cards 
-                .admin-card.card
-                    .moderator-gradient
-                    a.admin-card-top(href='moderator-tape.html') 
-                        .size-26.text-black Публикации
-                        .arrow-forward 
-                            img(src="icon/arrow-more.svg", alt="")
-                    .size-16.text-black Недавно опубликованное
-                    .publish-list 
-                        .publish-date.size-16.text-black Сегодня в 12:30
-                        a.publish-theme.size-16.text-black(href='moderator-description.html') Название статьи/бортжурнала/снаряжения
-                    .publish-list 
-                        .publish-date.size-16.text-black Сегодня в 12:30
-                        a.publish-theme.size-16.text-black(href='moderator-description.html') Название статьи/бортжурнала/снаряжения
-                    .publish-list 
-                        .publish-date.size-16.text-black Сегодня в 12:30
-                        a.publish-theme.size-16.text-black(href='moderator-description.html') Название статьи/бортжурнала/снаряжения
-                    .publish-list 
-                        .publish-date.size-16.text-black Сегодня в 12:30
-                        a.publish-theme.size-16.text-black(href='moderator-description.html') Название статьи/бортжурнала/снаряжения
-                .admin-card.card
-                    .moderator-gradient.rotate-gradient
-                    a.admin-card-top(href='moderator-refusals.html') 
-                        .size-26.text-black Отказы
-                        .arrow-forward 
-                            img(src="icon/arrow-more.svg", alt="")
-                    .size-16.text-black Список отказов в публикации
-                    .publish-list 
-                        a.publish-theme.size-16.text-black(href='moderator-description-refusals.html') Название статьи/бортжурнала/снаряжения
-                    .publish-list 
-                        a.publish-theme.size-16.text-black(href='moderator-description-refusals.html') Название статьи/бортжурнала/снаряжения
-                    .publish-list 
-                        a.publish-theme.size-16.text-black(href='moderator-description-refusals.html') Название статьи/бортжурнала/снаряжения
-                    .publish-list 
-                        a.publish-theme.size-16.text-black(href='moderator-description-refusals.html') Название статьи/бортжурнала/снаряжения
+        main.main
+            include component/moderator-left-menu.pug 
+            .content-wrapper
+                .profile.margin-end
+                    .admin-cards 
+                        .admin-card.card
+                            .moderator-gradient
+                            a.admin-card-top(href='moderator-tape.html') 
+                                .size-26.text-black Публикации
+                                .arrow-forward 
+                                    img(src="icon/arrow-more.svg", alt="")
+                            .size-16.text-black Недавно опубликованное
+                            .publish-list 
+                                .publish-date.size-16.text-black Сегодня в 12:30
+                                a.publish-theme.size-16.text-black(href='moderator-description.html') Название статьи/бортжурнала/снаряжения
+                            .publish-list 
+                                .publish-date.size-16.text-black Сегодня в 12:30
+                                a.publish-theme.size-16.text-black(href='moderator-description.html') Название статьи/бортжурнала/снаряжения
+                            .publish-list 
+                                .publish-date.size-16.text-black Сегодня в 12:30
+                                a.publish-theme.size-16.text-black(href='moderator-description.html') Название статьи/бортжурнала/снаряжения
+                            .publish-list 
+                                .publish-date.size-16.text-black Сегодня в 12:30
+                                a.publish-theme.size-16.text-black(href='moderator-description.html') Название статьи/бортжурнала/снаряжения
+                        .admin-card.card
+                            .moderator-gradient.rotate-gradient
+                            a.admin-card-top(href='moderator-refusals.html') 
+                                .size-26.text-black Отказы
+                                .arrow-forward 
+                                    img(src="icon/arrow-more.svg", alt="")
+                            .size-16.text-black Список отказов в публикации
+                            .publish-list 
+                                a.publish-theme.size-16.text-black(href='moderator-description-refusals.html') Название статьи/бортжурнала/снаряжения
+                            .publish-list 
+                                a.publish-theme.size-16.text-black(href='moderator-description-refusals.html') Название статьи/бортжурнала/снаряжения
+                            .publish-list 
+                                a.publish-theme.size-16.text-black(href='moderator-description-refusals.html') Название статьи/бортжурнала/снаряжения
+                            .publish-list 
+                                a.publish-theme.size-16.text-black(href='moderator-description-refusals.html') Название статьи/бортжурнала/снаряжения
         include component/footer.pug

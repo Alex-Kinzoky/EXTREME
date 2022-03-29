@@ -4,77 +4,79 @@ html
     body 
         include component/guest-header.pug 
         .hr
-        include component/guest-left-menu.pug 
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Места катания
-        .nav-line.content
-            .search-line.button.white-blue-border.top-search.search-filter
-                .search-image.blue-search
-                input.size-14.text-blue(type="text" placeholder="Фильтр по стране или городу")
-            .nav-sort.light-blue-blue-border.text-blue.size-14.button
-                .nav-sort-line.blue.text-white.button По популярности
-                .nav-sort-line.button По порядку
-        .profile 
-            .big-map.card
-                button.place-label#l-1
-                    img(src="icon/location.svg", alt="")
-                button.place-label#l-2
-                    img(src="icon/location.svg", alt="")
-                button.place-label#l-3
-                    img(src="icon/location.svg", alt="")
-                .scale 
-                    .scale-up.white-white-border
-                        img(src="icon/plus.svg", alt="")
-                    .scale-down.white-white-border
-                        img(src="icon/minus.svg", alt="")
-        .nav-line.content
-            .nav-title.size-50.weight-500.text-black 
-                | Список мест
-        .profile
-            .card-place-list
-                .card-place 
-                    .card-place-info 
-                        .size-30 оз. Муромское, Респ. Карелия
-                        .text-grey-2 61.483886, 36.340335
-                        .size-20 Смотреть описание
-                    .card-place-images
-                        #slider.card-place-images-line 
-                            .card-place-image
-                                img(src="images/place-1.png", alt="")
-                            .card-place-image
-                                img(src="images/place-2.png", alt="")
-                .card-place 
-                    .card-place-info 
-                        .size-30 оз. Муромское, Респ. Карелия
-                        .text-grey-2 61.483886, 36.340335
-                        .size-20 Смотреть описание
-                    .card-place-images
-                        #slider.card-place-images-line 
-                            .card-place-image
-                                img(src="images/place-1.png", alt="")
-                            .card-place-image
-                                img(src="images/place-2.png", alt="")
-                .card-place 
-                    .card-place-info 
-                        .size-30 оз. Муромское, Респ. Карелия
-                        .text-grey-2 61.483886, 36.340335
-                        .size-20 Смотреть описание
-                    .card-place-images
-                        #slider.card-place-images-line 
-                            .card-place-image
-                                img(src="images/place-1.png", alt="")
-                            .card-place-image
-                                img(src="images/place-2.png", alt="")
-                .card-place 
-                    .card-place-info 
-                        .size-30 оз. Муромское, Респ. Карелия
-                        .text-grey-2 61.483886, 36.340335
-                        .size-20 Смотреть описание
-                    .card-place-images
-                        #slider.card-place-images-line 
-                            .card-place-image
-                                img(src="images/place-1.png", alt="")
-                            .card-place-image
-                                img(src="images/place-2.png", alt="")
+        main.main
+            include component/guest-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black 
+                        | Места катания
+                .nav-line.content
+                    .search-line.button.white-blue-border.top-search.search-filter
+                        .search-image.blue-search
+                        input.size-14.text-blue(type="text" placeholder="Фильтр по стране или городу")
+                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                        .nav-sort-line.blue.text-white.button По популярности
+                        .nav-sort-line.button По порядку
+                .profile 
+                    .big-map.card
+                        button.place-label#l-1
+                            img(src="icon/location.svg", alt="")
+                        button.place-label#l-2
+                            img(src="icon/location.svg", alt="")
+                        button.place-label#l-3
+                            img(src="icon/location.svg", alt="")
+                        .scale 
+                            .scale-up.white-white-border
+                                img(src="icon/plus.svg", alt="")
+                            .scale-down.white-white-border
+                                img(src="icon/minus.svg", alt="")
+                .nav-line.content
+                    .nav-title.size-50.weight-500.text-black 
+                        | Список мест
+                .profile
+                    .card-place-list
+                        .card-place 
+                            .card-place-info 
+                                .size-30 оз. Муромское, Респ. Карелия
+                                .text-grey-2 61.483886, 36.340335
+                                .size-20 Смотреть описание
+                            .card-place-images
+                                #slider.card-place-images-line 
+                                    .card-place-image
+                                        img(src="images/place-1.png", alt="")
+                                    .card-place-image
+                                        img(src="images/place-2.png", alt="")
+                        .card-place 
+                            .card-place-info 
+                                .size-30 оз. Муромское, Респ. Карелия
+                                .text-grey-2 61.483886, 36.340335
+                                .size-20 Смотреть описание
+                            .card-place-images
+                                #slider.card-place-images-line 
+                                    .card-place-image
+                                        img(src="images/place-1.png", alt="")
+                                    .card-place-image
+                                        img(src="images/place-2.png", alt="")
+                        .card-place 
+                            .card-place-info 
+                                .size-30 оз. Муромское, Респ. Карелия
+                                .text-grey-2 61.483886, 36.340335
+                                .size-20 Смотреть описание
+                            .card-place-images
+                                #slider.card-place-images-line 
+                                    .card-place-image
+                                        img(src="images/place-1.png", alt="")
+                                    .card-place-image
+                                        img(src="images/place-2.png", alt="")
+                        .card-place 
+                            .card-place-info 
+                                .size-30 оз. Муромское, Респ. Карелия
+                                .text-grey-2 61.483886, 36.340335
+                                .size-20 Смотреть описание
+                            .card-place-images
+                                #slider.card-place-images-line 
+                                    .card-place-image
+                                        img(src="images/place-1.png", alt="")
+                                    .card-place-image
+                                        img(src="images/place-2.png", alt="")
         include component/footer.pug

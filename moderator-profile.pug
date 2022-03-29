@@ -4,144 +4,146 @@ html
     body 
         include component/moderator-header.pug 
         .hr
-        include component/moderator-left-menu.pug 
-        .profile
-            .user 
-                .user-label
-                    .user-photo
-                        a(href='guest-profile.html')
-                            img(src="images/user-photo.png", alt="")
-                        .online
-                    a.user-info(href='guest-profile.html')
-                        .user-name.size-50.weight-500.text-black Андрей Кулагин
-                        .user-level.text-grey-2 Мастер
-                        .user-location.text-grey-2 Москва, Россия
-                .user-button.desktop
-                    button.user-follow.blue.text-white.size-20 Подписаться
-                    button.user-mess.white-blue-border.text-blue.size-20 Сообщение
-                
-            .user-profile 
-                .user-profile-col 
-                    .text-black 2 подписчика
-                    .text-black 8 лет на сайте
-                .user-profile-col 
-                    .text-black 10 подписок
-                    .text-black 567 комментариев
-            .user-button-profile.mobile
-                    button.user-follow.blue.text-white.size-20 Подписаться
-                    button.user-mess.white-blue-border.text-blue.size-20 Сообщение
-        .hr 
-        .profile 
-            .storage 
-                .top-label
-                    a.size-50.weight-500.text-black(href='guest-storage.html') Кладовка
-                    .slider-buttons
-                        button.slider-button.blue
-                            img(src="icon/white-back.svg", alt="")
-                        button.slider-button.blue
-                            img(src="icon/white-forward.svg", alt="")
-                .card-overflow
-                    .card-line 
-                        a.card.button(href='guest-equipment.html') 
-                            .card-image 
-                                img(src="images/storage.png", alt="")
-                            .card-title 
-                                .size-26.weight-500.text-black Снаряжение 1 
-                                .arrow-more
-                        a.card.button(href='guest-equipment.html') 
-                            .card-image 
-                                img(src="images/storage.png", alt="")
-                            .card-title 
-                                .size-26.weight-500.text-black Снаряжение 2
-                                .arrow-more
-                        a.card.button(href='guest-equipment.html') 
-                            .card-image 
-                                img(src="images/storage.png", alt="")
-                            .card-title 
-                                .size-26.weight-500.text-black Снаряжение 3
-                                .arrow-more
-            .place 
-                .top-label
-                    .size-50.weight-500.text-black Места катания
-                .place-info 
-                    .place-map.button
-                        button.place-label#l-1
-                            img(src="icon/location.svg", alt="")
-                        button.place-label#l-2
-                            img(src="icon/location.svg", alt="")
-                        button.place-label#l-3
-                            img(src="icon/location.svg", alt="")
-                        button.place-label#l-4
-                            img(src="icon/location.svg", alt="")
-                    .place-list 
-                        .place-part 
-                            .text-black оз. Муромское, Респ. Карелия
-                            .size-16.text-grey-2 61.483886, 36.340335
-                        .place-part 
-                            .text-black оз. Муромское, Респ. Карелия
-                            .size-16.text-grey-2 61.483886, 36.340335
-                        .place-part 
-                            .text-black оз. Муромское, Респ. Карелия
-                            .size-16.text-grey-2 61.483886, 36.340335
-                        .place-part 
-                            .text-black оз. Муромское, Респ. Карелия
-                            .size-16.text-grey-2 61.483886, 36.340335
-                        .place-part 
-                            .text-black оз. Муромское, Респ. Карелия
-                            .size-16.text-grey-2 61.483886, 36.340335
-            .events 
-                .top-label
-                    .size-50.weight-500.text-black Мероприятия
-                .events-list 
-                    .card.button.card-h
-                        .card-h-left
-                            .card-h-image 
-                                img(src="images/map.png", alt="")
-                            .card-h-info 
-                                .size-16.weight-500.text-black 07.12.2021
-                                .size-30.text-black Название 
-                                .text-black Небольшое описание
-                                .participants 
-                                    .participants-photos
-                                        .participants-photo
-                                            img(src="images/comment-photo.png", alt="")
-                                        .participants-photo
-                                            img(src="images/user-photo.png", alt="")
-                                        .participants-photo
-                                            img(src="images/photo.png", alt="")
-                                    .text-black 10 участников
-                    .card.button.card-h
-                        .card-h-left
-                            .card-h-image 
-                                img(src="images/map.png", alt="")
-                            .card-h-info 
-                                .size-16.weight-500.text-black 07.12.2021
-                                .size-30.text-black Название 
-                                .text-black Небольшое описание
-                                .participants 
-                                    .participants-photos
-                                        .participants-photo
-                                            img(src="images/comment-photo.png", alt="")
-                                        .participants-photo
-                                            img(src="images/user-photo.png", alt="")
-                                        .participants-photo
-                                            img(src="images/photo.png", alt="")
-                                    .text-black 10 участников
-                    .card.button.card-h
-                        .card-h-left
-                            .card-h-image 
-                                img(src="images/map.png", alt="")
-                            .card-h-info 
-                                .size-16.weight-500.text-black 07.12.2021
-                                .size-30.text-black Название 
-                                .text-black Небольшое описание
-                                .participants 
-                                    .participants-photos
-                                        .participants-photo
-                                            img(src="images/comment-photo.png", alt="")
-                                        .participants-photo
-                                            img(src="images/user-photo.png", alt="")
-                                        .participants-photo
-                                            img(src="images/photo.png", alt="")
-                                    .text-black 10 участников
+        main.main
+            include component/moderator-left-menu.pug 
+            .content-wrapper
+                .profile
+                    .user 
+                        .user-label
+                            .user-photo
+                                a(href='guest-profile.html')
+                                    img(src="images/user-photo.png", alt="")
+                                .online
+                            a.user-info(href='guest-profile.html')
+                                .user-name.size-50.weight-500.text-black Андрей Кулагин
+                                .user-level.text-grey-2 Мастер
+                                .user-location.text-grey-2 Москва, Россия
+                        .user-button.desktop
+                            button.user-follow.blue.text-white.size-20 Подписаться
+                            button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                        
+                    .user-profile 
+                        .user-profile-col 
+                            .text-black 2 подписчика
+                            .text-black 8 лет на сайте
+                        .user-profile-col 
+                            .text-black 10 подписок
+                            .text-black 567 комментариев
+                    .user-button-profile.mobile
+                            button.user-follow.blue.text-white.size-20 Подписаться
+                            button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                .hr 
+                .profile 
+                    .storage 
+                        .top-label
+                            a.size-50.weight-500.text-black(href='guest-storage.html') Кладовка
+                            .slider-buttons
+                                button.slider-button.blue
+                                    img(src="icon/white-back.svg", alt="")
+                                button.slider-button.blue
+                                    img(src="icon/white-forward.svg", alt="")
+                        .card-overflow
+                            .card-line 
+                                a.card.button(href='guest-equipment.html') 
+                                    .card-image 
+                                        img(src="images/storage.png", alt="")
+                                    .card-title 
+                                        .size-26.weight-500.text-black Снаряжение 1 
+                                        .arrow-more
+                                a.card.button(href='guest-equipment.html') 
+                                    .card-image 
+                                        img(src="images/storage.png", alt="")
+                                    .card-title 
+                                        .size-26.weight-500.text-black Снаряжение 2
+                                        .arrow-more
+                                a.card.button(href='guest-equipment.html') 
+                                    .card-image 
+                                        img(src="images/storage.png", alt="")
+                                    .card-title 
+                                        .size-26.weight-500.text-black Снаряжение 3
+                                        .arrow-more
+                    .place 
+                        .top-label
+                            .size-50.weight-500.text-black Места катания
+                        .place-info 
+                            .place-map.button
+                                button.place-label#l-1
+                                    img(src="icon/location.svg", alt="")
+                                button.place-label#l-2
+                                    img(src="icon/location.svg", alt="")
+                                button.place-label#l-3
+                                    img(src="icon/location.svg", alt="")
+                                button.place-label#l-4
+                                    img(src="icon/location.svg", alt="")
+                            .place-list 
+                                .place-part 
+                                    .text-black оз. Муромское, Респ. Карелия
+                                    .size-16.text-grey-2 61.483886, 36.340335
+                                .place-part 
+                                    .text-black оз. Муромское, Респ. Карелия
+                                    .size-16.text-grey-2 61.483886, 36.340335
+                                .place-part 
+                                    .text-black оз. Муромское, Респ. Карелия
+                                    .size-16.text-grey-2 61.483886, 36.340335
+                                .place-part 
+                                    .text-black оз. Муромское, Респ. Карелия
+                                    .size-16.text-grey-2 61.483886, 36.340335
+                                .place-part 
+                                    .text-black оз. Муромское, Респ. Карелия
+                                    .size-16.text-grey-2 61.483886, 36.340335
+                    .events 
+                        .top-label
+                            .size-50.weight-500.text-black Мероприятия
+                        .events-list 
+                            .card.button.card-h
+                                .card-h-left
+                                    .card-h-image 
+                                        img(src="images/map.png", alt="")
+                                    .card-h-info 
+                                        .size-16.weight-500.text-black 07.12.2021
+                                        .size-30.text-black Название 
+                                        .text-black Небольшое описание
+                                        .participants 
+                                            .participants-photos
+                                                .participants-photo
+                                                    img(src="images/comment-photo.png", alt="")
+                                                .participants-photo
+                                                    img(src="images/user-photo.png", alt="")
+                                                .participants-photo
+                                                    img(src="images/photo.png", alt="")
+                                            .text-black 10 участников
+                            .card.button.card-h
+                                .card-h-left
+                                    .card-h-image 
+                                        img(src="images/map.png", alt="")
+                                    .card-h-info 
+                                        .size-16.weight-500.text-black 07.12.2021
+                                        .size-30.text-black Название 
+                                        .text-black Небольшое описание
+                                        .participants 
+                                            .participants-photos
+                                                .participants-photo
+                                                    img(src="images/comment-photo.png", alt="")
+                                                .participants-photo
+                                                    img(src="images/user-photo.png", alt="")
+                                                .participants-photo
+                                                    img(src="images/photo.png", alt="")
+                                            .text-black 10 участников
+                            .card.button.card-h
+                                .card-h-left
+                                    .card-h-image 
+                                        img(src="images/map.png", alt="")
+                                    .card-h-info 
+                                        .size-16.weight-500.text-black 07.12.2021
+                                        .size-30.text-black Название 
+                                        .text-black Небольшое описание
+                                        .participants 
+                                            .participants-photos
+                                                .participants-photo
+                                                    img(src="images/comment-photo.png", alt="")
+                                                .participants-photo
+                                                    img(src="images/user-photo.png", alt="")
+                                                .participants-photo
+                                                    img(src="images/photo.png", alt="")
+                                            .text-black 10 участников
         include component/footer.pug 

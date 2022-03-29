@@ -250,6 +250,7 @@ body {
     background-size: 100% 100%;
     width: 27px;
     height: 27px;
+    flex-shrink: 0;
 }
 .search-line input {
     width: 450px;
@@ -276,15 +277,16 @@ body {
     width: 405px;
     height: 43px;
     padding-left: 16px;
-    margin-left: calc(100vw * (164 / 1920));
+    margin-left: calc(100vw * (70 / 1920));
 }
 .top-search .search-image {
     background-image: url(icon/blue-search.svg);
     width: 19px;
     height: 19px;
+    flex-shrink: 0;
 }
 .top-search input {
-    width: 200px;
+    width: calc(100vw * (200 / 1920));
 }
 .top-search input::placeholder {
     color: #5575E8;
@@ -1015,7 +1017,7 @@ body {
 }
 .card-line .card {
     width: calc(100vw * (310 / 1920));
-    height: calc(100vw * (250 / 1920));
+    min-height: calc(100vw * (250 / 1920));
     border-radius: 28px;
 }
 .card-line .card .card-title {
@@ -1965,6 +1967,7 @@ textarea {
     border-bottom: 1px solid rgba(223, 223, 223, 0.29);
 }
 .profile-edit-field .profile-edit-line .profile-edit-input .chekbox .top-chekbox {
+    padding: 0 calc(100vw * (15 / 1920));
     justify-content: space-between;
     display: flex;
 }
@@ -1972,7 +1975,7 @@ textarea {
     width: 13px;
 }
 .profile-edit-field .profile-edit-line .profile-edit-input .chekbox .top-chekbox input {
-    width: 150px;
+    width: calc(100vw * (150 / 1920));
     padding: 0;
 }
 .profile-edit-field .profile-edit-line .profile-edit-input .radio {
@@ -2100,6 +2103,7 @@ input[type=radio] {
 .card .change-card {
     justify-content: flex-start;
     width: 100%;
+    align-self: flex-start;
 }
 .card .change-card .size-18 {
     margin-right: calc(100vw * (30 / 1920));
@@ -2685,8 +2689,8 @@ input[type=radio] {
     background-image: url(icon/chart.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
-    height: auto;
+    width: calc(100vw * (874 / 1920));
+    height: calc(100vw * (430 / 1920));
 }
 .admin-chart .admin-chart-top .admin-chart-canvas img {
     width: 100%;
@@ -2701,14 +2705,16 @@ input[type=radio] {
 
 .nav-line .top-search {
     margin-left: 0;
-    width: calc(100vw * (300 / 1920));
+    width: min-content;
+    min-width: 280px;
 }
 .nav-line .top-search input {
-    width: 285px;
+    width: calc(100vw * (285 / 1920));
     margin-inline: calc(100vw * (20 / 1920));
 }
 .nav-line .top-search .blue {
-    width: 118px;
+    width: calc(100vw * (118 / 1920));
+    flex-shrink: 0;
 }
 .nav-line .search-filter {
     margin: 0;
@@ -2866,36 +2872,7 @@ input[type=radio] {
     margin-right: calc(100vw * (36 / 1920));
 }
 
-@media (max-width: 1620px) {
-    body {
-        font-size: 18px;
-    }
-
-    .size-50 {
-        font-size: 40px;
-    }
-
-    .size-40 {
-        font-size: 30px;
-    }
-
-    .size-30 {
-        font-size: 26px;
-    }
-
-    .size-26 {
-        font-size: 22px;
-    }
-
-    .size-20 {
-        font-size: 18px;
-    }
-
-    .size-14 {
-        font-size: 12px;
-    }
-}
-@media (max-width: 1500px) {
+@media (max-width: 1550px) {
     body {
         font-size: 16px;
     }
@@ -2912,38 +2889,21 @@ input[type=radio] {
         border-radius: 35px;
     }
 
-    .size-16 {
-        font-size: 12px;
-    }
-
-    .size-18 {
-        font-size: 14px;
-    }
-
-    .size-20 {
-        font-size: 16px;
-    }
-
-    .size-22 {
-        font-size: 16px;
-    }
-
-    .size-26 {
-        font-size: 18px;
-    }
-
     .size-30 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .size-40 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .size-50 {
-        font-size: 35px;
+        font-size: 28px;
     }
 
+    .header {
+        max-width: 1200px;
+    }
     .header .header-content .center-search {
         display: flex;
         flex-direction: column;
@@ -3022,7 +2982,7 @@ input[type=radio] {
         margin-right: 0;
     }
     .top-search input {
-        width: 120px;
+        width: calc(100vw * (120 / 1920));
         flex-grow: 1;
     }
     .top-search .button {
@@ -3040,7 +3000,11 @@ input[type=radio] {
     }
 
     .page-card-list-small .card {
-        border-radius: 30px;
+        border-radius: 20px;
+    }
+    .page-card-list-small .card .card-image {
+        min-height: calc(100vw * (124 / 1920));
+        height: auto;
     }
     .page-card-list-small .card .card-title .arrow-more {
         width: 37px;
@@ -3058,7 +3022,12 @@ input[type=radio] {
         margin-bottom: calc(100vw * (30 / 1920));
     }
 
+    .main {
+        max-width: 1200px;
+    }
+
     .footer {
+        max-width: 1200px;
         border-top-left-radius: 35px;
         border-top-right-radius: 35px;
         box-sizing: border-box;
@@ -3105,6 +3074,9 @@ input[type=radio] {
         height: 7px;
     }
 
+    .description {
+        width: calc(100vw * (900 / 1920));
+    }
     .description .moderator-rejection-card {
         height: auto;
     }
@@ -3244,7 +3216,9 @@ input[type=radio] {
     }
 
     .card-line .card {
-        border-radius: 30px;
+        border-radius: 20px;
+        width: calc(100vw * (380 / 1920));
+        min-height: calc(100vw * (250 / 1920));
     }
     .card-line .card .card-title {
         padding: 0 calc(100vw * (33 / 1920));
@@ -3300,6 +3274,10 @@ input[type=radio] {
         height: 25px;
     }
 
+    .tape-card {
+        width: calc(100vw * (900 / 1920));
+    }
+
     .participants .participants-photos .participants-photo {
         width: 17px;
         height: 17px;
@@ -3336,6 +3314,7 @@ input[type=radio] {
     }
 
     .card-line-1 {
+        grid-template-columns: 54% 44%;
         grid-gap: 14px;
     }
 
@@ -3431,8 +3410,9 @@ input[type=radio] {
 
     .mess-card {
         flex-direction: row;
-        border-radius: 20px;
+        border-radius: 14px;
         margin: 0 0 20px;
+        height: calc(100vw * (100 / 1920));
     }
     .mess-card .mess-info .text {
         height: 14px;
@@ -3650,11 +3630,8 @@ input[type=radio] {
         margin-right: 5px;
     }
 
-    .nav-line .top-search {
-        width: calc(100vw * (350 / 1920));
-    }
     .nav-line .top-search .blue {
-        width: 84px;
+        width: calc(100vw * (84 / 1920));
     }
 
     .mobile-user-menu {

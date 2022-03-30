@@ -14,7 +14,7 @@
   </head>
   <body> 
     <header class="header"> 
-      <div class="menu content white-white-border">
+      <div class="menu content-wrapper white-white-border">
         <div class="menu-left"><a class="logo" href="index.html"></a>
           <div class="search-line button white-blue-border top-search desktop">
             <div class="search-image blue-search"></div>
@@ -31,7 +31,7 @@
           <div class="mobile-menu mobile tablet"></div>
         </div>
       </div>
-      <div class="left-menu-mobile white-white-border content">
+      <div class="left-menu-mobile white-white-border content-wrapper">
         <div class="left-menu-top">
           <div class="theme button">
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
@@ -39,10 +39,10 @@
           </div>
           <div class="left-menu-close"></div>
         </div>
-        <div class="left-menu"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners.html">Партнёры</a></div>
+        <div class="left-menu"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners-list.html">Партнёры</a></div>
       </div>
       <div class="menu-search-mobile white-white-border">
-        <div class="menu content white-white-border content">
+        <div class="menu content-wrapper white-white-border">
           <div class="menu-left"><a class="logo" href="index.html"></a>
             <div class="search-button mobile"></div>
           </div>
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="hr"> </div>
-        <div class="content">
+        <div class="content-wrapper">
           <div class="search-line button light-blue-blue-border top-search">
             <div class="search-image blue-search"></div>
             <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="hr"> </div>
-        <div class="request-mobile content">
+        <div class="request-mobile content-wrapper">
           <div class="size-40 weight-500">Недавние запросы</div>
           <div class="request-mobile-line">
              Запрос 1
@@ -79,7 +79,7 @@
     </header>
     <div class="hr"></div>
     <main class="main">
-      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Лента</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners.html">Партнёры</a></aside>
+      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Лента</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners-list.html">Партнёры</a></aside>
       <div class="content-wrapper">
         <div class="nav-line content">
           <div class="nav-title size-50 weight-500 text-black"><a class="size-50 weight-500 text-black" href="guest-storage.html">Кладовка</a><img src="icon/arrow-nav.svg" alt=""/>снаряжение 1</div>
@@ -99,7 +99,6 @@
                       <div class="line-image"><img src="images/line-image.png" alt=""/></div>
                       <div class="line-image"><img src="images/line-image.png" alt=""/></div>
                       <div class="line-image"><img src="images/line-image.png" alt=""/></div>
-                      <div class="line-image"><img src="images/line-image.png" alt=""/></div>
                     </div>
                   </div>
                   <div class="line-arrow card"><img src="icon/gradient-forward.svg" alt=""/></div>
@@ -114,9 +113,9 @@
                   <div class="bookmark"> </div>
                   <div class="share"></div>
                 </div>
-                <button class="user-follow blue text-white size-20 desktop">Подписаться</button>
+                <button class="user-follow blue text-white size-20 desktop follow">Подписаться</button>
               </div>
-              <button class="user-follow blue text-white size-20 mobile">Подписаться</button>
+              <button class="user-follow blue text-white size-20 mobile follow">Подписаться</button>
             </div>
           </div>
           <div class="user"> 
@@ -186,6 +185,12 @@
                 <button class="button size-30 text-black-2"><img src="icon/comment.svg" alt=""/>25</button>
               </div>
             </div>
+          </div>
+        </div>
+        <div id="follow-window">
+          <div class="join-card button white-white-border"> 
+            <div class="size-30 text-black">Чтобы подписаться, нужно авторизироваться</div>
+            <button class="button blue text-white size-20">Войти</button>
           </div>
         </div>
       </div>

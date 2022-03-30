@@ -1,0 +1,219 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <link rel="stylesheet" href="style-components.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-mobile.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body> 
+    <header class="header"> 
+      <div class="menu content-wrapper white-white-border">
+        <div class="menu-left"><a class="logo" href="index.html"></a>
+          <div class="search-line button white-blue-border top-search desktop">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <button class="blue button size-14 text-white">Поиск</button>
+          </div>
+        </div>
+        <div class="menu-right"> 
+          <div class="search-button mobile"></div>
+          <div class="theme button desktop">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div><a class="blue size-20 text-white button desktop" href="login.html">Войти</a><a class="mobile-login mobile tablet" href="login.html"></a>
+          <div class="mobile-menu mobile tablet"></div>
+        </div>
+      </div>
+      <div class="left-menu-mobile white-white-border content-wrapper">
+        <div class="left-menu-top">
+          <div class="theme button">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div>
+          <div class="left-menu-close"></div>
+        </div>
+        <div class="left-menu"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners-list.html">Партнёры</a></div>
+      </div>
+      <div class="menu-search-mobile white-white-border">
+        <div class="menu content-wrapper white-white-border">
+          <div class="menu-left"><a class="logo" href="index.html"></a>
+            <div class="search-button mobile"></div>
+          </div>
+          <div class="menu-right"> 
+            <div class="search-button mobile"></div>
+            <div class="mobile-menu"></div>
+          </div>
+        </div>
+        <div class="hr"> </div>
+        <div class="content-wrapper">
+          <div class="search-line button light-blue-blue-border top-search">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <button class="blue button size-14 text-white">Поиск</button>
+          </div>
+        </div>
+        <div class="hr"> </div>
+        <div class="request-mobile content-wrapper">
+          <div class="size-40 weight-500">Недавние запросы</div>
+          <div class="request-mobile-line">
+             Запрос 1
+            <div class="close-image"></div>
+          </div>
+          <div class="request-mobile-line">
+             Запрос 2
+            <div class="close-image"></div>
+          </div>
+          <div class="request-mobile-line">
+             Запрос 3
+            <div class="close-image"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hr"></div>
+    <main class="main">
+      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Лента</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners-list.html">Партнёры</a></aside>
+      <div class="right-filter"> 
+        <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Город, регион</button>
+        <div class="podmenu-filter" id="location">
+          <div class="podmenu-filter-link">Страна, регион, город</div>
+          <input class="location button size-20" type="text"/>
+        </div>
+        <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Вид спорта</button>
+        <div class="podmenu-filter" id="sport"><a class="podmenu-filter-link" href="#">Аквабайк </a><a class="podmenu-filter-link" href="#">Альпинизм</a><a class="podmenu-filter-link" href="#">Бейсджампинг </a><a class="podmenu-filter-link" href="#">Бокинг</a><a class="podmenu-filter-link" href="#">Вейкбординг</a><a class="podmenu-filter-link" href="#">Виндсерфинг</a><a class="podmenu-filter-link" href="#">Воркаут </a><a class="podmenu-filter-link" href="#">Горнолыжный спорт</a><a class="podmenu-filter-link" href="#">Скоростной спуск</a></div>
+        <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>С чем помочь</button>
+        <button class="blue size-20 text-white">Применить</button>
+        <div class="advertisement-left"></div>
+      </div>
+      <div class="content-wrapper pd-40">
+        <div class="nav-line content">
+          <div class="nav-title size-50 weight-500 text-black">
+             Поиск компаний</div>
+        </div>
+        <div class="nav-line content">
+          <div class="search-line button white-blue-border top-search search-filter">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск партнёра"/>
+          </div>
+        </div>
+        <div class="description margin-end">
+          <div class="partners-card card">
+            <div class="user"> 
+              <div class="user-label">
+                <div class="user-photo"><a href="partners-index.html"><img src="icon/sportmaster.svg" alt=""/></a>
+                  <div class="online"></div>
+                </div>
+                <div class="user-info"><a class="user-name size-26 text-black" href="guest-partners.html">Спортмастер</a>
+                  <div class="size-18 text-black-2">Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации </div>
+                </div>
+              </div>
+              <div class="user-button">
+                <div class="bookmark"> </div>
+              </div>
+            </div>
+            <div class="partners-sales"> 
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на беговые лыжи</div>
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на велосипеды</div>
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на всё</div>
+            </div>
+            <div class="partners-card-bottom"> 
+              <div class="text-black-2">Открыто до 20:00 </div>
+              <div class="text-black-2">Россия, Москва </div>
+            </div>
+          </div>
+          <div class="partners-card card">
+            <div class="user"> 
+              <div class="user-label">
+                <div class="user-photo"><a href="partners-index.html"><img src="icon/sportmaster.svg" alt=""/></a>
+                  <div class="online"></div>
+                </div>
+                <div class="user-info"><a class="user-name size-26 text-black" href="guest-partners.html">Спортмастер</a>
+                  <div class="size-18 text-black-2">Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации </div>
+                </div>
+              </div>
+              <div class="user-button">
+                <div class="bookmark"> </div>
+              </div>
+            </div>
+            <div class="partners-sales"> 
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на беговые лыжи</div>
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на велосипеды</div>
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на всё</div>
+            </div>
+            <div class="partners-card-bottom"> 
+              <div class="text-black-2">Открыто до 20:00 </div>
+              <div class="text-black-2">Россия, Москва </div>
+            </div>
+          </div>
+          <div class="partners-card card">
+            <div class="user"> 
+              <div class="user-label">
+                <div class="user-photo"><a href="partners-index.html"><img src="icon/sportmaster.svg" alt=""/></a>
+                  <div class="online"></div>
+                </div>
+                <div class="user-info"><a class="user-name size-26 text-black" href="guest-partners.html">Спортмастер</a>
+                  <div class="size-18 text-black-2">Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации </div>
+                </div>
+              </div>
+              <div class="user-button">
+                <div class="bookmark"> </div>
+              </div>
+            </div>
+            <div class="partners-sales"> 
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на беговые лыжи</div>
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на велосипеды</div>
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на всё</div>
+            </div>
+            <div class="partners-card-bottom"> 
+              <div class="text-black-2">Открыто до 20:00 </div>
+              <div class="text-black-2">Россия, Москва </div>
+            </div>
+          </div>
+          <div class="partners-card card">
+            <div class="user"> 
+              <div class="user-label">
+                <div class="user-photo"><a href="partners-index.html"><img src="icon/sportmaster.svg" alt=""/></a>
+                  <div class="online"></div>
+                </div>
+                <div class="user-info"><a class="user-name size-26 text-black" href="guest-partners.html">Спортмастер</a>
+                  <div class="size-18 text-black-2">Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации </div>
+                </div>
+              </div>
+              <div class="user-button">
+                <div class="bookmark"> </div>
+              </div>
+            </div>
+            <div class="partners-sales"> 
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на беговые лыжи</div>
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на велосипеды</div>
+              <div class="button light-green-green-border text-green size-16">Скидка 10% на всё</div>
+            </div>
+            <div class="partners-card-bottom"> 
+              <div class="text-black-2">Открыто до 20:00 </div>
+              <div class="text-black-2">Россия, Москва </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer text-black size-18 white-white-border">
+      <div class="footer-list"> 
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Пользовательское соглашение</a><a class="footer-link text-black" href="#">Политика обработки персональных данных</a></div>
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Помощь</a><a class="footer-link text-black" href="#">Написать в поддержку</a><a class="footer-link text-black" href="#">Реклама и сотрудничество</a></div>
+        <div class="footer-col">
+          <div class="footer-link">Мы в социальных сетях</div>
+          <div class="footer-social"> <a class="social" href="#"> <img src="icon/grey-facebook.svg" alt=""/></a><a class="social" href="#"> <img src="./icon/grey-vk.svg" alt=""/></a><a class="social" href="#"> <img src="icon/grey-instagramm.svg" alt=""/></a></div>
+        </div>
+      </div>
+      <div class="copyright size-20">© extremy.ru, 2021</div>
+    </footer>
+    <div class="up"> <img src="icon/up.svg" alt=""/></div>
+  </body>
+</html>

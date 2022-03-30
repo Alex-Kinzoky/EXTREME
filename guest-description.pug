@@ -24,7 +24,7 @@ html
                                     .user-name.size-26.text-black Андрей Кулагин
                                     .user-level.size-16.text-grey-2 Мастер
                                     .user-location.size-16.text-grey-2 Москва, Россия
-                                button.user-follow.blue.text-white.size-20.desktop Подписаться
+                                button.user-follow.blue.text-white.size-20.desktop.follow Подписаться
                                 .mobile-user-menu.mobile
                                 .user-button-mobile.button.white-white-border
                                     .user-button-line
@@ -68,30 +68,35 @@ html
                                 .nav-sort-line.blue.text-white.button По популярности
                                 .nav-sort-line.button По порядку
                 .hr
-                .comments-bottom
-                    .new-comment.light-blue-blue-border.button
-                        .smile 
-                        input.text-blue-grey.size-20(type="text", placeholder='Написать комментарий...')
-                    .one-comment 
-                        .user 
-                            .user-label
-                                .user-photo
-                                    a(href='guest-profile.html')
-                                        img(src="images/comment-photo.png", alt="")
-                                a.user-info(href='guest-profile.html')
-                                    .user-name.size-24.text-black Кирилл Максимчук
-                                    .user-level.size-16.text-grey-2 Мастер
-                                    .user-location.size-16.text-grey-2 Москва, Россия
-                            .user-button
-                                button.unlike
-                                    img(src="icon/unlike.svg", alt="")
-                                    | 1
-                                button.like-comment
-                                    img(src="icon/like-comment.svg", alt="")
-                                    | 20
-                        .comment-content 
-                            .comment-text.text-black Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно
-                            .comment-bottom 
-                                .comment-time.size-14.text-grey-2 Сегодня 14:00
-                                button.size-16.text-grey-2 Ответить
+                .description
+                    .comments-bottom
+                        .new-comment.light-blue-blue-border.button
+                            .smile 
+                            input.text-blue-grey.size-20(type="text", placeholder='Написать комментарий...')
+                        .one-comment 
+                            .user 
+                                .user-label
+                                    .user-photo
+                                        a(href='guest-profile.html')
+                                            img(src="images/comment-photo.png", alt="")
+                                    a.user-info(href='guest-profile.html')
+                                        .user-name.size-24.text-black Кирилл Максимчук
+                                        .user-level.size-16.text-grey-2 Мастер
+                                        .user-location.size-16.text-grey-2 Москва, Россия
+                                .user-button
+                                    button.unlike
+                                        img(src="icon/unlike.svg", alt="")
+                                        | 1
+                                    button.like-comment
+                                        img(src="icon/like-comment.svg", alt="")
+                                        | 20
+                            .comment-content 
+                                .comment-text.text-black.size-14 Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно
+                                .comment-bottom 
+                                    .comment-time.size-14.text-grey-2 Сегодня 14:00
+                                    button.size-16.text-grey-2 Ответить
+                #follow-window
+                    .join-card.button.white-white-border 
+                        .size-30.text-black Чтобы подписаться, нужно авторизироваться
+                        button.button.blue.text-white.size-20 Войти
         include component/footer.pug 

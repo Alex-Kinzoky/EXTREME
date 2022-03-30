@@ -14,7 +14,7 @@
   </head>
   <body> 
     <header class="header"> 
-      <div class="menu content white-white-border">
+      <div class="menu content-wrapper white-white-border">
         <div class="menu-left"><a class="logo" href="index.html"></a>
           <div class="search-line button white-blue-border top-search desktop">
             <div class="search-image blue-search"></div>
@@ -31,7 +31,7 @@
           <div class="mobile-menu mobile tablet"></div>
         </div>
       </div>
-      <div class="left-menu-mobile white-white-border content">
+      <div class="left-menu-mobile white-white-border content-wrapper">
         <div class="left-menu-top">
           <div class="theme button">
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
@@ -39,10 +39,10 @@
           </div>
           <div class="left-menu-close"></div>
         </div>
-        <div class="left-menu"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners.html">Партнёры</a></div>
+        <div class="left-menu"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners-list.html">Партнёры</a></div>
       </div>
       <div class="menu-search-mobile white-white-border">
-        <div class="menu content white-white-border content">
+        <div class="menu content-wrapper white-white-border">
           <div class="menu-left"><a class="logo" href="index.html"></a>
             <div class="search-button mobile"></div>
           </div>
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="hr"> </div>
-        <div class="content">
+        <div class="content-wrapper">
           <div class="search-line button light-blue-blue-border top-search">
             <div class="search-image blue-search"></div>
             <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="hr"> </div>
-        <div class="request-mobile content">
+        <div class="request-mobile content-wrapper">
           <div class="size-40 weight-500">Недавние запросы</div>
           <div class="request-mobile-line">
              Запрос 1
@@ -79,7 +79,7 @@
     </header>
     <div class="hr"></div>
     <main class="main">
-      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Лента</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners.html">Партнёры</a></aside>
+      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Лента</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners-list.html">Партнёры</a></aside>
       <div class="content-wrapper">
         <div class="nav-line content">
           <div class="nav-title size-50 weight-500 text-black"><a class="size-50 weight-500 text-black" href="guest-tape.html">Лента</a><img src="icon/arrow-nav.svg" alt=""/>дайвинг</div>
@@ -94,7 +94,7 @@
                   <div class="user-name size-26 text-black">Андрей Кулагин</div>
                   <div class="user-level size-16 text-grey-2">Мастер</div>
                   <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
-                <button class="user-follow blue text-white size-20 desktop">Подписаться</button>
+                <button class="user-follow blue text-white size-20 desktop follow">Подписаться</button>
                 <div class="mobile-user-menu mobile"></div>
                 <div class="user-button-mobile button white-white-border">
                   <div class="user-button-line">
@@ -146,31 +146,39 @@
           </div>
         </div>
         <div class="hr"></div>
-        <div class="comments-bottom">
-          <div class="new-comment light-blue-blue-border button">
-            <div class="smile"> </div>
-            <input class="text-blue-grey size-20" type="text" placeholder="Написать комментарий..."/>
+        <div class="description">
+          <div class="comments-bottom">
+            <div class="new-comment light-blue-blue-border button">
+              <div class="smile"> </div>
+              <input class="text-blue-grey size-20" type="text" placeholder="Написать комментарий..."/>
+            </div>
+            <div class="one-comment"> 
+              <div class="user"> 
+                <div class="user-label">
+                  <div class="user-photo"><a href="guest-profile.html"><img src="images/comment-photo.png" alt=""/></a></div><a class="user-info" href="guest-profile.html">
+                    <div class="user-name size-24 text-black">Кирилл Максимчук</div>
+                    <div class="user-level size-16 text-grey-2">Мастер</div>
+                    <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+                </div>
+                <div class="user-button">
+                  <button class="unlike"><img src="icon/unlike.svg" alt=""/>1</button>
+                  <button class="like-comment"><img src="icon/like-comment.svg" alt=""/>20</button>
+                </div>
+              </div>
+              <div class="comment-content"> 
+                <div class="comment-text text-black size-14">Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно</div>
+                <div class="comment-bottom"> 
+                  <div class="comment-time size-14 text-grey-2">Сегодня 14:00</div>
+                  <button class="size-16 text-grey-2">Ответить</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="one-comment"> 
-            <div class="user"> 
-              <div class="user-label">
-                <div class="user-photo"><a href="guest-profile.html"><img src="images/comment-photo.png" alt=""/></a></div><a class="user-info" href="guest-profile.html">
-                  <div class="user-name size-24 text-black">Кирилл Максимчук</div>
-                  <div class="user-level size-16 text-grey-2">Мастер</div>
-                  <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
-              </div>
-              <div class="user-button">
-                <button class="unlike"><img src="icon/unlike.svg" alt=""/>1</button>
-                <button class="like-comment"><img src="icon/like-comment.svg" alt=""/>20</button>
-              </div>
-            </div>
-            <div class="comment-content"> 
-              <div class="comment-text text-black">Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно</div>
-              <div class="comment-bottom"> 
-                <div class="comment-time size-14 text-grey-2">Сегодня 14:00</div>
-                <button class="size-16 text-grey-2">Ответить</button>
-              </div>
-            </div>
+        </div>
+        <div id="follow-window">
+          <div class="join-card button white-white-border"> 
+            <div class="size-30 text-black">Чтобы подписаться, нужно авторизироваться</div>
+            <button class="button blue text-white size-20">Войти</button>
           </div>
         </div>
       </div>

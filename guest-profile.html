@@ -14,7 +14,7 @@
   </head>
   <body> 
     <header class="header"> 
-      <div class="menu content white-white-border">
+      <div class="menu content-wrapper white-white-border">
         <div class="menu-left"><a class="logo" href="index.html"></a>
           <div class="search-line button white-blue-border top-search desktop">
             <div class="search-image blue-search"></div>
@@ -31,7 +31,7 @@
           <div class="mobile-menu mobile tablet"></div>
         </div>
       </div>
-      <div class="left-menu-mobile white-white-border content">
+      <div class="left-menu-mobile white-white-border content-wrapper">
         <div class="left-menu-top">
           <div class="theme button">
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
@@ -39,10 +39,10 @@
           </div>
           <div class="left-menu-close"></div>
         </div>
-        <div class="left-menu"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners.html">Партнёры</a></div>
+        <div class="left-menu"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Бортжурналы</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners-list.html">Партнёры</a></div>
       </div>
       <div class="menu-search-mobile white-white-border">
-        <div class="menu content white-white-border content">
+        <div class="menu content-wrapper white-white-border">
           <div class="menu-left"><a class="logo" href="index.html"></a>
             <div class="search-button mobile"></div>
           </div>
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="hr"> </div>
-        <div class="content">
+        <div class="content-wrapper">
           <div class="search-line button light-blue-blue-border top-search">
             <div class="search-image blue-search"></div>
             <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="hr"> </div>
-        <div class="request-mobile content">
+        <div class="request-mobile content-wrapper">
           <div class="size-40 weight-500">Недавние запросы</div>
           <div class="request-mobile-line">
              Запрос 1
@@ -79,7 +79,7 @@
     </header>
     <div class="hr"></div>
     <main class="main">
-      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Лента</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners.html">Партнёры</a></aside>
+      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="index.html">Виды спорта</a><a class="size-26 text-black" href="guest-tape.html">Лента</a><a class="size-26 text-black" href="guest-place.html">Места катания</a><a class="size-26 text-black" href="guest-events.html">Мероприятия</a><a class="size-26 text-black" href="guest-partners-list.html">Партнёры</a></aside>
       <div class="content-wrapper">
         <div class="profile">
           <div class="user"> 
@@ -92,8 +92,8 @@
                 <div class="user-location text-grey-2">Москва, Россия</div></a>
             </div>
             <div class="user-button desktop">
-              <button class="user-follow blue text-white size-20">Подписаться</button>
-              <button class="user-mess white-blue-border text-blue size-20">Сообщение</button>
+              <button class="user-follow blue text-white size-20 follow">Подписаться</button>
+              <button class="user-mess white-blue-border text-blue size-20 message">Сообщение</button>
             </div>
           </div>
           <div class="user-profile"> 
@@ -107,8 +107,8 @@
             </div>
           </div>
           <div class="user-button-profile mobile">
-            <button class="user-follow blue text-white size-20">Подписаться</button>
-            <button class="user-mess white-blue-border text-blue size-20">Сообщение</button>
+            <button class="user-follow blue text-white size-20 follow">Подписаться</button>
+            <button class="user-mess white-blue-border text-blue size-20 message">Сообщение</button>
           </div>
         </div>
         <div class="hr"> </div>
@@ -174,6 +174,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="description">
           <div class="events"> 
             <div class="top-label">
               <div class="size-50 weight-500 text-black">Мероприятия</div>
@@ -196,7 +198,7 @@
                     </div>
                   </div>
                 </div>
-                <button class="button size-20 blue text-white" id="join">Присоединиться</button>
+                <button class="button size-20 blue text-white join">Присоединиться</button>
               </div>
               <div class="card button card-h">
                 <div class="card-h-left">
@@ -215,7 +217,7 @@
                     </div>
                   </div>
                 </div>
-                <button class="button size-20 blue text-white" id="join">Присоединиться</button>
+                <button class="button size-20 blue text-white join">Присоединиться</button>
               </div>
               <div class="card button card-h">
                 <div class="card-h-left">
@@ -234,7 +236,7 @@
                     </div>
                   </div>
                 </div>
-                <button class="button size-20 blue text-white" id="join">Присоединиться</button>
+                <button class="button size-20 blue text-white join">Присоединиться</button>
               </div>
             </div>
           </div>
@@ -242,6 +244,18 @@
         <div id="join-window">
           <div class="join-card button white-white-border"> 
             <div class="size-30 text-black">Чтобы присоединиться к мероприятию, нужно авторизироваться</div>
+            <button class="button blue text-white size-20">Войти</button>
+          </div>
+        </div>
+        <div id="follow-window">
+          <div class="join-card button white-white-border"> 
+            <div class="size-30 text-black">Чтобы подписаться, нужно авторизироваться</div>
+            <button class="button blue text-white size-20">Войти</button>
+          </div>
+        </div>
+        <div id="message-window">
+          <div class="join-card button white-white-border"> 
+            <div class="size-30 text-black">Чтобы написать сообщение пользователю, нужно авторизироваться</div>
             <button class="button blue text-white size-20">Войти</button>
           </div>
         </div>

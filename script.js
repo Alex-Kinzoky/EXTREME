@@ -5,6 +5,8 @@ $(document).ready(function(){
     $('#level').hide()
     $('#about').hide()
     $('#join-window').hide()
+    $('#follow-window').hide()
+    $('#message-window').hide()
     $('.user-button-mobile').hide()
     $('.location').attr('placeholder','')
     $('.left-menu-mobile').hide()
@@ -505,11 +507,29 @@ $(document).ready(function(){
             }
         }
     })
-    $('#join').click(function(){
+    $('.join').click(function(){
         $('#join-window').show()
     })
     $('#join-window').click(function(){
         $('#join-window').hide()
+    })
+    $('.join-card').on('click', function(event) {
+        event.stopPropagation();
+    });
+    $('.follow').click(function(){
+        $('#follow-window').show()
+    })
+    $('#follow-window').click(function(){
+        $('#follow-window').hide()
+    })
+    $('.join-card').on('click', function(event) {
+        event.stopPropagation();
+    });
+    $('.message').click(function(){
+        $('#message-window').show()
+    })
+    $('#message-window').click(function(){
+        $('#message-window').hide()
     })
     $('.join-card').on('click', function(event) {
         event.stopPropagation();

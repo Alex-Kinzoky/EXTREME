@@ -34,8 +34,6 @@ html
                                                 img(src="images/line-image.png", alt="")
                                             .line-image
                                                 img(src="images/line-image.png", alt="")
-                                            .line-image
-                                                img(src="images/line-image.png", alt="")
                                     .line-arrow.card
                                         img(src="icon/gradient-forward.svg", alt="")
                             .card-content-bottom
@@ -49,8 +47,8 @@ html
                                 .user-button
                                     .bookmark 
                                     .share
-                                button.user-follow.blue.text-white.size-20.desktop Подписаться
-                            button.user-follow.blue.text-white.size-20.mobile Подписаться
+                                button.user-follow.blue.text-white.size-20.desktop.follow Подписаться
+                            button.user-follow.blue.text-white.size-20.mobile.follow Подписаться
                     .user 
                         .user-label
                             .user-photo
@@ -120,4 +118,8 @@ html
                                 button.button.size-30.text-black-2
                                     img(src="icon/comment.svg", alt="")
                                     | 25
+                #follow-window
+                    .join-card.button.white-white-border 
+                        .size-30.text-black Чтобы подписаться, нужно авторизироваться
+                        button.button.blue.text-white.size-20 Войти
         include component/footer.pug 

@@ -1,0 +1,50 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/guest-header.pug 
+        .hr
+        main.main
+            include component/guest-left-menu.pug 
+            .content-wrapper
+                .nav-line.content.column-mobile
+                    .nav-title.size-50.weight-500.text-black 
+                        | Оз. Муромское, Респ. Карелия
+                    a.left-profile-button(href='user-myprofile.html')
+                        .size-20.text-black  Назад в профиль
+                        .arrow-more
+                .profile 
+                    .big-map.card
+                        button.place-label#l-1
+                            img(src="icon/location.svg", alt="")
+                        button.place-label#l-2
+                            img(src="icon/location.svg", alt="")
+                        button.place-label#l-3
+                            img(src="icon/location.svg", alt="")
+                        .scale 
+                            .scale-up.white-white-border
+                                img(src="icon/plus.svg", alt="")
+                            .scale-down.white-white-border
+                                img(src="icon/minus.svg", alt="")
+                .nav-line.content
+                    .size-40.text-black Описание
+                .profile.margin-end
+                    .text-black 
+                        | Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Товарищи! консультация с широким активом способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров требуют определения и уточнения новых предложений. С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации направлений прогрессивного развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массового участия. 
+                        br
+                        br
+                        | Разнообразный и богатый опыт рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что начало повседневной работы по формированию позиции требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Таким образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.
+                    .image-galery 
+                        .image-card 
+                            img(src="images/place-3.png", alt="")
+                        .image-card 
+                            img(src="images/galery.png", alt="")
+                        .image-card 
+                            img(src="images/place-1.png", alt="")
+                        .image-card 
+                            img(src="images/place-4.png", alt="")
+                        .image-card 
+                            img(src="images/journal.png", alt="")
+                        .image-card 
+                            img(src="images/place-2.png", alt="")
+        include component/footer.pug

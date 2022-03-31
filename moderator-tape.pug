@@ -5,19 +5,19 @@ html
         include component/moderator-header.pug 
         .hr
         .nav-line.content.mobile
-            .nav-title.size-50.weight-500.text-black.mobile Лента
+            .nav-title.size-30.weight-500.text-black.mobile Лента
         main.main
             include component/moderator-left-menu.pug
-            .content-wrapper.pd-40
+            .content-wrapper.pdl-40
                 .nav-line.content.desktop
-                    .nav-title.size-50.weight-500.text-black Лента
-                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                    .nav-title.size-30.weight-500.text-black Лента
+                    .nav-sort.light-blue-blue-border.text-blue.size-12.button
                         .nav-sort-line.blue.text-white.button По популярности
                         .nav-sort-line.button По коментариям
                         .nav-sort-line.button По дате
                 include component/right-filter.pug
                 .nav-line.content.mobile
-                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                    .nav-sort.light-blue-blue-border.text-blue.size-12.button
                         .nav-sort-line.blue.text-white.button По популярности
                         .nav-sort-line.button По коментариям
                         .nav-sort-line.button По дате
@@ -77,10 +77,10 @@ html
                             .card-content-bottom
                                 button.button.size-30.text-black-2
                                     img.like(src="icon/like.svg", alt="")
-                                    .size-18 20
+                                    span.size-18 20
                                 button.button.size-30.text-black-2
                                     img(src="icon/comment.svg", alt="")
-                                    .size-18 25
+                                    span.size-18 25
                                 .user-button.mobile
                                     .bookmark
                                     .share
@@ -139,10 +139,10 @@ html
                             .card-content-bottom
                                 button.button.size-30.text-black-2
                                     img.like(src="icon/like.svg", alt="")
-                                    .size-18 20
+                                    span.size-18 20
                                 button.button.size-30.text-black-2
                                     img(src="icon/comment.svg", alt="")
-                                    .size-18 25
+                                    span.size-18 25
                                 .user-button.mobile
                                     .bookmark
                                     .share

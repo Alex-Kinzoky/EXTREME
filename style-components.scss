@@ -41,15 +41,15 @@ input{
     justify-content: center;
 }
 .content-wrapper{
-    padding: 0 calc(100vw * (80 / 1920));
+    padding: 0 0 0 calc(100vw * (80 / 1920));
     flex-grow: 1;
 }
 .flex-wrap{
     flex-wrap: wrap;
 }
 
-.pd-40{
-    padding: 0 calc(100vw * (40 / 1920));
+.pdl-40{
+    padding-left: calc(100vw * (40 / 1920));
 }
 
 .weight-500{

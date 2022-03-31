@@ -10,6 +10,9 @@ body{
 .card{
     border-radius: 35px;
 }
+.size-14{
+    font-size: 12px;
+}
 .size-16{
     font-size: 12px;
 }
@@ -30,6 +33,9 @@ body{
 }
 .size-40{
     font-size: 24px;
+}
+.size-44{
+    font-size: 30px;
 }
 .size-50{
     font-size: 35px;
@@ -151,13 +157,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 119px;
+    height: calc(100vw * (100 / 1920));
     .logo{
         background: url(icon/black-logo.svg);
         /*width: calc(100vw * (212 / 1920));
         height: calc(100vw * (103 / 1920));*/
-        width: 212px;
-        height: 103px;
+        width: calc(100vw * (159 / 1920));
+        height: calc(100vw * (76 / 1920));
         background-size: 100% 100%;
     }
     .menu-right{
@@ -167,8 +173,8 @@ body{
         align-items: center;
         
         .blue{
-            width: calc(100vw * (197 / 1920));
-            height: 48px;
+            width: calc(100vw * (150 / 1920));
+            height: calc(100vw * (32 / 1920));
             margin-left: calc(100vw * (20 / 1920));
         }
         .mobile-login{
@@ -194,6 +200,11 @@ body{
             margin-left: calc(100vw * (20 / 1920));
             .menu-right-button{
                 margin-right: calc(100vw * (20 / 1920));
+                height: calc(100vw * (27 / 1920));
+                cursor: pointer;
+                >img{
+                    height: 100%;
+                }
             }
         }
     }
@@ -201,8 +212,8 @@ body{
 .theme{
     display: flex;
     justify-content: space-between;
-    width: 97px;
-    height: 36px;
+    width: calc(100vw * (74 / 1920));
+    height: calc(100vw * (27 / 1920));
     border: 1px solid #161616;
     .dark{
         width: 45%;
@@ -230,10 +241,10 @@ body{
 }
 .search-line{
     box-sizing: border-box;
-    width: calc(100vw * (870 / 1920));
-    height: 60px;
+    width: calc(100vw * (652 / 1920));
+    height: calc(100vw * (45 / 1920));
     align-items: center;
-    padding-left: 22px;
+    padding-left: calc(100vw * (17 / 1920));
     justify-content: space-between;
     .search-image{
         background-image: url(icon/grey-search.svg);
@@ -241,6 +252,7 @@ body{
         width: 27px;
         height: 27px;
         flex-shrink: 0;
+        margin-right: calc(100vw * (20 / 1920));
     }
     input{
         width: 450px;
@@ -248,12 +260,13 @@ body{
     .filter-image{
         background-image: url(icon/grey-filter.svg);
         background-size: 100% 100%;
-        width: 33px;
-        height: 24px;
+        width: calc(100vw * (25 / 1920));
+        height: calc(100vw * (18 / 1920));
     }
     .button{
-        width: calc(100vw * (197 / 1920));
+        width: calc(100vw * (150 / 1920));
         height: 100%;
+        margin-left: calc(100vw * (20 / 1920));
     }
 }
 .menu-left{
@@ -264,24 +277,24 @@ body{
 .top-search{
     display: flex;
     justify-content: space-between;
-    width: 405px;
-    height: 43px;
-    padding-left: 16px;
-    margin-left: calc(100vw * (70 / 1920));
+    width: calc(100vw * (304 / 1920));
+    height: calc(100vw * (32 / 1920));
+    padding-left: calc(100vw * (12 / 1920));
+    margin-left: calc(100vw * (52 / 1920));
     .search-image{
         background-image: url(icon/blue-search.svg);
-        width: 19px;
-        height: 19px;
+        width: calc(100vw * (14 / 1920));
+        height: calc(100vw * (14 / 1920));
         flex-shrink: 0;
     }
     input{
-        width: calc(100vw * (200 / 1920));
+        width: calc(100vw * (150 / 1920));
         &::placeholder{
             color: #5575E8;
         }
     }
     .button{
-        width: 140px;
+        width: calc(100vw * (105 / 1920));
         height: calc(100% + 2px);
     }
 }
@@ -312,16 +325,21 @@ body{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     .page-card-t{
-        padding: calc(100vw * (95 / 1920)) 0;
+        padding: calc(100vw * (75 / 1920)) 0;
         align-self: flex-start;
     }
     .page-card-list {
-        padding: calc(100vw * (19 / 1920)) 0 calc(100vw * (170 / 1920));
+        width: 100%;
+        padding: 0 0 calc(100vw * (170 / 1920));
         display: grid;
-        grid-template-columns: repeat(3, calc(100vw * (530 / 1920)));
+        grid-template-columns: repeat(3, calc(100vw * (400 / 1920)));
         grid-template-rows: repeat(2 , min-content);
-        grid-column-gap: calc(100vw * (35 / 1920));
-        grid-row-gap: calc(100vw * (27 / 1920));
+        grid-column-gap: calc(100vw * (70 / 1920));
+        grid-row-gap: calc(100vw * (45 / 1920));
+
+        .card {
+            min-height: calc(100vw * (320 / 1920));
+        }
         
     }
 }
@@ -433,14 +451,67 @@ body{
     display: flex;
     position: relative;
 }
-
-.main-content {
-    padding-inline: calc(100vw * (80 / 1920));
+.about-place {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card-content-bottom{
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin-top: calc(100vw * (15 / 1920));
+        
+        .buttons{
+            display: flex;
+        }
+        .button{
+            height: calc(100vw * (30 / 1920));
+            background-color: rgba(0, 56, 255, 0.04);
+            display: flex;
+            align-items: center;
+            margin-right: calc(100vw * (15 / 1920));
+            img{
+                height: 60%;
+                margin-right: calc(100vw * (10 / 1920));
+            }
+        }
+        
+        .share{
+            background-image: url(icon/share.svg);
+            background-size: 100% 100%;
+            width: calc(100vw * (21 / 1920));
+            height: calc(100vw * (21 / 1920));
+            margin-right: 0;
+            cursor: pointer;
+        }
+    }
+    .change-card{
+        width: calc(100vw * (190 / 1920));
+        padding: 0;
+        margin-top: auto;
+        order: 3;
+        
+        .size-26{
+            align-items: center;
+            display: flex;
+            img{
+                width: 27px;
+                margin-right: calc(100vw * (15 / 1920));
+            }
+        }
+        
+    }
+}
+.main-index {
+    .content-wrapper{
+        width: calc(100vw * (1500 / 1920));
+        padding: 0 calc(100vw * (80 / 1920));
+    }
 }
 .footer{
     max-width: 1366px;
     height: 305px;
-    padding: 89px 80px 27px;
+    padding: calc(100vw * (89 / 1920)) 0 calc(100vw * (27 / 1920));
     margin-inline: auto;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -478,8 +549,8 @@ body{
     position: fixed;
     right: calc(100vw * (80 / 1920));
     bottom: calc(100vw * (148 / 1920));
-    width: calc(100vw * (68 / 1920));
-    height: calc(100vw * (68 / 1920));
+    width: calc(100vw * (51 / 1920));
+    height: calc(100vw * (51 / 1920));
     cursor: pointer;
     img{
         width: 100%;
@@ -495,6 +566,7 @@ body{
     display: flex;
     flex-direction: column;
     width: auto;
+    max-width: 261px;
     padding-left: calc(100vw * (56 / 1920));
     padding-top: calc(100vw * (54 / 1920));
     padding-right: calc(100vw * (31 / 1920));
@@ -521,11 +593,10 @@ body{
     position: absolute;
     right: 0;
     width: auto;
-    padding-right: calc(100vw * (40 / 1920));
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 140px;
+    //margin-top: 140px;
     .size-26{
         padding: calc(100vw * (10 / 1920));
         display: flex;
@@ -539,7 +610,7 @@ body{
     }
     .blue{
         align-self: center;
-        padding: calc(100vw * (9 / 1920)) calc(100vw * (61 / 1920));
+        padding: calc(100vw * (7 / 1920)) calc(100vw * (46 / 1920));
         margin-top: calc(100vw * (13 / 1920));
     }
 }
@@ -552,14 +623,15 @@ body{
 }
 .change-card {
     display: flex;
-    margin-top: calc(100vw * (16 / 1920));
-    width: calc(100vw * (266 / 1920));
+    margin-top: calc(100vw * (12 / 1920));
+    width: calc(100vw * (220 / 1920));
     justify-content: space-between;
     .size-18{
         display: flex;
         align-items: center;
         img{
             margin-right: 7px;
+            height: calc(100vw * (15 / 1920));
         }
     }
 }
@@ -567,7 +639,7 @@ body{
     display: flex;
     margin: calc(100vw * (30 / 1920)) 0 calc(100vw * (25 / 1920));
     justify-content: space-between;
-    height: 60px;
+    height: calc(100vw * (40 / 1920));
     align-items: center;
     .top-label{
         width: auto;
@@ -584,13 +656,13 @@ body{
         }
         
         align-items: baseline;
-        .size-30{
-            margin-left: calc(100vw * (27 / 1920));
-        }
         img{
             margin: 0 calc(100vw * (20 / 1920));
-            height: 100%;
+            height: calc(100vw * (20 / 1920));
             align-self: center;
+        }
+        .size-20{
+            margin-left: calc(100vw * (15 / 1920));
         }
     }
     .nav-sort{
@@ -599,10 +671,10 @@ body{
         justify-content: space-between;
         padding: 0;
         .nav-sort-line{
-            padding: 7px 14px;
+            padding: 5px 10px;
             height: fit-content;
             margin: -1px;
-            min-width: calc(100vw * (105 / 1920));
+            min-width: calc(100vw * (76 / 1920));
             display: flex;
             justify-content: center;
         }
@@ -654,7 +726,7 @@ body{
 }
 .user-follow{
     height: fit-content;
-    padding: calc(100vw * (8 / 1920)) calc(100vw * (32 / 1920));
+    padding: calc(100vw * (6 / 1920)) calc(100vw * (20 / 1920));
 }
 .user-button{
     display: flex;
@@ -663,24 +735,26 @@ body{
     .bookmark{
         background-image: url(icon/bookmark.svg);
         background-size: 100% 100%;
-        width: calc(100vw * (22 / 1920));
-        height: calc(100vw * (28 / 1920));
-        margin-right: calc(100vw * (22 / 1920));
+        width: calc(100vw * (16 / 1920));
+        height: calc(100vw * (21 / 1920));
+        margin-right: calc(100vw * (16 / 1920));
+        cursor: pointer;
     }
     .share{
         background-image: url(icon/share.svg);
         background-size: 100% 100%;
-        width: calc(100vw * (28 / 1920));
-        height: calc(100vw * (28 / 1920));
+        width: calc(100vw * (21 / 1920));
+        height: calc(100vw * (21 / 1920));
         margin-right: 0;
+        cursor: pointer;
     }
     .size-26{
         height: fit-content;
         display: flex;
         align-items: center;
         img{
-            height: 35px;
-            margin-right: 13px;
+            height: calc(100vw * (27 / 1920));
+            margin-right: 10px;
         }
     }
 }
@@ -723,21 +797,22 @@ body{
             display: flex;
         }
         .button{
-            height: calc(100vw * (38 / 1920));
+            height: calc(100vw * (30 / 1920));
             background-color: rgba(0, 56, 255, 0.04);
-            padding: calc(100vw * (7 / 1920)) calc(100vw * (10 / 1920));
+            padding: calc(100vw * (5 / 1920)) calc(100vw * (8 / 1920));
             display: flex;
             align-items: center;
             margin-right: calc(100vw * (15 / 1920));
             img{
-                height: 80%;
-                margin-right: 10px;
+                height: 75%;
+                margin-right: calc(100vw * (10 / 1920));
             }
         }
         .change-card{
             width: calc(100vw * (360 / 1920));
             padding: 0;
             margin-inline: 70px auto;
+            margin-block: auto;
             
             .size-26{
                 align-items: center;
@@ -750,9 +825,11 @@ body{
             
         }
         .vie{
+            height: calc(100vw * (30 / 1920));
             display: flex;
             img{
-                margin-right: calc(100vw * (15 / 1920));
+                height: 75%;
+                margin-right: calc(100vw * (10 / 1920));
             }
         }
     }
@@ -823,7 +900,7 @@ body{
     }
 }
 .light-blue-blue-border{
-    padding: calc(100vw * (12 / 1920)) calc(100vw * (34 / 1920));
+    padding: calc(100vw * (9 / 1920)) calc(100vw * (25 / 1920));
     width: fit-content;
 }
 .comments{
@@ -834,14 +911,14 @@ body{
 .new-comment{
     width: 100%;
     box-sizing: border-box;
-    padding: calc(100vw * (17 / 1920)) calc(100vw * (14 / 1920));
+    padding: calc(100vw * (12 / 1920)) calc(100vw * (17 / 1920));
     display: flex;
     margin-top: calc(100vw * (47 / 1920));
     .smile{
         background-image: url(icon/grey-smile.svg);
         background-size: 100% 100%;
-        width: calc(100vw * (29 / 1920));
-        height: calc(100vw * (29 / 1920));
+        width: calc(100vw * (22 / 1920));
+        height: calc(100vw * (22 / 1920));
         margin-right: calc(100vw * (23 / 1920));
     }
     input{
@@ -855,6 +932,11 @@ body{
     margin: auto;
     margin-bottom: calc(100vw * (134 / 1920));
 }
+.content-wrapper > .comments-bottom{
+    width: 70%;
+    margin: 0 auto calc(100vw * (134 / 1920)) 0;
+}
+
 .one-comment {
     margin: calc(100vw * (60 / 1920)) 0;
     .user{
@@ -870,27 +952,32 @@ body{
         .user-button{
             font-size: 10px;
             height: fit-content;
+            align-items: end;
             .mobile-user-menu{
                 margin-left: 10px;
             }
             .unlike{
+                padding: 0;
+                margin-right: calc(100vw * (10 / 1920));
                 display: flex;
                 align-items: flex-end;
                 color: #E55555;
-                height: 40px;
+                height: calc(100vw * (30 / 1920));
                 img{
                     margin-right: 4px;
-                    padding-top: 5px;
+                    margin-bottom: -6px;
                     height: 110%;
                 }
             }
             .like-comment{
+                padding: 0;
                 display: flex;
                 align-items: flex-end;
                 color: #17B126;
-                height: 36px;
+                height: calc(100vw * (27 / 1920));
                 img{
                     margin-right: 4px;
+                    margin-bottom: -2px;
                     height: 110%;
                 }
             }
@@ -937,12 +1024,12 @@ body{
             margin-left: auto;
             .user-mess{
                 height: fit-content;
-                padding: 11px calc(100vw * (38 / 1920));
-                margin-left: calc(100vw * (20 / 1920));
+                padding: 8px calc(100vw * (28 / 1920));
+                margin-left: calc(100vw * (15 / 1920));
             }
             .user-follow{
                 height: fit-content;
-                padding: 11px calc(100vw * (32 / 1920));
+                padding: 8px calc(100vw * (24 / 1920));
             }
         }
         
@@ -976,18 +1063,18 @@ body{
         }
         
         .button{
-            padding: calc(100vw * (12 / 1920)) calc(100vw * (38 / 1920));
-            margin-left: calc(100vw * (40 / 1920));
+            padding: calc(100vw * (9 / 1920)) calc(100vw * (30 / 1920));
+            margin-left: calc(100vw * (30 / 1920));
         }
     }
     .slider-buttons{
         display: flex;
         justify-content: space-between;
-        width: 105px;
+        width: calc(100vw * (76 / 1920));
         .slider-button{
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            width: calc(100vw * (30 / 1920));
+            height: calc(100vw * (30 / 1920));
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1087,7 +1174,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 140px;
+    height: calc(100vw * (110 / 1920));
     justify-content: space-between;
     align-items: center;
     margin: 16px 0;
@@ -1111,7 +1198,7 @@ body{
             flex-direction: column;
             padding: 20px calc(100vw * (50 / 1920));
             .change-card{
-                width: calc(100vw * (255 / 1920));
+                width: calc(100vw * (220 / 1920));
             }
         }
     }
@@ -1125,16 +1212,15 @@ body{
             height: 19px;
             align-self: flex-end;
             margin-right: calc(100vw * (34 / 1920));
-            margin-top: -15px;
         }
         .button{
-            padding: calc(100vw * (12 / 1920)) calc(100vw * (41 / 1920));
+            padding: calc(100vw * (9 / 1920)) calc(100vw * (30 / 1920));
         }
     }
     .button{
-        height: 35px;
+        height: calc(100vw * (35 / 1920));
         
-        padding: calc(100vw * (8/ 1920)) calc(100vw * (12 / 1920));
+        padding: calc(100vw * (8 / 1920)) calc(100vw * (12 / 1920));
         margin-right: calc(100vw * (30 / 1920));
     }
     .blue{
@@ -1257,6 +1343,7 @@ body{
                 img {
                     width: 100%;
                     height: 100%;
+                    object-fit: cover;
                 }
             }
         }
@@ -1315,13 +1402,13 @@ body{
 }
 .status{
     position: absolute;
-    padding: calc(100vw * (8 / 1920)) calc(100vw * (24 / 1920));
+    padding: calc(100vw * (6 / 1920)) calc(100vw * (18 / 1920));
 }
 .card-map {
     width: 100%;
     height: 100%;
     .card-image {
-        height: calc(100vw * (205 / 1920));
+        height: calc(100vw * (160 / 1920));
         overflow: hidden;
         position: relative;
         .mobile-user-menu{
@@ -1337,8 +1424,8 @@ body{
             width: 100%;
         }
         .status{
-            top: calc(100vw * (26 / 1920));
-            left:  calc(100vw * (42 / 1920));
+            top: calc(100vw * (20 / 1920));
+            left:  calc(100vw * (31 / 1920));
         }
         .place-label{
             position: absolute;
@@ -1372,6 +1459,7 @@ body{
             position: absolute;
             top: 80%;
             left: -15px;
+            padding-block: calc(100vw * (6 / 1920));
         }
     }
 }
@@ -1385,11 +1473,14 @@ body{
     overflow: hidden;
     .place-label{
         position: absolute;
-        height: calc(100vw * (48 / 1920));
-        width: calc(100vw * (30 / 1920));
+        height: calc(100vw * (36 / 1920));
+        width: calc(100vw * (22 / 1920));
         background-image: url(icon/location.svg);
         background-size: cover;
         padding: 0;
+        img {
+            width: 100%;
+        }
     }
     #l-1{
         top: 26.5%;
@@ -1465,7 +1556,7 @@ body{
                 justify-content: space-between;
                 .button{
                     img{
-                        height: 24px;
+                        height: calc(100vw * (18 / 1920));
                         margin-right: 5px;
                     }
                 }
@@ -1478,9 +1569,9 @@ body{
                 display: flex;
                 width: auto;
                 .card-place-image{
-                    width: calc(100vw * (401 / 1920));
-                    height: calc(100vw * (222 / 1920));
-                    margin-right: calc(100vw * (37 / 1920));
+                    width: calc(100vw * (300 / 1920));
+                    height: calc(100vw * (166 / 1920));
+                    margin-right: calc(100vw * (30 / 1920));
                     img{
                         height: 100%;
                     }
@@ -1618,8 +1709,9 @@ body{
     z-index: -1;
 }
 .login-content{
+    width: 100%;
     display: grid;
-    grid-template-columns: calc(100vw * (435 / 1920)) calc(100vw * (1315 / 1920));
+    grid-template-columns: calc(100vw * (435 / 1920)) 1fr;
     grid-gap: 10px;
     
     margin: calc(100vw * (121 / 1920)) 0 calc(100vw * (142 / 1920));
@@ -1834,14 +1926,14 @@ body{
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    height: calc(100vw * (84 / 1920));
-    border-radius: 30px;
-    padding: calc(100vw * (12 / 1920)) calc(100vw * (24 / 1920));
-    margin: 20px 0;
+    height: calc(100vw * (70 / 1920));
+    border-radius: 21px;
+    padding: calc(100vw * (9 / 1920)) calc(100vw * (18 / 1920));
+    margin: calc(100vw * (20 / 1920)) 0;
     .mess-photo {
-        width: calc(100vw * (60 / 1920));
-        height: calc(100vw * (60 / 1920));
-        margin-right: calc(100vw * (20 / 1920));
+        width: calc(100vw * (40 / 1920));
+        height: calc(100vw * (40 / 1920));
+        margin-right: calc(100vw * (15 / 1920));
         img{
             height: 100%;
         }
@@ -1851,28 +1943,36 @@ body{
         flex-direction: column;
         justify-content: space-between;
         .text{
-            height: 17px;
+            height: calc(100vw * (15 / 1920));
             overflow: hidden;
             background: linear-gradient(269.96deg, #FFFFFF 0.02%, #161616 83.95%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+
     }
 }
 .notification-content{
     position: relative;
     height: 900px;
+
+    .notification-line {
+        margin-bottom: calc(100vw * (25 / 1920));;
+    }
 }
 .notification-line {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: calc(100vw * (29 / 1920)) 0;
+
     .notification-left{
         display: flex;
+        align-items: center;
         .notification-image {
-            width: 34px;
-            height: 34px;
+            width: calc(100vw * (25 / 1920));
+            height: calc(100vw * (25 / 1920));
             margin-right: calc(100vw * (18 / 1920));
             img{
                 height: 100%;
@@ -1894,11 +1994,12 @@ body{
     }
 }
 .invite{
+    padding-bottom: calc(100vw * (14 / 1920));
     border-bottom: 1px solid rgba(223, 223, 223, 0.29);
 }
 .proposal-image {
-    width: 34px;
-    height: 34px;
+    width: calc(100vw * (25 / 1920));
+    height: calc(100vw * (25 / 1920));
     margin-right: calc(100vw * (15 / 1920));
     img{
         height: 100%;
@@ -1915,8 +2016,8 @@ body{
 .myprofile-button{
     display: flex;
     .blue{
-        margin-right: calc(100vw * (73 / 1920));
-        padding: calc(100vw * (12 / 1920)) calc(100vw * (34 / 1920));
+        margin-right: calc(100vw * (60 / 1920));
+        padding: calc(100vw * (9 / 1920)) calc(100vw * (26 / 1920));
         height: fit-content;
     }
     
@@ -1970,7 +2071,7 @@ textarea{
             margin-top: calc(100vw * (12 / 1920));
         }
         .profile-edit-input{
-            width: calc(100vw * (425 / 1920));
+            width: calc(100vw * (315 / 1920));
             textarea{
                 border-radius: 20px;
                 width: 100%;
@@ -1981,7 +2082,7 @@ textarea{
             }
             .chekbox{
                 margin-right: calc(100vw * (13 / 1920));
-                padding: calc(100vw * (14 / 1920)) calc(100vw * (24 / 1920));
+                padding: calc(100vw * (9 / 1920)) calc(100vw * (18 / 1920));
                 flex-direction: column;
                 justify-content: space-between;
                 .drop-chekbox {
@@ -1991,14 +2092,14 @@ textarea{
                     }
                 }
                 .top-chekbox{
-                    padding: 0 calc(100vw * (15 / 1920));
+                    padding: 0 calc(100vw * (12 / 1920));
                     justify-content: space-between;
                     display: flex;
                     img{
                         width: 13px;
                     }
                     input{
-                        width: calc(100vw * (150 / 1920));
+                        width: calc(100vw * (110 / 1920));
                         padding: 0;
                     }
                 }
@@ -2038,7 +2139,7 @@ textarea{
                 }
                 .button{
                     .calendar{
-                        width: 26px;
+                        width: calc(100vw * (14 / 1920));
                     }
                 }
                 #day{
@@ -2048,7 +2149,7 @@ textarea{
                 #month{
                     width: 123px;
                     margin-right: calc(100vw * (13 / 1920));
-                    padding: calc(100vw * (14 / 1920)) calc(100vw * (24 / 1920));
+                    padding: calc(100vw * (10 / 1920)) calc(100vw * (24 / 1920));
                     display: flex;
                     justify-content: space-between;
                     img{
@@ -2065,12 +2166,12 @@ textarea{
             }
             input{
                 box-sizing: border-box;
-                padding: calc(100vw * (14 / 1920)) calc(100vw * (24 / 1920));
+                padding: calc(100vw * (10 / 1920)) calc(100vw * (24 / 1920));
                 width: 100%;
             }
             .blue{
-                padding: calc(100vw * (12 / 1920)) 0;
-                width: 142px;
+                padding: calc(100vw * (9 / 1920)) 0;
+                width: calc(100vw * (142 / 1920));
             }
             .profile-edit-check{
                 display: flex;
@@ -2120,10 +2221,10 @@ input[type=radio]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: calc(100vw * (38 / 1920));
-    margin-bottom: calc(100vw * (38 / 1920));
+    margin-top: calc(100vw * (32 / 1920));
+    margin-bottom: calc(100vw * (32 / 1920));
     .blue{
-        padding: calc(100vw * (12 / 1920)) calc(100vw * (34 / 1920));
+        padding: calc(100vw * (9 / 1920)) calc(100vw * (26 / 1920));
     }
     .delete {
         margin-right: calc(100vw * (-150/1920));
@@ -2137,7 +2238,7 @@ input[type=radio]{
         width: 100%;
         align-self: flex-start;
         .size-18{
-            margin-right: calc(100vw * (30 / 1920));
+            margin-right: calc(100vw * (22 / 1920));
         }
     }
 }
@@ -2195,8 +2296,8 @@ input[type=radio]{
 .about-top-button {
     display: flex;
     .button{
-        padding: calc(100vw * (12 / 1920)) calc(100vw * (26 / 1920));
-        margin-right: calc(100vw * (46 / 1920));
+        padding: calc(100vw * (9 / 1920)) calc(100vw * (18 / 1920));
+        margin-right: calc(100vw * (33 / 1920));
     }
 }
 .about-event{
@@ -2289,7 +2390,7 @@ input[type=radio]{
 }
 .add-journal-top {
     display: grid;
-    grid-template-columns: repeat(2, 355px);
+    grid-template-columns: repeat(2, 265px);
     grid-gap: calc(100vw * (145 / 1920));
     margin-bottom: calc(100vw * (54 / 1920));
     .add-journal-note {
@@ -2300,6 +2401,7 @@ input[type=radio]{
                 padding: calc(100vw * (14 / 1920)) calc(100vw * (24 / 1920));
                 flex-direction: column;
                 justify-content: space-between;
+                border-radius: 28px;
                 .drop-chekbox {
                     .size-16{
                         padding: 8px 0;
@@ -2365,7 +2467,7 @@ input[type=radio]{
         width: 100%;
     }
     textarea{
-        width: 100%;
+        width: 75%;
     }
 }
 .add-place-journal{
@@ -2407,10 +2509,10 @@ input[type=radio]{
 }
 .user-setting-card{
     position: absolute;
-    right: calc(100vw * (80 / 1920));
+    right: 0;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    padding: calc(100vw * (20 / 1920)) calc(100vw * (29 / 1920));
+    padding: calc(100vw * (15 / 1920)) calc(100vw * (22 / 1920));
     width: fit-content;
     height: fit-content;
     z-index: 1000;
@@ -2420,18 +2522,21 @@ input[type=radio]{
 }
 .user-notificarion-card{
     position: absolute;
-    right: calc(100vw * (80 / 1920));
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding: 0 calc(100vw * (29 / 1920));
+    right: 0;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding: calc(100vw * (14 / 1920)) calc(100vw * (22 / 1920)) 0;
     width: fit-content;
     height: fit-content;
     z-index: 1000;
     .notification-line{
-        padding: calc(100vw * (14 / 1920)) 0;
+        margin-bottom: calc(100vw * (14 / 1920));
         .notification-left{
             .notification-image{
-                height: 33px;
+                height: calc(100vw * (25 / 1920));
+                >img {
+                    height: 100%;
+                }
             }
         }
     }           
@@ -2504,7 +2609,11 @@ input[type=radio]{
         margin-left: 95px;
         display: flex;
         justify-content: space-between;
-        width: calc(100vw * (300 / 1920));
+        width: max-content;
+
+        .text-black-2:first-child {
+            margin-right: calc(100vw * (25 / 1920));
+        }
     }
 }
 .admin-cards {
@@ -2740,6 +2849,9 @@ input[type=radio]{
             width: calc(100vw * (118 / 1920));
             flex-shrink: 0;
         }
+        .search-image {
+            margin: 0;
+        }
     }
     .search-filter{
         margin: 0;
@@ -2751,8 +2863,8 @@ input[type=radio]{
 .mobile-user-menu{
     background-image: url(icon/black-user-menu.svg);
     background-size: 100% 100%;
-    width: calc(100vw * (10 / 1920));
-    height: calc(100vw * (28 / 1920));
+    width: calc(100vw * (7 / 1920));
+    height: calc(100vw * (21 / 1920));
     margin-right: 30px;
     cursor: pointer;
 }
@@ -2819,10 +2931,11 @@ input[type=radio]{
     margin-right: 10px;
     align-items: flex-start;
     justify-content: space-between;
-    width: 105px;
+    width: calc(100vw * (60 / 1920));
+    cursor: pointer;
     img{
-        height: 38px;
-        margin-right: 10px;
+        height: calc(100vw * (24 / 1920));
+        margin-right: calc(100vw * (8 / 1920));
     }
 }
 .moderator-rejection-card{
@@ -2901,6 +3014,15 @@ input[type=radio]{
     .card{
         border-radius: 35px;
     }
+    .size-20{
+        font-size: 15px;
+    }
+    .size-22{
+        font-size: 15px;
+    }
+    .size-26{
+        font-size: 16px;
+    }
     .size-30{
         font-size: 20px;
     }
@@ -2937,27 +3059,71 @@ input[type=radio]{
         }
     }
 
-    .menu{
-        height: 84px;
-        .logo{
-            height: 60px;
-            width: 165px;
-        }
-        .menu-right{
-            .blue{
-                height: 35px;
+    .about-place {
+        .card-content-bottom{
+            .button{
+                height: calc(100vw * (30 / 1550));
+                margin-right: calc(100vw * (15 / 1550));
             }
         }
-
-        .menu-right-buttons {
-            height: 30px;
-
-            img {
-                height: 100%;
+        .change-card{
+            width: calc(100vw * (190 / 1550));
+        }
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(100vw * (100 / 1920));
+        .logo{
+            background: url(icon/black-logo.svg);
+            /*width: calc(100vw * (212 / 1920));
+            height: calc(100vw * (103 / 1920));*/
+            width: calc(100vw * (159 / 1920));
+            height: calc(100vw * (76 / 1920));
+            background-size: 100% 100%;
+        }
+        .menu-right{
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            align-items: center;
+            
+            .blue{
+                height: calc(100vw * (45 / 1920));
+            }
+            .mobile-login{
+                box-sizing: border-box;
+                background-image: url(icon/mobile-login.svg);
+                background-size: 100% 100%;
+                width: 34px;
+                height: 34px;
+                border-radius: 0;
+            }
+            .mobile-menu{
+                box-sizing: border-box;
+                background-image: url(icon/mobile-menu.svg);
+                background-size: 100% 100%;
+                width: 37px;
+                height: 25px;
+                border-radius: 0;
+            }
+            .menu-right-buttons {
+                display: flex;
+                justify-content: space-between;
+                width: auto;
+                margin-left: calc(100vw * (20 / 1920));
+                .menu-right-button{
+                    margin-right: calc(100vw * (20 / 1920));
+                    height: calc(100vw * (33 / 1920));
+                    >img{
+                        height: 100%;
+                    }
+                }
             }
         }
     }
-
     .theme{
         width: 70px;
         height: 25px;
@@ -3132,16 +3298,29 @@ input[type=radio]{
         }
     }
     .user-button{
+        .bookmark{
+            width: calc(100vw * (16 / 1550));
+            height: calc(100vw * (21 / 1550));
+            margin-right: calc(100vw * (16 / 1550));
+        }
+        .share{
+            width: calc(100vw * (21 / 1550));
+            height: calc(100vw * (21 / 1550));
+        }
         .size-26{
-            margin-top: 8px;
             img{
-                height: 26px;
-                margin-right: 10px;
+                height: calc(100vw * (27 / 1550));
             }
         }
     }
     .card-content{
         .card-content-bottom{
+            .button {
+                height: calc(100vw * (30 / 1550));
+                padding: calc(100vw * (5 / 1550)) calc(100vw * (8 / 1550));
+                margin-right: calc(100vw * (15 / 1550));
+              }
+
             .change-card{
                 width: calc(100vw * (360 / 1920));
                 padding: 0;
@@ -3225,17 +3404,7 @@ input[type=radio]{
             }
             .user-button{
                 width: calc(100vw * (461 / 1920));
-                .user-mess{
-                    height: fit-content;
-                    padding: 11px calc(100vw * (51 / 1920));
-                }
-                .user-follow{
-                    height: fit-content;
-                    padding: 11px calc(100vw * (43 / 1920));
-                    margin-right: calc(100vw * (10 / 1920));
-                }
             }
-            
         }
         .user-profile {
             display: grid;
@@ -3321,11 +3490,12 @@ input[type=radio]{
                 height: 14px;
             }
         }
-        .button{
-            img {
-                width: 25px;
-                height: 25px;
-            }
+    }
+    .mess-card {
+        .mess-photo {
+            width: calc(100vw * (40 / 1550));
+            height: calc(100vw * (40 / 1550));
+            margin-right: calc(100vw * (15 / 1550));
         }
     }
     .tape-card {
@@ -3742,7 +3912,7 @@ input[type=radio]{
         }
     }
     .mobile-user-menu{
-        height: 27px;
+        height: calc(100vw * (25 / 1920));
         margin-right: 20px;
     }
     .user-button-desktop{
@@ -3761,9 +3931,8 @@ input[type=radio]{
     .moderator-buttons{
         margin-left: 10px;
         margin-right: 10px;
-        width: 70px;
         img{
-            height: 27px;
+            height: calc(100vw * (25 / 1920));
             margin-right: 7px;
         }
     }
@@ -3782,6 +3951,24 @@ input[type=radio]{
             }
         }
     }
+    .profile-edit-field {
+        .profile-edit-line {
+            .profile-edit-input {
+                .chekbox {
+                    .top-chekbox {
+                        input:not(input:only-child) {
+                            //для инпута с календарём
+                            width: calc(100vw * (120 / 1550));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.advantages .advantages-card .advantages-text {
+    width: calc(100vw * (260 / 1550));
+    text-align: center;
 }
 .mobile{
     display: none;

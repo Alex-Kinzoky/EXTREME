@@ -8,8 +8,8 @@ html
             include component/admin-left-menu.pug 
             .content-wrapper
                 .nav-line.content
-                    .nav-title.size-50.weight-500.text-black 
-                        a.size-50.weight-500.text-black(href='admin-tape.html') Лента
+                    .nav-title.size-30.weight-500.text-black 
+                        a.size-30.weight-500.text-black(href='admin-tape.html') Лента
                         img(src="icon/arrow-nav.svg", alt="")
                         | дайвинг
                 .description 
@@ -24,7 +24,7 @@ html
                                     .user-name.size-26.text-black Андрей Кулагин
                                     .user-level.size-16.text-grey-2 Мастер
                                     .user-location.size-16.text-grey-2 Москва, Россия
-                                button.user-follow.blue.text-white.size-20.desktop Подписаться
+                                button.user-follow.blue.text-white.size-18.desktop Подписаться
                                 .mobile-user-menu.mobile
                                 .user-button-mobile.button.white-white-border
                                     .user-button-line
@@ -65,10 +65,10 @@ html
                             .card-content-bottom
                                 button.button.size-30.text-black-2
                                     img.like(src="icon/like.svg", alt="")
-                                    .size-18 20
+                                    span.size-18 20
                                 button.button.size-30.text-black-2
                                     img(src="icon/comment.svg", alt="")
-                                    .size-18 25
+                                    span.size-18 25
                     a.before(href='admin-description.pug') 
                         .arrow-back
                             img(src="icon/arrow-back.svg", alt="")
@@ -78,42 +78,42 @@ html
                     .comments 
                         .nav-line
                             .nav-title.size-30.weight-500.text-black 25 комментариев
-                            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                            .nav-sort.light-blue-blue-border.text-blue.size-12.button
                                 .nav-sort-line.blue.text-white.button По популярности
                                 .nav-sort-line.button По порядку
-            .hr
-            .comments-bottom
-                .new-comment.light-blue-blue-border.button
-                    .smile 
-                    input.text-blue-grey.size-20(type="text", placeholder='Написать комментарий...')
-                .one-comment 
-                    .user 
-                        .user-label
-                            .user-photo
-                                a(href='admin-profile.html')
-                                    img(src="images/comment-photo.png", alt="")
-                            a.user-info(href='admin-profile.html')
-                                .user-name.size-24.text-black Кирилл Максимчук
-                                .user-level.size-16.text-grey-2 Мастер
-                                .user-location.size-16.text-grey-2 Москва, Россия
-                        .user-button
-                            button.unlike
-                                img(src="icon/unlike.svg", alt="")
-                                | 1
-                            button.like-comment
-                                img(src="icon/like-comment.svg", alt="")
-                                | 20
-                            .mobile-user-menu
-                            .user-button-mobile.button.white-white-border
-                                .user-button-line
-                                    img(src="icon/black-delete.svg", alt="")
-                                    | Удалить
-                                .user-button-line
-                                    img(src="icon/black-black-list.svg", alt="")
-                                    | Добавить в чёрный список
-                    .comment-content 
-                        .comment-text.text-black Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно
-                        .comment-bottom 
-                            .comment-time.size-14.text-grey-2 Сегодня 14:00
-                            button.size-16.text-grey-2 Ответить
+                    .hr
+                    .comments-bottom
+                        .new-comment.light-blue-blue-border.button
+                            .smile 
+                            input.text-blue-grey.size-18(type="text", placeholder='Написать комментарий...')
+                        .one-comment 
+                            .user 
+                                .user-label
+                                    .user-photo
+                                        a(href='admin-profile.html')
+                                            img(src="images/comment-photo.png", alt="")
+                                    a.user-info(href='admin-profile.html')
+                                        .user-name.size-26.text-black Кирилл Максимчук
+                                        .user-level.size-16.text-grey-2 Мастер
+                                        .user-location.size-16.text-grey-2 Москва, Россия
+                                .user-button
+                                    button.unlike
+                                        img(src="icon/unlike.svg", alt="")
+                                        | 1
+                                    button.like-comment
+                                        img(src="icon/like-comment.svg", alt="")
+                                        | 20
+                                    .mobile-user-menu
+                                    .user-button-mobile.button.white-white-border
+                                        .user-button-line
+                                            img(src="icon/black-delete.svg", alt="")
+                                            | Удалить
+                                        .user-button-line
+                                            img(src="icon/black-black-list.svg", alt="")
+                                            | Добавить в чёрный список
+                            .comment-content 
+                                .comment-text.text-black.size-18 Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно
+                                .comment-bottom 
+                                    .comment-time.size-14.text-grey-2 Сегодня 14:00
+                                    button.size-16.text-grey-2 Ответить
         include component/footer.pug 

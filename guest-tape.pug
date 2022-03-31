@@ -5,7 +5,7 @@ html
         include component/guest-header.pug 
         .hr
         .nav-line.content.mobile
-            .nav-title.size-50.weight-500.text-black.mobile Лента
+            .nav-title.size-30.weight-500.text-black.mobile Лента
         main.main
             .left-menu.desktop
                 a.size-26.text-black(href='index.html') Виды спорта
@@ -13,7 +13,21 @@ html
                 a.size-26.text-black(href='guest-place.html') Места катания
                 a.size-26.text-black(href='guest-events.html') Мероприятия
                 a.size-26.text-black(href='guest-partners.html') Партнёры
-            .right-filter 
+            
+            .content-wrapper.pdl-40
+                .nav-line.content.desktop
+                    .nav-title.size-30.weight-500.text-black Лента
+                    .nav-sort.light-blue-blue-border.text-blue.size-12.button
+                        .nav-sort-line.blue.text-white.button По популярности
+                        .nav-sort-line.button По коментариям
+                        .nav-sort-line.button По дате
+                
+                .nav-line.content.mobile
+                    .nav-sort.light-blue-blue-border.text-blue.size-12.button
+                        .nav-sort-line.blue.text-white.button По популярности
+                        .nav-sort-line.button По коментариям
+                        .nav-sort-line.button По дате
+                .right-filter 
                     button.size-26.text-black
                         img(src="icon/arrow-down.svg", alt="")
                         | Вид спорта
@@ -66,19 +80,7 @@ html
                         a.podmenu-filter-link(href="#") Вопрос — ответ
                     button.blue.size-20.text-white Применить
                     .advertisement-left
-            .content-wrapper.pd-40
-                .nav-line.content.desktop
-                    .nav-title.size-50.weight-500.text-black Лента
-                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
-                        .nav-sort-line.blue.text-white.button По популярности
-                        .nav-sort-line.button По коментариям
-                        .nav-sort-line.button По дате
-                
-                .nav-line.content.mobile
-                    .nav-sort.light-blue-blue-border.text-blue.size-14.button
-                        .nav-sort-line.blue.text-white.button По популярности
-                        .nav-sort-line.button По коментариям
-                        .nav-sort-line.button По дате
+               
                 .tape-list 
                     .card.tape-card.button
                         .user 
@@ -91,7 +93,7 @@ html
                                     .user-name.size-26.text-black Андрей Кулагин
                                     .user-level.size-16.text-grey-2 Мастер
                                     .user-location.size-16.text-grey-2 Москва, Россия
-                                button.user-follow.blue.text-white.size-20.desktop Подписаться
+                                button.user-follow.blue.text-white.size-18.desktop Подписаться
                             .mobile-user-menu.mobile
                             .user-button-mobile.button.white-white-border
                                 .user-button-line
@@ -117,10 +119,10 @@ html
                             .card-content-bottom
                                 button.button.size-30.text-black-2
                                     img.like(src="icon/like.svg", alt="")
-                                    .size-18 20
+                                    span.size-18 20
                                 button.button.size-30.text-black-2
                                     img(src="icon/comment.svg", alt="")
-                                    .size-18 25
+                                    span.size-18 25
                     .card.tape-card.button
                         .user 
                             .user-label
@@ -132,7 +134,7 @@ html
                                     .user-name.size-26.text-black Андрей Кулагин
                                     .user-level.size-16.text-grey-2 Мастер
                                     .user-location.size-16.text-grey-2 Москва, Россия
-                                button.user-follow.blue.text-white.size-20.desktop Подписаться
+                                button.user-follow.blue.text-white.size-18.desktop Подписаться
                             .mobile-user-menu.mobile
                             .user-button-mobile.button.white-white-border
                                 .user-button-line
@@ -158,8 +160,8 @@ html
                             .card-content-bottom
                                 button.button.size-30.text-black-2
                                     img.like(src="icon/like.svg", alt="")
-                                    .size-18 20
+                                    span.size-18 20
                                 button.button.size-30.text-black-2
                                     img(src="icon/comment.svg", alt="")
-                                    .size-18 25
+                                    span.size-18 25
         include component/footer.pug

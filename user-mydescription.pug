@@ -8,8 +8,8 @@ html
             include component/user-left-menu.pug 
             .content-wrapper
                 .nav-line.content
-                    .nav-title.size-50.weight-500.text-black 
-                        .size-50.weight-500.text-black Велосипед
+                    .nav-title.size-30.weight-500.text-black 
+                        .size-30.weight-500.text-black Велосипед
                         img(src="icon/arrow-nav.svg", alt="")
                         | Cannondale
                 .description 
@@ -24,7 +24,7 @@ html
                                     .user-name.size-26.text-black Андрей Кулагин
                                     .user-level.size-16.text-grey-2 Мастер
                                     .user-location.size-16.text-grey-2 Москва, Россия
-                                button.user-follow.blue.text-white.size-20.desktop Продвинуть запись
+                                button.user-follow.blue.text-white.size-18.desktop Продвинуть запись
                                 
                                 .mobile-user-menu.mobile
                                 .user-button-mobile.button.white-white-border
@@ -55,10 +55,10 @@ html
                                 .buttons
                                     button.button.size-30.text-black-2
                                         img.like(src="icon/like.svg", alt="")
-                                        .size-18 20
+                                        span.size-18 20
                                     button.button.size-30.text-black-2
                                         img(src="icon/comment.svg", alt="")
-                                        .size-18 25
+                                        span.size-18 25
                                 .change-card.desktop 
                                         .size-18.text-red
                                             img(src="icon/del.svg", alt="")
@@ -78,34 +78,34 @@ html
                     .comments 
                         .nav-line
                             .nav-title.size-30.weight-500.text-black 25 комментариев
-                            .nav-sort.light-blue-blue-border.text-blue.size-14.button
+                            .nav-sort.light-blue-blue-border.text-blue.size-12.button
                                 .nav-sort-line.blue.text-white.button По популярности
                                 .nav-sort-line.button По порядку
-                .hr
-                .comments-bottom
-                    .new-comment.light-blue-blue-border.button
-                        .smile 
-                        input.size-20(type="text", placeholder='Написать комментарий...')
-                    .one-comment 
-                        .user 
-                            .user-label
-                                .user-photo
-                                    a(href='user-profile.html')
-                                        img(src="images/comment-photo.png", alt="")
-                                a.user-info(href='user-profile.html')
-                                    .user-name.size-24.text-black Кирилл Максимчук
-                                    .user-level.size-16.text-grey-2 Мастер
-                                    .user-location.size-16.text-grey-2 Москва, Россия
-                            .user-button
-                                button.unlike
-                                    img(src="icon/unlike.svg", alt="")
-                                    | 1
-                                button.like-comment
-                                    img(src="icon/like-comment.svg", alt="")
-                                    | 20
-                        .comment-content 
-                            .comment-text.text-black Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно
-                            .comment-bottom 
-                                .comment-time.size-14.text-grey-2 Сегодня 14:00
-                                button.size-16.text-grey-2 Ответить
+                    .hr
+                    .comments-bottom
+                        .new-comment.light-blue-blue-border.button
+                            .smile 
+                            input.size-18(type="text", placeholder='Написать комментарий...')
+                        .one-comment 
+                            .user 
+                                .user-label
+                                    .user-photo
+                                        a(href='user-profile.html')
+                                            img(src="images/comment-photo.png", alt="")
+                                    a.user-info(href='user-profile.html')
+                                        .user-name.size-26.text-black Кирилл Максимчук
+                                        .user-level.size-16.text-grey-2 Мастер
+                                        .user-location.size-16.text-grey-2 Москва, Россия
+                                .user-button
+                                    button.unlike
+                                        img(src="icon/unlike.svg", alt="")
+                                        | 1
+                                    button.like-comment
+                                        img(src="icon/like-comment.svg", alt="")
+                                        | 20
+                            .comment-content 
+                                .comment-text.text-black.size-18 Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно
+                                .comment-bottom 
+                                    .comment-time.size-14.text-grey-2 Сегодня 14:00
+                                    button.size-16.text-grey-2 Ответить
         include component/footer.pug 

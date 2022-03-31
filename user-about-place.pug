@@ -8,12 +8,19 @@ html
             include component/user-left-menu.pug 
             .content-wrapper
                 .nav-line.content.column-mobile
-                    .nav-title.size-50.weight-500.text-black 
+                    .nav-title.size-30.weight-500.text-black 
                         | Оз. Муромское, Респ. Карелия
                     a.left-profile-button(href='user-myprofile.html')
                         .size-20.text-black  Назад в профиль
                         .arrow-more
-                .profile 
+                .profile.about-place 
+                    .change-card 
+                        .size-18.text-red
+                            img(src="icon/del.svg", alt="")
+                            | Удалить
+                        .size-18.text-blue 
+                            img(src="icon/return.svg", alt="")
+                            | Заменить
                     .big-map.card
                         button.place-label#l-1
                             img(src="icon/location.svg", alt="")
@@ -26,6 +33,14 @@ html
                                 img(src="icon/plus.svg", alt="")
                             .scale-down.white-white-border
                                 img(src="icon/minus.svg", alt="")
+                    .card-content-bottom
+                        button.button.size-30.text-black-2
+                            img.like(src="icon/like.svg", alt="")
+                            span.size-18 20
+                        button.button.size-30.text-black-2
+                            img(src="icon/comment.svg", alt="")
+                            span.size-18 25
+                        .share
                 .nav-line.content
                     .size-40.text-black Описание
                 .profile.margin-end

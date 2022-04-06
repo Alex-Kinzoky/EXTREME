@@ -366,7 +366,7 @@ body{
         }
         .change-card {
             width: auto;
-            margin: 0 calc(100vw * (15 / 1920)) calc(100vw * (10 / 1920));
+            margin: -25px calc(100vw * (15 / 1920)) calc(100vw * (30 / 1920));
         }
     }
 }
@@ -387,6 +387,10 @@ body{
             width: 68px;
             height: 30px;
         }
+    }
+    .save-change{
+        margin: 10px 0;
+        width: auto;
     }
 }
 .arrow-more{
@@ -876,6 +880,7 @@ body{
 
             }
         }
+        
     }
 }
 .like-comment{
@@ -902,6 +907,16 @@ body{
 .light-blue-blue-border{
     padding: calc(100vw * (9 / 1920)) calc(100vw * (25 / 1920));
     width: fit-content;
+}
+.light-green-green-border{
+    padding: calc(100vw * (9 / 1920)) calc(100vw * (25 / 1920));
+    width: fit-content;
+}
+.list-button{
+    display: flex;
+    .delete{
+        margin-left: 20px;
+    }
 }
 .comments{
     .nav-line{
@@ -1031,13 +1046,21 @@ body{
                 height: fit-content;
                 padding: 8px calc(100vw * (24 / 1920));
             }
+            .size-18{
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+                img{
+                    margin-right: 5px;
+                }
+            }
         }
         
     }
     .user-profile {
         display: grid;
         grid-template-columns: repeat(2, 250px);
-        margin: 12px 0 37px 93px;
+        margin: 12px 0 37px calc(100vw * (93 / 1920));
         .user-profile-col{
             .text-black {
                 margin: 12px 0;
@@ -1119,6 +1142,7 @@ body{
     .place-map{
         width: calc(100vw * (567 / 1920));
         height: calc(100vw * (283 / 1920));
+        border-radius: 23px;
         .place-label{
             img{
                 height: calc(100vw * (48 / 1920));
@@ -1174,7 +1198,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: calc(100vw * (110 / 1920));
+    height: auto;
     justify-content: space-between;
     align-items: center;
     margin: 16px 0;
@@ -1200,21 +1224,23 @@ body{
             .change-card{
                 width: calc(100vw * (220 / 1920));
             }
+            .participants{
+                margin-top: 5px;
+            }
         }
     }
     .card-h-right{
-        height: calc(100vw * (88 / 1920));
+        height: calc(100vw * (50 / 1920));
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .close-image{
-            width: 19px;
-            height: 19px;
-            align-self: flex-end;
-            margin-right: calc(100vw * (34 / 1920));
-        }
-        .button{
-            padding: calc(100vw * (9 / 1920)) calc(100vw * (30 / 1920));
+        margin-right: calc(100vw * (60 / 1920));
+        .size-18{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 10px;
+            }
         }
     }
     .button{
@@ -1356,7 +1382,7 @@ body{
 .equip{
     margin-bottom: calc(100vw * (110 / 1920));
     .card-content-bottom{
-        width: calc(100vw * (586 / 1920));
+        //width: calc(100vw * (586 / 1920));
         justify-content: space-between;
     }
 }
@@ -1497,8 +1523,8 @@ body{
     .active-label{
         background-color: #FFFFFF;
         border-radius: 50%;
-        width: calc(100vw * (15 / 1920));
-        height: calc(100vw * (15 / 1920));
+        width: calc(100vw * (9 / 1920));
+        height: calc(100vw * (9 / 1920));
         margin-top: calc(100vw * (-13 / 1920));
         margin-left: calc(100vw * (7 / 1920));
         z-index: 2;
@@ -1633,6 +1659,13 @@ body{
         border-radius: 0;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
+    .user-button{
+        background-color: #FFFFFF;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: calc(100vw * (12 / 1920)) calc(100vw * (17 / 1920));
     }
 }
 .partners-sales{
@@ -2208,7 +2241,7 @@ input[type=radio]{
     display: none;
 }
 .profile-edit{
-    margin-left: 146px;
+    margin-left: 98px;
     .profile-edit-field {
         width: 100%;
         display: flex;
@@ -2251,7 +2284,7 @@ input[type=radio]{
     }
 }
 .margin-left-button{
-    margin-left: calc(100vw * (29 / 1920) + 96px);
+    margin-left: calc(100vw * (50 / 1920) + 96px);
 }
 .add-journal-note{
     .add-photo {
@@ -2264,8 +2297,8 @@ input[type=radio]{
             background-size: 80% 80%;
             background-repeat: no-repeat;
             background-position: center;
-            width: calc(100vw * (267 / 1920));
-            height: calc(100vw * (161 / 1920));
+            width: 210px;
+            height: 140px;
             border-radius: 25px;
             padding: 0;
             overflow: hidden;
@@ -2372,6 +2405,23 @@ input[type=radio]{
             flex-direction: column;
             justify-content: space-between;
             padding-bottom: calc(100vw * (30 / 1920));
+        }
+        .mark-equipment-part{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 7px;
+            }
+        }
+        .list-button{
+            .size-18{
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+                img{
+                    margin-right: 7px;
+                }
+            }
         }
     }
     padding: calc(100vw * (33 / 1920)) 0;
@@ -2580,6 +2630,7 @@ input[type=radio]{
     .advertisement-image{
         img{
             width: 100%;
+            max-height: calc(100vw * (284 / 1920));
         }
     }
 }
@@ -2880,6 +2931,7 @@ input[type=radio]{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     .user-button-line{
         display: flex;
         align-items: center;
@@ -3530,6 +3582,14 @@ input[type=radio]{
         .blue{
             width: 150px;
             height: 36px;
+        }
+    }
+    .add-journal-note{
+        .add-photo {
+            .light-blue-blue-border{
+                width: 190px;
+                height: 125px;
+            }
         }
     }
     #slider-line {

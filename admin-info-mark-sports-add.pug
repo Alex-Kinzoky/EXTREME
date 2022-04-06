@@ -1,0 +1,64 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/admin-header.pug 
+        .hr
+        main.main
+            include component/admin-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-30.weight-500.text-black
+                        |  Информация
+                        img(src="icon/arrow-nav.svg", alt="")
+                        | добавить
+                .profile
+                    .profile-edit-field 
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Название
+                            .profile-edit-input
+                                input.light-blue-blue-border.button.size-16(type="text")
+                            .profile-edit-text
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Вид спорта
+                            .profile-edit-input
+                                .input-date
+                                    .light-blue-blue-border.button.chekbox
+                                        .top-chekbox
+                                            input.size-20(type="text" placeholder='Выбрать')
+                                            img(src="icon/arrow-down.svg", alt="")
+                                        .drop-chekbox 
+                                                .size-16.text-blue-grey Вариант 1
+                                                .size-16.text-blue-grey Вариант 2
+                                                .size-16.text-blue-grey Вариант 3
+                            .profile-edit-text
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Тип транспорта
+                            .profile-edit-input
+                                .input-date
+                                    .light-blue-blue-border.button.chekbox
+                                        .top-chekbox
+                                            input.size-20(type="text" placeholder='Выбрать')
+                                            img(src="icon/arrow-down.svg", alt="")
+                                        .drop-chekbox 
+                                                .size-16.text-blue-grey Вариант 1
+                                                .size-16.text-blue-grey Вариант 2
+                                                .size-16.text-blue-grey Вариант 3
+                            .profile-edit-text
+                .hr 
+                .profile 
+                    .add-journal-note 
+                            .size-30.text-black Обложка
+                            .add-photo.margin-0
+                                .light-blue-blue-border
+                            .change-card 
+                                .size-18.text-blue 
+                                    img(src="icon/return.svg", alt="")
+                                    | Заменить
+                                .size-18.text-red
+                                    img(src="icon/del.svg", alt="")
+                                    | Удалить
+                .description.margin-end
+                    .save-change
+                        a.button.blue.size-20.text-white(href='partners-index.html') Добавить
+        include component/footer.pug

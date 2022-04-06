@@ -15,9 +15,13 @@ html
                         .arrow-more
                 .profile.about-place 
                     .change-card 
-                        .size-18.text-green
-                            img(src="icon/add-place.svg", alt="")
-                            | Добавить место к себе
+                        a.size-18.text-blue(href='user-place-add.html') 
+                            img(src="icon/return.svg", alt="")
+                            | Изменить
+                        .size-18.text-red
+                            img(src="icon/del.svg", alt="")
+                            | Удалить
+                        
                     .big-map.card
                         button.place-label#l-1
                             img(src="icon/location.svg", alt="")

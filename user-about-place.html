@@ -96,7 +96,8 @@
             <div class="text-blue size-20">Выход</div>
           </div>
         </div>
-        <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-journal.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
+        <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a>
+          <!--a.size-26.text-black(href='user-journal.html') Бортжурналы--><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners-list.html">Партнёры</a>
           <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
           <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="user-subscriptions.html">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"> <img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
         </div>
@@ -139,7 +140,8 @@
     </header>
     <div class="hr"></div>
     <main class="main">
-      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-journal.html">Бортжурналы</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners.html">Партнёры</a>
+      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a>
+        <!--a.size-26.text-black(href='user-journal.html') Бортжурналы--><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners-list.html">Партнёры</a>
         <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
         <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="user-subscriptions.html">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"><img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
       </aside>
@@ -152,8 +154,7 @@
         </div>
         <div class="profile about-place"> 
           <div class="change-card"> 
-            <div class="size-18 text-red"><img src="icon/del.svg" alt=""/>Удалить</div>
-            <div class="size-18 text-blue"> <img src="icon/return.svg" alt=""/>Заменить</div>
+            <div class="size-18 text-green"><img src="icon/add-place.svg" alt=""/>Добавить место к себе</div>
           </div>
           <div class="big-map card">
             <button class="place-label" id="l-1"><img src="icon/location.svg" alt=""/></button>
@@ -183,6 +184,45 @@
             <div class="image-card"> <img src="images/place-4.png" alt=""/></div>
             <div class="image-card"> <img src="images/journal.png" alt=""/></div>
             <div class="image-card"> <img src="images/place-2.png" alt=""/></div>
+          </div>
+        </div>
+        <div class="description"> 
+          <div class="comments"> 
+            <div class="nav-line">
+              <div class="nav-title size-30 weight-500 text-black">25 комментариев</div>
+              <div class="nav-sort light-blue-blue-border text-blue size-12 button">
+                <div class="nav-sort-line blue text-white button">По популярности</div>
+                <div class="nav-sort-line button">По порядку</div>
+              </div>
+            </div>
+          </div>
+          <div class="hr"></div>
+          <div class="comments-bottom">
+            <div class="new-comment light-blue-blue-border button">
+              <div class="smile"> </div>
+              <input class="text-blue-grey size-18" type="text" placeholder="Написать комментарий..."/>
+            </div>
+            <div class="one-comment"> 
+              <div class="user"> 
+                <div class="user-label">
+                  <div class="user-photo"><a href="user-profile.html"><img src="images/comment-photo.png" alt=""/></a></div><a class="user-info" href="user-profile.html">
+                    <div class="user-name size-26 text-black">Кирилл Максимчук</div>
+                    <div class="user-level size-16 text-grey-2">Мастер</div>
+                    <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+                </div>
+                <div class="user-button">
+                  <button class="unlike"><img src="icon/unlike.svg" alt=""/>1</button>
+                  <button class="like-comment"><img src="icon/like-comment.svg" alt=""/>20</button>
+                </div>
+              </div>
+              <div class="comment-content"> 
+                <div class="comment-text text-black size-18">Молодчина. Рассказывай побольше деталей о своей работе. Нам интересно</div>
+                <div class="comment-bottom"> 
+                  <div class="comment-time size-14 text-grey-2">Сегодня 14:00</div>
+                  <button class="size-16 text-grey-2">Ответить</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

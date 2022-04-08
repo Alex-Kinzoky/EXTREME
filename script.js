@@ -19,8 +19,6 @@ $(document).ready(function(){
     $('.user-button-desktop').hide()
     $('.admin-information-add-card').hide()
     $('.moderator-rejection-card').hide()
-    $('.left-podmenu').hide()
-    $('.left-podmenu-partners').hide()
     $('.active-label').hide()
     $('.about-map-card').hide()
     $('.read-more').hide()
@@ -119,19 +117,46 @@ $(document).ready(function(){
         $('.active-label').hide()
         $(this).find('.active-label').show()
     })
-    $('.open-left-podmenu').click(function(){
-        if($('.left-podmenu').is(':visible')){
-            $('.left-podmenu').hide()
-        } else{
-            $('.left-podmenu').show()
-        }
+    $('.open-left-podmenu').click(function(evt){
+        evt.preventDefault();
+        $('.open-left-podmenu').toggleClass('open');
         
+        const $left_podmenu = $('.left-podmenu'),
+                $left_podmenu_items = $left_podmenu.find('a');
+    
+        let height = 0;
+    
+        $.each($left_podmenu_items, function() {
+            const $item = $(this);
+            
+            height += $item.outerHeight(true);
+        })
+    
+        if($left_podmenu.height() !== height) {
+            $left_podmenu.height(height);
+        } else {
+            $left_podmenu.height(0);
+        }
     })
-    $('.open-left-podmenu-partners').click(function(){
-        if($('.left-podmenu-partners').is(':visible')){
-            $('.left-podmenu-partners').hide()
-        } else{
-            $('.left-podmenu-partners').show()
+    $('.open-left-podmenu-partners').click(function(evt){
+        evt.preventDefault();
+        $('.open-left-podmenu-partners').toggleClass('open');
+        
+        const $left_podmenu = $('.left-podmenu-partners'),
+                $left_podmenu_items = $left_podmenu.find('a');
+    
+        let height = 0;
+    
+        $.each($left_podmenu_items, function() {
+            const $item = $(this);
+            
+            height += $item.outerHeight(true);
+        })
+    
+        if($left_podmenu.height() !== height) {
+            $left_podmenu.height(height);
+        } else {
+            $left_podmenu.height(0);
         }
         
     })

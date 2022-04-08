@@ -1,0 +1,65 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/user-header.pug 
+        .hr
+        main.main
+            include component/user-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-30.weight-500.text-black 
+                        | Стать партнёром
+                
+                .profile.become-partner
+                    .profile-edit-field 
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Название
+                            .profile-edit-input
+                                input.light-blue-blue-border.button.size-16(type="text")
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Email
+                            .profile-edit-input
+                                input.light-blue-blue-border.button.size-16(type="text")
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Телефон
+                            .profile-edit-input
+                                input.light-blue-blue-border.button.size-16(type="text")
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Ваше имя
+                            .profile-edit-input
+                                input.light-blue-blue-border.button.size-16(type="text")
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Никнейм
+                            .profile-edit-input
+                                input.light-blue-blue-border.button.size-16(type="text")
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Страна
+                            .profile-edit-input
+                                .input-date
+                                    .light-blue-blue-border.button.chekbox
+                                        .top-chekbox
+                                            input.size-20(type="text" placeholder='Выбрать')
+                                            img(src="icon/arrow-down.svg", alt="")
+                                        .drop-chekbox 
+                                                .size-16.text-blue-grey Вариант 1
+                                                .size-16.text-blue-grey Вариант 2
+                                                .size-16.text-blue-grey Вариант 3
+                            .profile-edit-text
+                        .profile-edit-line
+                            .profile-edit-title.size-20.text-black Город
+                            .profile-edit-input
+                                .input-date
+                                    .light-blue-blue-border.button.chekbox
+                                        .top-chekbox
+                                            input.size-20(type="text" placeholder='Выбрать')
+                                            img(src="icon/arrow-down.svg", alt="")
+                                        .drop-chekbox 
+                                                .size-16.text-blue-grey Вариант 1
+                                                .size-16.text-blue-grey Вариант 2
+                                                .size-16.text-blue-grey Вариант 3
+                            .profile-edit-text
+                        
+                    a.size-18.button.blue Зарегистрироваться
+        include component/footer.pug 
+            .login-gradient.body-gradient    

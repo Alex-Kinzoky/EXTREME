@@ -1,0 +1,245 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <link rel="stylesheet" href="style-components.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-mobile.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body> 
+    <header class="header"> 
+      <div class="menu white-white-border">
+        <div class="menu-left"><a class="logo" href="index.html"></a>
+          <div class="search-line button white-blue-border top-search desktop">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <button class="blue button size-14 text-white">Поиск</button>
+          </div>
+        </div>
+        <div class="menu-right"> 
+          <div class="theme button desktop">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div>
+          <div class="menu-right-buttons partners-menu-right-buttons"><a class="menu-right-button desktop" href="partners-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
+            <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
+            <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
+          </div>
+          <div class="search-button mobile tablet"></div>
+          <div class="mobile-menu mobile tablet"></div>
+        </div>
+      </div>
+      <div class="user-setting-card white-white-border card"><a class="size-18 text-black" href="partners-profile-edit.html">Редактировать страницу</a>
+        <div class="size-18 text-black invite">Уведомления и сообщения</div><a class="size-18 text-black" id="exit" href="login.html">Выход</a>
+      </div>
+      <div class="user-notificarion-card white-white-border card">
+        <div class="notification-line"> 
+          <div class="notification-left">
+            <div class="notification-image"> <img src="icon/black-level.svg" alt=""/></div>
+            <div class="size-18 text-black">Уровень вашего снаряжения увеличился  (5 ур.)</div>
+          </div>
+        </div>
+        <div class="notification-line"> 
+          <div class="notification-left">
+            <div class="notification-image"> <img src="icon/black-like.svg" alt=""/></div>
+            <div class="size-18 text-black">Name1 нравится ваше снаряжение</div>
+          </div>
+        </div>
+        <div class="notification-line"> 
+          <div class="notification-left">
+            <div class="notification-image"> <img src="icon/black-follow.svg" alt=""/></div>
+            <div class="size-18 text-black">Name1 начал(а) отслеживать ваш профиль</div>
+          </div>
+        </div>
+        <div class="notification-line">
+          <div class="notification-left">
+            <div class="notification-image"> <img src="icon/black-event.svg" alt=""/></div>
+            <div class="size-18 text-black">Name1 приглашает Вас на мероприятие</div>
+          </div>
+        </div>
+        <div class="notification-line invite"> 
+          <div class="notification-left">
+            <div class="notification-image"> <img src="icon/black-notification.svg" alt=""/></div>
+            <div class="size-18 text-black">Важное уведомление</div>
+          </div>
+        </div>
+        <div class="notification-line"><a class="notification-left" href="user-notification.html">
+            <div class="notification-image"> <img src="" alt=""/></div>
+            <div class="size-18 text-black">Смотреть все уведомления</div></a></div>
+      </div>
+      <div class="left-menu-mobile white-white-border content-wrapper">
+        <div class="left-menu-top">
+          <div class="theme button">
+            <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
+            <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
+          </div>
+          <div class="left-menu-close"></div>
+        </div>
+        <div class="profile">
+          <div class="user">
+            <div class="user-label">
+              <div class="user-photo"><a href="guest-profile.html"><img src="images/user-photo.png" alt=""/></a>
+                <div class="online"></div>
+              </div><a class="user-info" href="guest-profile.html">
+                <div class="user-name size-26 text-black">Партнер</div>
+                <div class="user-level size-16 text-grey-2">Мастер</div>
+                <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+            </div>
+          </div>
+          <div class="delete"> <img src="icon/blue-mobile-exit.svg" alt=""/>
+            <div class="text-blue size-20">Выход</div>
+          </div>
+        </div>
+        <div class="left-menu"><a class="size-26 text-black" href="user-sports.html">Виды спорта</a><a class="size-26 text-black" href="user-tape.html">Лента</a><a class="size-26 text-black" href="user-place.html">Места катания</a><a class="size-26 text-black" href="user-events.html">Мероприятия</a><a class="size-26 text-black" href="user-partners-list.html">Партнёры</a>
+          <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
+          <div class="left-podmenu"><a class="size-20 text-black" href="user-myfavourites.html">Избранное</a><a class="size-20 text-black" href="user-subscriptions.html">Подписки</a><a class="size-20 text-black" href="user-mystorage.html"><img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="user-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="user-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
+          <div class="size-26 text-black open-left-podmenu-partners">Партнёрство<img src="icon/arrow-down.svg" alt=""/></div>
+          <div class="left-podmenu-partners"><a class="size-20 text-black" href="user-myfavourites.html">Поиск компаний</a><a class="size-20 text-black" href="user-subscriptions.html">Рекламная компания</a></div>
+        </div>
+      </div>
+      <div class="menu-search-mobile white-white-border">
+        <div class="menu content-wrapper white-white-border">
+          <div class="menu-left"><a class="logo" href="index.html"></a>
+            <div class="search-button mobile"></div>
+          </div>
+          <div class="menu-right"> 
+            <div class="search-button mobile"></div>
+            <div class="mobile-menu"></div>
+          </div>
+        </div>
+        <div class="hr"> </div>
+        <div class="content-wrapper">
+          <div class="search-line button light-blue-blue-border top-search">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск"/>
+            <button class="blue button size-14 text-white">Поиск</button>
+          </div>
+        </div>
+        <div class="hr"> </div>
+        <div class="request-mobile content-wrapper">
+          <div class="size-40 weight-500">Недавние запросы</div>
+          <div class="request-mobile-line">
+             Запрос 1
+            <div class="close-image"></div>
+          </div>
+          <div class="request-mobile-line">
+             Запрос 2
+            <div class="close-image"></div>
+          </div>
+          <div class="request-mobile-line">
+             Запрос 3
+            <div class="close-image"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hr"></div>
+    <main class="main">
+      <aside class="left-menu white-white-border desktop"><a class="size-26 text-black" href="partners-sports.html">Виды спорта</a><a class="size-26 text-black" href="partners-tape.html">Лента</a><a class="size-26 text-black" href="partners-place.html">Места катания</a><a class="size-26 text-black" href="partners-events.html">Мероприятия</a><a class="size-26 text-black" href="partners-partners-list.html">Партнёры</a>
+        <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
+        <div class="left-podmenu"><a class="size-20 text-black" href="partners-myfavourites.html">Избранное</a><a class="size-20 text-black" href="partners-subscriptions.html">Подписки</a><a class="size-20 text-black" href="partners-mystorage.html"><img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="partners-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="partners-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
+        <div class="size-26 text-black open-left-podmenu-partners">Партнёрство<img src="icon/arrow-down.svg" alt=""/></div>
+        <div class="left-podmenu-partners"><a class="size-20 text-black" href="user-myfavourites.html">Поиск компаний</a><a class="size-20 text-black" href="partners-advertisement.html">Рекламная компания</a></div>
+      </aside>
+      <div class="content-wrapper">
+        <div class="nav-line content">
+          <div class="nav-title size-30 weight-500 text-black">
+             Подписки</div>
+        </div>
+        <div class="nav-line content desktop">
+          <div class="search-line button white-blue-border top-search desktop">
+            <div class="search-image blue-search"></div>
+            <input class="size-14 text-blue" type="text" placeholder="Поиск пользователя"/>
+            <button class="blue button size-14 text-white">Поиск</button>
+          </div>
+        </div>
+        <div class="participants-line">
+          <div class="profile">
+            <div class="user">
+              <div class="user-label">
+                <div class="user-photo"><a href="user-profile.html"><img src="images/user-photo.png" alt=""/></a>
+                  <div class="online"></div>
+                </div><a class="user-info" href="user-profile.html">
+                  <div class="user-name size-26 text-black">Андрей Кулагин</div>
+                  <div class="user-level size-16 text-grey-2">Мастер</div>
+                  <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+              </div>
+            </div>
+            <div class="delete"> <img src="icon/unsub.svg" alt=""/>
+              <div class="text-red size-20">Отписаться</div>
+            </div>
+          </div>
+        </div>
+        <div class="participants-line">
+          <div class="profile">
+            <div class="user">
+              <div class="user-label">
+                <div class="user-photo"><a href="user-profile.html"><img src="images/user-photo.png" alt=""/></a>
+                  <div class="online"></div>
+                </div><a class="user-info" href="user-profile.html">
+                  <div class="user-name size-26 text-black">Андрей Кулагин</div>
+                  <div class="user-level size-16 text-grey-2">Мастер</div>
+                  <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+              </div>
+            </div>
+            <div class="delete"> <img src="icon/unsub.svg" alt=""/>
+              <div class="text-red size-20">Отписаться</div>
+            </div>
+          </div>
+        </div>
+        <div class="participants-line">
+          <div class="profile">
+            <div class="user">
+              <div class="user-label">
+                <div class="user-photo"><a href="user-profile.html"><img src="images/user-photo.png" alt=""/></a>
+                  <div class="online"></div>
+                </div><a class="user-info" href="user-profile.html">
+                  <div class="user-name size-26 text-black">Андрей Кулагин</div>
+                  <div class="user-level size-16 text-grey-2">Мастер</div>
+                  <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+              </div>
+            </div>
+            <div class="delete"> <img src="icon/unsub.svg" alt=""/>
+              <div class="text-red size-20">Отписаться</div>
+            </div>
+          </div>
+        </div>
+        <div class="participants-line margin-end">
+          <div class="profile">
+            <div class="user">
+              <div class="user-label">
+                <div class="user-photo"><a href="user-profile.html"><img src="images/user-photo.png" alt=""/></a>
+                  <div class="online"></div>
+                </div><a class="user-info" href="user-profile.html">
+                  <div class="user-name size-26 text-black">Андрей Кулагин</div>
+                  <div class="user-level size-16 text-grey-2">Мастер</div>
+                  <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+              </div>
+            </div>
+            <div class="delete"> <img src="icon/unsub.svg" alt=""/>
+              <div class="text-red size-20">Отписаться</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="up"> <img src="icon/up.svg" alt=""/></div>
+    <footer class="footer text-black size-18 white-white-border">
+      <div class="footer-list"> 
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Пользовательское соглашение</a><a class="footer-link text-black" href="#">Политика обработки персональных данных</a></div>
+        <div class="footer-col"> <a class="footer-link text-black" href="#">Стать партнёром</a><a class="footer-link text-black" href="#">Написать в поддержку</a><a class="footer-link text-black" href="#">Реклама и сотрудничество</a></div>
+        <div class="footer-col">
+          <div class="footer-link">Мы в социальных сетях</div>
+          <div class="footer-social"> <a class="social" href="#"> <img src="icon/grey-facebook.svg" alt=""/></a><a class="social" href="#"> <img src="./icon/grey-vk.svg" alt=""/></a><a class="social" href="#"> <img src="icon/grey-instagramm.svg" alt=""/></a></div>
+        </div>
+      </div>
+      <div class="copyright size-20">© extremy.ru, 2021</div>
+    </footer>
+  </body>
+</html>

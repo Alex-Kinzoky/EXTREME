@@ -39,6 +39,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .content-wrapper{
     padding: 0 0 0 calc(100vw * (80 / 1920));

@@ -1582,15 +1582,31 @@
     .add-journal-note .light-blue-blue-border input {
         font-size: 14px;
     }
+    .add-journal-note .add-photo .light-blue-blue-border {
+        height: calc(100vw * (75 / 320));
+        width: calc(100vw * (75 / 320));
+    }
+    .add-journal-note .change-card {
+        width: max-content;
+        column-gap: 15px;
+    }
     .add-journal-note textarea {
         width: 100%;
         height: calc(100vw * (129 / 320));
     }
-    .add-journal-note .size-30 {
+    .add-journal-note .size-30, .add-journal-note .size-26 {
         margin: 10px 0;
     }
-    .add-journal-note .size-30 .edit-description {
+    .add-journal-note .size-30 .edit-description, .add-journal-note .size-26 .edit-description {
         display: none;
+    }
+    .add-journal-note .size-30 .size-20, .add-journal-note .size-26 .size-20 {
+        display: flex;
+        align-items: center;
+    }
+    .add-journal-note .size-30 .size-20 img, .add-journal-note .size-26 .size-20 img {
+        width: calc(100vw * (20 / 320));
+        height: calc(100vw * (20 / 320));
     }
     .add-journal-note .edit-description {
         display: flex;
@@ -1766,14 +1782,17 @@
     .partners-card .user .user-label .user-info {
         width: 100%;
     }
+    .partners-card .user .user-label .user-photo {
+        margin-bottom: calc(100vw * (10 / 320));
+    }
     .partners-card .user .user-button {
         position: absolute;
         right: calc(100vw * (13 / 320));
     }
     .partners-card .user .user-button .bookmark {
         margin: 0;
-        height: 31px;
-        width: 23px;
+        height: calc(100vw * (25 / 320));
+        width: calc(100vw * (15 / 320));
     }
     .partners-card .partners-sales {
         margin: 5px 0 20px;

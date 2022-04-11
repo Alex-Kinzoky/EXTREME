@@ -1622,14 +1622,34 @@
                 font-size: 14px;
             }
         }
+        .add-photo {
+            .light-blue-blue-border{
+                height: calc(100vw * (75 / 320));
+                width: calc(100vw * (75 / 320));
+            }
+
+        }
+        .change-card {
+            width: max-content;
+            column-gap: 15px;
+        }
         textarea{
             width: 100%;
             height: calc(100vw * (129 / 320));
         }
-        .size-30{
+        .size-30, .size-26{
             margin: 10px 0;
             .edit-description{
                 display: none;
+            }
+            .size-20{
+                display: flex;
+                align-items: center;
+                img{
+                    width: calc(100vw * (20 / 320));
+                    height: calc(100vw * (20 / 320));
+                }
+                
             }
         }
         .edit-description{
@@ -1810,15 +1830,17 @@
                 .user-info{
                     width: 100%;
                 }
-                
+                .user-photo {
+                    margin-bottom: calc(100vw * (10 / 320));
+                }
             }
             .user-button{
                 position: absolute;
                 right: calc(100vw * (13 / 320));
                 .bookmark{
                     margin: 0;
-                    height: 31px;
-                    width: 23px;
+                    height: calc(100vw * (25 / 320));
+                    width: calc(100vw * (15 / 320));
                 }
             }
         }

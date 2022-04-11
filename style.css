@@ -909,6 +909,9 @@ body {
 .description .description-card .card-content .card-content-bottom .blue {
     margin-left: calc(100vw * (20 / 1920));
 }
+.description .add-journal-note {
+    width: 100%;
+}
 
 .like-comment {
     display: flex;
@@ -1479,7 +1482,7 @@ body {
     height: 100%;
 }
 .card-map .card-image {
-    height: calc(100vw * (160 / 1920));
+    min-height: calc(100vw * (160 / 1920));
     overflow: hidden;
     position: relative;
 }
@@ -1633,6 +1636,9 @@ body {
     height: calc(100vw * (18 / 1920));
     margin-right: 5px;
 }
+.card-place-list .card-place .card-place-info .change-card {
+    width: max-content;
+}
 .card-place-list .card-place .card-place-images {
     width: calc(100vw * (810 / 1920));
     overflow: hidden;
@@ -1721,7 +1727,7 @@ body {
     grid-gap: calc(100vw * (48 / 1920));
 }
 .partners-sales .button {
-    padding: calc(100vw * (18 / 1920)) calc(100vw * (43 / 1920));
+    padding: calc(100vw * (13 / 1920)) calc(100vw * (31 / 1920));
 }
 
 .advantages {
@@ -1736,8 +1742,8 @@ body {
 .advantages .advantages-card .advantages-image {
     border-radius: 50%;
     background-color: rgba(0, 56, 255, 0.04);
-    width: calc(100vw * (119 / 1920));
-    height: calc(100vw * (119 / 1920));
+    width: calc(100vw * (90 / 1920));
+    height: calc(100vw * (90 / 1920));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2319,8 +2325,8 @@ input[type=radio] {
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 210px;
-    height: 140px;
+    width: calc(100vw * (210 / 1920));
+    height: calc(100vw * (140 / 1920));
     border-radius: 25px;
     padding: 0;
     overflow: hidden;
@@ -2465,9 +2471,9 @@ input[type=radio] {
 
 .add-journal-top {
     display: grid;
-    grid-template-columns: repeat(2, 265px);
-    grid-gap: calc(100vw * (145 / 1920));
-    margin-bottom: calc(100vw * (54 / 1920));
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: calc(100vw * (110 / 1920));
+    margin-bottom: calc(100vw * (45 / 1920));
 }
 .add-journal-top .add-journal-note {
     width: 100%;
@@ -2499,26 +2505,28 @@ input[type=radio] {
 }
 
 .add-journal-note {
-    width: 100%;
+    width: 75%;
     margin-bottom: calc(100vw * (32 / 1920));
 }
-.add-journal-note .size-30 {
+.add-journal-note .size-30, .add-journal-note .size-26 {
     margin: calc(100vw * (12 / 1920)) 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.add-journal-note .size-30 .edit-description {
+.add-journal-note .size-30 .edit-description, .add-journal-note .size-26 .edit-description {
     display: flex;
 }
-.add-journal-note .size-30 .edit-description .text-black-2 {
+.add-journal-note .size-30 .edit-description .text-black-2, .add-journal-note .size-26 .edit-description .text-black-2 {
     margin-left: calc(100vw * (47 / 1920));
 }
-.add-journal-note .size-30 .size-20 {
+.add-journal-note .size-30 .size-20, .add-journal-note .size-26 .size-20 {
     display: flex;
     align-items: center;
 }
-.add-journal-note .size-30 .size-20 img {
+.add-journal-note .size-30 .size-20 img, .add-journal-note .size-26 .size-20 img {
+    width: calc(100vw * (25 / 1920));
+    height: calc(100vw * (25 / 1920));
     margin-right: calc(100vw * (19 / 1920));
 }
 .add-journal-note .light-blue-blue-border {
@@ -2536,7 +2544,7 @@ input[type=radio] {
     width: 100%;
 }
 .add-journal-note textarea {
-    width: 75%;
+    width: 100%;
 }
 
 .add-place-journal {
@@ -3621,11 +3629,6 @@ input[type=radio] {
         height: 36px;
     }
 
-    .add-journal-note .add-photo .light-blue-blue-border {
-        width: 190px;
-        height: 125px;
-    }
-
     #slider-line .line-arrow {
         border-radius: 0px 0px 14.2292px 14.2292px;
     }
@@ -3671,6 +3674,8 @@ input[type=radio] {
     }
 
     .advantages .advantages-card .advantages-image {
+        width: calc(100vw * (75 / 1500));
+        height: calc(100vw * (75 / 1500));
         margin-bottom: 10px;
     }
 
@@ -3998,6 +4003,10 @@ input[type=radio] {
 
     .profile-edit-field .profile-edit-line .profile-edit-input .chekbox .top-chekbox input:not(input:only-child) {
         width: calc(100vw * (120 / 1550));
+    }
+
+    .add-journal-note {
+        width: 100%;
     }
 }
 .advantages .advantages-card .advantages-text {

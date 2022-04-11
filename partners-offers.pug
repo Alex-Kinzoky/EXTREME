@@ -1,0 +1,26 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/partners-header.pug 
+        .hr
+        main.main
+            include component/partners-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .top-label
+                        .size-50
+                            .weight-500.text-black.size-30 Предложения
+                .profile 
+                    .page-card-list-small
+                        - for (var x = 0; x < 6; x++)
+                            a.card.button.card-map
+                                .card-image 
+                                    img(src="images/product.png", alt="")
+                                .card-title.product-title
+                                    .size-26.weight-500.text-black Товар
+                                    .weight-500 1 000 ₽
+                                    .size-16 Идейные соображения высшего порядка, а также консультация. 
+                                
+                    button.button.blue.size-20.text-white.border-top-0 Показать ещё    
+        include component/footer.pug

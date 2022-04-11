@@ -1330,8 +1330,12 @@
         }
     }
     .border-top-0{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: calc(100% - 30px);
         padding-top: 12px;
         padding-bottom: 12px;
+        margin-inline: auto;
     }
     .mark-equipment-list{
         display: flex;

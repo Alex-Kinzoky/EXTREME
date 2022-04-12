@@ -3217,6 +3217,11 @@ input[type=radio] {
     margin-left: 10px;
   }
 
+  .partners-advertisement {
+    width: 515px;
+    height: 156px;
+  }
+
   .about-place .card-content-bottom .button {
     height: 1.935483871vw;
     margin-right: 0.9677419355vw;

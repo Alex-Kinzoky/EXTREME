@@ -288,6 +288,32 @@ $(document).ready(function(){
         $(this).removeClass('text-black')
         $(this).addClass('text-blue')
     })
+    $('.right-filter').find('.size-26').click(function(){
+        $('.right-filter').find('.size-26').removeClass('text-blue')
+        $('.right-filter').find('.size-26').addClass('text-black')
+        $(this).removeClass('text-black')
+        $(this).addClass('text-blue')
+        var right_menu = $(this).text()
+        $('.partners-card').each(function(index, value){
+            if(right_menu == 'Отказы') {
+                if ($(this).find('.partner-advertisement').find('.size-20').hasClass('text-red')){
+                    $(this).show()
+                } else{
+                    $(this).hide()
+                }
+            } else if(right_menu == 'Опубликовано') {
+                if($(this).find('.partner-advertisement').find('.size-20').hasClass('text-green')) {
+                    $(this).show()
+                } else{
+                    $(this).hide()
+                }
+            } else if(right_menu == 'Все'){
+                $(this).show()
+            } else{
+                $(this).hide()
+            }
+        })
+    })
     var fileName = location.href.split("/").slice(-1); 
     $('.left-menu').find('a').each(function(index, value){
         if (fileName == 'index.html'){

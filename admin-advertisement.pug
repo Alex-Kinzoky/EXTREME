@@ -6,8 +6,98 @@ html
         .hr
         main.main
             include component/admin-left-menu.pug 
-            .content-wrapper
+            .content-wrapper.pdl-40
                 .nav-line.content
                     .nav-title.size-30.weight-500.text-black
                         |  Реклама
+                    .nav-sort.light-blue-blue-border.text-blue.size-12.button
+                        .nav-sort-line.blue.text-white.button Сначала новые
+                        .nav-sort-line.button Сначала старые
+                include component/admin-filter.pug 
+                .description.margin-end
+                    .partners-card.card
+                        .user 
+                            .user-label
+                                .user-photo
+                                    a(href='admin-advertisement-page.html')
+                                        img(src="icon/sportmaster.svg", alt="")
+                                    .online
+                                .user-info
+                                    a.user-name.size-26.text-black(href='admin-advertisement-page.html') Спортмастер
+                                    .size-20.text-grey-2 10 февраля 2022
+                                .partner-advertisement 
+                                    .size-20.text-green Опубликовано
+                            .user-button
+                                .moderator-buttons
+                                    img(src="icon/yes.svg", alt="")
+                                    img.rejection(src="icon/rejection.svg", alt="")
+                        .partners-card-bottom 
+                            .partners-advertisement 
+                                .advertisement
+                                .advertisement
+                                .advertisement.grid-row-2
+                                .advertisement.grid-col-2
+                    .partners-card.card
+                        .user 
+                            .user-label
+                                .user-photo
+                                    a(href='admin-advertisement-page.html')
+                                        img(src="icon/sportmaster.svg", alt="")
+                                    .online
+                                .user-info
+                                    a.user-name.size-26.text-black(href='admin-advertisement-page.html') Спортмастер
+                                    .size-20.text-grey-2 10 февраля 2022
+                                .partner-advertisement 
+                                    .size-20.text-red Отказано
+                            .user-button
+                                .moderator-buttons
+                                    img(src="icon/yes.svg", alt="")
+                                    img.rejection(src="icon/rejection.svg", alt="")
+                        .partners-card-bottom 
+                            .partners-advertisement 
+                                .advertisement
+                                .advertisement
+                                .advertisement.grid-row-2
+                                .advertisement.grid-col-2
+                    .partners-card.card
+                        .user 
+                            .user-label
+                                .user-photo
+                                    a(href='admin-advertisement-page.html')
+                                        img(src="icon/sportmaster.svg", alt="")
+                                    .online
+                                .user-info
+                                    a.user-name.size-26.text-black(href='admin-advertisement-page.html') Спортмастер
+                                    .size-20.text-grey-2 10 февраля 2022
+                            .user-button
+                                .moderator-buttons
+                                    img(src="icon/yes.svg", alt="")
+                                    img.rejection(src="icon/rejection.svg", alt="")
+                        .partners-card-bottom 
+                            .partners-advertisement 
+                                .advertisement
+                                .advertisement
+                                .advertisement.grid-row-2
+                                .advertisement.grid-col-2
+                    .partners-card.card
+                        .user 
+                            .user-label
+                                .user-photo
+                                    a(href='admin-advertisement-page.html')
+                                        img(src="icon/sportmaster.svg", alt="")
+                                    .online
+                                .user-info
+                                    a.user-name.size-26.text-black(href='admin-advertisement-page.html') Спортмастер
+                                    .size-20.text-grey-2 10 февраля 2022
+                            .user-button
+                                .moderator-buttons
+                                    img(src="icon/yes.svg", alt="")
+                                    img.rejection(src="icon/rejection.svg", alt="")
+                        .partners-card-bottom 
+                            .partners-advertisement 
+                                .advertisement
+                                .advertisement
+                                .advertisement.grid-row-2
+                                .advertisement.grid-col-2
+                    
         include component/footer.pug

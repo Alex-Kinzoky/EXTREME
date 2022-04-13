@@ -1173,6 +1173,16 @@ body{
         .product-title{
             padding: calc(100vw * (22 / 1920)) calc(100vw * (32 / 1920)) calc(100vw * (37 / 1920));
         }
+        .card-bottom-info{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 0 calc(100vw * (30 / 1920));
+        }
+    }
+    .user-card{
+        width: fit-content;
     }
 }
 .place-map{
@@ -3152,7 +3162,21 @@ input[type=radio]{
         }
     }
 }
-
+.admin-card-button {
+    position: absolute;
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+    right: 8px;
+    top: 8px;
+}
+.old-messege{
+    .old-mess-line{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+}
 @media (max-width: 1550px){
     body{
         font-size: 16px;

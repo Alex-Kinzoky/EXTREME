@@ -23,6 +23,7 @@ $(document).ready(function(){
     $('.about-map-card').hide()
     $('.read-more').hide()
     $('.drop-chekbox').hide()
+    $('.old-messege').hide()
     var height = $('body').height() - $('.header').height()
     $('.chat-list').css('height', height)
     $(function(){
@@ -255,6 +256,17 @@ $(document).ready(function(){
             div.hide(); 
         }
     });
+    $('.admin-menu-content-part').click(function(){
+        $('.admin-menu-content-part').removeClass('active')
+        $(this).addClass('active')
+        if ($(this).text()=='Текущие сообщения'){
+            $('.now-messege').show()
+            $('.old-messege').hide()
+        } else{
+            $('.now-messege').hide()
+            $('.old-messege').show()
+        }
+    })
     $('.mobile-menu').click(function(){
         $('.left-menu-mobile').show()
         $('.menu-search-mobile').hide()

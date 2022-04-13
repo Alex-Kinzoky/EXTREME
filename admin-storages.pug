@@ -1,0 +1,162 @@
+doctype html 
+html 
+    include component/head.pug
+    body 
+        include component/admin-header.pug 
+        .hr
+        main.main
+            include component/admin-left-menu.pug 
+            .content-wrapper
+                .nav-line.content
+                    .nav-title.size-30.weight-500.text-black 
+                        | Кладовки
+                .nav-line.content.desktop
+                    .search-line.button.white-blue-border.top-search.desktop
+                        .search-image.blue-search
+                        input.size-14.text-blue(type="text" placeholder="Поиск")
+                        button.blue.button.size-14.text-white Поиск
+                    .nav-sort.light-blue-blue-border.text-blue.size-12.button
+                        .nav-sort-line.blue.text-white.button По популярности
+                        .nav-sort-line.button По коментариям
+                        .nav-sort-line.button По дате
+                .profile.margin-end 
+                    .card-grid.card-line
+                            .card.button 
+                                a.card-image(href='admin-equipment.html') 
+                                    img(src="images/storage.png", alt="")
+                                a.card-title(href='admin-equipment.html') 
+                                    .size-26.weight-500.text-black Снаряжение 1 
+                                    .arrow-more
+                                .card-bottom-info
+                                    button.weight-500.size-18.open-user-card Name 1
+                                    .user-card.white-white-border.card
+                                        .user 
+                                            .user-label
+                                                .user-photo
+                                                    a(href='user-profile.html')
+                                                        img(src="images/user-photo.png", alt="")
+                                                    .online
+                                                a.user-info(href='user-profile.html')
+                                                    .user-name.size-30.weight-500.text-black Андрей Кулагин
+                                                    .user-level.text-grey-2 Мастер
+                                                    .user-location.text-grey-2 Москва, Россия
+                                            .user-button
+                                                button.user-follow.blue.text-white.size-20 Подписаться
+                                                button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                                    .size-14.text-grey 3 снаряжения
+                            .card.button 
+                                a.card-image(href='admin-equipment.html') 
+                                    img(src="images/storage.png", alt="")
+                                a.card-title(href='admin-equipment.html') 
+                                    .size-26.weight-500.text-black Снаряжение 1
+                                    .arrow-more
+                                .card-bottom-info
+                                    button.weight-500.size-18.open-user-card Name 1
+                                    .user-card.white-white-border.card
+                                        .user 
+                                            .user-label
+                                                .user-photo
+                                                    a(href='user-profile.html')
+                                                        img(src="images/user-photo.png", alt="")
+                                                    .online
+                                                a.user-info(href='user-profile.html')
+                                                    .user-name.size-30.weight-500.text-black Андрей Кулагин
+                                                    .user-level.text-grey-2 Мастер
+                                                    .user-location.text-grey-2 Москва, Россия
+                                            .user-button
+                                                button.user-follow.blue.text-white.size-20 Подписаться
+                                                button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                                    .size-14.text-grey 3 снаряжения
+                            .card.button 
+                                a.card-image(href='admin-equipment.html') 
+                                    img(src="images/storage.png", alt="")
+                                a.card-title(href='admin-equipment.html') 
+                                    .size-26.weight-500.text-black Снаряжение 1
+                                    .arrow-more
+                                .card-bottom-info
+                                    button.weight-500.size-18.open-user-card Name 1
+                                    .user-card.white-white-border.card
+                                        .user 
+                                            .user-label
+                                                .user-photo
+                                                    a(href='user-profile.html')
+                                                        img(src="images/user-photo.png", alt="")
+                                                    .online
+                                                a.user-info(href='user-profile.html')
+                                                    .user-name.size-30.weight-500.text-black Андрей Кулагин
+                                                    .user-level.text-grey-2 Мастер
+                                                    .user-location.text-grey-2 Москва, Россия
+                                            .user-button
+                                                button.user-follow.blue.text-white.size-20 Подписаться
+                                                button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                                    .size-14.text-grey 3 снаряжения
+                            .card.button 
+                                a.card-image(href='admin-equipment.html') 
+                                    img(src="images/storage.png", alt="")
+                                a.card-title(href='admin-equipment.html') 
+                                    .size-26.weight-500.text-black Снаряжение 1
+                                    .arrow-more
+                                .card-bottom-info
+                                    button.weight-500.size-18.open-user-card Name 1
+                                    .user-card.white-white-border.card
+                                        .user 
+                                            .user-label
+                                                .user-photo
+                                                    a(href='user-profile.html')
+                                                        img(src="images/user-photo.png", alt="")
+                                                    .online
+                                                a.user-info(href='user-profile.html')
+                                                    .user-name.size-30.weight-500.text-black Андрей Кулагин
+                                                    .user-level.text-grey-2 Мастер
+                                                    .user-location.text-grey-2 Москва, Россия
+                                            .user-button
+                                                button.user-follow.blue.text-white.size-20 Подписаться
+                                                button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                                    .size-14.text-grey 3 снаряжения
+                            .card.button 
+                                a.card-image(href='admin-equipment.html') 
+                                    img(src="images/storage.png", alt="")
+                                a.card-title(href='admin-equipment.html') 
+                                    .size-26.weight-500.text-black Снаряжение 1
+                                    .arrow-more
+                                .card-bottom-info
+                                    button.weight-500.size-18.open-user-card Name 1
+                                    .user-card.white-white-border.card
+                                        .user 
+                                            .user-label
+                                                .user-photo
+                                                    a(href='user-profile.html')
+                                                        img(src="images/user-photo.png", alt="")
+                                                    .online
+                                                a.user-info(href='user-profile.html')
+                                                    .user-name.size-30.weight-500.text-black Андрей Кулагин
+                                                    .user-level.text-grey-2 Мастер
+                                                    .user-location.text-grey-2 Москва, Россия
+                                            .user-button
+                                                button.user-follow.blue.text-white.size-20 Подписаться
+                                                button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                                    .size-14.text-grey 3 снаряжения
+                            .card.button 
+                                a.card-image(href='admin-equipment.html') 
+                                    img(src="images/storage.png", alt="")
+                                a.card-title(href='admin-equipment.html') 
+                                    .size-26.weight-500.text-black Снаряжение 1
+                                    .arrow-more
+                                .card-bottom-info
+                                    button.weight-500.size-18.open-user-card Name 1
+                                    .user-card.white-white-border.card
+                                        .user 
+                                            .user-label
+                                                .user-photo
+                                                    a(href='user-profile.html')
+                                                        img(src="images/user-photo.png", alt="")
+                                                    .online
+                                                a.user-info(href='user-profile.html')
+                                                    .user-name.size-30.weight-500.text-black Андрей Кулагин
+                                                    .user-level.text-grey-2 Мастер
+                                                    .user-location.text-grey-2 Москва, Россия
+                                            .user-button
+                                                button.user-follow.blue.text-white.size-20 Подписаться
+                                                button.user-mess.white-blue-border.text-blue.size-20 Сообщение
+                                    .size-14.text-grey 3 снаряжения
+        include component/footer.pug

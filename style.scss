@@ -2568,7 +2568,7 @@ input[type=radio]{
         }
     }
     .light-blue-blue-border{
-        padding: calc(100vw * (12 / 1920)) calc(100vw * (17 / 1920));
+        padding: calc(100vw * (8 / 1920)) calc(100vw * (12 / 1920));
     }
     .textarea-icon{
         margin: calc(100vw * (28 / 1920)) 0;
@@ -3600,6 +3600,10 @@ input[type=radio]{
                 }
             }
         } 
+
+        .add-journal-note {
+            width: 75%;
+        }
     }
     .top-label{
         margin: 40px 0 30px;

@@ -27,7 +27,7 @@
             <div class="dark button"><img src="icon/dark-theme.svg" alt=""/></div>
             <div class="light button"><img src="icon/light-theme.svg" alt=""/></div>
           </div>
-          <div class="menu-right-buttons partners-menu-right-buttons"><a class="menu-right-button desktop" href="partners-index.html"> <img src="icon/black-profile.svg" alt=""/></a>
+          <div class="menu-right-buttons partners-menu-right-buttons"><a class="menu-right-button desktop" href="partners-myprofile.html"> <img src="icon/black-profile.svg" alt=""/></a>
             <div class="menu-right-button" id="user-notification"><img src="icon/black-bell.svg" alt=""/></div>
             <div class="menu-right-button" id="user-setting"><img src="icon/black-setting.svg" alt=""/></div>
           </div>
@@ -145,124 +145,124 @@
         <div class="size-26 text-black open-left-podmenu">Моё<img src="icon/arrow-down.svg" alt=""/></div>
         <div class="left-podmenu"><a class="size-20 text-black" href="partners-myfavourites.html">Избранное</a><a class="size-20 text-black" href="partners-subscriptions.html">Подписки</a><a class="size-20 text-black" href="partners-mystorage.html"><img src="icon/blue-plus.svg" alt=""/>Моя кладовка</a><a class="size-20 text-black" href="partners-myplace.html"><img src="icon/blue-plus.svg" alt=""/>Мои места катания</a><a class="size-20 text-black" href="partners-myevents.html"><img src="icon/blue-plus.svg" alt=""/>Мои мероприятия</a></div>
         <div class="size-26 text-black open-left-podmenu-partners">Партнёрство<img src="icon/arrow-down.svg" alt=""/></div>
-        <div class="left-podmenu-partners"><a class="size-20 text-black" href="partners-partners-list.html">Главная</a><a class="size-20 text-black" href="partners-advertisement.html">Рекламная компания</a></div>
+        <div class="left-podmenu-partners"><a class="size-20 text-black" href="partners-index.html">Главная</a>
+          <!--a.size-20.text-black(href='partners-advertisement.html') Рекламная компания-->
+        </div>
       </aside>
       <div class="content-wrapper pdl-40">
-        <div class="nav-line content">
-          <div class="nav-title size-30 weight-500 text-black">
-             Поиск компаний</div>
+        <div class="nav-line content desktop">
+          <div class="nav-title size-30 weight-500 text-black">Лента</div>
+          <div class="nav-sort light-blue-blue-border text-blue size-12 button">
+            <div class="nav-sort-line blue text-white button">По популярности</div>
+            <div class="nav-sort-line button">По коментариям</div>
+            <div class="nav-sort-line button">По дате</div>
+          </div>
         </div>
         <div class="right-filter"> 
-          <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Город, регион</button>
-          <div class="podmenu-filter" id="location">
-            <div class="podmenu-filter-link">Страна, регион, город</div>
-            <input class="location button size-20" type="text"/>
-          </div>
           <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Вид спорта</button>
           <div class="podmenu-filter" id="sport"><a class="podmenu-filter-link" href="#">Аквабайк </a><a class="podmenu-filter-link" href="#">Альпинизм</a><a class="podmenu-filter-link" href="#">Бейсджампинг </a><a class="podmenu-filter-link" href="#">Бокинг</a><a class="podmenu-filter-link" href="#">Вейкбординг</a><a class="podmenu-filter-link" href="#">Виндсерфинг</a><a class="podmenu-filter-link" href="#">Воркаут </a><a class="podmenu-filter-link" href="#">Горнолыжный спорт</a><a class="podmenu-filter-link" href="#">Скоростной спуск</a></div>
-          <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>С чем помочь</button>
+          <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Модель снаряжения</button>
+          <div class="podmenu-filter" id="model"><a class="podmenu-filter-link" href="#">Гидрокостюмы</a><a class="podmenu-filter-link" href="#">Сухие гидрокостюмы</a><a class="podmenu-filter-link" href="#">Ласты</a><a class="podmenu-filter-link" href="#">Маски</a><a class="podmenu-filter-link" href="#">Трубки</a><a class="podmenu-filter-link" href="#">Дайвинг-компьютеры</a><a class="podmenu-filter-link" href="#">Регуляторы</a><a class="podmenu-filter-link" href="#">Октопусы</a><a class="podmenu-filter-link" href="#">Сумки для дайвинга</a></div>
+          <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Локация</button>
+          <div class="podmenu-filter" id="location">
+            <div class="podmenu-filter-link desktop">Страна, регион, город</div>
+            <input class="location button size-20 text-grey-2" type="text" placeholder="Страна, регион, город"/>
+          </div>
+          <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>Уровень подготовки</button>
+          <div class="podmenu-filter" id="level"><a class="podmenu-filter-link" href="#">Новичок</a><a class="podmenu-filter-link" href="#">Любитель</a><a class="podmenu-filter-link" href="#">Продвинутый</a><a class="podmenu-filter-link" href="#">Мастер</a></div>
+          <button class="size-26 text-black"><img src="icon/arrow-down.svg" alt=""/>О чём</button>
+          <div class="podmenu-filter" id="about"><a class="podmenu-filter-link" href="#">Обо всём</a><a class="podmenu-filter-link" href="#">Трюки</a><a class="podmenu-filter-link" href="#">Интересные места</a><a class="podmenu-filter-link" href="#">Снаряжение</a><a class="podmenu-filter-link" href="#">Лайфхаки</a><a class="podmenu-filter-link" href="#">Вопрос — ответ</a></div>
           <button class="blue size-20 text-white">Применить</button>
           <div class="advertisement-left"></div>
         </div>
-        <div class="description margin-end">
-          <div class="partners-card card">
+        <div class="nav-line content mobile">
+          <div class="nav-sort light-blue-blue-border text-blue size-12 button">
+            <div class="nav-sort-line blue text-white button">По популярности</div>
+            <div class="nav-sort-line button">По коментариям</div>
+            <div class="nav-sort-line button">По дате</div>
+          </div>
+        </div>
+        <div class="tape-list"> 
+          <div class="card tape-card button">
             <div class="user"> 
               <div class="user-label">
-                <div class="user-photo"><a href="partners-index.html"><img src="icon/sportmaster.svg" alt=""/></a>
+                <div class="user-photo"><a href="user-profile.html"><img src="images/user-photo.png" alt=""/></a>
                   <div class="online"></div>
+                </div><a class="user-info" href="user-profile.html">
+                  <div class="user-name size-26 text-black">Андрей Кулагин</div>
+                  <div class="user-level size-16 text-grey-2">Мастер</div>
+                  <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+                <button class="user-follow blue text-white size-18 desktop">Подписаться</button>
+              </div>
+              <div class="mobile-user-menu mobile"></div>
+              <div class="user-button-mobile button white-white-border">
+                <div class="user-button-line">
+                  <div class="bookmark"></div>Сохранить в закладках
                 </div>
-                <div class="user-info">
-                  <div class="user-name size-26 text-black">Спортмастер</div>
-                  <div class="size-18 text-black-2">Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации </div>
+                <div class="user-button-line">
+                  <div class="share"></div>Поделиться
                 </div>
               </div>
-              <div class="user-button">
+              <div class="user-button desktop">
                 <div class="bookmark"> </div>
+                <div class="share"></div>
               </div>
             </div>
-            <div class="partners-sales"> 
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на беговые лыжи</div>
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на велосипеды</div>
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на всё</div>
-            </div>
-            <div class="partners-card-bottom"> 
-              <div class="text-black-2">Открыто до 20:00 </div>
-              <div class="text-black-2">Россия, Москва </div>
+            <div class="card-content">
+              <div class="card-content-top"><a class="card-content-title size-30 weight-500 text-black" href="user-description.html">Лучшее снаряжение для сноубординга</a>
+                <div class="card-content-date size-16 text-grey-2">Опубликовано 07.12.2021</div>
+              </div>
+              <div class="card-content-text size-18 text-black">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.</div>
+              <div class="read-more"> <br/>
+                <div class="card-content-text size-18 text-black">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.</div>
+              </div>
+              <div class="card-content-more size-18 text-black">Читать дальше...</div>
+              <div class="card-content-image"> <img src="images/tape.png" alt=""/></div>
+              <div class="card-content-bottom">
+                <button class="button size-30 text-black-2"><img class="like" src="icon/like.svg" alt=""/><span class="size-18">20</span></button>
+                <button class="button size-30 text-black-2"><img src="icon/comment.svg" alt=""/><span class="size-18">25</span></button>
+              </div>
             </div>
           </div>
-          <div class="partners-card card">
+          <div class="card tape-card button">
             <div class="user"> 
               <div class="user-label">
-                <div class="user-photo"><a href="partners-index.html"><img src="icon/sportmaster.svg" alt=""/></a>
+                <div class="user-photo"><a href="user-profile.html"><img src="images/user-photo.png" alt=""/></a>
                   <div class="online"></div>
+                </div><a class="user-info" href="user-profile.html">
+                  <div class="user-name size-26 text-black">Андрей Кулагин</div>
+                  <div class="user-level size-16 text-grey-2">Мастер</div>
+                  <div class="user-location size-16 text-grey-2">Москва, Россия</div></a>
+                <button class="user-follow blue text-white size-18 desktop">Подписаться</button>
+              </div>
+              <div class="mobile-user-menu mobile"></div>
+              <div class="user-button-mobile button white-white-border">
+                <div class="user-button-line">
+                  <div class="bookmark"></div>Сохранить в закладках
                 </div>
-                <div class="user-info">
-                  <div class="user-name size-26 text-black">Спортмастер</div>
-                  <div class="size-18 text-black-2">Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации </div>
+                <div class="user-button-line">
+                  <div class="share"></div>Поделиться
                 </div>
               </div>
-              <div class="user-button">
+              <div class="user-button desktop">
                 <div class="bookmark"> </div>
+                <div class="share"></div>
               </div>
             </div>
-            <div class="partners-sales"> 
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на беговые лыжи</div>
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на велосипеды</div>
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на всё</div>
-            </div>
-            <div class="partners-card-bottom"> 
-              <div class="text-black-2">Открыто до 20:00 </div>
-              <div class="text-black-2">Россия, Москва </div>
-            </div>
-          </div>
-          <div class="partners-card card">
-            <div class="user"> 
-              <div class="user-label">
-                <div class="user-photo"><a href="partners-index.html"><img src="icon/sportmaster.svg" alt=""/></a>
-                  <div class="online"></div>
-                </div>
-                <div class="user-info">
-                  <div class="user-name size-26 text-black">Спортмастер</div>
-                  <div class="size-18 text-black-2">Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации </div>
-                </div>
+            <div class="card-content">
+              <div class="card-content-top"><a class="card-content-title size-30 weight-500 text-black" href="user-description.html">Лучшее снаряжение для сноубординга</a>
+                <div class="card-content-date size-16 text-grey-2">Опубликовано 07.12.2021</div>
               </div>
-              <div class="user-button">
-                <div class="bookmark"> </div>
+              <div class="card-content-text size-18 text-black">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.</div>
+              <div class="read-more"> <br/>
+                <div class="card-content-text size-18 text-black">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации.</div>
               </div>
-            </div>
-            <div class="partners-sales"> 
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на беговые лыжи</div>
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на велосипеды</div>
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на всё</div>
-            </div>
-            <div class="partners-card-bottom"> 
-              <div class="text-black-2">Открыто до 20:00 </div>
-              <div class="text-black-2">Россия, Москва </div>
-            </div>
-          </div>
-          <div class="partners-card card">
-            <div class="user"> 
-              <div class="user-label">
-                <div class="user-photo"><a href="partners-index.html"><img src="icon/sportmaster.svg" alt=""/></a>
-                  <div class="online"></div>
-                </div>
-                <div class="user-info">
-                  <div class="user-name size-26 text-black">Спортмастер</div>
-                  <div class="size-18 text-black-2">Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации </div>
-                </div>
+              <div class="card-content-more size-18 text-black">Читать дальше...</div>
+              <div class="card-content-image"> <img src="images/tape.png" alt=""/></div>
+              <div class="card-content-bottom">
+                <button class="button size-30 text-black-2"><img class="like" src="icon/like.svg" alt=""/><span class="size-18">20</span></button>
+                <button class="button size-30 text-black-2"><img src="icon/comment.svg" alt=""/><span class="size-18">25</span></button>
               </div>
-              <div class="user-button">
-                <div class="bookmark"> </div>
-              </div>
-            </div>
-            <div class="partners-sales"> 
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на беговые лыжи</div>
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на велосипеды</div>
-              <div class="button light-green-green-border text-green size-16">Скидка 10% на всё</div>
-            </div>
-            <div class="partners-card-bottom"> 
-              <div class="text-black-2">Открыто до 20:00 </div>
-              <div class="text-black-2">Россия, Москва </div>
             </div>
           </div>
         </div>

@@ -25,6 +25,7 @@ $(document).ready(function () {
   $('.about-map-card').hide();
   $('.read-more').hide();
   $('.drop-chekbox').hide();
+  $('.old-messege').hide();
   var height = $('body').height() - $('.header').height();
   $('.chat-list').css('height', height);
   $(function () {
@@ -256,6 +257,18 @@ $(document).ready(function () {
       div.hide();
     }
   });
+  $('.admin-menu-content-part').click(function () {
+    $('.admin-menu-content-part').removeClass('active');
+    $(this).addClass('active');
+
+    if ($(this).text() == 'Текущие сообщения') {
+      $('.now-messege').show();
+      $('.old-messege').hide();
+    } else {
+      $('.now-messege').hide();
+      $('.old-messege').show();
+    }
+  });
   $('.mobile-menu').click(function () {
     $('.left-menu-mobile').show();
     $('.menu-search-mobile').hide();
@@ -287,6 +300,32 @@ $(document).ready(function () {
     $('.left-menu.white-white-border').find('a').addClass('text-black');
     $(this).removeClass('text-black');
     $(this).addClass('text-blue');
+  });
+  $('.right-filter').find('.size-26').click(function () {
+    $('.right-filter').find('.size-26').removeClass('text-blue');
+    $('.right-filter').find('.size-26').addClass('text-black');
+    $(this).removeClass('text-black');
+    $(this).addClass('text-blue');
+    var right_menu = $(this).text();
+    $('.partners-card').each(function (index, value) {
+      if (right_menu == 'Отказы') {
+        if ($(this).find('.partner-advertisement').find('.size-20').hasClass('text-red')) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      } else if (right_menu == 'Опубликовано') {
+        if ($(this).find('.partner-advertisement').find('.size-20').hasClass('text-green')) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      } else if (right_menu == 'Все') {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
   });
   var fileName = location.href.split("/").slice(-1);
   $('.left-menu').find('a').each(function (index, value) {

@@ -3179,6 +3179,83 @@ input[type=radio] {
     padding: 10px 0;
 }
 
+.search-filter {
+    display: flex;
+}
+.search-filter .button {
+    font: inherit;
+    color: #5575E8;
+    padding: calc(100vw * (7 / 1920)) calc(100vw * (18 / 1920));
+    margin-right: calc(100vw * (14 / 1920));
+}
+.search-filter .button:last-child {
+    margin-right: 0;
+}
+.search-filter .button.active {
+    background-color: #5575E8;
+    color: #FFFFFF;
+}
+
+.search-list {
+    width: 100%;
+}
+.search-list .search-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: calc(100vw * (40 / 1920));
+}
+.search-list .search-card .card-left {
+    padding-block: calc(100vw * (32 / 1920));
+    padding-inline: calc(100vw * (45 / 1920)) calc(100vw * (86 / 1920));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.search-list .search-card .card-left .user-info {
+    margin: 0;
+}
+.search-list .search-card .card-left .user-name {
+    margin-bottom: calc(100vw * (25 / 1920));
+    display: block;
+}
+.search-list .search-card .card-left .search-card-bottom {
+    display: flex;
+}
+.search-list .search-card .card-left .search-card-bottom .text-black-2 {
+    margin-block: 0;
+    margin-left: calc(100vw * (22 / 1920));
+    color: #7C7C7C;
+}
+.search-list .search-card .card-left .search-card-bottom .text-black-2:first-child {
+    margin-left: 0;
+}
+.search-list .search-card .card-left .search-card-bottom .card-content-bottom {
+    display: flex;
+    margin-left: calc(100vw * (25 / 1920));
+}
+.search-list .search-card .card-left .search-card-bottom .card-content-bottom .button {
+    padding: 0;
+    margin-inline: 0 calc(100vw * (16 / 1920));
+    display: flex;
+    align-items: center;
+}
+.search-list .search-card .card-left .search-card-bottom .card-content-bottom .button:last-child {
+    margin-right: 0;
+}
+.search-list .search-card .card-left .search-card-bottom .card-content-bottom img {
+    height: calc(100vw * (16 / 1920));
+    margin-right: 5px;
+}
+.search-list .search-card .card-right {
+    width: calc(100vw * (344 / 1920));
+    flex-shrink: 0;
+}
+.search-list .search-card .card-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (max-width: 1550px) {
     body {
         font-size: 16px;

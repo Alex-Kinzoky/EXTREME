@@ -2272,5 +2272,78 @@
     .card-content .card-content-bottom .vie {
         height: calc(100vw * (20 / 320));
         display: flex;
-      }
+    }
+
+    .search-filter {
+        display: flex;
+        flex-wrap: wrap;
+        order: 2;
+        margin-bottom: calc(100vw * (15 / 320));
+
+        .button {
+            font-size: calc(100vw * (16 / 320));
+            padding: calc(100vw * (5 / 320)) calc(100vw * (23 / 320));
+            margin-right: calc(100vw * (16 / 320));
+            margin-bottom: calc(100vw * (15 / 320));
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .search-list {
+        margin-top: calc(100vw * (30 / 320));
+        padding-inline: calc(100vw * (15 / 320));
+
+        .search-card {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: calc(100vw * (20 / 320));
+            height: min-content;
+
+            .card-left {
+                padding-block: calc(100vw * (30 / 320));
+                padding-inline: calc(100vw * (12 / 320));
+
+                .user-info {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                .user-name {
+                    font-weight: 500;
+                    margin-bottom: calc(100vw * (15 / 320));
+                }
+
+                .search-card-bottom {
+                    display: flex;
+                    margin-top: calc(100vw * (28 / 320));
+
+                    .text-black-2 {
+                        margin-left: calc(100vw * (18 / 320));
+                    }
+
+                    .card-content-bottom {
+                        display: flex;
+                        margin-left: calc(100vw * (18 / 320));
+
+                        .button {
+                            margin-right: calc(100vw * (18 / 320));
+                        }
+
+                        img {
+                            height: calc(100vw * (16 / 320));
+                        }
+                    }
+                }
+            }
+
+            .card-right {
+                width: 100%;
+                height: calc(100vw * (213 / 320));
+            }
+        }
+    }
+
 }

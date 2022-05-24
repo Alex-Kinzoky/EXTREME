@@ -2199,4 +2199,64 @@
         height: calc(100vw * (20 / 320));
         display: flex;
     }
+
+    .search-filter {
+        display: flex;
+        flex-wrap: wrap;
+        order: 2;
+        margin-bottom: calc(100vw * (15 / 320));
+    }
+    .search-filter .button {
+        font-size: calc(100vw * (16 / 320));
+        padding: calc(100vw * (5 / 320)) calc(100vw * (23 / 320));
+        margin-right: calc(100vw * (16 / 320));
+        margin-bottom: calc(100vw * (15 / 320));
+    }
+    .search-filter .button:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .search-list {
+        margin-top: calc(100vw * (30 / 320));
+        padding-inline: calc(100vw * (15 / 320));
+    }
+    .search-list .search-card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: calc(100vw * (20 / 320));
+        height: min-content;
+    }
+    .search-list .search-card .card-left {
+        padding-block: calc(100vw * (30 / 320));
+        padding-inline: calc(100vw * (12 / 320));
+    }
+    .search-list .search-card .card-left .user-info {
+        width: 100%;
+        margin: 0;
+    }
+    .search-list .search-card .card-left .user-name {
+        font-weight: 500;
+        margin-bottom: calc(100vw * (15 / 320));
+    }
+    .search-list .search-card .card-left .search-card-bottom {
+        display: flex;
+        margin-top: calc(100vw * (28 / 320));
+    }
+    .search-list .search-card .card-left .search-card-bottom .text-black-2 {
+        margin-left: calc(100vw * (18 / 320));
+    }
+    .search-list .search-card .card-left .search-card-bottom .card-content-bottom {
+        display: flex;
+        margin-left: calc(100vw * (18 / 320));
+    }
+    .search-list .search-card .card-left .search-card-bottom .card-content-bottom .button {
+        margin-right: calc(100vw * (18 / 320));
+    }
+    .search-list .search-card .card-left .search-card-bottom .card-content-bottom img {
+        height: calc(100vw * (16 / 320));
+    }
+    .search-list .search-card .card-right {
+        width: 100%;
+        height: calc(100vw * (213 / 320));
+    }
 }

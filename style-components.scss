@@ -42,7 +42,7 @@ input{
     cursor: pointer;
 }
 .content-wrapper{
-    padding: 0 0 0 calc(100vw * (80 / 1920));
+    padding: 0 0 0 calc(100vw * (320 / 1920));
     flex-grow: 1;
 }
 .flex-wrap{
@@ -50,7 +50,9 @@ input{
 }
 
 .pdl-40{
-    padding-left: calc(100vw * (40 / 1920));
+    //padding-left: calc(100vw * (40 / 1920));
+    padding-left: calc(100vw *(340/1920));
+    
 }
 
 .weight-500{

@@ -1561,7 +1561,7 @@ body{
     position: relative;
     background-image: url(images/big-map.png);
     background-size: 100% 100%;
-    width: 100%;
+    width: calc(100vw * (1000/1920));
     height: calc(100vw * (403 / 1920));
     border-radius: 28px;
     overflow: hidden;

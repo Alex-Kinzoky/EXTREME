@@ -457,6 +457,7 @@ body{
 }
 .about-place {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     .card-content-bottom{
@@ -1268,6 +1269,7 @@ body{
         border-bottom-left-radius: inherit;
         .card-h-image{
             overflow: hidden;
+            width: calc(100vw * (175/1920));
             img{
                 
                 height: 100%;

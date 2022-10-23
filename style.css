@@ -476,6 +476,7 @@ body {
 
 .about-place {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -1276,6 +1277,7 @@ body {
 }
 .card-h .card-h-left .card-h-image {
   overflow: hidden;
+  width: 9.1145833333vw;
 }
 .card-h .card-h-left .card-h-image img {
   height: 100%;

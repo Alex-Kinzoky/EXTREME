@@ -723,9 +723,11 @@ body{
     }
 }
 .advertisement{
+    display: none;
     background: #E2E2E2;
 }
 .advertisement-left{
+    display: none;
     background: #E2E2E2;
     width: calc(100vw * (269 / 1920));
     height: calc(100vw * (388 / 1920));
@@ -733,6 +735,7 @@ body{
     align-self: center;
 }
 .advertisement-bottom{
+    display: none;
     background: #E2E2E2;
     width: 100%;
     height: calc(100vw * (291 / 1920));
